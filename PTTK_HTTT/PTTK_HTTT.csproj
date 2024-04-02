@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3876C4DC-4663-4E7E-A4F8-38337896C50A}</ProjectGuid>
+    <ProjectGuid>{C8E87D63-B08B-4087-8E52-A90A16305F5A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>PTTK</RootNamespace>
-    <AssemblyName>PTTK</AssemblyName>
+    <RootNamespace>PTTK_HTTT</RootNamespace>
+    <AssemblyName>PTTK_HTTT</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

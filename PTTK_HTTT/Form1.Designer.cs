@@ -1,4 +1,4 @@
-﻿namespace PTTK
+﻿namespace PTTK_HTTT
 {
     partial class Form1
     {

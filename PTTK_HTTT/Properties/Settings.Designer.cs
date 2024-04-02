@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PTTK.Properties
+namespace PTTK_HTTT.Properties
 {
 
 

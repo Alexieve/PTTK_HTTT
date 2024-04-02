@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PTTK
+namespace PTTK_HTTT
 {
     internal static class Program
     {
