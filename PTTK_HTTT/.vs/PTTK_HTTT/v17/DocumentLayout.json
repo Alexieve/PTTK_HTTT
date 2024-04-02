@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C8E87D63-B08B-4087-8E52-A90A16305F5A}|PTTK_HTTT.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8E87D63-B08B-4087-8E52-A90A16305F5A}|PTTK_HTTT.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8E87D63-B08B-4087-8E52-A90A16305F5A}|PTTK_HTTT.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C8E87D63-B08B-4087-8E52-A90A16305F5A}|PTTK_HTTT.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,26 +35,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T02:18:33.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "GUI\\Form1.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\Form1.cs [Design]",
+              "RelativeToolTip": "GUI\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T02:11:23.096Z",
+              "WhenOpened": "2024-04-02T17:19:35.56Z",
               "EditorCaption": " [Design]"
             }
           ]
