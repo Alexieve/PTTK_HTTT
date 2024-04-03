@@ -66,5 +66,10 @@ namespace GUI
                 currentButton.BackColor = Color.FromArgb(64, 64, 64);
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
