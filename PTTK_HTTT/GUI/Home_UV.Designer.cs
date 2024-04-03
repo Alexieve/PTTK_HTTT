@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             childFormPanel = new Panel();
+            ContentPanel = new Panel();
             SearchPanel = new Panel();
             SearchBtn = new Button();
             textBox1 = new TextBox();
@@ -46,8 +47,16 @@
             DuyetHSBtn = new Button();
             panel6 = new Panel();
             GiaHanHDBtn = new Button();
-            ContentPanel = new Panel();
+            dataGridView1 = new DataGridView();
+            MaDN = new DataGridViewTextBoxColumn();
+            TenDN = new DataGridViewTextBoxColumn();
+            ViTriTD = new DataGridViewTextBoxColumn();
+            SoLuong = new DataGridViewTextBoxColumn();
+            CapBac = new DataGridViewTextBoxColumn();
+            YeuCau = new DataGridViewTextBoxColumn();
+            ThoiGian = new DataGridViewTextBoxColumn();
             childFormPanel.SuspendLayout();
+            ContentPanel.SuspendLayout();
             SearchPanel.SuspendLayout();
             sidePanel.SuspendLayout();
             panel1.SuspendLayout();
@@ -56,6 +65,7 @@
             panel4.SuspendLayout();
             panel5.SuspendLayout();
             panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // childFormPanel
@@ -67,6 +77,15 @@
             childFormPanel.Name = "childFormPanel";
             childFormPanel.Size = new Size(1077, 721);
             childFormPanel.TabIndex = 6;
+            // 
+            // ContentPanel
+            // 
+            ContentPanel.Controls.Add(dataGridView1);
+            ContentPanel.Location = new Point(6, 73);
+            ContentPanel.Name = "ContentPanel";
+            ContentPanel.Size = new Size(1058, 636);
+            ContentPanel.TabIndex = 3;
+            ContentPanel.Paint += ContentPanel_Paint;
             // 
             // SearchPanel
             // 
@@ -257,12 +276,74 @@
             GiaHanHDBtn.Text = "Temporary";
             GiaHanHDBtn.UseVisualStyleBackColor = true;
             // 
-            // ContentPanel
+            // dataGridView1
             // 
-            ContentPanel.Location = new Point(6, 73);
-            ContentPanel.Name = "ContentPanel";
-            ContentPanel.Size = new Size(1058, 636);
-            ContentPanel.TabIndex = 3;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView1.AllowUserToResizeRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { MaDN, TenDN, ViTriTD, SoLuong, CapBac, YeuCau, ThoiGian });
+            dataGridView1.Location = new Point(3, 6);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1065, 639);
+            dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // MaDN
+            // 
+            MaDN.HeaderText = "Mã Doanh Nghiệp";
+            MaDN.MinimumWidth = 6;
+            MaDN.Name = "MaDN";
+            MaDN.ReadOnly = true;
+            MaDN.Visible = false;
+            // 
+            // TenDN
+            // 
+            TenDN.HeaderText = "Tên Doanh Nghiệp";
+            TenDN.MinimumWidth = 6;
+            TenDN.Name = "TenDN";
+            TenDN.ReadOnly = true;
+            // 
+            // ViTriTD
+            // 
+            ViTriTD.HeaderText = "Vị Trí";
+            ViTriTD.MinimumWidth = 6;
+            ViTriTD.Name = "ViTriTD";
+            ViTriTD.ReadOnly = true;
+            // 
+            // SoLuong
+            // 
+            SoLuong.HeaderText = "Số Lượng";
+            SoLuong.MinimumWidth = 6;
+            SoLuong.Name = "SoLuong";
+            SoLuong.ReadOnly = true;
+            // 
+            // CapBac
+            // 
+            CapBac.HeaderText = "Cấp Bậc";
+            CapBac.MinimumWidth = 6;
+            CapBac.Name = "CapBac";
+            CapBac.ReadOnly = true;
+            // 
+            // YeuCau
+            // 
+            YeuCau.HeaderText = "Yêu Cầu";
+            YeuCau.MinimumWidth = 6;
+            YeuCau.Name = "YeuCau";
+            YeuCau.ReadOnly = true;
+            // 
+            // ThoiGian
+            // 
+            ThoiGian.HeaderText = "Thời Gian";
+            ThoiGian.MinimumWidth = 6;
+            ThoiGian.Name = "ThoiGian";
+            ThoiGian.ReadOnly = true;
             // 
             // Home_UV
             // 
@@ -275,6 +356,7 @@
             Name = "Home_UV";
             Text = "Home_UV";
             childFormPanel.ResumeLayout(false);
+            ContentPanel.ResumeLayout(false);
             SearchPanel.ResumeLayout(false);
             SearchPanel.PerformLayout();
             sidePanel.ResumeLayout(false);
@@ -284,6 +366,7 @@
             panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -308,5 +391,13 @@
         private TextBox textBox1;
         private Panel SearchPanel;
         private Panel ContentPanel;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn MaDN;
+        private DataGridViewTextBoxColumn TenDN;
+        private DataGridViewTextBoxColumn ViTriTD;
+        private DataGridViewTextBoxColumn SoLuong;
+        private DataGridViewTextBoxColumn CapBac;
+        private DataGridViewTextBoxColumn YeuCau;
+        private DataGridViewTextBoxColumn ThoiGian;
     }
 }
