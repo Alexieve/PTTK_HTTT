@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Home_UV : Form
+    public partial class GiaHanHopDong : Form
     {
-        public Home_UV()
+        public GiaHanHopDong()
         {
             InitializeComponent();
-        }
-
-        private void ContentPanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

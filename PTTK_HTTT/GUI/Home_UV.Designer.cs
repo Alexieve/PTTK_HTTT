@@ -47,14 +47,7 @@
             DuyetHSBtn = new Button();
             panel6 = new Panel();
             GiaHanHDBtn = new Button();
-            dataGridView1 = new DataGridView();
-            MaDN = new DataGridViewTextBoxColumn();
-            TenDN = new DataGridViewTextBoxColumn();
-            ViTriTD = new DataGridViewTextBoxColumn();
-            SoLuong = new DataGridViewTextBoxColumn();
-            CapBac = new DataGridViewTextBoxColumn();
-            YeuCau = new DataGridViewTextBoxColumn();
-            ThoiGian = new DataGridViewTextBoxColumn();
+            cardTuyenDung1 = new CardTuyenDung();
             childFormPanel.SuspendLayout();
             ContentPanel.SuspendLayout();
             SearchPanel.SuspendLayout();
@@ -65,7 +58,6 @@
             panel4.SuspendLayout();
             panel5.SuspendLayout();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // childFormPanel
@@ -80,7 +72,7 @@
             // 
             // ContentPanel
             // 
-            ContentPanel.Controls.Add(dataGridView1);
+            ContentPanel.Controls.Add(cardTuyenDung1);
             ContentPanel.Location = new Point(6, 73);
             ContentPanel.Name = "ContentPanel";
             ContentPanel.Size = new Size(1058, 636);
@@ -276,74 +268,19 @@
             GiaHanHDBtn.Text = "Temporary";
             GiaHanHDBtn.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // cardTuyenDung1
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.AllowUserToOrderColumns = true;
-            dataGridView1.AllowUserToResizeColumns = false;
-            dataGridView1.AllowUserToResizeRows = false;
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { MaDN, TenDN, ViTriTD, SoLuong, CapBac, YeuCau, ThoiGian });
-            dataGridView1.Location = new Point(3, 6);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1065, 639);
-            dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // MaDN
-            // 
-            MaDN.HeaderText = "Mã Doanh Nghiệp";
-            MaDN.MinimumWidth = 6;
-            MaDN.Name = "MaDN";
-            MaDN.ReadOnly = true;
-            MaDN.Visible = false;
-            // 
-            // TenDN
-            // 
-            TenDN.HeaderText = "Tên Doanh Nghiệp";
-            TenDN.MinimumWidth = 6;
-            TenDN.Name = "TenDN";
-            TenDN.ReadOnly = true;
-            // 
-            // ViTriTD
-            // 
-            ViTriTD.HeaderText = "Vị Trí";
-            ViTriTD.MinimumWidth = 6;
-            ViTriTD.Name = "ViTriTD";
-            ViTriTD.ReadOnly = true;
-            // 
-            // SoLuong
-            // 
-            SoLuong.HeaderText = "Số Lượng";
-            SoLuong.MinimumWidth = 6;
-            SoLuong.Name = "SoLuong";
-            SoLuong.ReadOnly = true;
-            // 
-            // CapBac
-            // 
-            CapBac.HeaderText = "Cấp Bậc";
-            CapBac.MinimumWidth = 6;
-            CapBac.Name = "CapBac";
-            CapBac.ReadOnly = true;
-            // 
-            // YeuCau
-            // 
-            YeuCau.HeaderText = "Yêu Cầu";
-            YeuCau.MinimumWidth = 6;
-            YeuCau.Name = "YeuCau";
-            YeuCau.ReadOnly = true;
-            // 
-            // ThoiGian
-            // 
-            ThoiGian.HeaderText = "Thời Gian";
-            ThoiGian.MinimumWidth = 6;
-            ThoiGian.Name = "ThoiGian";
-            ThoiGian.ReadOnly = true;
+            cardTuyenDung1.Avatar = null;
+            cardTuyenDung1.BackColor = Color.White;
+            cardTuyenDung1.CapBacUngtuyen = null;
+            cardTuyenDung1.DiaChiDN = null;
+            cardTuyenDung1.KyNangUngTuyen = null;
+            cardTuyenDung1.Location = new Point(3, 3);
+            cardTuyenDung1.Name = "cardTuyenDung1";
+            cardTuyenDung1.Size = new Size(1322, 285);
+            cardTuyenDung1.TabIndex = 0;
+            cardTuyenDung1.TenDoanhNghiep = null;
+            cardTuyenDung1.ViTri = null;
             // 
             // Home_UV
             // 
@@ -366,7 +303,6 @@
             panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -391,13 +327,6 @@
         private TextBox textBox1;
         private Panel SearchPanel;
         private Panel ContentPanel;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn MaDN;
-        private DataGridViewTextBoxColumn TenDN;
-        private DataGridViewTextBoxColumn ViTriTD;
-        private DataGridViewTextBoxColumn SoLuong;
-        private DataGridViewTextBoxColumn CapBac;
-        private DataGridViewTextBoxColumn YeuCau;
-        private DataGridViewTextBoxColumn ThoiGian;
+        private CardTuyenDung cardTuyenDung1;
     }
 }
