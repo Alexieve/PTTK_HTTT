@@ -4,6 +4,9 @@
     <Compile Update="Home_BLD.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Home_DN.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Home_NV.cs">
       <SubType>Form</SubType>
     </Compile>
