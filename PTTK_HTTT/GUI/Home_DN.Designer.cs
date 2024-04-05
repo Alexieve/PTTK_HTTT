@@ -132,6 +132,7 @@
             LapYCBtn.TabIndex = 0;
             LapYCBtn.Text = "Lập yêu cầu tuyển dụng";
             LapYCBtn.UseVisualStyleBackColor = true;
+            LapYCBtn.Click += LapYCBtn_Click;
             // 
             // panel3
             // 

@@ -32,6 +32,7 @@ namespace GUI
         {
 
             ActiveButton(sender);
+            openChildForm(new Page_TT());
         }
 
         private void DuyetHSBtn_Click(object sender, EventArgs e)
