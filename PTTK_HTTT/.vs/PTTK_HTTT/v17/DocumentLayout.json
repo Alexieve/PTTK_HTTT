@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\",
+  "WorkspaceRootPath": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\home_dn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\home_dn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -13,6 +14,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\tab_xemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\tab_xemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\tab_xnpqc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\tab_xnpqc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\page_tt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\page_tt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> ff0ffe1103649924d4e8a5e8a911343ad85b85de
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +35,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 59,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,6 +55,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "Home_DN.cs [Design]",
               "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\Home_DN.cs",
@@ -50,6 +64,40 @@
               "RelativeToolTip": "GUI\\Home_DN.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-06T10:12:18.397Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "Page_TT.cs [Design]",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Page_TT.cs",
+              "RelativeDocumentMoniker": "GUI\\Page_TT.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Page_TT.cs [Design]",
+              "RelativeToolTip": "GUI\\Page_TT.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T17:02:06.74Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tab_XemHoaDon.cs [Design]",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_XemHoaDon.cs",
+              "RelativeDocumentMoniker": "GUI\\Tab_XemHoaDon.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_XemHoaDon.cs [Design]",
+              "RelativeToolTip": "GUI\\Tab_XemHoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T16:59:24.25Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tab_XNPQC.cs [Design]",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_XNPQC.cs",
+              "RelativeDocumentMoniker": "GUI\\Tab_XNPQC.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_XNPQC.cs [Design]",
+              "RelativeToolTip": "GUI\\Tab_XNPQC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T16:59:32.911Z",
+>>>>>>> ff0ffe1103649924d4e8a5e8a911343ad85b85de
               "EditorCaption": " [Design]"
             },
             {
