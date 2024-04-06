@@ -30,6 +30,7 @@
         {
             childFormPanel = new Panel();
             ContentPanel = new Panel();
+            cardTuyenDung1 = new CardTuyenDung();
             SearchPanel = new Panel();
             SearchBtn = new Button();
             textBox1 = new TextBox();
@@ -47,7 +48,6 @@
             DuyetHSBtn = new Button();
             panel6 = new Panel();
             GiaHanHDBtn = new Button();
-            cardTuyenDung1 = new CardTuyenDung();
             childFormPanel.SuspendLayout();
             ContentPanel.SuspendLayout();
             SearchPanel.SuspendLayout();
@@ -77,7 +77,20 @@
             ContentPanel.Name = "ContentPanel";
             ContentPanel.Size = new Size(1058, 636);
             ContentPanel.TabIndex = 3;
-            ContentPanel.Paint += ContentPanel_Paint;
+            // 
+            // cardTuyenDung1
+            // 
+            cardTuyenDung1.Avatar = null;
+            cardTuyenDung1.BackColor = Color.White;
+            cardTuyenDung1.CapBacUngtuyen = null;
+            cardTuyenDung1.DiaChiDN = null;
+            cardTuyenDung1.KyNangUngTuyen = null;
+            cardTuyenDung1.Location = new Point(3, 3);
+            cardTuyenDung1.Name = "cardTuyenDung1";
+            cardTuyenDung1.Size = new Size(1322, 285);
+            cardTuyenDung1.TabIndex = 0;
+            cardTuyenDung1.TenDoanhNghiep = null;
+            cardTuyenDung1.ViTri = null;
             // 
             // SearchPanel
             // 
@@ -157,6 +170,7 @@
             logoutBtn.TabIndex = 0;
             logoutBtn.Text = "Đăng xuất";
             logoutBtn.UseVisualStyleBackColor = false;
+            logoutBtn.Click += logoutBtn_Click;
             // 
             // panel2
             // 
@@ -179,6 +193,7 @@
             XemKQBtn.TabIndex = 0;
             XemKQBtn.Text = "Xem Kết Quả Ứng Tuyển";
             XemKQBtn.UseVisualStyleBackColor = true;
+            XemKQBtn.Click += XemKQBtn_Click;
             // 
             // panel3
             // 
@@ -267,20 +282,6 @@
             GiaHanHDBtn.TabIndex = 0;
             GiaHanHDBtn.Text = "Temporary";
             GiaHanHDBtn.UseVisualStyleBackColor = true;
-            // 
-            // cardTuyenDung1
-            // 
-            cardTuyenDung1.Avatar = null;
-            cardTuyenDung1.BackColor = Color.White;
-            cardTuyenDung1.CapBacUngtuyen = null;
-            cardTuyenDung1.DiaChiDN = null;
-            cardTuyenDung1.KyNangUngTuyen = null;
-            cardTuyenDung1.Location = new Point(3, 3);
-            cardTuyenDung1.Name = "cardTuyenDung1";
-            cardTuyenDung1.Size = new Size(1322, 285);
-            cardTuyenDung1.TabIndex = 0;
-            cardTuyenDung1.TenDoanhNghiep = null;
-            cardTuyenDung1.ViTri = null;
             // 
             // Home_UV
             // 

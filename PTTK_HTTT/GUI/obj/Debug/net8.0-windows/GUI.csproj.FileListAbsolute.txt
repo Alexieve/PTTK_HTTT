@@ -17,3 +17,17 @@ D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.genru
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\ref\GUI.dll
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Home_BLD.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Home_UV.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CardTuyenDung.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.GiaHanHopDong.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Home_DN.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UngTuyenModal.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.GiayToCpn.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.KetQuaUngTuyen.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.ThongTinUngTuyenCpn.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.HieuChinhHSModal.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.HSChoDuyet.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DuyetHoSoModal.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.BaiDangChoDuyetHS.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.HDCanPhanHoiHS.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.HSChoPhanHoi.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.PhanHoiHSModal.resources
