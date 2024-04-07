@@ -29,8 +29,7 @@ namespace GUI
             BaiDangTb.Rows.Add("HD004", "Doanh nghiệp 4", "Intern - Software Engineer", 67, "01/01/2021");
             BaiDangTb.Rows.Add("HD005", "Doanh nghiệp 5", "Intern - Data Engineer", 36, "01/01/2021");
         }
-
-        private void BaiDangTb_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void XemDSHoSoBtn_Click(object sender, EventArgs e)
         {
             this.duyetHoSoTab.openChildForm(new NV_DuyetHoSo_DSHoSo(this.duyetHoSoTab));
         }

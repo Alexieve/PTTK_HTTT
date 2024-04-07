@@ -42,8 +42,7 @@ namespace GUI
                 HoSoTb.Rows.Add("6", "Nguyễn Văn F", "12/12/2021", "Đã đạt");
             }
         }
-
-        private void HoSoTb_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void XemCTHoSoBtn_Click(object sender, EventArgs e)
         {
             DN_PhanHoiHS_ChiTietHS phanHoiHSModal = new DN_PhanHoiHS_ChiTietHS();
             phanHoiHSModal.ShowDialog();

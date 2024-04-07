@@ -30,6 +30,8 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             ParentPanel = new Panel();
+            panel1 = new Panel();
+            XemCTHoSoBtn = new Button();
             KetQuaTb = new DataGridView();
             TitlePanel = new Panel();
             TitleLabel = new Label();
@@ -37,14 +39,15 @@
             CB_VT = new DataGridViewTextBoxColumn();
             NGAYNOP = new DataGridViewTextBoxColumn();
             KETQUA = new DataGridViewTextBoxColumn();
-            AccessBtn = new DataGridViewButtonColumn();
             ParentPanel.SuspendLayout();
+            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)KetQuaTb).BeginInit();
             TitlePanel.SuspendLayout();
             SuspendLayout();
             // 
             // ParentPanel
             // 
+            ParentPanel.Controls.Add(panel1);
             ParentPanel.Controls.Add(KetQuaTb);
             ParentPanel.Controls.Add(TitlePanel);
             ParentPanel.Dock = DockStyle.Fill;
@@ -53,6 +56,24 @@
             ParentPanel.Name = "ParentPanel";
             ParentPanel.Size = new Size(1077, 721);
             ParentPanel.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(XemCTHoSoBtn);
+            panel1.Location = new Point(12, 86);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1053, 52);
+            panel1.TabIndex = 11;
+            // 
+            // XemCTHoSoBtn
+            // 
+            XemCTHoSoBtn.Location = new Point(12, 8);
+            XemCTHoSoBtn.Name = "XemCTHoSoBtn";
+            XemCTHoSoBtn.Size = new Size(248, 37);
+            XemCTHoSoBtn.TabIndex = 13;
+            XemCTHoSoBtn.Text = "Xem Chi Tiết Hồ Sơ";
+            XemCTHoSoBtn.UseVisualStyleBackColor = true;
+            XemCTHoSoBtn.Click += XemCTHoSoBtn_Click;
             // 
             // KetQuaTb
             // 
@@ -68,14 +89,13 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             KetQuaTb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             KetQuaTb.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            KetQuaTb.Columns.AddRange(new DataGridViewColumn[] { TENDN, CB_VT, NGAYNOP, KETQUA, AccessBtn });
-            KetQuaTb.Location = new Point(12, 93);
+            KetQuaTb.Columns.AddRange(new DataGridViewColumn[] { TENDN, CB_VT, NGAYNOP, KETQUA });
+            KetQuaTb.Location = new Point(12, 144);
             KetQuaTb.Name = "KetQuaTb";
             KetQuaTb.ReadOnly = true;
             KetQuaTb.RowHeadersWidth = 51;
-            KetQuaTb.Size = new Size(1053, 616);
+            KetQuaTb.Size = new Size(1053, 565);
             KetQuaTb.TabIndex = 9;
-            KetQuaTb.CellContentClick += KetQuaTb_CellContentClick;
             // 
             // TitlePanel
             // 
@@ -132,24 +152,17 @@
             KETQUA.Name = "KETQUA";
             KETQUA.ReadOnly = true;
             // 
-            // AccessBtn
-            // 
-            AccessBtn.HeaderText = "V";
-            AccessBtn.MinimumWidth = 6;
-            AccessBtn.Name = "AccessBtn";
-            AccessBtn.ReadOnly = true;
-            AccessBtn.Width = 50;
-            // 
-            // KetQuaHS
+            // UV_KetQuaHS
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1077, 721);
             Controls.Add(ParentPanel);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "KetQuaHS";
+            Name = "UV_KetQuaHS";
             Text = "KetQuaUngTuyen";
             ParentPanel.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)KetQuaTb).EndInit();
             TitlePanel.ResumeLayout(false);
             TitlePanel.PerformLayout();
@@ -162,10 +175,11 @@
         private Panel TitlePanel;
         private Label TitleLabel;
         private DataGridView KetQuaTb;
+        private Panel panel1;
+        private Button XemCTHoSoBtn;
         private DataGridViewTextBoxColumn TENDN;
         private DataGridViewTextBoxColumn CB_VT;
         private DataGridViewTextBoxColumn NGAYNOP;
         private DataGridViewTextBoxColumn KETQUA;
-        private DataGridViewButtonColumn AccessBtn;
     }
 }

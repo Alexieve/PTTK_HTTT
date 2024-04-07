@@ -30,18 +30,21 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             ParentPanel = new Panel();
+            panel1 = new Panel();
+            XemDSHoSoBtn = new Button();
             HopDongTb = new DataGridView();
             MAHOPDONG = new DataGridViewTextBoxColumn();
             CB_VT = new DataGridViewTextBoxColumn();
             SOLUONG = new DataGridViewTextBoxColumn();
             NGAYKT = new DataGridViewTextBoxColumn();
-            AccessBtn = new DataGridViewButtonColumn();
             ParentPanel.SuspendLayout();
+            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)HopDongTb).BeginInit();
             SuspendLayout();
             // 
             // ParentPanel
             // 
+            ParentPanel.Controls.Add(panel1);
             ParentPanel.Controls.Add(HopDongTb);
             ParentPanel.Dock = DockStyle.Fill;
             ParentPanel.Font = new Font("Segoe UI", 12F);
@@ -49,6 +52,24 @@
             ParentPanel.Name = "ParentPanel";
             ParentPanel.Size = new Size(1053, 594);
             ParentPanel.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(XemDSHoSoBtn);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1053, 52);
+            panel1.TabIndex = 11;
+            // 
+            // XemDSHoSoBtn
+            // 
+            XemDSHoSoBtn.Location = new Point(12, 8);
+            XemDSHoSoBtn.Name = "XemDSHoSoBtn";
+            XemDSHoSoBtn.Size = new Size(248, 37);
+            XemDSHoSoBtn.TabIndex = 0;
+            XemDSHoSoBtn.Text = "Xem Danh Sách Hồ Sơ";
+            XemDSHoSoBtn.UseVisualStyleBackColor = true;
+            XemDSHoSoBtn.Click += XemDSHoSoBtn_Click;
             // 
             // HopDongTb
             // 
@@ -64,15 +85,13 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             HopDongTb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             HopDongTb.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            HopDongTb.Columns.AddRange(new DataGridViewColumn[] { MAHOPDONG, CB_VT, SOLUONG, NGAYKT, AccessBtn });
-            HopDongTb.Dock = DockStyle.Fill;
-            HopDongTb.Location = new Point(0, 0);
+            HopDongTb.Columns.AddRange(new DataGridViewColumn[] { MAHOPDONG, CB_VT, SOLUONG, NGAYKT });
+            HopDongTb.Location = new Point(0, 58);
             HopDongTb.Name = "HopDongTb";
             HopDongTb.ReadOnly = true;
             HopDongTb.RowHeadersWidth = 51;
-            HopDongTb.Size = new Size(1053, 594);
+            HopDongTb.Size = new Size(1053, 536);
             HopDongTb.TabIndex = 9;
-            HopDongTb.CellContentClick += HopDongTb_CellContentClick;
             // 
             // MAHOPDONG
             // 
@@ -106,24 +125,17 @@
             NGAYKT.Name = "NGAYKT";
             NGAYKT.ReadOnly = true;
             // 
-            // AccessBtn
-            // 
-            AccessBtn.HeaderText = "V";
-            AccessBtn.MinimumWidth = 6;
-            AccessBtn.Name = "AccessBtn";
-            AccessBtn.ReadOnly = true;
-            AccessBtn.Width = 50;
-            // 
-            // PhanHoiHS_DSHopDong
+            // DN_PhanHoiHS_DSHopDong
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1053, 594);
             Controls.Add(ParentPanel);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "PhanHoiHS_DSHopDong";
+            Name = "DN_PhanHoiHS_DSHopDong";
             Text = "BaiDangChoDuyet";
             ParentPanel.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)HopDongTb).EndInit();
             ResumeLayout(false);
         }
@@ -132,10 +144,11 @@
 
         private Panel ParentPanel;
         private DataGridView HopDongTb;
+        private Panel panel1;
+        private Button XemDSHoSoBtn;
         private DataGridViewTextBoxColumn MAHOPDONG;
         private DataGridViewTextBoxColumn CB_VT;
         private DataGridViewTextBoxColumn SOLUONG;
         private DataGridViewTextBoxColumn NGAYKT;
-        private DataGridViewButtonColumn AccessBtn;
     }
 }

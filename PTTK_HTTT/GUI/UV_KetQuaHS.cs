@@ -24,8 +24,7 @@ namespace GUI
             KetQuaTb.Rows.Add("Công ty KLM", "Data Engineer", "01/01/2021", "Chưa duyệt");
             KetQuaTb.Rows.Add("Công ty NOP", "Data Analyst", "01/01/2021", "Cần hiệu chỉnh");
         }
-
-        private void KetQuaTb_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void XemCTHoSoBtn_Click(object sender, EventArgs e)
         {
             UV_KetQuaHS_ChiTietHS hieuChinhHSModal = new UV_KetQuaHS_ChiTietHS();
             hieuChinhHSModal.Show();

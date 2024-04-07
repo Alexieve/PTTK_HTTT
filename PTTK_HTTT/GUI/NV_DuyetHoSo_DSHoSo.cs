@@ -67,7 +67,7 @@ namespace GUI
                 UpBtn.Visible = true;
                 DownBtn.Visible = true;
                 SaveBtn.Visible = true;
-                HoSoTb.Columns[4].Visible = false;
+                XemCTHoSoBtn.Visible = false;
             }
             else
             {
@@ -75,26 +75,13 @@ namespace GUI
                 UpBtn.Visible = false;
                 DownBtn.Visible = false;
                 SaveBtn.Visible = false;
-                HoSoTb.Columns[4].Visible = KetQuaCbb.SelectedIndex == 0;
+                XemCTHoSoBtn.Visible = KetQuaCbb.SelectedIndex == 0;
             }
         }
-
-
-
-        private void HoSoTb_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (KetQuaCbb.SelectedIndex == 0)
-            {
-                NV_DuyetHoSo_ChiTietHS modal = new NV_DuyetHoSo_ChiTietHS();
-                modal.ShowDialog();
-            }
-        }
-
         private void KetQuaCbb_SelectedIndexChanged(object sender, EventArgs e)
         {
             SortMode();
         }
-
         private void DownBtn_Click(object sender, EventArgs e)
         {
             MoveRow(1);
@@ -102,6 +89,15 @@ namespace GUI
         private void UpBtn_Click(object sender, EventArgs e)
         {
             MoveRow(-1);
+        }
+
+        private void XemCTHoSoBtn_Click(object sender, EventArgs e)
+        {
+            if (KetQuaCbb.SelectedIndex == 0)
+            {
+                NV_DuyetHoSo_ChiTietHS modal = new NV_DuyetHoSo_ChiTietHS();
+                modal.ShowDialog();
+            }
         }
     }
 }

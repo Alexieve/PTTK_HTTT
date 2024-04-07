@@ -31,6 +31,7 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             ParentPanel = new Panel();
             panel1 = new Panel();
+            XemCTHoSoBtn = new Button();
             KetQuaLabel = new Label();
             KetQuaCbb = new ComboBox();
             HoSoTb = new DataGridView();
@@ -38,7 +39,6 @@
             TENUV = new DataGridViewTextBoxColumn();
             NGAYNOP = new DataGridViewTextBoxColumn();
             KETQUA = new DataGridViewTextBoxColumn();
-            AccessBtn = new DataGridViewButtonColumn();
             ParentPanel.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)HoSoTb).BeginInit();
@@ -57,12 +57,23 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(XemCTHoSoBtn);
             panel1.Controls.Add(KetQuaLabel);
             panel1.Controls.Add(KetQuaCbb);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1053, 52);
             panel1.TabIndex = 10;
+            // 
+            // XemCTHoSoBtn
+            // 
+            XemCTHoSoBtn.Location = new Point(12, 8);
+            XemCTHoSoBtn.Name = "XemCTHoSoBtn";
+            XemCTHoSoBtn.Size = new Size(248, 37);
+            XemCTHoSoBtn.TabIndex = 13;
+            XemCTHoSoBtn.Text = "Xem Chi Tiết Hồ Sơ";
+            XemCTHoSoBtn.UseVisualStyleBackColor = true;
+            XemCTHoSoBtn.Click += XemCTHoSoBtn_Click;
             // 
             // KetQuaLabel
             // 
@@ -96,14 +107,13 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             HoSoTb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             HoSoTb.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            HoSoTb.Columns.AddRange(new DataGridViewColumn[] { MAUV, TENUV, NGAYNOP, KETQUA, AccessBtn });
+            HoSoTb.Columns.AddRange(new DataGridViewColumn[] { MAUV, TENUV, NGAYNOP, KETQUA });
             HoSoTb.Location = new Point(0, 58);
             HoSoTb.Name = "HoSoTb";
             HoSoTb.ReadOnly = true;
             HoSoTb.RowHeadersWidth = 51;
             HoSoTb.Size = new Size(1053, 536);
             HoSoTb.TabIndex = 9;
-            HoSoTb.CellContentClick += HoSoTb_CellContentClick;
             // 
             // MAUV
             // 
@@ -137,22 +147,14 @@
             KETQUA.Name = "KETQUA";
             KETQUA.ReadOnly = true;
             // 
-            // AccessBtn
-            // 
-            AccessBtn.HeaderText = "V";
-            AccessBtn.MinimumWidth = 6;
-            AccessBtn.Name = "AccessBtn";
-            AccessBtn.ReadOnly = true;
-            AccessBtn.Width = 50;
-            // 
-            // PhanHoiHS_DSHoSo
+            // DN_PhanHoiHS_DSHoSo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1053, 594);
             Controls.Add(ParentPanel);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "PhanHoiHS_DSHoSo";
+            Name = "DN_PhanHoiHS_DSHoSo";
             Text = "HSChoPhanHoi";
             ParentPanel.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -168,10 +170,10 @@
         private Panel panel1;
         private ComboBox KetQuaCbb;
         private Label KetQuaLabel;
+        private Button XemCTHoSoBtn;
         private DataGridViewTextBoxColumn MAUV;
         private DataGridViewTextBoxColumn TENUV;
         private DataGridViewTextBoxColumn NGAYNOP;
         private DataGridViewTextBoxColumn KETQUA;
-        private DataGridViewButtonColumn AccessBtn;
     }
 }

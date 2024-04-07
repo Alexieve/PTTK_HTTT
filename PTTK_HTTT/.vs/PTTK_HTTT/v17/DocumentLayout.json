@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\nv_duyethoso_dshoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\nv_duyethoso_dshoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\nv_duyethoso_dshoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\nv_duyethoso_dshoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\nv_duyethoso_dsbaidang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\nv_duyethoso_dsbaidang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -35,12 +47,49 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "NV_DuyetHoSo_DSHoSo.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV_DuyetHoSo_DSHoSo.cs",
+              "RelativeDocumentMoniker": "GUI\\NV_DuyetHoSo_DSHoSo.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV_DuyetHoSo_DSHoSo.cs",
+              "RelativeToolTip": "GUI\\NV_DuyetHoSo_DSHoSo.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAgwEMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T17:15:23.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NV_DuyetHoSo_DSHoSo.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV_DuyetHoSo_DSHoSo.cs",
+              "RelativeDocumentMoniker": "GUI\\NV_DuyetHoSo_DSHoSo.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV_DuyetHoSo_DSHoSo.cs [Design]",
+              "RelativeToolTip": "GUI\\NV_DuyetHoSo_DSHoSo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T17:14:26.97Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NV_DuyetHoSo_DSBaiDang.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV_DuyetHoSo_DSBaiDang.cs",
+              "RelativeDocumentMoniker": "GUI\\NV_DuyetHoSo_DSBaiDang.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV_DuyetHoSo_DSBaiDang.cs [Design]",
+              "RelativeToolTip": "GUI\\NV_DuyetHoSo_DSBaiDang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T17:12:07.927Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\Program.cs",
               "RelativeDocumentMoniker": "GUI\\Program.cs",
               "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\Program.cs",
               "RelativeToolTip": "GUI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T10:41:08.406Z",
               "EditorCaption": ""

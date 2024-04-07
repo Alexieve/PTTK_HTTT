@@ -31,8 +31,7 @@ namespace GUI
 
 
         }
-
-        private void HopDongTb_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void XemDSHoSoBtn_Click(object sender, EventArgs e)
         {
             this.phanHoiHsTab.openChildForm(new DN_PhanHoiHS_DSHoSo(this.phanHoiHsTab));
         }
