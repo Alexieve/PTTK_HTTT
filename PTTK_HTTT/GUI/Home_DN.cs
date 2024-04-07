@@ -33,5 +33,10 @@ namespace GUI
         {
             loadform(new Page_LYCTD());
         }
+
+        private void PhanHoiHSBtn_Click(object sender, EventArgs e)
+        {
+            loadform(new PhanHoiHSTab());
+        }
     }
 }

@@ -21,7 +21,7 @@ namespace GUI
 
         private void XemKQBtn_Click(object sender, EventArgs e)
         {
-            openChildForm(new KetQuaUngTuyen());
+            openChildForm(new KetQuaHSTab());
             ActiveButton(sender);
         }
         private void logoutBtn_Click(object sender, EventArgs e)

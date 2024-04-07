@@ -8,6 +8,7 @@ namespace GUI
         public Home_NV()
         {
             InitializeComponent();
+            this.IsMdiContainer = true;
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
@@ -39,6 +40,7 @@ namespace GUI
         {
 
             ActiveButton(sender);
+            openChildForm(new DuyetHoSoTab());
         }
 
         private void GiaHanHDBtn_Click(object sender, EventArgs e)
@@ -52,6 +54,7 @@ namespace GUI
             if (activeForm != null)
             {
                 activeForm.Close();
+                this.childFormPanel.Controls.Clear();
             }
             activeForm = childForm;
             childForm.TopLevel = false;

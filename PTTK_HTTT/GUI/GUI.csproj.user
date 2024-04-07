@@ -2,16 +2,17 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Update="BaiDangChoDuyetHS.cs">
+    <Compile Update="DuyetHoSoTab.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DuyetHoSoModal.cs">
-      <SubType>Form</SubType>
-=======
     <Compile Update="CardTuyenDung.cs">
       <SubType>UserControl</SubType>
->>>>>>> ff0ffe1103649924d4e8a5e8a911343ad85b85de
+    </Compile>
+    <Compile Update="DuyetHoSo_ChiTietHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DuyetHoSo_DSBaiDang.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="GiaHanHopDong.cs">
       <SubType>Form</SubType>
@@ -19,10 +20,10 @@
     <Compile Update="GiayToPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="HDCanPhanHoiHS.cs">
+    <Compile Update="PhanHoiHS_DSHopDong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="HieuChinhHSModal.cs">
+    <Compile Update="KetQuaHS_ChiTietHS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Home_BLD.cs">
@@ -37,10 +38,25 @@
     <Compile Update="Home_UV.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DuyetHoSo_DSHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PhanHoiHS_DSHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KetQuaHSTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Page_LYCTD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Page_TT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PhanHoiHS_ChiTietHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PhanHoiHSTab.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Tab_LTGVHT.cs">
@@ -54,18 +70,6 @@
     </Compile>
     <Compile Update="Tab_XNPQC.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="HSChoDuyet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="HSChoPhanHoi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="KetQuaUngTuyen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="PhanHoiHSModal.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Update="ThongTinUngTuyenPanel.cs">
       <SubType>UserControl</SubType>

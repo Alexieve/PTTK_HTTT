@@ -177,6 +177,7 @@
             PhanHoiHSBtn.TabIndex = 0;
             PhanHoiHSBtn.Text = "Phản Hồi Hồ Sơ";
             PhanHoiHSBtn.UseVisualStyleBackColor = true;
+            PhanHoiHSBtn.Click += PhanHoiHSBtn_Click;
             // 
             // panel5
             // 
@@ -231,6 +232,7 @@
             Controls.Add(sidePanel);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Home_DN";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Home_DN";
             sidePanel.ResumeLayout(false);
             panel1.ResumeLayout(false);

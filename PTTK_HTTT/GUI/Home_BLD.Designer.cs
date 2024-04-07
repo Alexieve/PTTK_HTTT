@@ -232,6 +232,7 @@
             Controls.Add(sidePanel);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Home_BLD";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang Chủ";
             sidePanel.ResumeLayout(false);
             panel1.ResumeLayout(false);

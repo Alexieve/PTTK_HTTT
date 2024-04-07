@@ -292,6 +292,7 @@
             Controls.Add(sidePanel);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Home_UV";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Home_UV";
             childFormPanel.ResumeLayout(false);
             ContentPanel.ResumeLayout(false);
