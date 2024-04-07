@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             gboxTTTT = new GroupBox();
             tbSoLan = new TextBox();
             tbConLai = new TextBox();
@@ -36,17 +38,17 @@
             lbConLai = new Label();
             lbTongTien = new Label();
             dtgHoaDon = new DataGridView();
+            panel2 = new Panel();
+            label1 = new Label();
+            textBox1 = new TextBox();
+            pnlTitle = new Panel();
+            pnlTilte2 = new Panel();
+            lbTitle = new Label();
             MAHOADON = new DataGridViewTextBoxColumn();
             NGAYTT = new DataGridViewTextBoxColumn();
             SOTIEN = new DataGridViewTextBoxColumn();
             HINHTHUCTT = new DataGridViewTextBoxColumn();
             NVTHANHTOAN = new DataGridViewTextBoxColumn();
-            panel2 = new Panel();
-            pnlTitle = new Panel();
-            pnlTilte2 = new Panel();
-            lbTitle = new Label();
-            textBox1 = new TextBox();
-            label1 = new Label();
             gboxTTTT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgHoaDon).BeginInit();
             panel2.SuspendLayout();
@@ -130,6 +132,14 @@
             // dtgHoaDon
             // 
             dtgHoaDon.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dtgHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtgHoaDon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgHoaDon.Columns.AddRange(new DataGridViewColumn[] { MAHOADON, NGAYTT, SOTIEN, HINHTHUCTT, NVTHANHTOAN });
             dtgHoaDon.Location = new Point(375, 100);
@@ -139,9 +149,73 @@
             dtgHoaDon.Size = new Size(654, 393);
             dtgHoaDon.TabIndex = 32;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(gboxTTTT);
+            panel2.Controls.Add(dtgHoaDon);
+            panel2.Location = new Point(14, 81);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1049, 516);
+            panel2.TabIndex = 36;
+            panel2.Paint += panel2_Paint;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(375, 57);
+            label1.Name = "label1";
+            label1.Size = new Size(73, 20);
+            label1.TabIndex = 37;
+            label1.Text = "Tìm kiếm:";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(451, 54);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(578, 27);
+            textBox1.TabIndex = 36;
+            // 
+            // pnlTitle
+            // 
+            pnlTitle.BackColor = Color.MediumSeaGreen;
+            pnlTitle.BorderStyle = BorderStyle.FixedSingle;
+            pnlTitle.Controls.Add(pnlTilte2);
+            pnlTitle.Location = new Point(35, 32);
+            pnlTitle.Margin = new Padding(0);
+            pnlTitle.Name = "pnlTitle";
+            pnlTitle.Padding = new Padding(7, 0, 0, 0);
+            pnlTitle.Size = new Size(293, 61);
+            pnlTitle.TabIndex = 37;
+            // 
+            // pnlTilte2
+            // 
+            pnlTilte2.BackColor = Color.White;
+            pnlTilte2.Controls.Add(lbTitle);
+            pnlTilte2.Dock = DockStyle.Fill;
+            pnlTilte2.Location = new Point(7, 0);
+            pnlTilte2.Name = "pnlTilte2";
+            pnlTilte2.Size = new Size(284, 59);
+            pnlTilte2.TabIndex = 7;
+            // 
+            // lbTitle
+            // 
+            lbTitle.AutoSize = true;
+            lbTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbTitle.Location = new Point(3, 15);
+            lbTitle.Name = "lbTitle";
+            lbTitle.Size = new Size(281, 31);
+            lbTitle.TabIndex = 7;
+            lbTitle.Text = "Xem hoá đơn thanh toán";
+            // 
             // MAHOADON
             // 
             MAHOADON.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            MAHOADON.DefaultCellStyle = dataGridViewCellStyle2;
             MAHOADON.HeaderText = "Mã hóa đơn";
             MAHOADON.MinimumWidth = 6;
             MAHOADON.Name = "MAHOADON";
@@ -179,68 +253,6 @@
             NVTHANHTOAN.Name = "NVTHANHTOAN";
             NVTHANHTOAN.ReadOnly = true;
             // 
-            // panel2
-            // 
-            panel2.BackColor = Color.White;
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(gboxTTTT);
-            panel2.Controls.Add(dtgHoaDon);
-            panel2.Location = new Point(14, 81);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1049, 516);
-            panel2.TabIndex = 36;
-            panel2.Paint += panel2_Paint;
-            // 
-            // pnlTitle
-            // 
-            pnlTitle.BackColor = Color.MediumSeaGreen;
-            pnlTitle.BorderStyle = BorderStyle.FixedSingle;
-            pnlTitle.Controls.Add(pnlTilte2);
-            pnlTitle.Location = new Point(35, 32);
-            pnlTitle.Margin = new Padding(0);
-            pnlTitle.Name = "pnlTitle";
-            pnlTitle.Padding = new Padding(7, 0, 0, 0);
-            pnlTitle.Size = new Size(293, 61);
-            pnlTitle.TabIndex = 37;
-            // 
-            // pnlTilte2
-            // 
-            pnlTilte2.BackColor = Color.White;
-            pnlTilte2.Controls.Add(lbTitle);
-            pnlTilte2.Dock = DockStyle.Fill;
-            pnlTilte2.Location = new Point(7, 0);
-            pnlTilte2.Name = "pnlTilte2";
-            pnlTilte2.Size = new Size(284, 59);
-            pnlTilte2.TabIndex = 7;
-            // 
-            // lbTitle
-            // 
-            lbTitle.AutoSize = true;
-            lbTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbTitle.Location = new Point(3, 15);
-            lbTitle.Name = "lbTitle";
-            lbTitle.Size = new Size(281, 31);
-            lbTitle.TabIndex = 7;
-            lbTitle.Text = "Xem hoá đơn thanh toán";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(451, 54);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(578, 27);
-            textBox1.TabIndex = 36;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(375, 57);
-            label1.Name = "label1";
-            label1.Size = new Size(73, 20);
-            label1.TabIndex = 37;
-            label1.Text = "Tìm kiếm:";
-            // 
             // Tab_XemHoaDon
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -271,16 +283,16 @@
         private Label lbConLai;
         private Label lbTongTien;
         private DataGridView dtgHoaDon;
-        private DataGridViewTextBoxColumn MAHOADON;
-        private DataGridViewTextBoxColumn NGAYTT;
-        private DataGridViewTextBoxColumn SOTIEN;
-        private DataGridViewTextBoxColumn HINHTHUCTT;
-        private DataGridViewTextBoxColumn NVTHANHTOAN;
         private Panel panel2;
         private Panel pnlTitle;
         private Panel pnlTilte2;
         private Label lbTitle;
         private TextBox textBox1;
         private Label label1;
+        private DataGridViewTextBoxColumn MAHOADON;
+        private DataGridViewTextBoxColumn NGAYTT;
+        private DataGridViewTextBoxColumn SOTIEN;
+        private DataGridViewTextBoxColumn HINHTHUCTT;
+        private DataGridViewTextBoxColumn NVTHANHTOAN;
     }
 }

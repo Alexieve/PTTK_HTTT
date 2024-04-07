@@ -30,7 +30,7 @@
         {
             label3 = new Label();
             button2 = new Button();
-            button1 = new Button();
+            UngTuyenBtn = new Button();
             pictureBox1 = new PictureBox();
             label2 = new Label();
             textBox1 = new TextBox();
@@ -76,13 +76,14 @@
             button2.Text = "Quay lại";
             button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // UngTuyenBtn
             // 
-            button1.Location = new Point(479, 657);
-            button1.Name = "button1";
-            button1.Size = new Size(128, 40);
-            button1.TabIndex = 11;
-            button1.Text = "Ứng tuyển";
+            UngTuyenBtn.Location = new Point(479, 657);
+            UngTuyenBtn.Name = "UngTuyenBtn";
+            UngTuyenBtn.Size = new Size(128, 40);
+            UngTuyenBtn.TabIndex = 11;
+            UngTuyenBtn.Text = "Ứng tuyển";
+            UngTuyenBtn.Click += UngTuyenBtn_Click;
             // 
             // pictureBox1
             // 
@@ -274,7 +275,7 @@
             childFormPanel.Controls.Add(pictureBox1);
             childFormPanel.Controls.Add(label3);
             childFormPanel.Controls.Add(button2);
-            childFormPanel.Controls.Add(button1);
+            childFormPanel.Controls.Add(UngTuyenBtn);
             childFormPanel.Controls.Add(textBox9);
             childFormPanel.Controls.Add(textBox1);
             childFormPanel.Controls.Add(label10);
@@ -316,7 +317,7 @@
         #endregion
         private Label label3;
         private Button button2;
-        private Button button1;
+        private Button UngTuyenBtn;
         private PictureBox pictureBox1;
         private Label label2;
         private TextBox textBox1;

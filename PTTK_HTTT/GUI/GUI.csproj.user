@@ -2,49 +2,64 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="DuyetHoSoTab.cs">
+    <Compile Update="NV_DuyetHoSo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CardTuyenDung.cs">
+    <Compile Update="CPN_CardTuyenDung.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="DuyetHoSo_ChiTietHS.cs">
+    <Compile Update="NV_DuyetHoSo_ChiTietHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DuyetHoSo_DSBaiDang.cs">
+    <Compile Update="NV_DuyetHoSo_DSBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GiaHanHopDong.cs">
+    <Compile Update="BLD_DeXuatUuDai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GiayToPanel.cs">
+    <Compile Update="CPN_GiayToPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="PhanHoiHS_DSHopDong.cs">
+    <Compile Update="NV_TraCuuHD_DangBai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="KetQuaHS_ChiTietHS.cs">
+    <Compile Update="NV_HieuChinhBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Home_BLD.cs">
+    <Compile Update="NV_TraCuuHD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Home_DN.cs">
+    <Compile Update="NV_TraCuuHD_XemBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Home_NV.cs">
+    <Compile Update="DN_PhanHoiBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Home_UV.cs">
+    <Compile Update="DN_PhanHoiHS_DSHopDong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DuyetHoSo_DSHoSo.cs">
+    <Compile Update="UV_KetQuaHS_ChiTietHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PhanHoiHS_DSHoSo.cs">
+    <Compile Update="BLD_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="KetQuaHSTab.cs">
+    <Compile Update="DN_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NV_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UV_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NV_DuyetHoSo_DSHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DN_PhanHoiHS_DSHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UV_KetQuaHS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Page_LYCTD.cs">
@@ -53,10 +68,10 @@
     <Compile Update="Page_TT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PhanHoiHS_ChiTietHS.cs">
+    <Compile Update="DN_PhanHoiHS_ChiTietHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PhanHoiHSTab.cs">
+    <Compile Update="DN_PhanHoiHS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Tab_LTGVHT.cs">
@@ -71,10 +86,22 @@
     <Compile Update="Tab_XNPQC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ThongTinUngTuyenPanel.cs">
+    <Compile Update="CPN_ThongTinUngTuyen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UngTuyenModal.cs">
+    <Compile Update="DN_TraCuuHD_XemBaiDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DN_TraCuuHD_XemChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DN_TraCuuHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UV_UngTuyenModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UV_XemBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -55,13 +55,13 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openChildForm(new NV_DangBai());
+            openChildForm(new NV_TraCuuHD_DangBai());
             ActiveButton(sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new NV_XemBaiDang());
+            openChildForm(new NV_TraCuuHD_XemBaiDang());
             ActiveButton(sender);
         }
     }

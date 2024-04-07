@@ -58,14 +58,15 @@
             // 
             // labelTopbar
             // 
+            labelTopbar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             labelTopbar.AutoSize = true;
-            labelTopbar.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelTopbar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelTopbar.ForeColor = SystemColors.Control;
-            labelTopbar.Location = new Point(412, 18);
+            labelTopbar.Location = new Point(412, 13);
             labelTopbar.Name = "labelTopbar";
-            labelTopbar.Size = new Size(253, 25);
+            labelTopbar.Size = new Size(276, 31);
             labelTopbar.TabIndex = 0;
-            labelTopbar.Text = "Lập yêu cầu tuyển dụng";
+            labelTopbar.Text = "Lập Yêu Cầu Tuyển Dụng";
             // 
             // tabtbLout
             // 
@@ -178,7 +179,6 @@
             // pnlMain
             // 
             pnlMain.BackColor = SystemColors.Control;
-            pnlMain.Dock = DockStyle.Fill;
             pnlMain.Location = new Point(0, 111);
             pnlMain.Name = "pnlMain";
             pnlMain.Size = new Size(1077, 610);

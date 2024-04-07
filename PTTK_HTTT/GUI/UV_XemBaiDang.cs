@@ -16,5 +16,17 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UngTuyenBtn_Click(object sender, EventArgs e)
+        {
+            // Show dialog of UngTuyenModal
+            UV_UngTuyenModal modal = new UV_UngTuyenModal();
+            modal.ShowDialog();
+        }
     }
 }
