@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="NV_DuyetHoSo.cs">
+    <Compile Update="DuyetHoSoTab.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CPN_CardTuyenDung.cs">
@@ -20,22 +20,7 @@
     <Compile Update="CPN_GiayToPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="NV_TraCuuHD_DangBai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="NV_HieuChinhBaiDang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="NV_TraCuuHD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="NV_TraCuuHD_XemBaiDang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DN_PhanHoiBaiDang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DN_PhanHoiHS_DSHopDong.cs">
+    <Compile Update="PhanHoiHS_DSHopDong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UV_KetQuaHS_ChiTietHS.cs">
@@ -80,8 +65,8 @@
     <Compile Update="Tab_LTTDT.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Tab_XemHoaDon.cs">
-      <SubType>UserControl</SubType>
+    <Compile Update="Tab_XemHoaDon1.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="Tab_XNPQC.cs">
       <SubType>UserControl</SubType>
@@ -89,16 +74,7 @@
     <Compile Update="CPN_ThongTinUngTuyen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="DN_TraCuuHD_XemBaiDang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DN_TraCuuHD_XemChiTiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DN_TraCuuHD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="UV_UngTuyenModal.cs">
+    <Compile Update="UngTuyenModal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UV_XemBaiDang.cs">
