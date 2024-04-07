@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Page_TT
+    partial class NV_ThanhToan
     {
         /// <summary>
         /// Required designer variable.

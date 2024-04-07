@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Page_LYCTD : Form
+    public partial class DN_LapYeuCauTD : Form
     {
-        public Page_LYCTD()
+        public DN_LapYeuCauTD()
         {
             InitializeComponent();
             add_UControls(new Tab_LTTDT());

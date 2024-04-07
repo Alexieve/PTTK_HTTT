@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Page_LYCTD
+    partial class DN_LapYeuCauTD
     {
         /// <summary>
         /// Required designer variable.

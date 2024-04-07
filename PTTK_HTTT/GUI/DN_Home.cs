@@ -34,7 +34,7 @@ namespace GUI
 
         private void LapYCBtn_Click(object sender, EventArgs e)
         {
-            loadform(new Page_LYCTD());
+            loadform(new DN_LapYeuCauTD());
             ActiveButton(sender);
         }
         private void TraCuuHDBtn_Click(object sender, EventArgs e)

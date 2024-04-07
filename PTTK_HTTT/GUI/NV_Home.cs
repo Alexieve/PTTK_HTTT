@@ -37,7 +37,7 @@ namespace GUI
         {
 
             ActiveButton(sender);
-            openChildForm(new Page_TT());
+            openChildForm(new NV_ThanhToan());
         }
 
         private void DuyetHSBtn_Click(object sender, EventArgs e)

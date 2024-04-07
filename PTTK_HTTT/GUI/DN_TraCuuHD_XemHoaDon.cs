@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Tab_XemHoaDon1 : Form
+    public partial class DN_TraCuuHD_XemHoaDon : Form
     {
-        public Tab_XemHoaDon1()
+        public DN_TraCuuHD_XemHoaDon()
         {
             InitializeComponent();
         }

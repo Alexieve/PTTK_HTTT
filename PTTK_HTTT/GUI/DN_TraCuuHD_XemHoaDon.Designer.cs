@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Tab_XemHoaDon1
+    partial class DN_TraCuuHD_XemHoaDon
     {
         /// <summary>
         /// Required designer variable.
@@ -240,7 +240,7 @@
             NVTHANHTOAN.Name = "NVTHANHTOAN";
             NVTHANHTOAN.ReadOnly = true;
             // 
-            // Tab_XemHoaDon1
+            // DN_TraCuuHD_XemHoaDon
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -248,7 +248,7 @@
             Controls.Add(pnlTitle);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Tab_XemHoaDon1";
+            Name = "DN_TraCuuHD_XemHoaDon";
             Text = "Tab_XemHoaDon1";
             pnlTitle.ResumeLayout(false);
             pnlTilte2.ResumeLayout(false);

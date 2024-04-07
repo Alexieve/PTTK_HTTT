@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Page_TT : Form
+    public partial class NV_ThanhToan : Form
     {
-        public Page_TT()
+        public NV_ThanhToan()
         {
             InitializeComponent();
         }

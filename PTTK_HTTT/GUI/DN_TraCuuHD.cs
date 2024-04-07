@@ -66,7 +66,8 @@ namespace GUI
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            openChildForm(new DN_TraCuuHD_XemHoaDon());
+            ActiveButton(sender);
         }
     }
 }

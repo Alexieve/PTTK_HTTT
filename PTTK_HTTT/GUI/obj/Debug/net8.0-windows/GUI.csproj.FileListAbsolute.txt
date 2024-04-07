@@ -4,11 +4,8 @@ D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.runti
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.dll
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.pdb
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.GiayToCpn.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Page_LYCTD.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Page_TT.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Tab_LTGVHT.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Tab_LTTDT.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Tab_XemHoaDon.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Tab_XNPQC.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.ThongTinUngTuyenCpn.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.GenerateResource.cache
@@ -49,3 +46,7 @@ D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_Ho
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_KetQuaHS.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_KetQuaHS_ChiTietHS.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_UngTuyenModal.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DeXuatUuDai.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_TraCuuHD_XemHoaDon.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_LapYeuCauTD.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_ThanhToan.resources
