@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Tab_XemHoaDon : UserControl
+    public partial class Tab_XemHoaDon1 : Form
     {
-        public Tab_XemHoaDon()
+        public Tab_XemHoaDon1()
         {
             InitializeComponent();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

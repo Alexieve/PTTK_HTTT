@@ -1,13 +1,13 @@
 ﻿namespace GUI
 {
-    partial class Tab_XemHoaDon
+    partial class Tab_XemHoaDon1
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,14 +20,20 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            lbTitle = new Label();
+            pnlTitle = new Panel();
+            pnlTilte2 = new Panel();
+            label1 = new Label();
+            textBox1 = new TextBox();
+            panel2 = new Panel();
             gboxTTTT = new GroupBox();
             tbSoLan = new TextBox();
             tbConLai = new TextBox();
@@ -41,18 +47,73 @@
             SOTIEN = new DataGridViewTextBoxColumn();
             HINHTHUCTT = new DataGridViewTextBoxColumn();
             NVTHANHTOAN = new DataGridViewTextBoxColumn();
-            panel2 = new Panel();
-            pnlTitle = new Panel();
-            pnlTilte2 = new Panel();
-            lbTitle = new Label();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            gboxTTTT.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dtgHoaDon).BeginInit();
-            panel2.SuspendLayout();
             pnlTitle.SuspendLayout();
             pnlTilte2.SuspendLayout();
+            panel2.SuspendLayout();
+            gboxTTTT.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dtgHoaDon).BeginInit();
             SuspendLayout();
+            // 
+            // lbTitle
+            // 
+            lbTitle.AutoSize = true;
+            lbTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbTitle.Location = new Point(3, 15);
+            lbTitle.Name = "lbTitle";
+            lbTitle.Size = new Size(281, 31);
+            lbTitle.TabIndex = 7;
+            lbTitle.Text = "Xem hoá đơn thanh toán";
+            // 
+            // pnlTitle
+            // 
+            pnlTitle.BackColor = Color.MediumSeaGreen;
+            pnlTitle.BorderStyle = BorderStyle.FixedSingle;
+            pnlTitle.Controls.Add(pnlTilte2);
+            pnlTitle.Location = new Point(35, 23);
+            pnlTitle.Margin = new Padding(0);
+            pnlTitle.Name = "pnlTitle";
+            pnlTitle.Padding = new Padding(7, 0, 0, 0);
+            pnlTitle.Size = new Size(293, 61);
+            pnlTitle.TabIndex = 39;
+            // 
+            // pnlTilte2
+            // 
+            pnlTilte2.BackColor = Color.White;
+            pnlTilte2.Controls.Add(lbTitle);
+            pnlTilte2.Dock = DockStyle.Fill;
+            pnlTilte2.Location = new Point(7, 0);
+            pnlTilte2.Name = "pnlTilte2";
+            pnlTilte2.Size = new Size(284, 59);
+            pnlTilte2.TabIndex = 7;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(375, 57);
+            label1.Name = "label1";
+            label1.Size = new Size(73, 20);
+            label1.TabIndex = 37;
+            label1.Text = "Tìm kiếm:";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(451, 54);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(578, 27);
+            textBox1.TabIndex = 36;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(gboxTTTT);
+            panel2.Controls.Add(dtgHoaDon);
+            panel2.Location = new Point(14, 72);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1049, 516);
+            panel2.TabIndex = 38;
             // 
             // gboxTTTT
             // 
@@ -179,90 +240,35 @@
             NVTHANHTOAN.Name = "NVTHANHTOAN";
             NVTHANHTOAN.ReadOnly = true;
             // 
-            // panel2
-            // 
-            panel2.BackColor = Color.White;
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(gboxTTTT);
-            panel2.Controls.Add(dtgHoaDon);
-            panel2.Location = new Point(14, 81);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1049, 516);
-            panel2.TabIndex = 36;
-            panel2.Paint += panel2_Paint;
-            // 
-            // pnlTitle
-            // 
-            pnlTitle.BackColor = Color.MediumSeaGreen;
-            pnlTitle.BorderStyle = BorderStyle.FixedSingle;
-            pnlTitle.Controls.Add(pnlTilte2);
-            pnlTitle.Location = new Point(35, 32);
-            pnlTitle.Margin = new Padding(0);
-            pnlTitle.Name = "pnlTitle";
-            pnlTitle.Padding = new Padding(7, 0, 0, 0);
-            pnlTitle.Size = new Size(293, 61);
-            pnlTitle.TabIndex = 37;
-            // 
-            // pnlTilte2
-            // 
-            pnlTilte2.BackColor = Color.White;
-            pnlTilte2.Controls.Add(lbTitle);
-            pnlTilte2.Dock = DockStyle.Fill;
-            pnlTilte2.Location = new Point(7, 0);
-            pnlTilte2.Name = "pnlTilte2";
-            pnlTilte2.Size = new Size(284, 59);
-            pnlTilte2.TabIndex = 7;
-            // 
-            // lbTitle
-            // 
-            lbTitle.AutoSize = true;
-            lbTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbTitle.Location = new Point(3, 15);
-            lbTitle.Name = "lbTitle";
-            lbTitle.Size = new Size(281, 31);
-            lbTitle.TabIndex = 7;
-            lbTitle.Text = "Xem hoá đơn thanh toán";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(451, 54);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(578, 27);
-            textBox1.TabIndex = 36;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(375, 57);
-            label1.Name = "label1";
-            label1.Size = new Size(73, 20);
-            label1.TabIndex = 37;
-            label1.Text = "Tìm kiếm:";
-            // 
-            // Tab_XemHoaDon
+            // Tab_XemHoaDon1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
+            ClientSize = new Size(1077, 610);
             Controls.Add(pnlTitle);
             Controls.Add(panel2);
-            Name = "Tab_XemHoaDon";
-            Size = new Size(1077, 610);
-            gboxTTTT.ResumeLayout(false);
-            gboxTTTT.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dtgHoaDon).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Tab_XemHoaDon1";
+            Text = "Tab_XemHoaDon1";
             pnlTitle.ResumeLayout(false);
             pnlTilte2.ResumeLayout(false);
             pnlTilte2.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            gboxTTTT.ResumeLayout(false);
+            gboxTTTT.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dtgHoaDon).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
+        private Label lbTitle;
+        private Panel pnlTitle;
+        private Panel pnlTilte2;
+        private Label label1;
+        private TextBox textBox1;
+        private Panel panel2;
         private GroupBox gboxTTTT;
         private TextBox tbSoLan;
         private TextBox tbConLai;
@@ -276,11 +282,5 @@
         private DataGridViewTextBoxColumn SOTIEN;
         private DataGridViewTextBoxColumn HINHTHUCTT;
         private DataGridViewTextBoxColumn NVTHANHTOAN;
-        private Panel panel2;
-        private Panel pnlTitle;
-        private Panel pnlTilte2;
-        private Label lbTitle;
-        private TextBox textBox1;
-        private Label label1;
     }
 }

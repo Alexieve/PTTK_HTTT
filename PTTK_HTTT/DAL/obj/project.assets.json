@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\vumin\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DAL.csproj",
+      "projectUniqueName": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\vumin\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\obj\\",
+      "projectPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
