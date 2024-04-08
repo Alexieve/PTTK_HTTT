@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="DeXuatUuDai.cs">
+    <Compile Update="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DN_PhanHoiBaiDang.cs">
@@ -41,6 +41,9 @@
     <Compile Update="NV_HieuChinhBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="NV_PhanHoiHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="NV_TraCuuHD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -48,6 +51,15 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="NV_TraCuuHD_XemBaiDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DN_DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NV_XacThucHS_ChiTietHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UV_DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UV_KetQuaHS_ChiTietHS.cs">
@@ -86,16 +98,16 @@
     <Compile Update="DN_PhanHoiHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Tab_LTGVHT.cs">
+    <Compile Update="CPN_LTGVHT.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Tab_LTTDT.cs">
+    <Compile Update="CPN_LTTDT.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="DN_TraCuuHD_XemHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Tab_XNPQC.cs">
+    <Compile Update="CPN_XNPQC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="CPN_ThongTinUngTuyen.cs">
@@ -105,6 +117,15 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UV_XemBaiDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NV_XacThucDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NV_XacThucHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NV_XuLyDNTN.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
