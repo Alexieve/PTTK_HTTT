@@ -75,9 +75,9 @@
             // 
             // XemCTHoSoBtn
             // 
-            XemCTHoSoBtn.Location = new Point(12, 8);
+            XemCTHoSoBtn.Location = new Point(504, 8);
             XemCTHoSoBtn.Name = "XemCTHoSoBtn";
-            XemCTHoSoBtn.Size = new Size(248, 37);
+            XemCTHoSoBtn.Size = new Size(81, 37);
             XemCTHoSoBtn.TabIndex = 17;
             XemCTHoSoBtn.Text = "Xem Chi Tiết Hồ Sơ";
             XemCTHoSoBtn.UseVisualStyleBackColor = true;

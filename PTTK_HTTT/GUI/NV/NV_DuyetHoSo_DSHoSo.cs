@@ -67,7 +67,9 @@ namespace GUI
                 UpBtn.Visible = true;
                 DownBtn.Visible = true;
                 SaveBtn.Visible = true;
-                XemCTHoSoBtn.Visible = false;
+                XemCTHoSoBtn.Location = new Point(504, 8);
+                XemCTHoSoBtn.Size = new Size(81, 37);
+
             }
             else
             {
@@ -75,7 +77,9 @@ namespace GUI
                 UpBtn.Visible = false;
                 DownBtn.Visible = false;
                 SaveBtn.Visible = false;
-                XemCTHoSoBtn.Visible = KetQuaCbb.SelectedIndex == 0;
+                XemCTHoSoBtn.Location = new Point(12, 8);
+                XemCTHoSoBtn.Size = new Size(248, 37);
+                
             }
         }
         private void KetQuaCbb_SelectedIndexChanged(object sender, EventArgs e)
@@ -93,11 +97,14 @@ namespace GUI
 
         private void XemCTHoSoBtn_Click(object sender, EventArgs e)
         {
-            if (KetQuaCbb.SelectedIndex == 0)
+            var modal = new NV_DuyetHoSo_ChiTietHS();
+
+            if (KetQuaCbb.SelectedIndex > 0)
             {
-                NV_DuyetHoSo_ChiTietHS modal = new NV_DuyetHoSo_ChiTietHS();
-                modal.ShowDialog();
+                modal.XacNhanBtn.Visible = false;
+                modal.TuChoiBtn.Visible = false;
             }
+            modal.ShowDialog();
         }
     }
 }

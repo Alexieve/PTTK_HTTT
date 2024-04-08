@@ -221,8 +221,8 @@
         private Panel TieuChiDNBoxPanel;
         private RichTextBox TieuChiDNBox;
         private Panel ThongTinPanel;
-        private Button TuChoiBtn;
-        private Button XacNhanBtn;
+        internal Button TuChoiBtn;
+        internal Button XacNhanBtn;
         private Label ThongTinLabel;
         private Panel panel1;
         private Label TieuChiDNLabel;

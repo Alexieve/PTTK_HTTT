@@ -2,130 +2,130 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="BLD\BLD_DeXuatUuDai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BLD\BLD_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Component\CPN_CardTuyenDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Component\CPN_GiayToPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Component\CPN_LTGVHT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Component\CPN_LTTDT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Component\CPN_ThongTinUngTuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Component\CPN_XNPQC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DN_PhanHoiBaiDang.cs">
+    <Compile Update="DN\DN_DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DN_PhanHoiHS_DSHopDong.cs">
+    <Compile Update="DN\DN_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DN_TraCuuHD.cs">
+    <Compile Update="DN\DN_LapYeuCauTD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CPN_CardTuyenDung.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="DN_TraCuuHD_XemBaiDang.cs">
+    <Compile Update="DN\DN_PhanHoiBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DN_TraCuuHD_XemChiTiet.cs">
+    <Compile Update="DN\DN_PhanHoiHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_DuyetHoSo.cs">
+    <Compile Update="DN\DN_PhanHoiHS_ChiTietHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_DuyetHoSo_ChiTietHS.cs">
+    <Compile Update="DN\DN_PhanHoiHS_DSHopDong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_DuyetHoSo_DSBaiDang.cs">
+    <Compile Update="DN\DN_PhanHoiHS_DSHoSo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="BLD_DeXuatUuDai.cs">
+    <Compile Update="DN\DN_TraCuuHD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CPN_GiayToPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="NV_HieuChinhBaiDang.cs">
+    <Compile Update="DN\DN_TraCuuHD_XemBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_PhanHoiHS.cs">
+    <Compile Update="DN\DN_TraCuuHD_XemChiTiet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_TraCuuHD.cs">
+    <Compile Update="DN\DN_TraCuuHD_XemHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_TraCuuHD_DangBai.cs">
+    <Compile Update="NV\NV_DuyetHoSo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_TraCuuHD_XemBaiDang.cs">
+    <Compile Update="NV\NV_DuyetHoSo_ChiTietHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DN_DangKy.cs">
+    <Compile Update="NV\NV_DuyetHoSo_DSBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_XacThucHS_ChiTietHS.cs">
+    <Compile Update="NV\NV_DuyetHoSo_DSHoSo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UV_DangKy.cs">
+    <Compile Update="NV\NV_HieuChinhBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UV_KetQuaHS_ChiTietHS.cs">
+    <Compile Update="NV\NV_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="BLD_Home.cs">
+    <Compile Update="NV\NV_PhanHoiHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DN_Home.cs">
+    <Compile Update="NV\NV_ThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_Home.cs">
+    <Compile Update="NV\NV_TraCuuHD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UV_Home.cs">
+    <Compile Update="NV\NV_TraCuuHD_DangBai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_DuyetHoSo_DSHoSo.cs">
+    <Compile Update="NV\NV_TraCuuHD_XemBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DN_PhanHoiHS_DSHoSo.cs">
+    <Compile Update="NV\NV_XacThucDN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UV_KetQuaHS.cs">
+    <Compile Update="NV\NV_XacThucHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DN_LapYeuCauTD.cs">
+    <Compile Update="NV\NV_XacThucHS_ChiTietHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_ThanhToan.cs">
+    <Compile Update="NV\NV_XuLyDNTN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DN_PhanHoiHS_ChiTietHS.cs">
+    <Compile Update="UV\UV_DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DN_PhanHoiHS.cs">
+    <Compile Update="UV\UV_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CPN_LTGVHT.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="CPN_LTTDT.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="DN_TraCuuHD_XemHoaDon.cs">
+    <Compile Update="UV\UV_KetQuaHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CPN_XNPQC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="CPN_ThongTinUngTuyen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UV_UngTuyenModal.cs">
+    <Compile Update="UV\UV_KetQuaHS_ChiTietHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UV_XemBaiDang.cs">
+    <Compile Update="UV\UV_UngTuyenModal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NV_XacThucDN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="NV_XacThucHS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="NV_XuLyDNTN.cs">
+    <Compile Update="UV\UV_XemBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
