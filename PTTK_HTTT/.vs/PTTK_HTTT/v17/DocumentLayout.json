@@ -3,48 +3,8 @@
   "WorkspaceRootPath": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\duyethoso_chitieths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\duyethoso_chitieths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\duyethoso_dsbaidang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\duyethoso_dsbaidang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\duyethoso_dshoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\duyethoso_dshoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\duyethosotab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\duyethosotab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\dexuatuudai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\dexuatuudai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\giahanhopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\giahanhopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\tab_ltgvht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\tab_ltgvht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\tab_lttdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\tab_lttdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\tab_xemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\tab_xemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\tab_xnpqc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\tab_xnpqc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\page_tt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\page_tt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|e:\\k\u00EC 2 n\u0103m 3\\pttk_httt\\pttk_httt\\gui\\tab_xemhoadon1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\tab_xemhoadon1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 59,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,134 +34,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DuyetHoSoTab.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\DuyetHoSoTab.cs",
-              "RelativeDocumentMoniker": "GUI\\DuyetHoSoTab.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\DuyetHoSoTab.cs [Design]",
-              "RelativeToolTip": "GUI\\DuyetHoSoTab.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:53:08.811Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DuyetHoSo_ChiTietHS.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\DuyetHoSo_ChiTietHS.cs",
-              "RelativeDocumentMoniker": "GUI\\DuyetHoSo_ChiTietHS.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\DuyetHoSo_ChiTietHS.cs [Design]",
-              "RelativeToolTip": "GUI\\DuyetHoSo_ChiTietHS.cs [Design]",
+              "Title": "Tab_XemHoaDon1.cs [Design]",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_XemHoaDon1.cs",
+              "RelativeDocumentMoniker": "GUI\\Tab_XemHoaDon1.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_XemHoaDon1.cs [Design]",
+              "RelativeToolTip": "GUI\\Tab_XemHoaDon1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:52:44.078Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DuyetHoSo_DSBaiDang.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\DuyetHoSo_DSBaiDang.cs",
-              "RelativeDocumentMoniker": "GUI\\DuyetHoSo_DSBaiDang.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\DuyetHoSo_DSBaiDang.cs [Design]",
-              "RelativeToolTip": "GUI\\DuyetHoSo_DSBaiDang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:52:47.559Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DuyetHoSo_DSHoSo.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\DuyetHoSo_DSHoSo.cs",
-              "RelativeDocumentMoniker": "GUI\\DuyetHoSo_DSHoSo.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\DuyetHoSo_DSHoSo.cs [Design]",
-              "RelativeToolTip": "GUI\\DuyetHoSo_DSHoSo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:52:48.987Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DeXuatUuDai.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\DeXuatUuDai.cs",
-              "RelativeDocumentMoniker": "GUI\\DeXuatUuDai.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\DeXuatUuDai.cs [Design]",
-              "RelativeToolTip": "GUI\\DeXuatUuDai.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:52:52.803Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GiaHanHopDong.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GiaHanHopDong.cs",
-              "RelativeDocumentMoniker": "GUI\\GiaHanHopDong.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GiaHanHopDong.cs [Design]",
-              "RelativeToolTip": "GUI\\GiaHanHopDong.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:52:50.079Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Page_TT.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Page_TT.cs",
-              "RelativeDocumentMoniker": "GUI\\Page_TT.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Page_TT.cs [Design]",
-              "RelativeToolTip": "GUI\\Page_TT.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:51:54.693Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Tab_LTGVHT.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_LTGVHT.cs",
-              "RelativeDocumentMoniker": "GUI\\Tab_LTGVHT.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_LTGVHT.cs [Design]",
-              "RelativeToolTip": "GUI\\Tab_LTGVHT.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:51:49.31Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Tab_XemHoaDon.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_XemHoaDon.cs",
-              "RelativeDocumentMoniker": "GUI\\Tab_XemHoaDon.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_XemHoaDon.cs [Design]",
-              "RelativeToolTip": "GUI\\Tab_XemHoaDon.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:51:40.63Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Tab_XNPQC.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_XNPQC.cs",
-              "RelativeDocumentMoniker": "GUI\\Tab_XNPQC.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_XNPQC.cs [Design]",
-              "RelativeToolTip": "GUI\\Tab_XNPQC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:51:39.757Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Tab_LTTDT.cs [Design]",
-              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_LTTDT.cs",
-              "RelativeDocumentMoniker": "GUI\\Tab_LTTDT.cs",
-              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Tab_LTTDT.cs [Design]",
-              "RelativeToolTip": "GUI\\Tab_LTTDT.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:51:33.749Z",
+              "WhenOpened": "2024-04-07T16:22:23.863Z",
               "EditorCaption": " [Design]"
             }
           ]
