@@ -99,6 +99,10 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1053, 654);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
+            dataGridView1.CellMouseUp += dataGridView1_CellMouseUp;
+            dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
             // 
             // CheckBox
             // 
@@ -158,6 +162,7 @@
             ChienLuocUuDai.MinimumWidth = 6;
             ChienLuocUuDai.Name = "ChienLuocUuDai";
             ChienLuocUuDai.ReadOnly = true;
+            ChienLuocUuDai.Resizable = DataGridViewTriState.False;
             // 
             // BLD_DeXuatUuDai
             // 
