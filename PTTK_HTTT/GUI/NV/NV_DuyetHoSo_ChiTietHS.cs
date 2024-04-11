@@ -16,30 +16,14 @@ namespace GUI
         public NV_DuyetHoSo_ChiTietHS()
         {
             InitializeComponent();
-            LoadThongTinUngTuyen();
             LoadGiayToUngVien();
 
         }
-
-        private void LoadThongTinUngTuyen()
-        {
-            // Add ThongTinUngTuyenCpn to ParentPanel before GiayToPanel
-            ThongTinUngTuyenCpn thongTinUngTuyenCpn = new ThongTinUngTuyenCpn();
-            thongTinUngTuyenCpn.Location = new Point(0, 0);
-            thongTinUngTuyenCpn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            ParentPanel.Controls.Add(thongTinUngTuyenCpn);
-            // Move GiayToPanel to the after all ThongTinUngTuyenCpn
-            GiayToPanel.Location = new Point(0, thongTinUngTuyenCpn.Height);
-            GiayToPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            ParentPanel.Controls.Add(GiayToPanel);
-        }
-
         private void LoadGiayToUngVien()
         {
             ThemGiayTo();
             ThemGiayTo();
         }
-
         private void ThemGiayTo()
         {
             // Add GiayToPanel to ParentPanel when click button Allow add multiple and can scroll

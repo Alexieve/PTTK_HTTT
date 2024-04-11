@@ -169,6 +169,7 @@
             ClientSize = new Size(757, 777);
             Controls.Add(childFormPanel);
             Font = new Font("Segoe UI", 12F);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "DangNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng Nhập";

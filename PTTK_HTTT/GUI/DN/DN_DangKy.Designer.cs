@@ -45,6 +45,8 @@
             label2 = new Label();
             panel2 = new Panel();
             TitleLabel = new Label();
+            MatKhauLabel = new Label();
+            MatKhauBox = new TextBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -63,6 +65,8 @@
             // 
             // panel3
             // 
+            panel3.Controls.Add(MatKhauLabel);
+            panel3.Controls.Add(MatKhauBox);
             panel3.Controls.Add(DangKyBtn);
             panel3.Controls.Add(label5);
             panel3.Controls.Add(EmailBox);
@@ -97,7 +101,7 @@
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label5.Location = new Point(30, 511);
+            label5.Location = new Point(30, 420);
             label5.Name = "label5";
             label5.Size = new Size(64, 28);
             label5.TabIndex = 51;
@@ -108,7 +112,7 @@
             // 
             EmailBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             EmailBox.Font = new Font("Segoe UI", 12F);
-            EmailBox.Location = new Point(238, 511);
+            EmailBox.Location = new Point(238, 420);
             EmailBox.Name = "EmailBox";
             EmailBox.Size = new Size(507, 34);
             EmailBox.TabIndex = 50;
@@ -117,7 +121,7 @@
             // 
             SDTBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             SDTBox.Font = new Font("Segoe UI", 12F);
-            SDTBox.Location = new Point(238, 414);
+            SDTBox.Location = new Point(238, 340);
             SDTBox.Name = "SDTBox";
             SDTBox.Size = new Size(507, 34);
             SDTBox.TabIndex = 49;
@@ -127,7 +131,7 @@
             label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label6.Location = new Point(30, 414);
+            label6.Location = new Point(30, 340);
             label6.Name = "label6";
             label6.Size = new Size(138, 28);
             label6.TabIndex = 48;
@@ -138,7 +142,7 @@
             // 
             DiaChiBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DiaChiBox.Font = new Font("Segoe UI", 12F);
-            DiaChiBox.Location = new Point(238, 320);
+            DiaChiBox.Location = new Point(238, 260);
             DiaChiBox.Name = "DiaChiBox";
             DiaChiBox.Size = new Size(507, 34);
             DiaChiBox.TabIndex = 47;
@@ -148,7 +152,7 @@
             label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label7.Location = new Point(30, 325);
+            label7.Location = new Point(30, 260);
             label7.Name = "label7";
             label7.Size = new Size(78, 28);
             label7.TabIndex = 46;
@@ -160,7 +164,7 @@
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label4.Location = new Point(30, 229);
+            label4.Location = new Point(30, 180);
             label4.Name = "label4";
             label4.Size = new Size(155, 28);
             label4.TabIndex = 45;
@@ -171,7 +175,7 @@
             // 
             NGDaiDienBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             NGDaiDienBox.Font = new Font("Segoe UI", 12F);
-            NGDaiDienBox.Location = new Point(238, 229);
+            NGDaiDienBox.Location = new Point(238, 180);
             NGDaiDienBox.Name = "NGDaiDienBox";
             NGDaiDienBox.Size = new Size(507, 34);
             NGDaiDienBox.TabIndex = 44;
@@ -180,7 +184,7 @@
             // 
             MSThueBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             MSThueBox.Font = new Font("Segoe UI", 12F);
-            MSThueBox.Location = new Point(238, 131);
+            MSThueBox.Location = new Point(238, 100);
             MSThueBox.Name = "MSThueBox";
             MSThueBox.Size = new Size(507, 34);
             MSThueBox.TabIndex = 43;
@@ -190,7 +194,7 @@
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.Location = new Point(30, 131);
+            label3.Location = new Point(30, 100);
             label3.Name = "label3";
             label3.Size = new Size(118, 28);
             label3.TabIndex = 42;
@@ -201,7 +205,7 @@
             // 
             TenDNBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             TenDNBox.Font = new Font("Segoe UI", 12F);
-            TenDNBox.Location = new Point(238, 39);
+            TenDNBox.Location = new Point(238, 20);
             TenDNBox.Name = "TenDNBox";
             TenDNBox.Size = new Size(507, 34);
             TenDNBox.TabIndex = 41;
@@ -211,7 +215,7 @@
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(30, 42);
+            label2.Location = new Point(30, 20);
             label2.Name = "label2";
             label2.Size = new Size(181, 28);
             label2.TabIndex = 40;
@@ -239,6 +243,28 @@
             TitleLabel.Size = new Size(582, 46);
             TitleLabel.TabIndex = 0;
             TitleLabel.Text = "Đăng Ký Thành Viên Doanh Nghiệp";
+            // 
+            // MatKhauLabel
+            // 
+            MatKhauLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            MatKhauLabel.AutoSize = true;
+            MatKhauLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            MatKhauLabel.Location = new Point(30, 500);
+            MatKhauLabel.Name = "MatKhauLabel";
+            MatKhauLabel.Size = new Size(102, 28);
+            MatKhauLabel.TabIndex = 54;
+            MatKhauLabel.Text = "Mật khẩu";
+            MatKhauLabel.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // MatKhauBox
+            // 
+            MatKhauBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            MatKhauBox.Font = new Font("Segoe UI", 12F);
+            MatKhauBox.Location = new Point(238, 500);
+            MatKhauBox.Name = "MatKhauBox";
+            MatKhauBox.PasswordChar = '*';
+            MatKhauBox.Size = new Size(507, 34);
+            MatKhauBox.TabIndex = 53;
             // 
             // DN_DangKy
             // 
@@ -278,5 +304,7 @@
         private Label label3;
         private TextBox TenDNBox;
         private Label label2;
+        private Label MatKhauLabel;
+        private TextBox MatKhauBox;
     }
 }

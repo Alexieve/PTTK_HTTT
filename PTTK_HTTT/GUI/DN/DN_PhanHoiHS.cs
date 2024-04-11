@@ -19,14 +19,14 @@ namespace GUI
         public DN_PhanHoiHS()
         {
             InitializeComponent();
-            HopDongBtn_Click(HopDongBtn, null);
+            HopDongBtn_Click(DSHopDongBtn, null);
         }
 
         public void openChildForm(Form childForm)
         {
             if (childForm is DN_PhanHoiHS_DSHoSo)
             {
-                ActiveTab(HoSoBtn);
+                ActiveTab(DSHoSoBtn);
             }
 
 
@@ -68,7 +68,7 @@ namespace GUI
         {
             openChildForm(new DN_PhanHoiHS_DSHopDong(this));
             ActiveTab(sender);
-            HoSoBtn.Enabled = false;
+            DSHoSoBtn.Enabled = false;
 
         }
 
@@ -76,7 +76,7 @@ namespace GUI
         {
             openChildForm(new DN_PhanHoiHS_DSHoSo(this));
             ActiveTab(sender);
-            HoSoBtn.Enabled = true;
+            DSHoSoBtn.Enabled = true;
         }
     }
 }

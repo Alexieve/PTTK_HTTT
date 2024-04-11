@@ -2,19 +2,19 @@ SET DEFINE OFF
 
 -- UNGVIEN
 INSERT INTO UNGVIEN (MAUV, HOTEN, PHAI, NGAYSINH, DIACHI, SDT, EMAIL) 
-VALUES ('UV00000001', N'Vũ Minh Quỳnh', N'Nam', to_date('01/01/2003', 'MM/DD/RRRR'), N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0000000001', 'vmquynh21@clc.fitus.edu.vn');
+VALUES ('UV00000001', N'Vũ Minh Quỳnh', N'Nam', to_date('01/01/2003', 'MM/DD/YYYY'), N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0000000001', 'vmquynh21@clc.fitus.edu.vn');
 
 INSERT INTO UNGVIEN (MAUV, HOTEN, PHAI, NGAYSINH, DIACHI, SDT, EMAIL) 
-VALUES ('UV00000002', N'Võ Đoàn Vương Thịnh', N'Nam', to_date('01/02/2003', 'MM/DD/RRRR'), N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0000000002', 'vdvthinh21@clc.fitus.edu.vn');
+VALUES ('UV00000002', N'Võ Đoàn Vương Thịnh', N'Nam', to_date('01/02/2003', 'MM/DD/YYYY'), N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0000000002', 'vdvthinh21@clc.fitus.edu.vn');
 
 INSERT INTO UNGVIEN (MAUV, HOTEN, PHAI, NGAYSINH, DIACHI, SDT, EMAIL) 
-VALUES ('UV00000003', N'Trương Vĩnh Phúc', N'Nam', to_date('01/03/2003', 'MM/DD/RRRR'), N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0000000003', 'tvphuc21@clc.fitus.edu.vn');
+VALUES ('UV00000003', N'Trương Vĩnh Phúc', N'Nam', to_date('01/03/2003', 'MM/DD/YYYY'), N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0000000003', 'tvphuc21@clc.fitus.edu.vn');
 
 INSERT INTO UNGVIEN (MAUV, HOTEN, PHAI, NGAYSINH, DIACHI, SDT, EMAIL) 
-VALUES ('UV00000004', N'Nguyễn Lê Hoàng Kha', N'Nam', to_date('01/04/2003', 'MM/DD/RRRR'), N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0000000004', 'nlhkha21@clc.fitus.edu.vn');
+VALUES ('UV00000004', N'Nguyễn Lê Hoàng Kha', N'Nam', to_date('01/04/2003', 'MM/DD/YYYY'), N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0000000004', 'nlhkha21@clc.fitus.edu.vn');
 
 INSERT INTO UNGVIEN (MAUV, HOTEN, PHAI, NGAYSINH, DIACHI, SDT, EMAIL) 
-VALUES ('UV00000005', N'Lô Thuỷ Tiên', N'Nữ', to_date('01/05/2003', 'MM/DD/RRRR'), N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0000000005', 'lttien21@clc.fitus.edu.vn');
+VALUES ('UV00000005', N'Lô Thuỷ Tiên', N'Nữ', to_date('01/05/2003', 'MM/DD/YYYY'), N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0000000005', 'lttien21@clc.fitus.edu.vn');
 
 
 -- NHANVIEN
@@ -263,19 +263,19 @@ VALUES ('VUEJS', N'VueJS', 500000.0);
 
 -- HOPDONG
 INSERT INTO HOPDONG (MAHOPDONG, MADN, CAPBACTD, VITRITD, SOLUONGTD, YEUCAU, THOIGIANTD, NGAYTD, NGAYLAP, TRANGTHAI, TONGTIEN, TIENCONLAI) 
-VALUES ('HD00000001', 'DN00000001', 'INTERN', 'BE', 5, N'Chúng tôi đang tìm kiếm một intern back-end năng động và ham học hỏi để tham gia vào đội ngũ phát triển phần mềm của chúng tôi. Ứng viên lý tưởng sẽ có kiến thức cơ bản về lập trình back-end và mong muốn học hỏi và phát triển kỹ năng trong môi trường làm việc thực tế.', 30, to_date('04/20/2024', 'MM/DD/RRRR'), to_date('04/13/2024', 'MM/DD/RRRR'), 0, 1, 0);
+VALUES ('HD00000001', 'DN00000001', 'INTERN', 'BE', 5, N'Chúng tôi đang tìm kiếm một intern back-end năng động và ham học hỏi để tham gia vào đội ngũ phát triển phần mềm của chúng tôi. Ứng viên lý tưởng sẽ có kiến thức cơ bản về lập trình back-end và mong muốn học hỏi và phát triển kỹ năng trong môi trường làm việc thực tế.', 30, to_date('04/20/2024', 'MM/DD/YYYY'), to_date('04/13/2024', 'MM/DD/YYYY'), 0, 1, 0);
 
 INSERT INTO HOPDONG (MAHOPDONG, MADN, CAPBACTD, VITRITD, SOLUONGTD, YEUCAU, THOIGIANTD, NGAYTD, NGAYLAP, TRANGTHAI, TONGTIEN, TIENCONLAI) 
-VALUES ('HD00000002', 'DN00000002', 'FRESHER', 'BA', 6, N'Chúng tôi đang tìm kiếm một fresher business analyst đam mê và sáng tạo để tham gia vào đội ngũ phân tích kinh doanh của chúng tôi. Ứng viên lý tưởng sẽ có kiến thức cơ bản về phân tích kinh doanh và khả năng làm việc trong môi trường đa dạng và động.', 21, to_date('04/21/2024', 'MM/DD/RRRR'), to_date('04/14/2024', 'MM/DD/RRRR'), 0, 1, 0);
+VALUES ('HD00000002', 'DN00000002', 'FRESHER', 'BA', 6, N'Chúng tôi đang tìm kiếm một fresher business analyst đam mê và sáng tạo để tham gia vào đội ngũ phân tích kinh doanh của chúng tôi. Ứng viên lý tưởng sẽ có kiến thức cơ bản về phân tích kinh doanh và khả năng làm việc trong môi trường đa dạng và động.', 21, to_date('04/21/2024', 'MM/DD/YYYY'), to_date('04/14/2024', 'MM/DD/YYYY'), 0, 1, 0);
 
 INSERT INTO HOPDONG (MAHOPDONG, MADN, CAPBACTD, VITRITD, SOLUONGTD, YEUCAU, THOIGIANTD, NGAYTD, NGAYLAP, TRANGTHAI, TONGTIEN, TIENCONLAI) 
-VALUES ('HD00000003', 'DN00000003', 'JUNIOR', 'DA', 7, N'Chúng tôi đang tìm kiếm một junior data analyst nhiệt huyết và có kỹ năng phân tích dữ liệu để tham gia vào đội ngũ phân tích dữ liệu của chúng tôi. Ứng viên lý tưởng sẽ có kiến thức cơ bản về phân tích dữ liệu và mong muốn phát triển kỹ năng trong lĩnh vực này.', 35, to_date('04/22/2024', 'MM/DD/RRRR'), to_date('04/15/2024', 'MM/DD/RRRR'), 0, 1, 0);
+VALUES ('HD00000003', 'DN00000003', 'JUNIOR', 'DA', 7, N'Chúng tôi đang tìm kiếm một junior data analyst nhiệt huyết và có kỹ năng phân tích dữ liệu để tham gia vào đội ngũ phân tích dữ liệu của chúng tôi. Ứng viên lý tưởng sẽ có kiến thức cơ bản về phân tích dữ liệu và mong muốn phát triển kỹ năng trong lĩnh vực này.', 35, to_date('04/22/2024', 'MM/DD/YYYY'), to_date('04/15/2024', 'MM/DD/YYYY'), 0, 1, 0);
 
 INSERT INTO HOPDONG (MAHOPDONG, MADN, CAPBACTD, VITRITD, SOLUONGTD, YEUCAU, THOIGIANTD, NGAYTD, NGAYLAP, TRANGTHAI, TONGTIEN, TIENCONLAI) 
-VALUES ('HD00000004', 'DN00000004', 'MIDDLE', 'DE', 8, N'Chúng tôi đang tìm kiếm một middle developer có kinh nghiệm và sáng tạo để tham gia vào đội ngũ phát triển phần mềm của chúng tôi. Ứng viên lý tưởng sẽ có kinh nghiệm trong việc phát triển phần mềm, kiến thức vững về các ngôn ngữ lập trình và có khả năng làm việc hiệu quả trong môi trường đội nhóm.', 14, to_date('04/23/2024', 'MM/DD/RRRR'), to_date('04/16/2024', 'MM/DD/RRRR'), 0, 1, 0);
+VALUES ('HD00000004', 'DN00000004', 'MIDDLE', 'DE', 8, N'Chúng tôi đang tìm kiếm một middle developer có kinh nghiệm và sáng tạo để tham gia vào đội ngũ phát triển phần mềm của chúng tôi. Ứng viên lý tưởng sẽ có kinh nghiệm trong việc phát triển phần mềm, kiến thức vững về các ngôn ngữ lập trình và có khả năng làm việc hiệu quả trong môi trường đội nhóm.', 14, to_date('04/23/2024', 'MM/DD/YYYY'), to_date('04/16/2024', 'MM/DD/YYYY'), 0, 1, 0);
 
 INSERT INTO HOPDONG (MAHOPDONG, MADN, CAPBACTD, VITRITD, SOLUONGTD, YEUCAU, THOIGIANTD, NGAYTD, NGAYLAP, TRANGTHAI, TONGTIEN, TIENCONLAI) 
-VALUES ('HD00000005', 'DN00000005', 'SENIOR', 'DEV', 9, N'Chúng tôi đang tìm kiếm một senior developer có kinh nghiệm và năng động để tham gia vào đội ngũ phát triển phần mềm của chúng tôi và đóng góp vào việc xây dựng các sản phẩm chất lượng. Ứng viên lý tưởng sẽ có kinh nghiệm rộng lớn trong việc phát triển phần mềm, lãnh đạo và hướng dẫn các thành viên khác trong đội ngũ.', 40, to_date('04/24/2024', 'MM/DD/RRRR'), to_date('04/17/2024', 'MM/DD/RRRR'), 0, 1, 0);
+VALUES ('HD00000005', 'DN00000005', 'SENIOR', 'DEV', 9, N'Chúng tôi đang tìm kiếm một senior developer có kinh nghiệm và năng động để tham gia vào đội ngũ phát triển phần mềm của chúng tôi và đóng góp vào việc xây dựng các sản phẩm chất lượng. Ứng viên lý tưởng sẽ có kinh nghiệm rộng lớn trong việc phát triển phần mềm, lãnh đạo và hướng dẫn các thành viên khác trong đội ngũ.', 40, to_date('04/24/2024', 'MM/DD/YYYY'), to_date('04/17/2024', 'MM/DD/YYYY'), 0, 1, 0);
 
 
 
@@ -385,96 +385,96 @@ VALUES ('HD00000005', 'NODEJS');
 
 -- HOADON
 INSERT INTO HOADON (MAHOADON, NGAYTT, SOTIEN, HINHTHUCTT, NVTHANHTOAN, MAHOPDONG) 
-VALUES ('HD00000001', to_date('04/13/2024', 'MM/DD/RRRR'), 1, N'Tiền mặt', 'NV00000001', 'HD00000001');
+VALUES ('HD00000001', to_date('04/13/2024', 'MM/DD/YYYY'), 1, N'Tiền mặt', 'NV00000001', 'HD00000001');
 
 INSERT INTO HOADON (MAHOADON, NGAYTT, SOTIEN, HINHTHUCTT, NVTHANHTOAN, MAHOPDONG) 
-VALUES ('HD00000002', to_date('04/14/2024', 'MM/DD/RRRR'), 1, N'Thẻ', 'NV00000002', 'HD00000002');
+VALUES ('HD00000002', to_date('04/14/2024', 'MM/DD/YYYY'), 1, N'Thẻ', 'NV00000002', 'HD00000002');
 
 INSERT INTO HOADON (MAHOADON, NGAYTT, SOTIEN, HINHTHUCTT, NVTHANHTOAN, MAHOPDONG) 
-VALUES ('HD00000003', to_date('04/15/2024', 'MM/DD/RRRR'), 1, N'Tiền mặt', 'NV00000003', 'HD00000003');
+VALUES ('HD00000003', to_date('04/15/2024', 'MM/DD/YYYY'), 1, N'Tiền mặt', 'NV00000003', 'HD00000003');
 
 INSERT INTO HOADON (MAHOADON, NGAYTT, SOTIEN, HINHTHUCTT, NVTHANHTOAN, MAHOPDONG) 
-VALUES ('HD00000004', to_date('04/16/2024', 'MM/DD/RRRR'), 1, N'Thẻ', 'NV00000004', 'HD00000004');
+VALUES ('HD00000004', to_date('04/16/2024', 'MM/DD/YYYY'), 1, N'Thẻ', 'NV00000004', 'HD00000004');
 
 INSERT INTO HOADON (MAHOADON, NGAYTT, SOTIEN, HINHTHUCTT, NVTHANHTOAN, MAHOPDONG) 
-VALUES ('HD00000005', to_date('04/17/2024', 'MM/DD/RRRR'), 1, N'Tiền mặt', 'NV00000005', 'HD00000005');
+VALUES ('HD00000005', to_date('04/17/2024', 'MM/DD/YYYY'), 1, N'Tiền mặt', 'NV00000005', 'HD00000005');
 
 
 -- HSUNGTUYEN
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000001', 'HD00000001', to_date('04/20/2024', 'MM/DD/RRRR'), N'Giới thiệu 1', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000001', 'HD00000001', to_date('04/20/2024', 'MM/DD/YYYY'), N'Giới thiệu 1', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000002', 'HD00000001', to_date('04/20/2024', 'MM/DD/RRRR'), N'Giới thiệu 2', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000002', 'HD00000001', to_date('04/20/2024', 'MM/DD/YYYY'), N'Giới thiệu 2', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000003', 'HD00000001', to_date('04/20/2024', 'MM/DD/RRRR'), N'Giới thiệu 3', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000003', 'HD00000001', to_date('04/20/2024', 'MM/DD/YYYY'), N'Giới thiệu 3', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000004', 'HD00000001', to_date('04/20/2024', 'MM/DD/RRRR'), N'Giới thiệu 4', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000004', 'HD00000001', to_date('04/20/2024', 'MM/DD/YYYY'), N'Giới thiệu 4', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000005', 'HD00000001', to_date('04/20/2024', 'MM/DD/RRRR'), N'Giới thiệu 5', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000005', 'HD00000001', to_date('04/20/2024', 'MM/DD/YYYY'), N'Giới thiệu 5', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000001', 'HD00000002', to_date('04/21/2024', 'MM/DD/RRRR'), N'Giới thiệu 1', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000001', 'HD00000002', to_date('04/21/2024', 'MM/DD/YYYY'), N'Giới thiệu 1', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000002', 'HD00000002', to_date('04/21/2024', 'MM/DD/RRRR'), N'Giới thiệu 2', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000002', 'HD00000002', to_date('04/21/2024', 'MM/DD/YYYY'), N'Giới thiệu 2', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000003', 'HD00000002', to_date('04/21/2024', 'MM/DD/RRRR'), N'Giới thiệu 3', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000003', 'HD00000002', to_date('04/21/2024', 'MM/DD/YYYY'), N'Giới thiệu 3', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000004', 'HD00000002', to_date('04/21/2024', 'MM/DD/RRRR'), N'Giới thiệu 4', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000004', 'HD00000002', to_date('04/21/2024', 'MM/DD/YYYY'), N'Giới thiệu 4', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000005', 'HD00000002', to_date('04/21/2024', 'MM/DD/RRRR'), N'Giới thiệu 5', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000005', 'HD00000002', to_date('04/21/2024', 'MM/DD/YYYY'), N'Giới thiệu 5', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000001', 'HD00000003', to_date('04/22/2024', 'MM/DD/RRRR'), N'Giới thiệu 1', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000001', 'HD00000003', to_date('04/22/2024', 'MM/DD/YYYY'), N'Giới thiệu 1', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000002', 'HD00000003', to_date('04/22/2024', 'MM/DD/RRRR'), N'Giới thiệu 2', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000002', 'HD00000003', to_date('04/22/2024', 'MM/DD/YYYY'), N'Giới thiệu 2', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000003', 'HD00000003', to_date('04/22/2024', 'MM/DD/RRRR'), N'Giới thiệu 3', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000003', 'HD00000003', to_date('04/22/2024', 'MM/DD/YYYY'), N'Giới thiệu 3', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000004', 'HD00000003', to_date('04/22/2024', 'MM/DD/RRRR'), N'Giới thiệu 4', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000004', 'HD00000003', to_date('04/22/2024', 'MM/DD/YYYY'), N'Giới thiệu 4', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000005', 'HD00000003', to_date('04/22/2024', 'MM/DD/RRRR'), N'Giới thiệu 5', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000005', 'HD00000003', to_date('04/22/2024', 'MM/DD/YYYY'), N'Giới thiệu 5', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000001', 'HD00000004', to_date('04/23/2024', 'MM/DD/RRRR'), N'Giới thiệu 1', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000001', 'HD00000004', to_date('04/23/2024', 'MM/DD/YYYY'), N'Giới thiệu 1', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000002', 'HD00000004', to_date('04/23/2024', 'MM/DD/RRRR'), N'Giới thiệu 2', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000002', 'HD00000004', to_date('04/23/2024', 'MM/DD/YYYY'), N'Giới thiệu 2', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000003', 'HD00000004', to_date('04/23/2024', 'MM/DD/RRRR'), N'Giới thiệu 3', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000003', 'HD00000004', to_date('04/23/2024', 'MM/DD/YYYY'), N'Giới thiệu 3', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000004', 'HD00000004', to_date('04/23/2024', 'MM/DD/RRRR'), N'Giới thiệu 4', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000004', 'HD00000004', to_date('04/23/2024', 'MM/DD/YYYY'), N'Giới thiệu 4', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000005', 'HD00000004', to_date('04/23/2024', 'MM/DD/RRRR'), N'Giới thiệu 5', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000005', 'HD00000004', to_date('04/23/2024', 'MM/DD/YYYY'), N'Giới thiệu 5', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000001', 'HD00000005', to_date('04/24/2024', 'MM/DD/RRRR'), N'Giới thiệu 1', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000001', 'HD00000005', to_date('04/24/2024', 'MM/DD/YYYY'), N'Giới thiệu 1', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000002', 'HD00000005', to_date('04/24/2024', 'MM/DD/RRRR'), N'Giới thiệu 2', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000002', 'HD00000005', to_date('04/24/2024', 'MM/DD/YYYY'), N'Giới thiệu 2', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000003', 'HD00000005', to_date('04/24/2024', 'MM/DD/RRRR'), N'Giới thiệu 3', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000003', 'HD00000005', to_date('04/24/2024', 'MM/DD/YYYY'), N'Giới thiệu 3', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000004', 'HD00000005', to_date('04/24/2024', 'MM/DD/RRRR'), N'Giới thiệu 4', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000004', 'HD00000005', to_date('04/24/2024', 'MM/DD/YYYY'), N'Giới thiệu 4', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 INSERT INTO HSUNGTUYEN (MAUV, MAHOPDONG, NGAYNOP, GIOITHIEU, HOCVAN, KINHNGHIEM, KETQUA) 
-VALUES ('UV00000005', 'HD00000005', to_date('04/24/2024', 'MM/DD/RRRR'), N'Giới thiệu 5', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
+VALUES ('UV00000005', 'HD00000005', to_date('04/24/2024', 'MM/DD/YYYY'), N'Giới thiệu 5', N'HCMUS', N'3 Năm kinh nghiệm C++', 0);
 
 
 

@@ -33,6 +33,7 @@
             TitleLabel = new Label();
             panel2 = new Panel();
             NgaySinhBox = new DateTimePicker();
+            DangKyBtn = new Button();
             PhaiBox = new ComboBox();
             label5 = new Label();
             EmailBox = new TextBox();
@@ -44,7 +45,6 @@
             label3 = new Label();
             HoTenBox = new TextBox();
             label2 = new Label();
-            DangKyBtn = new Button();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -114,8 +114,19 @@
             NgaySinhBox.Size = new Size(263, 34);
             NgaySinhBox.TabIndex = 54;
             // 
+            // DangKyBtn
+            // 
+            DangKyBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DangKyBtn.Location = new Point(280, 537);
+            DangKyBtn.Name = "DangKyBtn";
+            DangKyBtn.Size = new Size(230, 49);
+            DangKyBtn.TabIndex = 53;
+            DangKyBtn.Text = "Đăng Ký";
+            DangKyBtn.UseVisualStyleBackColor = true;
+            // 
             // PhaiBox
             // 
+            PhaiBox.DropDownStyle = ComboBoxStyle.DropDownList;
             PhaiBox.FormattingEnabled = true;
             PhaiBox.Items.AddRange(new object[] { "Nam", "Nữ" });
             PhaiBox.Location = new Point(174, 128);
@@ -220,16 +231,6 @@
             label2.TabIndex = 28;
             label2.Text = "Họ và tên";
             label2.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // DangKyBtn
-            // 
-            DangKyBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            DangKyBtn.Location = new Point(280, 537);
-            DangKyBtn.Name = "DangKyBtn";
-            DangKyBtn.Size = new Size(230, 49);
-            DangKyBtn.TabIndex = 53;
-            DangKyBtn.Text = "Đăng Ký";
-            DangKyBtn.UseVisualStyleBackColor = true;
             // 
             // UV_DangKy
             // 

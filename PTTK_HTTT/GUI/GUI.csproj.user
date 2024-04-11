@@ -20,9 +20,6 @@
     <Compile Update="Component\CPN_LTTDT.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Component\CPN_ThongTinUngTuyen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="Component\CPN_XNPQC.cs">
       <SubType>UserControl</SubType>
     </Compile>

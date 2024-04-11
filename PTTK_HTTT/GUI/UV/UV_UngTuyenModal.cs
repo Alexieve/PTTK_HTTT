@@ -16,15 +16,6 @@ namespace GUI
         public UV_UngTuyenModal()
         {
             InitializeComponent();
-            // Add ThongTinUngTuyenCpn to ParentPanel before GiayToPanel
-            ThongTinUngTuyenCpn thongTinUngTuyenCpn = new ThongTinUngTuyenCpn();
-            thongTinUngTuyenCpn.Location = new Point(0, 0);
-            thongTinUngTuyenCpn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            ParentPanel.Controls.Add(thongTinUngTuyenCpn);
-            // Move GiayToPanel to the after all ThongTinUngTuyenCpn
-            GiayToPanel.Location = new Point(0, thongTinUngTuyenCpn.Height);
-            GiayToPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            ParentPanel.Controls.Add(GiayToPanel);
         }
 
         private void ThemGiayToBtn_Click(object sender, EventArgs e)

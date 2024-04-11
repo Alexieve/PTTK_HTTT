@@ -30,13 +30,12 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             BaiDangTb = new DataGridView();
+            panel1 = new Panel();
+            XemDSHoSoBtn = new Button();
             MAHOPDONG = new DataGridViewTextBoxColumn();
-            TENDN = new DataGridViewTextBoxColumn();
             CB_VT = new DataGridViewTextBoxColumn();
             SOLUONG = new DataGridViewTextBoxColumn();
             NGAYKT = new DataGridViewTextBoxColumn();
-            panel1 = new Panel();
-            XemDSHoSoBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)BaiDangTb).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -55,13 +54,32 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             BaiDangTb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             BaiDangTb.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            BaiDangTb.Columns.AddRange(new DataGridViewColumn[] { MAHOPDONG, TENDN, CB_VT, SOLUONG, NGAYKT });
+            BaiDangTb.Columns.AddRange(new DataGridViewColumn[] { MAHOPDONG, CB_VT, SOLUONG, NGAYKT });
             BaiDangTb.Location = new Point(0, 58);
             BaiDangTb.Name = "BaiDangTb";
             BaiDangTb.ReadOnly = true;
             BaiDangTb.RowHeadersWidth = 51;
             BaiDangTb.Size = new Size(1053, 536);
             BaiDangTb.TabIndex = 10;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(XemDSHoSoBtn);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1053, 52);
+            panel1.TabIndex = 12;
+            // 
+            // XemDSHoSoBtn
+            // 
+            XemDSHoSoBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            XemDSHoSoBtn.Location = new Point(12, 8);
+            XemDSHoSoBtn.Name = "XemDSHoSoBtn";
+            XemDSHoSoBtn.Size = new Size(248, 37);
+            XemDSHoSoBtn.TabIndex = 0;
+            XemDSHoSoBtn.Text = "Xem Danh Sách Hồ Sơ";
+            XemDSHoSoBtn.UseVisualStyleBackColor = true;
+            XemDSHoSoBtn.Click += XemDSHoSoBtn_Click;
             // 
             // MAHOPDONG
             // 
@@ -70,14 +88,6 @@
             MAHOPDONG.MinimumWidth = 6;
             MAHOPDONG.Name = "MAHOPDONG";
             MAHOPDONG.ReadOnly = true;
-            // 
-            // TENDN
-            // 
-            TENDN.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            TENDN.HeaderText = "Doanh Nghiệp";
-            TENDN.MinimumWidth = 6;
-            TENDN.Name = "TENDN";
-            TENDN.ReadOnly = true;
             // 
             // CB_VT
             // 
@@ -103,25 +113,6 @@
             NGAYKT.Name = "NGAYKT";
             NGAYKT.ReadOnly = true;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(XemDSHoSoBtn);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1053, 52);
-            panel1.TabIndex = 12;
-            // 
-            // XemDSHoSoBtn
-            // 
-            XemDSHoSoBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            XemDSHoSoBtn.Location = new Point(12, 8);
-            XemDSHoSoBtn.Name = "XemDSHoSoBtn";
-            XemDSHoSoBtn.Size = new Size(248, 37);
-            XemDSHoSoBtn.TabIndex = 0;
-            XemDSHoSoBtn.Text = "Xem Danh Sách Hồ Sơ";
-            XemDSHoSoBtn.UseVisualStyleBackColor = true;
-            XemDSHoSoBtn.Click += XemDSHoSoBtn_Click;
-            // 
             // NV_DuyetHoSo_DSBaiDang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -143,7 +134,6 @@
         private Panel panel1;
         private Button XemDSHoSoBtn;
         private DataGridViewTextBoxColumn MAHOPDONG;
-        private DataGridViewTextBoxColumn TENDN;
         private DataGridViewTextBoxColumn CB_VT;
         private DataGridViewTextBoxColumn SOLUONG;
         private DataGridViewTextBoxColumn NGAYKT;

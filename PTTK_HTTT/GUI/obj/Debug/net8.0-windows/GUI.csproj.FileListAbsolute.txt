@@ -4,7 +4,6 @@ D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.runti
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.dll
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.pdb
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.GiayToCpn.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.ThongTinUngTuyenCpn.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.GenerateResource.cache
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.AssemblyInfoInputs.cache
@@ -57,3 +56,12 @@ D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_L
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_LTTDT.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_XNPQC.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DangNhap.resources
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\DAL.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\DAL.pdb
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.AssemblyReference.cache
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.Up2Date

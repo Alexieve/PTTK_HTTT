@@ -32,9 +32,9 @@
             TablePanel = new Panel();
             TabPanel = new TableLayoutPanel();
             BaiDangPanel = new Panel();
-            BaiDangBtn = new Button();
+            DSBaiDangBtn = new Button();
             HoSoPanel = new Panel();
-            HoSoBtn = new Button();
+            DSHoSoBtn = new Button();
             TitlePanel = new Panel();
             TitleLabel = new Label();
             tabtbLout = new TableLayoutPanel();
@@ -89,50 +89,50 @@
             // BaiDangPanel
             // 
             BaiDangPanel.BackColor = Color.MediumSeaGreen;
-            BaiDangPanel.Controls.Add(BaiDangBtn);
+            BaiDangPanel.Controls.Add(DSBaiDangBtn);
             BaiDangPanel.Dock = DockStyle.Fill;
             BaiDangPanel.Location = new Point(3, 3);
             BaiDangPanel.Name = "BaiDangPanel";
             BaiDangPanel.Size = new Size(532, 49);
             BaiDangPanel.TabIndex = 0;
             // 
-            // BaiDangBtn
+            // DSBaiDangBtn
             // 
-            BaiDangBtn.BackColor = SystemColors.ControlLight;
-            BaiDangBtn.FlatAppearance.BorderSize = 0;
-            BaiDangBtn.FlatStyle = FlatStyle.Flat;
-            BaiDangBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BaiDangBtn.Location = new Point(0, -2);
-            BaiDangBtn.Name = "BaiDangBtn";
-            BaiDangBtn.Size = new Size(532, 42);
-            BaiDangBtn.TabIndex = 0;
-            BaiDangBtn.Text = "Danh Sách Bài Đăng";
-            BaiDangBtn.UseVisualStyleBackColor = false;
-            BaiDangBtn.Click += BaiDangBtn_Click;
+            DSBaiDangBtn.BackColor = SystemColors.ControlLight;
+            DSBaiDangBtn.FlatAppearance.BorderSize = 0;
+            DSBaiDangBtn.FlatStyle = FlatStyle.Flat;
+            DSBaiDangBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DSBaiDangBtn.Location = new Point(0, -2);
+            DSBaiDangBtn.Name = "DSBaiDangBtn";
+            DSBaiDangBtn.Size = new Size(532, 42);
+            DSBaiDangBtn.TabIndex = 0;
+            DSBaiDangBtn.Text = "Danh Sách Bài Đăng";
+            DSBaiDangBtn.UseVisualStyleBackColor = false;
+            DSBaiDangBtn.Click += BaiDangBtn_Click;
             // 
             // HoSoPanel
             // 
             HoSoPanel.BackColor = Color.DarkGray;
-            HoSoPanel.Controls.Add(HoSoBtn);
+            HoSoPanel.Controls.Add(DSHoSoBtn);
             HoSoPanel.Dock = DockStyle.Fill;
             HoSoPanel.Location = new Point(541, 3);
             HoSoPanel.Name = "HoSoPanel";
             HoSoPanel.Size = new Size(533, 49);
             HoSoPanel.TabIndex = 1;
             // 
-            // HoSoBtn
+            // DSHoSoBtn
             // 
-            HoSoBtn.BackColor = SystemColors.ControlLight;
-            HoSoBtn.FlatAppearance.BorderSize = 0;
-            HoSoBtn.FlatStyle = FlatStyle.Flat;
-            HoSoBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            HoSoBtn.Location = new Point(0, -2);
-            HoSoBtn.Name = "HoSoBtn";
-            HoSoBtn.Size = new Size(533, 42);
-            HoSoBtn.TabIndex = 1;
-            HoSoBtn.Text = "Danh Sách Hồ Sơ";
-            HoSoBtn.UseVisualStyleBackColor = false;
-            HoSoBtn.Click += HoSoBtn_Click;
+            DSHoSoBtn.BackColor = SystemColors.ControlLight;
+            DSHoSoBtn.FlatAppearance.BorderSize = 0;
+            DSHoSoBtn.FlatStyle = FlatStyle.Flat;
+            DSHoSoBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DSHoSoBtn.Location = new Point(0, -2);
+            DSHoSoBtn.Name = "DSHoSoBtn";
+            DSHoSoBtn.Size = new Size(533, 42);
+            DSHoSoBtn.TabIndex = 1;
+            DSHoSoBtn.Text = "Danh Sách Hồ Sơ";
+            DSHoSoBtn.UseVisualStyleBackColor = false;
+            DSHoSoBtn.Click += HoSoBtn_Click;
             // 
             // TitlePanel
             // 
@@ -227,14 +227,14 @@
             btnLtgvht.Text = "Lấy thời gian và hình thức đăng tuyển";
             btnLtgvht.UseVisualStyleBackColor = false;
             // 
-            // DuyetHoSoTab
+            // NV_DuyetHoSo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1077, 721);
             Controls.Add(ParentPanel);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "DuyetHoSoTab";
+            Name = "NV_DuyetHoSo";
             Text = "BaiDangChoDuyet";
             ParentPanel.ResumeLayout(false);
             TabPanel.ResumeLayout(false);
@@ -261,8 +261,8 @@
         private Button btnLtgvht;
         private Panel BaiDangPanel;
         private Panel HoSoPanel;
-        private Button BaiDangBtn;
-        private Button HoSoBtn;
+        private Button DSBaiDangBtn;
+        private Button DSHoSoBtn;
         private Panel TablePanel;
     }
 }

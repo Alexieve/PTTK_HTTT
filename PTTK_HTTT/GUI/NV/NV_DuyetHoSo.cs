@@ -19,14 +19,14 @@ namespace GUI
         public NV_DuyetHoSo()
         {
             InitializeComponent();
-            BaiDangBtn_Click(BaiDangBtn, null);
+            BaiDangBtn_Click(DSBaiDangBtn, null);
         }
 
         public void openChildForm(Form childForm)
         {
             if (childForm is NV_DuyetHoSo_DSHoSo)
             {
-                ActiveTab(HoSoBtn);
+                ActiveTab(DSHoSoBtn);
             }
 
 
@@ -68,7 +68,7 @@ namespace GUI
         {
             openChildForm(new NV_DuyetHoSo_DSBaiDang(this));
             ActiveTab(sender);
-            HoSoBtn.Enabled = false;
+            DSHoSoBtn.Enabled = false;
 
         }
 
@@ -76,7 +76,7 @@ namespace GUI
         {
             openChildForm(new NV_DuyetHoSo_DSHoSo(this));
             ActiveTab(sender);
-            HoSoBtn.Enabled = true;
+            DSHoSoBtn.Enabled = true;
         }
     }
 }
