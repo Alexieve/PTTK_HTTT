@@ -45,6 +45,8 @@
             label3 = new Label();
             HoTenBox = new TextBox();
             label2 = new Label();
+            MatKhauLabel = new Label();
+            MatKhauBox = new TextBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -85,6 +87,8 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(MatKhauLabel);
+            panel2.Controls.Add(MatKhauBox);
             panel2.Controls.Add(NgaySinhBox);
             panel2.Controls.Add(DangKyBtn);
             panel2.Controls.Add(PhaiBox);
@@ -108,7 +112,7 @@
             // 
             NgaySinhBox.CustomFormat = "dd/MM/yyyy";
             NgaySinhBox.Format = DateTimePickerFormat.Custom;
-            NgaySinhBox.Location = new Point(482, 126);
+            NgaySinhBox.Location = new Point(482, 120);
             NgaySinhBox.MinDate = new DateTime(2024, 4, 8, 0, 0, 0, 0);
             NgaySinhBox.Name = "NgaySinhBox";
             NgaySinhBox.Size = new Size(263, 34);
@@ -117,7 +121,7 @@
             // DangKyBtn
             // 
             DangKyBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            DangKyBtn.Location = new Point(280, 537);
+            DangKyBtn.Location = new Point(265, 582);
             DangKyBtn.Name = "DangKyBtn";
             DangKyBtn.Size = new Size(230, 49);
             DangKyBtn.TabIndex = 53;
@@ -129,7 +133,7 @@
             PhaiBox.DropDownStyle = ComboBoxStyle.DropDownList;
             PhaiBox.FormattingEnabled = true;
             PhaiBox.Items.AddRange(new object[] { "Nam", "Nữ" });
-            PhaiBox.Location = new Point(174, 128);
+            PhaiBox.Location = new Point(174, 120);
             PhaiBox.Name = "PhaiBox";
             PhaiBox.Size = new Size(135, 36);
             PhaiBox.TabIndex = 40;
@@ -138,7 +142,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label5.Location = new Point(30, 411);
+            label5.Location = new Point(30, 420);
             label5.Name = "label5";
             label5.Size = new Size(64, 28);
             label5.TabIndex = 38;
@@ -148,7 +152,7 @@
             // EmailBox
             // 
             EmailBox.Font = new Font("Segoe UI", 12F);
-            EmailBox.Location = new Point(174, 408);
+            EmailBox.Location = new Point(174, 420);
             EmailBox.Name = "EmailBox";
             EmailBox.Size = new Size(571, 34);
             EmailBox.TabIndex = 37;
@@ -156,7 +160,7 @@
             // SDTBox
             // 
             SDTBox.Font = new Font("Segoe UI", 12F);
-            SDTBox.Location = new Point(174, 310);
+            SDTBox.Location = new Point(174, 320);
             SDTBox.Name = "SDTBox";
             SDTBox.Size = new Size(571, 34);
             SDTBox.TabIndex = 36;
@@ -165,7 +169,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label6.Location = new Point(30, 314);
+            label6.Location = new Point(30, 320);
             label6.Name = "label6";
             label6.Size = new Size(138, 28);
             label6.TabIndex = 35;
@@ -175,7 +179,7 @@
             // DiaChiBox
             // 
             DiaChiBox.Font = new Font("Segoe UI", 12F);
-            DiaChiBox.Location = new Point(174, 217);
+            DiaChiBox.Location = new Point(174, 220);
             DiaChiBox.Name = "DiaChiBox";
             DiaChiBox.Size = new Size(571, 34);
             DiaChiBox.TabIndex = 34;
@@ -184,7 +188,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label7.Location = new Point(30, 225);
+            label7.Location = new Point(30, 220);
             label7.Name = "label7";
             label7.Size = new Size(78, 28);
             label7.TabIndex = 33;
@@ -195,7 +199,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label4.Location = new Point(350, 131);
+            label4.Location = new Point(350, 120);
             label4.Name = "label4";
             label4.Size = new Size(107, 28);
             label4.TabIndex = 32;
@@ -206,7 +210,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.Location = new Point(30, 131);
+            label3.Location = new Point(30, 120);
             label3.Name = "label3";
             label3.Size = new Size(53, 28);
             label3.TabIndex = 30;
@@ -216,7 +220,7 @@
             // HoTenBox
             // 
             HoTenBox.Font = new Font("Segoe UI", 12F);
-            HoTenBox.Location = new Point(174, 39);
+            HoTenBox.Location = new Point(174, 20);
             HoTenBox.Name = "HoTenBox";
             HoTenBox.Size = new Size(571, 34);
             HoTenBox.TabIndex = 29;
@@ -225,12 +229,34 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(30, 42);
+            label2.Location = new Point(30, 20);
             label2.Name = "label2";
             label2.Size = new Size(104, 28);
             label2.TabIndex = 28;
             label2.Text = "Họ và tên";
             label2.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // MatKhauLabel
+            // 
+            MatKhauLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            MatKhauLabel.AutoSize = true;
+            MatKhauLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            MatKhauLabel.Location = new Point(30, 520);
+            MatKhauLabel.Name = "MatKhauLabel";
+            MatKhauLabel.Size = new Size(102, 28);
+            MatKhauLabel.TabIndex = 56;
+            MatKhauLabel.Text = "Mật khẩu";
+            MatKhauLabel.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // MatKhauBox
+            // 
+            MatKhauBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            MatKhauBox.Font = new Font("Segoe UI", 12F);
+            MatKhauBox.Location = new Point(174, 520);
+            MatKhauBox.Name = "MatKhauBox";
+            MatKhauBox.PasswordChar = '*';
+            MatKhauBox.Size = new Size(571, 34);
+            MatKhauBox.TabIndex = 55;
             // 
             // UV_DangKy
             // 
@@ -269,5 +295,7 @@
         private Label TitleLabel;
         private DateTimePicker NgaySinhBox;
         private Button DangKyBtn;
+        private Label MatKhauLabel;
+        private TextBox MatKhauBox;
     }
 }

@@ -120,7 +120,6 @@ D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_L
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_LTTDT.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_XNPQC.resources
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DangNhap.resources
-<<<<<<< HEAD
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
@@ -130,6 +129,5 @@ D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\DAL.dll
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\DAL.pdb
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.AssemblyReference.cache
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.Up2Date
-=======
 >>>>>>> 33f6cedd2f15e64a4f6cde4a68f74bab4376d742
 >>>>>>> bfb5dfeca38cd06e26ec32fc61c7721ee207bd00
