@@ -23,6 +23,7 @@ namespace GUI
         private string _DiaChiDN;
         private string _CapBacUngTuyen;
         private string _TenDoanhNghiep;
+        private string _MaDN;
         private Image _Avatar;
 
         [Category("Custom Props")]
@@ -67,6 +68,12 @@ namespace GUI
             set { _Avatar = value; Ava.Image = value; }
         }
 
+        [Category("Custom Props")]
+        public string MaDN
+        {
+            get { return _MaDN; }
+            set { _MaDN = value; }
+        }
 
         #endregion
 
@@ -76,6 +83,16 @@ namespace GUI
         }
 
         private void DiaChi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CPN_CardTuyenDung_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ava_Click(object sender, EventArgs e)
         {
 
         }
