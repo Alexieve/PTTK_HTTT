@@ -21,40 +21,40 @@ namespace GUI
 
         private void AddSampleData()
         {
-            dataGridView1.Columns["ChienLuocUuDai"].DefaultCellStyle.BackColor = Color.LightGray;
-            dataGridView1.Rows.Add(false, "XX", 5, 5, "27/02/2024");
-            dataGridView1.Rows.Add(false, "XX", 5, 5, "27/02/2024");
-            dataGridView1.Rows.Add(false, "XX", 5, 5, "27/02/2024");
-            dataGridView1.Rows.Add(false, "XX", 5, 5, "27/02/2024");
-            dataGridView1.Rows.Add(false, "XX", 5, 5, "27/02/2024");
-            dataGridView1.Rows.Add(false, "XX", 5, 5, "27/02/2024");
-            dataGridView1.Rows.Add(false, "XX", 5, 5, "27/02/2024");
-            dataGridView1.Rows.Add(false, "XX", 5, 5, "27/02/2024");
-            dataGridView1.Rows.Add(false, "XX", 5, 5, "27/02/2024");
-            dataGridView1.Rows.Add(false, "XX", 5, 5, "27/02/2024");
+            DanhSachDNTN.Columns["ChienLuocUuDai"].DefaultCellStyle.BackColor = Color.LightGray;
+            DanhSachDNTN.Rows.Add(false,1,"XX", 5, 5, "27/02/2024");
+            DanhSachDNTN.Rows.Add(false,1,"XX", 5, 5, "27/02/2024");
+            DanhSachDNTN.Rows.Add(false,1,"XX", 5, 5, "27/02/2024");
+            DanhSachDNTN.Rows.Add(false, 1, "XX", 5, 5, "27/02/2024");
+            DanhSachDNTN.Rows.Add(false, 1, "XX", 5, 5, "27/02/2024");
+            DanhSachDNTN.Rows.Add(false, 1, "XX", 5, 5, "27/02/2024");
+            DanhSachDNTN.Rows.Add(false, 1, "XX", 5, 5, "27/02/2024");
+            DanhSachDNTN.Rows.Add(false, 1, "XX", 5, 5, "27/02/2024");
+            DanhSachDNTN.Rows.Add(false, 1, "XX", 5, 5, "27/02/2024");
+            DanhSachDNTN.Rows.Add(false, 1, "XX", 5, 5, "27/02/2024");
 
         }
 
-        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        private void DanhSachDNTN_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == CheckBox.Index && e.RowIndex != -1)
             {
                 // handle checkbox state change here
                 int rowindex = e.RowIndex; // get the row index of the clicked checkbox
-                if ((bool)dataGridView1.Rows[rowindex].Cells["CheckBox"].Value == true)
+                if ((bool)DanhSachDNTN.Rows[rowindex].Cells["CheckBox"].Value == true)
                 {
-                    dataGridView1.Rows[rowindex].Cells["ChienLuocUuDai"].Style.BackColor = Color.White;
-                    dataGridView1.Rows[rowindex].Cells["ChienLuocUuDai"].ReadOnly = false;
+                    DanhSachDNTN.Rows[rowindex].Cells["ChienLuocUuDai"].Style.BackColor = Color.White;
+                    DanhSachDNTN.Rows[rowindex].Cells["ChienLuocUuDai"].ReadOnly = false;
                 }
                 else
                 {
-                    dataGridView1.Rows[rowindex].Cells["ChienLuocUuDai"].Style.BackColor = Color.LightGray;
-                    dataGridView1.Rows[rowindex].Cells["ChienLuocUuDai"].ReadOnly = true;
+                    DanhSachDNTN.Rows[rowindex].Cells["ChienLuocUuDai"].Style.BackColor = Color.LightGray;
+                    DanhSachDNTN.Rows[rowindex].Cells["ChienLuocUuDai"].ReadOnly = true;
                 }
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DanhSachDNTN_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //int rowIndex = e.RowIndex; // Get the row index of the clicked checkbox
             //if (e.ColumnIndex == 0 && e.RowIndex >= 0)
@@ -72,20 +72,25 @@ namespace GUI
             //}
         }
 
-        private void dataGridView1_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
+        private void DanhSachDNTN_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.ColumnIndex == CheckBox.Index && e.RowIndex != -1)
             {
-                dataGridView1.EndEdit();
+                DanhSachDNTN.EndEdit();
             }
         }
 
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void DanhSachDNTN_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == CheckBox.Index && e.RowIndex != -1)
             {
-                dataGridView1.EndEdit();
+                DanhSachDNTN.EndEdit();
             }
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

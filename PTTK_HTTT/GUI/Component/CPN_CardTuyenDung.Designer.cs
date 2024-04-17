@@ -45,6 +45,7 @@
             Ava.SizeMode = PictureBoxSizeMode.Zoom;
             Ava.TabIndex = 0;
             Ava.TabStop = false;
+            Ava.Click += Ava_Click;
             // 
             // Title
             // 
@@ -93,7 +94,7 @@
             KyNang.TabIndex = 5;
             KyNang.Text = "Kỹ năng";
             // 
-            // CardTuyenDung
+            // CPN_CardTuyenDung
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -105,8 +106,9 @@
             Controls.Add(TenDN);
             Controls.Add(Title);
             Controls.Add(Ava);
-            Name = "CardTuyenDung";
+            Name = "CPN_CardTuyenDung";
             Size = new Size(1056, 226);
+            Load += CPN_CardTuyenDung_Load;
             ((System.ComponentModel.ISupportInitialize)Ava).EndInit();
             ResumeLayout(false);
         }

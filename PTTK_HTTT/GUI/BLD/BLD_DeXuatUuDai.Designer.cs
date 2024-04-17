@@ -37,21 +37,22 @@
             DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             childFormPanel = new Panel();
             SaveBtn = new Button();
-            dataGridView1 = new DataGridView();
+            DanhSachDNTN = new DataGridView();
             CheckBox = new DataGridViewCheckBoxColumn();
+            MaHD = new DataGridViewTextBoxColumn();
             TenDN = new DataGridViewTextBoxColumn();
             VTTuyenDung = new DataGridViewTextBoxColumn();
             SoLuongUV = new DataGridViewTextBoxColumn();
             NgayTD = new DataGridViewTextBoxColumn();
             ChienLuocUuDai = new DataGridViewTextBoxColumn();
             childFormPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DanhSachDNTN).BeginInit();
             SuspendLayout();
             // 
             // childFormPanel
             // 
             childFormPanel.Controls.Add(SaveBtn);
-            childFormPanel.Controls.Add(dataGridView1);
+            childFormPanel.Controls.Add(DanhSachDNTN);
             childFormPanel.Dock = DockStyle.Fill;
             childFormPanel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             childFormPanel.Location = new Point(0, 0);
@@ -69,12 +70,13 @@
             SaveBtn.TabIndex = 1;
             SaveBtn.Text = "Lưu";
             SaveBtn.UseVisualStyleBackColor = true;
+            SaveBtn.Click += SaveBtn_Click;
             // 
-            // dataGridView1
+            // DanhSachDNTN
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            DanhSachDNTN.AllowUserToAddRows = false;
+            DanhSachDNTN.AllowUserToDeleteRows = false;
+            DanhSachDNTN.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = SystemColors.Control;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -82,11 +84,11 @@
             dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CheckBox, TenDN, VTTuyenDung, SoLuongUV, NgayTD, ChienLuocUuDai });
-            dataGridView1.Location = new Point(12, 12);
-            dataGridView1.Name = "dataGridView1";
+            DanhSachDNTN.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            DanhSachDNTN.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DanhSachDNTN.Columns.AddRange(new DataGridViewColumn[] { CheckBox, MaHD, TenDN, VTTuyenDung, SoLuongUV, NgayTD, ChienLuocUuDai });
+            DanhSachDNTN.Location = new Point(12, 12);
+            DanhSachDNTN.Name = "DanhSachDNTN";
             dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.BackColor = SystemColors.Control;
             dataGridViewCellStyle7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -94,15 +96,15 @@
             dataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1053, 654);
-            dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
-            dataGridView1.CellMouseUp += dataGridView1_CellMouseUp;
-            dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
+            DanhSachDNTN.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            DanhSachDNTN.RowHeadersVisible = false;
+            DanhSachDNTN.RowHeadersWidth = 51;
+            DanhSachDNTN.Size = new Size(1053, 654);
+            DanhSachDNTN.TabIndex = 0;
+            DanhSachDNTN.CellContentClick += DanhSachDNTN_CellContentClick;
+            DanhSachDNTN.CellDoubleClick += DanhSachDNTN_CellDoubleClick;
+            DanhSachDNTN.CellMouseUp += DanhSachDNTN_CellMouseUp;
+            DanhSachDNTN.CellValueChanged += DanhSachDNTN_CellValueChanged;
             // 
             // CheckBox
             // 
@@ -112,6 +114,14 @@
             CheckBox.Name = "CheckBox";
             CheckBox.Resizable = DataGridViewTriState.True;
             CheckBox.SortMode = DataGridViewColumnSortMode.Automatic;
+            // 
+            // MaHD
+            // 
+            MaHD.HeaderText = "Mã hợp đồng";
+            MaHD.MinimumWidth = 6;
+            MaHD.Name = "MaHD";
+            MaHD.ReadOnly = true;
+            MaHD.Visible = false;
             // 
             // TenDN
             // 
@@ -174,7 +184,7 @@
             Name = "BLD_DeXuatUuDai";
             Text = "Form1";
             childFormPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DanhSachDNTN).EndInit();
             ResumeLayout(false);
         }
 
@@ -182,8 +192,9 @@
 
         private Panel childFormPanel;
         private Button SaveBtn;
-        private DataGridView dataGridView1;
+        private DataGridView DanhSachDNTN;
         private DataGridViewCheckBoxColumn CheckBox;
+        private DataGridViewTextBoxColumn MaHD;
         private DataGridViewTextBoxColumn TenDN;
         private DataGridViewTextBoxColumn VTTuyenDung;
         private DataGridViewTextBoxColumn SoLuongUV;
