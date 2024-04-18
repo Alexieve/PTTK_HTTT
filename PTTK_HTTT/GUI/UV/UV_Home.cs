@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PH2.DAL;
 
 namespace GUI
 {
@@ -14,9 +15,10 @@ namespace GUI
     {
         private Button currentButton;
         private Form activeForm = null;
-        public UV_Home()
+        public UV_Home(string username)
         {
             InitializeComponent();
+            usernameLabel.Text = username;
             HomeBtn_Click(HomeBtn, new EventArgs());
             addSample();
             addSample();
@@ -35,7 +37,12 @@ namespace GUI
 
         private void logoutBtn_Click(object sender, EventArgs e)
         {
-
+            DbConnection conn = new DbConnection();
+            conn.Disconnect();
+            this.Hide();
+            DangNhap dangNhap = new DangNhap();
+            dangNhap.ShowDialog();
+            this.Close();
         }
 
         private void openChildForm(Form childForm)

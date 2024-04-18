@@ -1,60 +1,133 @@
 ﻿using System.Data;
 using Oracle.ManagedDataAccess.Client;
 
-namespace DAL
+namespace PH2.DAL
 {
     public class DbConnection // Oracle
     {
-        private OracleConnection conn;
+        private static OracleConnection conn;
         private OracleDataAdapter adapter;
+        private static string _username;
+        private static string _role;
 
-        public DbConnection(string username, string password)
+        public string username
         {
-            string connectionString = "User ID=" + username + "; Password=" + password + "; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = " + "localhost" + ")(PORT = 1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = PTTK)));";
-            this.conn = new OracleConnection(connectionString);
-            adapter = new OracleDataAdapter();
+            get { return _username; }
+            set { _username = value; }
+        }
+
+        public string role
+        {
+            get { return _role; }
+            set { _role = value; }
+        }
+
+        public DbConnection()
+        {
+            if (conn != null) adapter = new OracleDataAdapter();
+        }
+        public bool Connect(string username, string password)
+        {
+            try
+            {
+                string connectionString = "User ID=" + username + "; Password=" + password +
+                                          "; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = " +
+                                          "localhost" +
+                                          ")(PORT = 1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = PTTK)));";
+                conn = new OracleConnection(connectionString);
+                adapter = new OracleDataAdapter();
+                _username = username;
+
+                // Set Schema
+                string sql = "ALTER SESSION SET CURRENT_SCHEMA = C##ADMIN";
+                ExecuteNonQuery(sql, CommandType.Text, null);
+
+                // Get Role
+                sql = "SELECT USP_GET_USER_MAIN_ROLE FROM DUAL";
+                DataTable dt = ExecuteQuery(sql, CommandType.Text, null);
+                _role = dt.Rows[0][0].ToString();
+                return true;
+            }
+            catch
+            {
+                conn = null;
+                adapter = null;
+                username = null;
+                _role = null;
+                return false;
+            }
+        }
+
+        public void Disconnect()
+        {
+            Close();
+            conn = null;
+            adapter = null;
+            username = null;
+            _role = null;
         }
 
         private OracleConnection OpenConnection()
         {
-            if (this.conn.State == ConnectionState.Closed
-                || this.conn.State == ConnectionState.Broken)
-                this.conn.Open();
-            return this.conn;
+            if (conn.State == ConnectionState.Closed
+                || conn.State == ConnectionState.Broken)
+                conn.Open();
+            return conn;
         }
 
         private void Close()
         {
-            if (this.conn.State == ConnectionState.Open)
-                this.conn.Close();
+            if (conn.State == ConnectionState.Open)
+                conn.Close();
         }
 
-        public DataTable ExecuteStoredProcedure(string procedureName, OracleParameter[]? parameters)
+        public DataTable ExecuteQuery(string sql, CommandType cmdType, OracleParameter[]? parameters)
         {
             DataTable dt;
             DataSet ds = new DataSet();
             try
             {
-                OracleCommand cmd = new OracleCommand(procedureName, OpenConnection());
-                cmd.CommandType = CommandType.StoredProcedure;
+                OracleCommand cmd = new OracleCommand(sql, OpenConnection());
+                cmd.CommandType = cmdType;
                 if (parameters != null)
                     cmd.Parameters.AddRange(parameters);
                 adapter.SelectCommand = cmd;
                 adapter.Fill(ds);
-                // Show the number of table in dataset
-                Console.WriteLine("Number of tables in dataset: " + ds.Tables.Count);
-                dt = ds.Tables[0];
-                cmd.ExecuteNonQuery();
+                if (ds.Tables.Count == 0)
+                    dt = new DataTable();
+                else
+                    dt = ds.Tables[0];
             }
             catch (OracleException ex)
             {
-                throw new Exception("Error executing stored procedure: " + ex.Message);
+                throw new Exception("Error executing: " + ex.Message);
             }
             finally
             {
                 Close();
             }
             return dt;
+        }
+
+        public void ExecuteNonQuery(string sql, CommandType cmdType, OracleParameter[]? parameters)
+        {
+            try
+            {
+                OracleCommand cmd = new OracleCommand(sql, OpenConnection());
+                cmd.CommandType = cmdType;
+                if (parameters != null)
+                    cmd.Parameters.AddRange(parameters);
+                //adapter.SelectCommand = cmd;
+                cmd.ExecuteNonQuery();
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception("Error executing: " + ex.Message);
+            }
+            finally
+            {
+                Close();
+            }
         }
     }
 }

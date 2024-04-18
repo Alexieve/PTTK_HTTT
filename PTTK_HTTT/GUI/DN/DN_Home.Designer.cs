@@ -30,16 +30,16 @@
         {
             childFormPanel = new Panel();
             sidePanel = new FlowLayoutPanel();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            PhanHoiHSBtn = new Button();
             panel1 = new Panel();
             usernameLabel = new Label();
             logoutBtn = new Button();
-            LapYCBtn = new Button();
             TraCuuHDBtn = new Button();
-            PhanHoiHSBtn = new Button();
-            tableLayoutPanel1 = new TableLayoutPanel();
+            LapYCBtn = new Button();
             sidePanel.SuspendLayout();
-            panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // childFormPanel
@@ -59,6 +59,39 @@
             sidePanel.Name = "sidePanel";
             sidePanel.Size = new Size(1348, 721);
             sidePanel.TabIndex = 7;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(PhanHoiHSBtn, 0, 3);
+            tableLayoutPanel1.Controls.Add(panel1, 0, 0);
+            tableLayoutPanel1.Controls.Add(TraCuuHDBtn, 0, 2);
+            tableLayoutPanel1.Controls.Add(LapYCBtn, 0, 1);
+            tableLayoutPanel1.Location = new Point(3, 3);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 4;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 28F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 28F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 28F));
+            tableLayoutPanel1.Size = new Size(266, 718);
+            tableLayoutPanel1.TabIndex = 0;
+            // 
+            // PhanHoiHSBtn
+            // 
+            PhanHoiHSBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            PhanHoiHSBtn.FlatAppearance.BorderSize = 0;
+            PhanHoiHSBtn.FlatStyle = FlatStyle.Flat;
+            PhanHoiHSBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            PhanHoiHSBtn.ForeColor = Color.White;
+            PhanHoiHSBtn.Location = new Point(3, 519);
+            PhanHoiHSBtn.Name = "PhanHoiHSBtn";
+            PhanHoiHSBtn.Size = new Size(260, 196);
+            PhanHoiHSBtn.TabIndex = 0;
+            PhanHoiHSBtn.Text = "Phản Hồi Hồ Sơ";
+            PhanHoiHSBtn.UseVisualStyleBackColor = true;
+            PhanHoiHSBtn.Click += PhanHoiHSBtn_Click;
             // 
             // panel1
             // 
@@ -96,21 +129,7 @@
             logoutBtn.TabIndex = 0;
             logoutBtn.Text = "Đăng xuất";
             logoutBtn.UseVisualStyleBackColor = false;
-            // 
-            // LapYCBtn
-            // 
-            LapYCBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            LapYCBtn.FlatAppearance.BorderSize = 0;
-            LapYCBtn.FlatStyle = FlatStyle.Flat;
-            LapYCBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            LapYCBtn.ForeColor = Color.White;
-            LapYCBtn.Location = new Point(3, 117);
-            LapYCBtn.Name = "LapYCBtn";
-            LapYCBtn.Size = new Size(260, 195);
-            LapYCBtn.TabIndex = 0;
-            LapYCBtn.Text = "Lập yêu cầu tuyển dụng";
-            LapYCBtn.UseVisualStyleBackColor = true;
-            LapYCBtn.Click += LapYCBtn_Click;
+            logoutBtn.Click += logoutBtn_Click;
             // 
             // TraCuuHDBtn
             // 
@@ -127,38 +146,20 @@
             TraCuuHDBtn.UseVisualStyleBackColor = true;
             TraCuuHDBtn.Click += TraCuuHDBtn_Click;
             // 
-            // PhanHoiHSBtn
+            // LapYCBtn
             // 
-            PhanHoiHSBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            PhanHoiHSBtn.FlatAppearance.BorderSize = 0;
-            PhanHoiHSBtn.FlatStyle = FlatStyle.Flat;
-            PhanHoiHSBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            PhanHoiHSBtn.ForeColor = Color.White;
-            PhanHoiHSBtn.Location = new Point(3, 519);
-            PhanHoiHSBtn.Name = "PhanHoiHSBtn";
-            PhanHoiHSBtn.Size = new Size(260, 196);
-            PhanHoiHSBtn.TabIndex = 0;
-            PhanHoiHSBtn.Text = "Phản Hồi Hồ Sơ";
-            PhanHoiHSBtn.UseVisualStyleBackColor = true;
-            PhanHoiHSBtn.Click += PhanHoiHSBtn_Click;
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Controls.Add(PhanHoiHSBtn, 0, 3);
-            tableLayoutPanel1.Controls.Add(panel1, 0, 0);
-            tableLayoutPanel1.Controls.Add(TraCuuHDBtn, 0, 2);
-            tableLayoutPanel1.Controls.Add(LapYCBtn, 0, 1);
-            tableLayoutPanel1.Location = new Point(3, 3);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 4;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 28F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 28F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 28F));
-            tableLayoutPanel1.Size = new Size(266, 718);
-            tableLayoutPanel1.TabIndex = 0;
+            LapYCBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            LapYCBtn.FlatAppearance.BorderSize = 0;
+            LapYCBtn.FlatStyle = FlatStyle.Flat;
+            LapYCBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            LapYCBtn.ForeColor = Color.White;
+            LapYCBtn.Location = new Point(3, 117);
+            LapYCBtn.Name = "LapYCBtn";
+            LapYCBtn.Size = new Size(260, 195);
+            LapYCBtn.TabIndex = 0;
+            LapYCBtn.Text = "Lập yêu cầu tuyển dụng";
+            LapYCBtn.UseVisualStyleBackColor = true;
+            LapYCBtn.Click += LapYCBtn_Click;
             // 
             // DN_Home
             // 
@@ -172,8 +173,8 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home_DN";
             sidePanel.ResumeLayout(false);
-            panel1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 

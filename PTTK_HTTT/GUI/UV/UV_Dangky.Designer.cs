@@ -32,6 +32,8 @@
             panel3 = new Panel();
             TitleLabel = new Label();
             panel2 = new Panel();
+            MatKhauLabel = new Label();
+            MatKhauBox = new TextBox();
             NgaySinhBox = new DateTimePicker();
             DangKyBtn = new Button();
             PhaiBox = new ComboBox();
@@ -45,8 +47,6 @@
             label3 = new Label();
             HoTenBox = new TextBox();
             label2 = new Label();
-            MatKhauLabel = new Label();
-            MatKhauBox = new TextBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -108,12 +108,35 @@
             panel2.Size = new Size(757, 643);
             panel2.TabIndex = 0;
             // 
+            // MatKhauLabel
+            // 
+            MatKhauLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            MatKhauLabel.AutoSize = true;
+            MatKhauLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            MatKhauLabel.Location = new Point(30, 520);
+            MatKhauLabel.Name = "MatKhauLabel";
+            MatKhauLabel.Size = new Size(102, 28);
+            MatKhauLabel.TabIndex = 56;
+            MatKhauLabel.Text = "Mật khẩu";
+            MatKhauLabel.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // MatKhauBox
+            // 
+            MatKhauBox.Font = new Font("Segoe UI", 12F);
+            MatKhauBox.Location = new Point(174, 520);
+            MatKhauBox.MaxLength = 50;
+            MatKhauBox.Name = "MatKhauBox";
+            MatKhauBox.PasswordChar = '*';
+            MatKhauBox.Size = new Size(571, 34);
+            MatKhauBox.TabIndex = 55;
+            MatKhauBox.KeyPress += PreventSpaceAndTab_KeyPress;
+            // 
             // NgaySinhBox
             // 
             NgaySinhBox.CustomFormat = "dd/MM/yyyy";
             NgaySinhBox.Format = DateTimePickerFormat.Custom;
             NgaySinhBox.Location = new Point(482, 120);
-            NgaySinhBox.MinDate = new DateTime(2024, 4, 8, 0, 0, 0, 0);
+            NgaySinhBox.MinDate = new DateTime(1900, 1, 1, 0, 0, 0, 0);
             NgaySinhBox.Name = "NgaySinhBox";
             NgaySinhBox.Size = new Size(263, 34);
             NgaySinhBox.TabIndex = 54;
@@ -127,6 +150,7 @@
             DangKyBtn.TabIndex = 53;
             DangKyBtn.Text = "Đăng Ký";
             DangKyBtn.UseVisualStyleBackColor = true;
+            DangKyBtn.Click += DangKyBtn_Click;
             // 
             // PhaiBox
             // 
@@ -153,17 +177,21 @@
             // 
             EmailBox.Font = new Font("Segoe UI", 12F);
             EmailBox.Location = new Point(174, 420);
+            EmailBox.MaxLength = 50;
             EmailBox.Name = "EmailBox";
             EmailBox.Size = new Size(571, 34);
             EmailBox.TabIndex = 37;
+            EmailBox.KeyPress += PreventSpaceAndTab_KeyPress;
             // 
             // SDTBox
             // 
             SDTBox.Font = new Font("Segoe UI", 12F);
             SDTBox.Location = new Point(174, 320);
+            SDTBox.MaxLength = 10;
             SDTBox.Name = "SDTBox";
             SDTBox.Size = new Size(571, 34);
             SDTBox.TabIndex = 36;
+            SDTBox.KeyPress += SDTBox_KeyPress;
             // 
             // label6
             // 
@@ -180,6 +208,7 @@
             // 
             DiaChiBox.Font = new Font("Segoe UI", 12F);
             DiaChiBox.Location = new Point(174, 220);
+            DiaChiBox.MaxLength = 200;
             DiaChiBox.Name = "DiaChiBox";
             DiaChiBox.Size = new Size(571, 34);
             DiaChiBox.TabIndex = 34;
@@ -221,6 +250,7 @@
             // 
             HoTenBox.Font = new Font("Segoe UI", 12F);
             HoTenBox.Location = new Point(174, 20);
+            HoTenBox.MaxLength = 50;
             HoTenBox.Name = "HoTenBox";
             HoTenBox.Size = new Size(571, 34);
             HoTenBox.TabIndex = 29;
@@ -235,28 +265,6 @@
             label2.TabIndex = 28;
             label2.Text = "Họ và tên";
             label2.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // MatKhauLabel
-            // 
-            MatKhauLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            MatKhauLabel.AutoSize = true;
-            MatKhauLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            MatKhauLabel.Location = new Point(30, 520);
-            MatKhauLabel.Name = "MatKhauLabel";
-            MatKhauLabel.Size = new Size(102, 28);
-            MatKhauLabel.TabIndex = 56;
-            MatKhauLabel.Text = "Mật khẩu";
-            MatKhauLabel.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // MatKhauBox
-            // 
-            MatKhauBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            MatKhauBox.Font = new Font("Segoe UI", 12F);
-            MatKhauBox.Location = new Point(174, 520);
-            MatKhauBox.Name = "MatKhauBox";
-            MatKhauBox.PasswordChar = '*';
-            MatKhauBox.Size = new Size(571, 34);
-            MatKhauBox.TabIndex = 55;
             // 
             // UV_DangKy
             // 

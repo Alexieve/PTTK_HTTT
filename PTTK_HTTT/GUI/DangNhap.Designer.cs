@@ -35,9 +35,9 @@
             DangKyDNBtn = new Button();
             DangKyUVBtn = new Button();
             AcceptBtn = new Button();
-            DiaChiBox = new TextBox();
+            PasswordBox = new TextBox();
             label7 = new Label();
-            HoTenBox = new TextBox();
+            UsernameBox = new TextBox();
             label2 = new Label();
             childFormPanel.SuspendLayout();
             panel3.SuspendLayout();
@@ -82,9 +82,9 @@
             panel2.Controls.Add(DangKyDNBtn);
             panel2.Controls.Add(DangKyUVBtn);
             panel2.Controls.Add(AcceptBtn);
-            panel2.Controls.Add(DiaChiBox);
+            panel2.Controls.Add(PasswordBox);
             panel2.Controls.Add(label7);
-            panel2.Controls.Add(HoTenBox);
+            panel2.Controls.Add(UsernameBox);
             panel2.Controls.Add(label2);
             panel2.Location = new Point(0, 134);
             panel2.Margin = new Padding(4);
@@ -123,14 +123,16 @@
             AcceptBtn.TabIndex = 53;
             AcceptBtn.Text = "Đăng Nhập";
             AcceptBtn.UseVisualStyleBackColor = true;
+            AcceptBtn.Click += AcceptBtn_Click;
             // 
-            // DiaChiBox
+            // PasswordBox
             // 
-            DiaChiBox.Font = new Font("Segoe UI", 12F);
-            DiaChiBox.Location = new Point(174, 94);
-            DiaChiBox.Name = "DiaChiBox";
-            DiaChiBox.Size = new Size(571, 34);
-            DiaChiBox.TabIndex = 34;
+            PasswordBox.Font = new Font("Segoe UI", 12F);
+            PasswordBox.Location = new Point(174, 94);
+            PasswordBox.Name = "PasswordBox";
+            PasswordBox.PasswordChar = '*';
+            PasswordBox.Size = new Size(571, 34);
+            PasswordBox.TabIndex = 34;
             // 
             // label7
             // 
@@ -143,13 +145,13 @@
             label7.Text = "Mật Khẩu";
             label7.TextAlign = ContentAlignment.TopCenter;
             // 
-            // HoTenBox
+            // UsernameBox
             // 
-            HoTenBox.Font = new Font("Segoe UI", 12F);
-            HoTenBox.Location = new Point(174, 39);
-            HoTenBox.Name = "HoTenBox";
-            HoTenBox.Size = new Size(571, 34);
-            HoTenBox.TabIndex = 29;
+            UsernameBox.Font = new Font("Segoe UI", 12F);
+            UsernameBox.Location = new Point(174, 39);
+            UsernameBox.Name = "UsernameBox";
+            UsernameBox.Size = new Size(571, 34);
+            UsernameBox.TabIndex = 29;
             // 
             // label2
             // 
@@ -157,9 +159,9 @@
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label2.Location = new Point(30, 42);
             label2.Name = "label2";
-            label2.Size = new Size(64, 28);
+            label2.Size = new Size(122, 28);
             label2.TabIndex = 28;
-            label2.Text = "Email";
+            label2.Text = "Email / SDT";
             label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // DangNhap
@@ -185,9 +187,9 @@
 
         private Panel childFormPanel;
         private Panel panel2;
-        private TextBox DiaChiBox;
+        private TextBox PasswordBox;
         private Label label7;
-        private TextBox HoTenBox;
+        private TextBox UsernameBox;
         private Label label2;
         private Panel panel3;
         private Label TitleLabel;

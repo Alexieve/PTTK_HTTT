@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PH2.DAL;
 
 namespace GUI
 {
@@ -14,14 +15,20 @@ namespace GUI
     {
         private Button currentButton;
         private Form activeForm;
-        public BLD_Home()
+        public BLD_Home(string username)
         {
             InitializeComponent();
+            usernameLabel.Text = username;
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
         {
-
+            DbConnection conn = new DbConnection();
+            conn.Disconnect();
+            this.Hide();
+            DangNhap dangNhap = new DangNhap();
+            dangNhap.ShowDialog();
+            this.Close();
         }
 
         private void ThongKeBtn_Click(object sender, EventArgs e)
