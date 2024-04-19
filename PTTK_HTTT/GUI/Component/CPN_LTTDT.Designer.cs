@@ -200,6 +200,7 @@
             btnSave.TabIndex = 15;
             btnSave.Text = "Lưu";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // panel2
             // 
@@ -242,7 +243,7 @@
             lbTitle.TabIndex = 7;
             lbTitle.Text = "Lấy thông tin đăng tuyển";
             // 
-            // Tab_LTTDT
+            // CPN_LTTDT
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.Control;
@@ -262,7 +263,7 @@
             Controls.Add(cbboxCapbac);
             Controls.Add(panel2);
             Margin = new Padding(0);
-            Name = "Tab_LTTDT";
+            Name = "CPN_LTTDT";
             Size = new Size(1077, 610);
             ((System.ComponentModel.ISupportInitialize)nbSoluong).EndInit();
             pnlSave.ResumeLayout(false);

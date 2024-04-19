@@ -12,14 +12,30 @@ namespace GUI
 {
     public partial class CPN_LTGVHT : UserControl
     {
+        public event EventHandler btnSaveMain_click;
         public CPN_LTGVHT()
         {
             InitializeComponent();
         }
 
-        private void Tab_LTGVHT_Load(object sender, EventArgs e)
+        public string Thoigian
         {
+            get { return nbThoigian.Value.ToString();}
+        }
 
+        public string Hinhthuc
+        {
+            get { return cbboxHinhthuc.Text;}
+        }
+
+        public DateTime NgayTD
+        {
+            get { return dtpkNgayTD.Value;}
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            btnSaveMain_click?.Invoke(this, EventArgs.Empty);
         }
     }
 }

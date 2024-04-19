@@ -17,7 +17,36 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void groupBox3_Enter(object sender, EventArgs e)
+        public string Capbac
+        { 
+            set { tbCapbac.Text = value;}
+        }
+        public string Vitri
+        {
+            set { tbVitri.Text = value;}
+        }
+        public string Soluong
+        {
+            set { tbSoluong.Text = value;}
+        }
+        public string Yeucau
+        {
+            set { richboxYeucau.Text = value;}
+        }
+        public string Hinhthuc
+        {
+            set { tbHinhthuc.Text = value;}
+        }
+        public string Thoigian
+        {
+            set { tbThoigian.Text = value;}
+        }
+        public DateTime NgayTD
+        {
+            set { dtpkNgayTD.Value = value;}
+        }
+
+        private void btnXacnhan_Click(object sender, EventArgs e)
         {
 
         }

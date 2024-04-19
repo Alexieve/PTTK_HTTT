@@ -33,19 +33,19 @@
             pnlTitle = new Panel();
             label7 = new Label();
             lbTgian = new Label();
-            nbSoluong = new NumericUpDown();
+            nbThoigian = new NumericUpDown();
             dtpkNgayTD = new DateTimePicker();
             label1 = new Label();
             lbNgayTD = new Label();
             label2 = new Label();
             label3 = new Label();
-            cbboxVitri = new ComboBox();
+            cbboxHinhthuc = new ComboBox();
             panel2 = new Panel();
             pnlSave = new Panel();
             btnSave = new Button();
             pnlTilte2.SuspendLayout();
             pnlTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)nbSoluong).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nbThoigian).BeginInit();
             pnlSave.SuspendLayout();
             SuspendLayout();
             // 
@@ -87,7 +87,7 @@
             label7.BackColor = Color.White;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label7.ForeColor = Color.Red;
-            label7.Location = new Point(201, 264);
+            label7.Location = new Point(292, 264);
             label7.Name = "label7";
             label7.Size = new Size(16, 20);
             label7.TabIndex = 16;
@@ -100,17 +100,17 @@
             lbTgian.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lbTgian.Location = new Point(46, 264);
             lbTgian.Name = "lbTgian";
-            lbTgian.Size = new Size(158, 20);
+            lbTgian.Size = new Size(251, 20);
             lbTgian.TabIndex = 15;
-            lbTgian.Text = "Thời gian tuyển dụng";
+            lbTgian.Text = "Thời gian tuyển dụng (theo tháng)";
             // 
-            // nbSoluong
+            // nbThoigian
             // 
-            nbSoluong.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            nbSoluong.Location = new Point(43, 290);
-            nbSoluong.Name = "nbSoluong";
-            nbSoluong.Size = new Size(279, 27);
-            nbSoluong.TabIndex = 14;
+            nbThoigian.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            nbThoigian.Location = new Point(43, 290);
+            nbThoigian.Name = "nbThoigian";
+            nbThoigian.Size = new Size(279, 27);
+            nbThoigian.TabIndex = 14;
             // 
             // dtpkNgayTD
             // 
@@ -166,14 +166,14 @@
             label3.TabIndex = 20;
             label3.Text = "Hình thức đăng tuyển";
             // 
-            // cbboxVitri
+            // cbboxHinhthuc
             // 
-            cbboxVitri.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cbboxVitri.FormattingEnabled = true;
-            cbboxVitri.Location = new Point(410, 290);
-            cbboxVitri.Name = "cbboxVitri";
-            cbboxVitri.Size = new Size(256, 28);
-            cbboxVitri.TabIndex = 22;
+            cbboxHinhthuc.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbboxHinhthuc.FormattingEnabled = true;
+            cbboxHinhthuc.Location = new Point(410, 290);
+            cbboxHinhthuc.Name = "cbboxHinhthuc";
+            cbboxHinhthuc.Size = new Size(256, 28);
+            cbboxHinhthuc.TabIndex = 22;
             // 
             // panel2
             // 
@@ -204,13 +204,14 @@
             btnSave.TabIndex = 15;
             btnSave.Text = "Lưu";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
-            // Tab_LTGVHT
+            // CPN_LTGVHT
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.Control;
             Controls.Add(pnlSave);
-            Controls.Add(cbboxVitri);
+            Controls.Add(cbboxHinhthuc);
             Controls.Add(label2);
             Controls.Add(label3);
             Controls.Add(label1);
@@ -218,17 +219,16 @@
             Controls.Add(dtpkNgayTD);
             Controls.Add(label7);
             Controls.Add(lbTgian);
-            Controls.Add(nbSoluong);
+            Controls.Add(nbThoigian);
             Controls.Add(pnlTitle);
             Controls.Add(panel2);
             Margin = new Padding(0);
-            Name = "Tab_LTGVHT";
+            Name = "CPN_LTGVHT";
             Size = new Size(1077, 610);
-            Load += Tab_LTGVHT_Load;
             pnlTilte2.ResumeLayout(false);
             pnlTilte2.PerformLayout();
             pnlTitle.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)nbSoluong).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nbThoigian).EndInit();
             pnlSave.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -241,13 +241,13 @@
         private Panel pnlTitle;
         private Label label7;
         private Label lbTgian;
-        private NumericUpDown nbSoluong;
+        private NumericUpDown nbThoigian;
         private DateTimePicker dtpkNgayTD;
         private Label label1;
         private Label lbNgayTD;
         private Label label2;
         private Label label3;
-        private ComboBox cbboxVitri;
+        private ComboBox cbboxHinhthuc;
         private Panel panel2;
         private Panel pnlSave;
         private Button btnSave;

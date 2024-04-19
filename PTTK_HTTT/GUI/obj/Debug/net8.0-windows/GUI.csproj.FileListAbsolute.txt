@@ -1,72 +1,57 @@
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.exe
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.deps.json
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.runtimeconfig.json
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.dll
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.pdb
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.GiayToCpn.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.GenerateResource.cache
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.AssemblyInfoInputs.cache
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.AssemblyInfo.cs
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.CoreCompileInputs.cache
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.sourcelink.json
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.dll
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\refint\GUI.dll
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.pdb
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.genruntimeconfig.cache
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\ref\GUI.dll
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Properties.Resources.resources
-<<<<<<< HEAD
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DuyetHoSoTab.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DuyetHoSo_DSBaiDang.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DuyetHoSo_DSHoSo.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DuyetHoSo_ChiTietHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.PhanHoiHSTab.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.PhanHoiHS_DSHopDong.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.PhanHoiHS_DSHoSo.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.KetQuaHS_ChiTietHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.PhanHoiHS_ChiTietHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.KetQuaHSTab.resources
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.exe
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.deps.json
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.runtimeconfig.json
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.dll
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\GUI.pdb
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CardTuyenDung.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DeXuatUuDai.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DuyetHoSoTab.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DuyetHoSo_ChiTietHS.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DuyetHoSo_DSBaiDang.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DuyetHoSo_DSHoSo.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.GiaHanHopDong.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\DAL.dll
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\DAL.pdb
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.AssemblyReference.cache
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.BLD_DeXuatUuDai.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.BLD_Home.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_CardTuyenDung.resources
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.GiayToCpn.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Home_BLD.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Home_DN.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Home_NV.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Home_UV.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.KetQuaHSTab.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.KetQuaHS_ChiTietHS.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_DangBai.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_LTGVHT.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_LTTDT.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_XNPQC.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DangNhap.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_DangKy.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_Home.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_LapYeuCauTD.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_PhanHoiBaiDang.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_PhanHoiHS.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_PhanHoiHS_ChiTietHS.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_PhanHoiHS_DSHopDong.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_PhanHoiHS_DSHoSo.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_TraCuuHD.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_TraCuuHD_XemBaiDang.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_TraCuuHD_XemChiTiet.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_TraCuuHD_XemHoaDon.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_DuyetHoSo.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_DuyetHoSo_ChiTietHS.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_DuyetHoSo_DSBaiDang.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_DuyetHoSo_DSHoSo.resources
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_HieuChinhBaiDang.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_Home.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_PhanHoiHS.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_ThanhToan.resources
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_TraCuuHD.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_XemBaiDang.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Page_LYCTD.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Page_TT.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.PhanHoiBaiDang.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.PhanHoiHSTab.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.PhanHoiHS_ChiTietHS.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.PhanHoiHS_DSHopDong.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.PhanHoiHS_DSHoSo.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_TraCuuHD_DangBai.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_TraCuuHD_XemBaiDang.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_XacThucDN.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_XacThucHS.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_XacThucHS_ChiTietHS.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_XuLyDNTN.resources
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Properties.Resources.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Tab_LTGVHT.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Tab_LTTDT.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Tab_XemHoaDon1.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.Tab_XNPQC.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.ThongTinUngTuyenCpn.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.TraCuuHD_XemBaiDang.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.TraCuuHD_XemChiTiet.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.TraCuuHopDong.resources
-E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UngTuyenModal.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_DangKy.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_Home.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_KetQuaHS.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_KetQuaHS_ChiTietHS.resources
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_UngTuyenModal.resources
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_XemBaiDang.resources
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.GenerateResource.cache
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
@@ -74,60 +59,9 @@ E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.AssemblyInf
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.AssemblyInfo.cs
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.CoreCompileInputs.cache
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.sourcelink.json
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.Up2Date
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.dll
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\refint\GUI.dll
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.pdb
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.genruntimeconfig.cache
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\ref\GUI.dll
-=======
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_HieuChinhBaiDang.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_TraCuuHD.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_XemBaiDang.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_CardTuyenDung.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_TraCuuHD_DangBai.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_TraCuuHD_XemBaiDang.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.BLD_DeXuatUuDai.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.BLD_Home.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_Home.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_PhanHoiBaiDang.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_PhanHoiHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_PhanHoiHS_ChiTietHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_PhanHoiHS_DSHopDong.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_PhanHoiHS_DSHoSo.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_TraCuuHD.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_TraCuuHD_XemBaiDang.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_TraCuuHD_XemChiTiet.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_DuyetHoSo.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_DuyetHoSo_ChiTietHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_DuyetHoSo_DSBaiDang.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_DuyetHoSo_DSHoSo.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_Home.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_Home.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_KetQuaHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_KetQuaHS_ChiTietHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_UngTuyenModal.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_TraCuuHD_XemHoaDon.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_LapYeuCauTD.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_ThanhToan.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DN_DangKy.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.UV_Dangky.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_XacThucDN.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_XacThucHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_XacThucHS_ChiTietHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_PhanHoiHS.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.NV_XuLyDNTN.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_LTGVHT.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_LTTDT.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.CPN_XNPQC.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.DangNhap.resources
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\DAL.dll
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\bin\Debug\net8.0-windows\DAL.pdb
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.AssemblyReference.cache
-D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\GUI\obj\Debug\net8.0-windows\GUI.csproj.Up2Date
->>>>>>> 33f6cedd2f15e64a4f6cde4a68f74bab4376d742
->>>>>>> bfb5dfeca38cd06e26ec32fc61c7721ee207bd00
