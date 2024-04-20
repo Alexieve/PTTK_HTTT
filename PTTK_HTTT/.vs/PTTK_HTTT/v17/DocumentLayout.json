@@ -7,20 +7,12 @@
       "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\bll\\dangnhapbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|solutionrelative:bll\\dangnhapbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\dn\\dn_dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\dn\\dn_dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\bll\\dangkybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|solutionrelative:bll\\dangkybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB5D35C5-C6EA-4BC3-9795-3B07F022F3FA}|DAL\\DAL.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\dal\\dangkydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB5D35C5-C6EA-4BC3-9795-3B07F022F3FA}|DAL\\DAL.csproj|solutionrelative:dal\\dangkydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB5D35C5-C6EA-4BC3-9795-3B07F022F3FA}|DAL\\DAL.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\dal\\dangnhapdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB5D35C5-C6EA-4BC3-9795-3B07F022F3FA}|DAL\\DAL.csproj|solutionrelative:dal\\dangnhapdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 59,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,15 +42,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DangNhap.Designer.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\DangNhap.Designer.cs",
-              "RelativeDocumentMoniker": "GUI\\DangNhap.Designer.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\DangNhap.Designer.cs",
-              "RelativeToolTip": "GUI\\DangNhap.Designer.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAuwGcAAAAhAAAA",
+              "DocumentIndex": 2,
+              "Title": "DangNhapDAL.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DangNhapDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\DangNhapDAL.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DangNhapDAL.cs",
+              "RelativeToolTip": "DAL\\DangNhapDAL.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwBIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T14:09:52.908Z",
+              "WhenOpened": "2024-04-20T15:52:50.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DangNhapBLL.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\DangNhapBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\DangNhapBLL.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\DangNhapBLL.cs",
+              "RelativeToolTip": "BLL\\DangNhapBLL.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T15:52:49.287Z",
               "EditorCaption": ""
             },
             {
@@ -69,48 +74,9 @@
               "RelativeDocumentMoniker": "GUI\\DangNhap.cs",
               "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\DangNhap.cs",
               "RelativeToolTip": "GUI\\DangNhap.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAwwA4AAAAmAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T14:05:53.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DN_DangKy.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\DN\\DN_DangKy.cs",
-              "RelativeDocumentMoniker": "GUI\\DN\\DN_DangKy.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\DN\\DN_DangKy.cs",
-              "RelativeToolTip": "GUI\\DN\\DN_DangKy.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAwwBMAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T10:46:43.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DangKyBLL.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\DangKyBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\DangKyBLL.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\DangKyBLL.cs",
-              "RelativeToolTip": "BLL\\DangKyBLL.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAiwG8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T08:10:09.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DangKyDAL.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DangKyDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\DangKyDAL.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DangKyDAL.cs",
-              "RelativeToolTip": "DAL\\DangKyDAL.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAwwBIAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T10:18:02.416Z",
+              "WhenOpened": "2024-04-20T15:52:25.697Z",
               "EditorCaption": ""
             }
           ]

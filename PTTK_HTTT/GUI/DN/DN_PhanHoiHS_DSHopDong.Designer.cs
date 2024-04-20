@@ -63,7 +63,7 @@
             // 
             // XemDSHoSoBtn
             // 
-            XemDSHoSoBtn.Location = new Point(12, 8);
+            XemDSHoSoBtn.Location = new Point(793, 8);
             XemDSHoSoBtn.Name = "XemDSHoSoBtn";
             XemDSHoSoBtn.Size = new Size(248, 37);
             XemDSHoSoBtn.TabIndex = 0;
@@ -76,7 +76,7 @@
             HopDongTb.AllowUserToAddRows = false;
             HopDongTb.AllowUserToDeleteRows = false;
             HopDongTb.BackgroundColor = SystemColors.ControlLightLight;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Control;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;

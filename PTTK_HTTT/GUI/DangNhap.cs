@@ -22,7 +22,7 @@ namespace GUI
             {
                 string role = dangNhapBLL.Connect(username, password);
                 if (role == null)
-                { 
+                {
                     MessageBox.Show("Tài khoản của bạn chưa được xác thực");
                     dangNhapBLL = new DangNhapBLL();
                     return;

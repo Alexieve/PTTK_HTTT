@@ -21,6 +21,13 @@ namespace GUI
             InitializeComponent();
             BaiDangBtn_Click(DSBaiDangBtn, null);
         }
+        private void BaiDangBtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new NV_DuyetHoSo_DSBaiDang(this));
+            ActiveTab(sender);
+            DSHoSoBtn.Enabled = false;
+
+        }
 
         public void openChildForm(Form childForm)
         {
@@ -62,21 +69,6 @@ namespace GUI
             {
                 currentPanel.BackColor = Color.DarkGray;
             }
-        }
-
-        private void BaiDangBtn_Click(object sender, EventArgs e)
-        {
-            openChildForm(new NV_DuyetHoSo_DSBaiDang(this));
-            ActiveTab(sender);
-            DSHoSoBtn.Enabled = false;
-
-        }
-
-        private void HoSoBtn_Click(object sender, EventArgs e)
-        {
-            openChildForm(new NV_DuyetHoSo_DSHoSo(this));
-            ActiveTab(sender);
-            DSHoSoBtn.Enabled = true;
         }
     }
 }

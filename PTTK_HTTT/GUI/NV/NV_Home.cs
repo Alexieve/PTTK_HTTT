@@ -1,5 +1,5 @@
 
-using PH2.DAL;
+using DAL;
 
 namespace GUI
 {

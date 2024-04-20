@@ -141,12 +141,12 @@
         #endregion
 
         private Panel MoTaPanel;
-        private RichTextBox MoTaBox;
+        internal RichTextBox MoTaBox;
         private Label MoTaLabel;
         internal Button DelGiayToBtn;
         private Panel GiayToPanel;
         private Panel LoaiGTPanel;
-        private TextBox LoaiGTBox;
+        internal TextBox LoaiGTBox;
         private Label LoaiGTLabel;
     }
 }

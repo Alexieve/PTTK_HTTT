@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.ManagedDataAccess.Client;
-using PH2.DAL;
 
 namespace DAL
 {
@@ -15,7 +14,7 @@ namespace DAL
 
         public DangNhapDAL()
         {
-            if (conn.username != "C##ADMIN")
+            if (conn == null || conn.username != "C##ADMIN")
                 conn.Connect("C##ADMIN", "123");
         }
         public string GetUsernameByEmailSDT(string username)

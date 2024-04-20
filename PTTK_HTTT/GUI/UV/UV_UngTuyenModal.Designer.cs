@@ -106,7 +106,7 @@
             ParentPanel.Dock = DockStyle.Fill;
             ParentPanel.Location = new Point(0, 0);
             ParentPanel.Name = "ParentPanel";
-            ParentPanel.Size = new Size(1139, 608);
+            ParentPanel.Size = new Size(1139, 679);
             ParentPanel.TabIndex = 8;
             // 
             // ThongTinPanel
@@ -128,6 +128,7 @@
             UngTuyenBtn.TabIndex = 2;
             UngTuyenBtn.Text = "Ứng tuyển";
             UngTuyenBtn.UseVisualStyleBackColor = true;
+            UngTuyenBtn.Click += UngTuyenBtn_Click;
             // 
             // ThongTinLabel
             // 
@@ -386,7 +387,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1139, 608);
+            ClientSize = new Size(1139, 679);
             Controls.Add(ParentPanel);
             Font = new Font("Segoe UI", 12F);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;

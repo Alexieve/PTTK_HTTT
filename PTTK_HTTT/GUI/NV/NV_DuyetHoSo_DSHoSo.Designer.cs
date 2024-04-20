@@ -75,7 +75,7 @@
             // 
             // XemCTHoSoBtn
             // 
-            XemCTHoSoBtn.Location = new Point(504, 8);
+            XemCTHoSoBtn.Location = new Point(960, 8);
             XemCTHoSoBtn.Name = "XemCTHoSoBtn";
             XemCTHoSoBtn.Size = new Size(81, 37);
             XemCTHoSoBtn.TabIndex = 17;
@@ -88,17 +88,18 @@
             SaveBtn.BackColor = Color.SteelBlue;
             SaveBtn.FlatAppearance.BorderColor = Color.White;
             SaveBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SaveBtn.Location = new Point(404, 8);
+            SaveBtn.Location = new Point(860, 8);
             SaveBtn.Name = "SaveBtn";
             SaveBtn.Size = new Size(94, 36);
             SaveBtn.TabIndex = 16;
             SaveBtn.Text = "Lưu";
             SaveBtn.UseVisualStyleBackColor = false;
+            SaveBtn.Click += SaveBtn_Click;
             // 
             // SortLabel
             // 
             SortLabel.AutoSize = true;
-            SortLabel.Location = new Point(12, 11);
+            SortLabel.Location = new Point(468, 11);
             SortLabel.Name = "SortLabel";
             SortLabel.Size = new Size(186, 28);
             SortLabel.TabIndex = 15;
@@ -107,7 +108,7 @@
             // DownBtn
             // 
             DownBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DownBtn.Location = new Point(204, 8);
+            DownBtn.Location = new Point(660, 8);
             DownBtn.Name = "DownBtn";
             DownBtn.Size = new Size(94, 36);
             DownBtn.TabIndex = 14;
@@ -118,7 +119,7 @@
             // UpBtn
             // 
             UpBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            UpBtn.Location = new Point(304, 8);
+            UpBtn.Location = new Point(760, 8);
             UpBtn.Name = "UpBtn";
             UpBtn.Size = new Size(94, 36);
             UpBtn.TabIndex = 13;
@@ -129,7 +130,7 @@
             // KetQuaLabel
             // 
             KetQuaLabel.AutoSize = true;
-            KetQuaLabel.Location = new Point(651, 11);
+            KetQuaLabel.Location = new Point(9, 11);
             KetQuaLabel.Name = "KetQuaLabel";
             KetQuaLabel.Size = new Size(141, 28);
             KetQuaLabel.TabIndex = 12;
@@ -139,7 +140,7 @@
             // 
             KetQuaCbb.DropDownStyle = ComboBoxStyle.DropDownList;
             KetQuaCbb.FormattingEnabled = true;
-            KetQuaCbb.Location = new Point(798, 8);
+            KetQuaCbb.Location = new Point(156, 8);
             KetQuaCbb.Name = "KetQuaCbb";
             KetQuaCbb.Size = new Size(252, 36);
             KetQuaCbb.TabIndex = 11;
@@ -150,7 +151,7 @@
             HoSoTb.AllowUserToAddRows = false;
             HoSoTb.AllowUserToDeleteRows = false;
             HoSoTb.BackgroundColor = SystemColors.ControlLightLight;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Control;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;

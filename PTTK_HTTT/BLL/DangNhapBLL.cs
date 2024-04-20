@@ -33,7 +33,7 @@ namespace BLL
             }
 
             username = dangNhapDAL.GetUsernameByEmailSDT(username);
-            if (username == null)
+            if (username == null || username == "")
             {
                 MessageBox.Show("Username hoặc mật khẩu không đúng");
                 return null;

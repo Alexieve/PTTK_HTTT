@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using Oracle.ManagedDataAccess.Client;
 
-namespace PH2.DAL
+namespace DAL
 {
     public class DbConnection // Oracle
     {

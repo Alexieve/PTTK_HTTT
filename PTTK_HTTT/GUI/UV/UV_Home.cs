@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PH2.DAL;
+using BLL;
+using DAL;
+using DTO;
 
 namespace GUI
 {
@@ -25,6 +27,18 @@ namespace GUI
             addSample();
             addSample();
             addSample();
+            
+
+            //Test UngTuyenModal
+            //ViTriUngTuyenDTO viTriUngTuyenDTO = new ViTriUngTuyenDTO("HD00000001", "Quỳnh Company", "Intern", "Back-end Developer");
+            //HSUngTuyenBLL hsUngTuyenBLL = new HSUngTuyenBLL();
+            //if (hsUngTuyenBLL.Check_Applied(viTriUngTuyenDTO.MAHOPDONG))
+            //{
+            //    MessageBox.Show("Bạn đã ứng tuyển cho vị trí này!");
+            //    return;
+            //}
+            //UV_UngTuyenModal modal = new UV_UngTuyenModal(viTriUngTuyenDTO);
+            //modal.ShowDialog();
         }
 
         private void addSample()
@@ -33,6 +47,20 @@ namespace GUI
             card.Margin = new Padding(0, 0, 0, 10);
             ContentPanel.Controls.Add(card);
 
+        }
+        private void HomeBtn_Click(object sender, EventArgs e)
+        {
+            // delete ChildFormPanel
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            ActiveButton(sender);
+        }
+        private void XemKQBtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new UV_KetQuaHS());
+            ActiveButton(sender);
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
@@ -81,21 +109,6 @@ namespace GUI
             {
                 currentButton.BackColor = Color.FromArgb(64, 64, 64);
             }
-        }
-
-        private void HomeBtn_Click(object sender, EventArgs e)
-        {
-            // delete ChildFormPanel
-            if (activeForm != null)
-            {
-                activeForm.Close();
-            }
-            ActiveButton(sender);
-        }
-        private void XemKQBtn_Click(object sender, EventArgs e)
-        {
-            openChildForm(new UV_KetQuaHS());
-            ActiveButton(sender);
         }
     }
 }

@@ -21,7 +21,13 @@ namespace GUI
             InitializeComponent();
             HopDongBtn_Click(DSHopDongBtn, null);
         }
+        private void HopDongBtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DN_PhanHoiHS_DSHopDong(this));
+            ActiveTab(sender);
+            DSHoSoBtn.Enabled = false;
 
+        }
         public void openChildForm(Form childForm)
         {
             if (childForm is DN_PhanHoiHS_DSHoSo)
@@ -62,21 +68,6 @@ namespace GUI
             {
                 currentPanel.BackColor = Color.DarkGray;
             }
-        }
-
-        private void HopDongBtn_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DN_PhanHoiHS_DSHopDong(this));
-            ActiveTab(sender);
-            DSHoSoBtn.Enabled = false;
-
-        }
-
-        private void HoSoBtn_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DN_PhanHoiHS_DSHoSo(this));
-            ActiveTab(sender);
-            DSHoSoBtn.Enabled = true;
         }
     }
 }
