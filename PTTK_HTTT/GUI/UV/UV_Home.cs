@@ -27,7 +27,7 @@ namespace GUI
             addSample();
             addSample();
             addSample();
-            
+
 
             //Test UngTuyenModal
             //ViTriUngTuyenDTO viTriUngTuyenDTO = new ViTriUngTuyenDTO("HD00000001", "Quỳnh Company", "Intern", "Back-end Developer");

@@ -66,7 +66,7 @@ namespace GUI
                 AddGiayTo(gt.LOAI, gt.NOIDUNG);
             }
         }
-        private void  AddGiayTo(string LOAI, string NOIDUNG)
+        private void AddGiayTo(string LOAI, string NOIDUNG)
         {
             GiayToCpn giayToCpn = new GiayToCpn(MAHOPDONG, LOAI, NOIDUNG);
             giayToCpn.Location = new Point(0, 0);

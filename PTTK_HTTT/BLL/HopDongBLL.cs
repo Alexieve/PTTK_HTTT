@@ -11,7 +11,7 @@ namespace BLL
 {
     public class HopDongBLL
     {
-        private HopDongDAL hopDongDAL = new HopDongDAL();
+        private HopDongDAL hopDongDAL = new();
         public HopDongBLL() { }
 
         public List<HopDongDTO> Get_All_For_DuyetHS()
