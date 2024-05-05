@@ -47,5 +47,37 @@ namespace DAL
 
             return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
         }
+        public DataTable Get_All_BaiDangTuyenDung()
+        {
+            string procName = "USP_GET_LIST_TUYEN_DUNG";
+            OracleParameter[] parameter =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output),
+            };
+
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
+        }
+        public DataTable Search_BaiDangTuyenDung(string SearchString)
+        {
+            string procName = "USP_GET_LIST_TUYEN_DUNG_BY_NAME";
+            OracleParameter[] parameter =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output),
+                new("SearchString", OracleDbType.Varchar2, SearchString, ParameterDirection.Input)
+            };
+
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
+        }
+        public DataTable Get_Detail_BaiDangTuyenDung(string MAHD)
+        {
+            string procName = "USP_GET_DETAIL_TUYEN_DUNG";
+            OracleParameter[] parameter =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output),
+                new("MAHD", OracleDbType.Varchar2, MAHD, ParameterDirection.Input)
+            };
+
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
+        }
     }
 }

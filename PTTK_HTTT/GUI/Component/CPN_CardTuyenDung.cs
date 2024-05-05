@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace GUI
 {
     public partial class CPN_CardTuyenDung : UserControl
@@ -17,16 +16,21 @@ namespace GUI
             InitializeComponent();
         }
         #region Properties
-
+        private string _MAHOPDONG;
         private string _ViTri;
         private string _KyNangUngTuyen;
         private string _DiaChiDN;
         private string _CapBacUngTuyen;
         private string _TenDoanhNghiep;
-        private string _MaDN;
+        //private string _MaDN;
         private Image _Avatar;
 
         [Category("Custom Props")]
+        public string MAHOPDONG
+        {
+            get { return _MAHOPDONG; }
+            set { _MAHOPDONG = value; MAHD.Text = value; }
+        }
         public string ViTri
         {
             get { return _ViTri; }
@@ -69,32 +73,18 @@ namespace GUI
         }
 
         [Category("Custom Props")]
-        public string MaDN
-        {
-            get { return _MaDN; }
-            set { _MaDN = value; }
-        }
+        //public string MaDN
+        //{
+        //    get { return _MaDN; }
+        //    set { _MaDN = value; }
+        //}
 
         #endregion
 
-        private void TenDN_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DiaChi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CPN_CardTuyenDung_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Ava_Click(object sender, EventArgs e)
         {
-
+            UV_Home uvHome = FindForm() as UV_Home;
+            uvHome.openChildForm(new UV_XemBaiDang(MAHOPDONG));
         }
     }
 }

@@ -646,19 +646,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vumin\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\GUI.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\GUI.csproj",
-      "packagesPath": "C:\\Users\\vumin\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -672,11 +672,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\BLL.csproj": {
-              "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\BLL.csproj"
+            "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj"
             },
-            "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj": {
-              "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj"
+            "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj"
             }
           }
         }
