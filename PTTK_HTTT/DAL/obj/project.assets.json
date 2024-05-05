@@ -607,11 +607,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
       "projectName": "DAL",
       "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\obj\\",
+=======
+      "projectUniqueName": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
+      "projectName": "DAL",
+      "projectPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\obj\\",
+>>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

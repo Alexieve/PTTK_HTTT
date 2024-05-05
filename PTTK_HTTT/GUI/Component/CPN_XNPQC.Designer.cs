@@ -30,35 +30,33 @@
         {
             panel2 = new Panel();
             gboxTGHT = new GroupBox();
+            tbHinhthuc = new TextBox();
+            tbThoigian = new TextBox();
             lbNgayTD = new Label();
             dtpkNgayTD = new DateTimePicker();
-            comboBox1 = new ComboBox();
             label3 = new Label();
             lbTgian = new Label();
-            numTgian = new NumericUpDown();
+            gboxTTDT = new GroupBox();
+            tbSoluong = new TextBox();
+            tbVitri = new TextBox();
+            tbCapbac = new TextBox();
+            label7 = new Label();
+            lbYeucau = new Label();
+            lbSoluong = new Label();
+            lbVitri = new Label();
+            lbCapbac = new Label();
+            richboxYeucau = new RichTextBox();
             pnlXacnhan = new Panel();
             btnXacnhan = new Button();
             pnlTitle = new Panel();
             pnlTilte2 = new Panel();
             lbTitle = new Label();
-            cbboxCapbac = new ComboBox();
-            cbboxVitri = new ComboBox();
-            nbSoluong = new NumericUpDown();
-            richboxYeucau = new RichTextBox();
-            lbCapbac = new Label();
-            lbVitri = new Label();
-            lbSoluong = new Label();
-            lbYeucau = new Label();
-            label7 = new Label();
-            gboxTTDT = new GroupBox();
             panel2.SuspendLayout();
             gboxTGHT.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numTgian).BeginInit();
+            gboxTTDT.SuspendLayout();
             pnlXacnhan.SuspendLayout();
             pnlTitle.SuspendLayout();
             pnlTilte2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)nbSoluong).BeginInit();
-            gboxTTDT.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
@@ -74,12 +72,12 @@
             // 
             // gboxTGHT
             // 
+            gboxTGHT.Controls.Add(tbHinhthuc);
+            gboxTGHT.Controls.Add(tbThoigian);
             gboxTGHT.Controls.Add(lbNgayTD);
             gboxTGHT.Controls.Add(dtpkNgayTD);
-            gboxTGHT.Controls.Add(comboBox1);
             gboxTGHT.Controls.Add(label3);
             gboxTGHT.Controls.Add(lbTgian);
-            gboxTGHT.Controls.Add(numTgian);
             gboxTGHT.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             gboxTGHT.Location = new Point(762, 49);
             gboxTGHT.Name = "gboxTGHT";
@@ -88,11 +86,29 @@
             gboxTGHT.TabStop = false;
             gboxTGHT.Text = "Thời gian và hình thức";
             // 
+            // tbHinhthuc
+            // 
+            tbHinhthuc.Font = new Font("Segoe UI", 10.8F);
+            tbHinhthuc.Location = new Point(18, 363);
+            tbHinhthuc.Name = "tbHinhthuc";
+            tbHinhthuc.ReadOnly = true;
+            tbHinhthuc.Size = new Size(235, 31);
+            tbHinhthuc.TabIndex = 30;
+            // 
+            // tbThoigian
+            // 
+            tbThoigian.Font = new Font("Segoe UI", 10.8F);
+            tbThoigian.Location = new Point(18, 93);
+            tbThoigian.Name = "tbThoigian";
+            tbThoigian.ReadOnly = true;
+            tbThoigian.Size = new Size(235, 31);
+            tbThoigian.TabIndex = 29;
+            // 
             // lbNgayTD
             // 
             lbNgayTD.AutoSize = true;
             lbNgayTD.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbNgayTD.Location = new Point(39, 203);
+            lbNgayTD.Location = new Point(18, 203);
             lbNgayTD.Name = "lbNgayTD";
             lbNgayTD.Size = new Size(130, 20);
             lbNgayTD.TabIndex = 26;
@@ -100,26 +116,18 @@
             // 
             // dtpkNgayTD
             // 
+            dtpkNgayTD.Enabled = false;
             dtpkNgayTD.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dtpkNgayTD.Location = new Point(36, 226);
+            dtpkNgayTD.Location = new Point(18, 226);
             dtpkNgayTD.Name = "dtpkNgayTD";
-            dtpkNgayTD.Size = new Size(204, 27);
+            dtpkNgayTD.Size = new Size(235, 27);
             dtpkNgayTD.TabIndex = 25;
-            // 
-            // comboBox1
-            // 
-            comboBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(36, 363);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(204, 28);
-            comboBox1.TabIndex = 24;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(39, 340);
+            label3.Location = new Point(18, 340);
             label3.Name = "label3";
             label3.Size = new Size(161, 20);
             label3.TabIndex = 23;
@@ -129,19 +137,118 @@
             // 
             lbTgian.AutoSize = true;
             lbTgian.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbTgian.Location = new Point(39, 73);
+            lbTgian.Location = new Point(18, 73);
             lbTgian.Name = "lbTgian";
-            lbTgian.Size = new Size(158, 20);
+            lbTgian.Size = new Size(239, 20);
             lbTgian.TabIndex = 17;
-            lbTgian.Text = "Thời gian tuyển dụng";
+            lbTgian.Text = "Thời gian tuyển dụng theo tháng";
             // 
-            // numTgian
+            // gboxTTDT
             // 
-            numTgian.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            numTgian.Location = new Point(36, 95);
-            numTgian.Name = "numTgian";
-            numTgian.Size = new Size(204, 27);
-            numTgian.TabIndex = 16;
+            gboxTTDT.Controls.Add(tbSoluong);
+            gboxTTDT.Controls.Add(tbVitri);
+            gboxTTDT.Controls.Add(tbCapbac);
+            gboxTTDT.Controls.Add(label7);
+            gboxTTDT.Controls.Add(lbYeucau);
+            gboxTTDT.Controls.Add(lbSoluong);
+            gboxTTDT.Controls.Add(lbVitri);
+            gboxTTDT.Controls.Add(lbCapbac);
+            gboxTTDT.Controls.Add(richboxYeucau);
+            gboxTTDT.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            gboxTTDT.Location = new Point(20, 49);
+            gboxTTDT.Name = "gboxTTDT";
+            gboxTTDT.Size = new Size(727, 449);
+            gboxTTDT.TabIndex = 0;
+            gboxTTDT.TabStop = false;
+            gboxTTDT.Text = "Thông tin đăng tuyển";
+            // 
+            // tbSoluong
+            // 
+            tbSoluong.Font = new Font("Segoe UI", 10.8F);
+            tbSoluong.Location = new Point(526, 93);
+            tbSoluong.Name = "tbSoluong";
+            tbSoluong.ReadOnly = true;
+            tbSoluong.Size = new Size(195, 31);
+            tbSoluong.TabIndex = 28;
+            // 
+            // tbVitri
+            // 
+            tbVitri.Font = new Font("Segoe UI", 10.8F);
+            tbVitri.Location = new Point(280, 93);
+            tbVitri.Name = "tbVitri";
+            tbVitri.ReadOnly = true;
+            tbVitri.Size = new Size(198, 31);
+            tbVitri.TabIndex = 27;
+            // 
+            // tbCapbac
+            // 
+            tbCapbac.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbCapbac.Location = new Point(11, 93);
+            tbCapbac.Name = "tbCapbac";
+            tbCapbac.ReadOnly = true;
+            tbCapbac.Size = new Size(198, 31);
+            tbCapbac.TabIndex = 26;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.Red;
+            label7.Location = new Point(764, 8);
+            label7.Name = "label7";
+            label7.Size = new Size(18, 23);
+            label7.TabIndex = 25;
+            label7.Text = "*";
+            // 
+            // lbYeucau
+            // 
+            lbYeucau.AutoSize = true;
+            lbYeucau.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbYeucau.Location = new Point(11, 147);
+            lbYeucau.Name = "lbYeucau";
+            lbYeucau.Size = new Size(146, 20);
+            lbYeucau.TabIndex = 23;
+            lbYeucau.Text = "Yêu cầu tuyển dụng";
+            // 
+            // lbSoluong
+            // 
+            lbSoluong.AutoSize = true;
+            lbSoluong.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbSoluong.Location = new Point(526, 73);
+            lbSoluong.Name = "lbSoluong";
+            lbSoluong.Size = new Size(155, 20);
+            lbSoluong.TabIndex = 22;
+            lbSoluong.Text = "Số lượng tuyển dụng";
+            // 
+            // lbVitri
+            // 
+            lbVitri.AutoSize = true;
+            lbVitri.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbVitri.Location = new Point(280, 72);
+            lbVitri.Name = "lbVitri";
+            lbVitri.Size = new Size(127, 20);
+            lbVitri.TabIndex = 21;
+            lbVitri.Text = "Vị trí tuyển dụng";
+            // 
+            // lbCapbac
+            // 
+            lbCapbac.AutoSize = true;
+            lbCapbac.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbCapbac.Location = new Point(14, 72);
+            lbCapbac.Name = "lbCapbac";
+            lbCapbac.Size = new Size(147, 20);
+            lbCapbac.TabIndex = 19;
+            lbCapbac.Text = "Cấp bậc tuyển dụng";
+            // 
+            // richboxYeucau
+            // 
+            richboxYeucau.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richboxYeucau.Location = new Point(8, 169);
+            richboxYeucau.Name = "richboxYeucau";
+            richboxYeucau.ReadOnly = true;
+            richboxYeucau.Size = new Size(713, 274);
+            richboxYeucau.TabIndex = 18;
+            richboxYeucau.Text = "";
             // 
             // pnlXacnhan
             // 
@@ -163,6 +270,7 @@
             btnXacnhan.TabIndex = 15;
             btnXacnhan.Text = "Xác nhận";
             btnXacnhan.UseVisualStyleBackColor = false;
+            btnXacnhan.Click += btnXacnhan_Click;
             // 
             // pnlTitle
             // 
@@ -196,112 +304,7 @@
             lbTitle.TabIndex = 7;
             lbTitle.Text = "Xác nhận phiếu quảng cáo";
             // 
-            // cbboxCapbac
-            // 
-            cbboxCapbac.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cbboxCapbac.FormattingEnabled = true;
-            cbboxCapbac.Location = new Point(11, 94);
-            cbboxCapbac.Name = "cbboxCapbac";
-            cbboxCapbac.Size = new Size(198, 28);
-            cbboxCapbac.TabIndex = 15;
-            // 
-            // cbboxVitri
-            // 
-            cbboxVitri.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cbboxVitri.FormattingEnabled = true;
-            cbboxVitri.Location = new Point(277, 94);
-            cbboxVitri.Name = "cbboxVitri";
-            cbboxVitri.Size = new Size(198, 28);
-            cbboxVitri.TabIndex = 16;
-            // 
-            // nbSoluong
-            // 
-            nbSoluong.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            nbSoluong.Location = new Point(523, 94);
-            nbSoluong.Name = "nbSoluong";
-            nbSoluong.Size = new Size(198, 27);
-            nbSoluong.TabIndex = 17;
-            // 
-            // richboxYeucau
-            // 
-            richboxYeucau.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            richboxYeucau.Location = new Point(8, 169);
-            richboxYeucau.Name = "richboxYeucau";
-            richboxYeucau.Size = new Size(713, 274);
-            richboxYeucau.TabIndex = 18;
-            richboxYeucau.Text = "";
-            // 
-            // lbCapbac
-            // 
-            lbCapbac.AutoSize = true;
-            lbCapbac.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbCapbac.Location = new Point(14, 72);
-            lbCapbac.Name = "lbCapbac";
-            lbCapbac.Size = new Size(147, 20);
-            lbCapbac.TabIndex = 19;
-            lbCapbac.Text = "Cấp bậc tuyển dụng";
-            // 
-            // lbVitri
-            // 
-            lbVitri.AutoSize = true;
-            lbVitri.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbVitri.Location = new Point(280, 72);
-            lbVitri.Name = "lbVitri";
-            lbVitri.Size = new Size(127, 20);
-            lbVitri.TabIndex = 21;
-            lbVitri.Text = "Vị trí tuyển dụng";
-            // 
-            // lbSoluong
-            // 
-            lbSoluong.AutoSize = true;
-            lbSoluong.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbSoluong.Location = new Point(526, 73);
-            lbSoluong.Name = "lbSoluong";
-            lbSoluong.Size = new Size(155, 20);
-            lbSoluong.TabIndex = 22;
-            lbSoluong.Text = "Số lượng tuyển dụng";
-            // 
-            // lbYeucau
-            // 
-            lbYeucau.AutoSize = true;
-            lbYeucau.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbYeucau.Location = new Point(11, 147);
-            lbYeucau.Name = "lbYeucau";
-            lbYeucau.Size = new Size(146, 20);
-            lbYeucau.TabIndex = 23;
-            lbYeucau.Text = "Yêu cầu tuyển dụng";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.Red;
-            label7.Location = new Point(764, 8);
-            label7.Name = "label7";
-            label7.Size = new Size(18, 23);
-            label7.TabIndex = 25;
-            label7.Text = "*";
-            // 
-            // gboxTTDT
-            // 
-            gboxTTDT.Controls.Add(label7);
-            gboxTTDT.Controls.Add(lbYeucau);
-            gboxTTDT.Controls.Add(lbSoluong);
-            gboxTTDT.Controls.Add(lbVitri);
-            gboxTTDT.Controls.Add(lbCapbac);
-            gboxTTDT.Controls.Add(richboxYeucau);
-            gboxTTDT.Controls.Add(nbSoluong);
-            gboxTTDT.Controls.Add(cbboxVitri);
-            gboxTTDT.Controls.Add(cbboxCapbac);
-            gboxTTDT.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            gboxTTDT.Location = new Point(20, 49);
-            gboxTTDT.Name = "gboxTTDT";
-            gboxTTDT.Size = new Size(727, 449);
-            gboxTTDT.TabIndex = 0;
-            gboxTTDT.TabStop = false;
-            gboxTTDT.Text = "Thông tin đăng tuyển";
-            // 
-            // Tab_XNPQC
+            // CPN_XNPQC
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.Control;
@@ -309,19 +312,17 @@
             Controls.Add(pnlXacnhan);
             Controls.Add(panel2);
             Margin = new Padding(0);
-            Name = "Tab_XNPQC";
+            Name = "CPN_XNPQC";
             Size = new Size(1077, 610);
             panel2.ResumeLayout(false);
             gboxTGHT.ResumeLayout(false);
             gboxTGHT.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numTgian).EndInit();
+            gboxTTDT.ResumeLayout(false);
+            gboxTTDT.PerformLayout();
             pnlXacnhan.ResumeLayout(false);
             pnlTitle.ResumeLayout(false);
             pnlTilte2.ResumeLayout(false);
             pnlTilte2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)nbSoluong).EndInit();
-            gboxTTDT.ResumeLayout(false);
-            gboxTTDT.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -335,11 +336,8 @@
         private Panel pnlTilte2;
         private Label lbTitle;
         private Label lbTgian;
-        private NumericUpDown numTgian;
-        private ComboBox comboBox1;
         private Label label3;
         private Label lbNgayTD;
-        private DateTimePicker dtpkNgayTD;
         private GroupBox gboxTTDT;
         private Label label7;
         private Label lbYeucau;
@@ -347,8 +345,11 @@
         private Label lbVitri;
         private Label lbCapbac;
         private RichTextBox richboxYeucau;
-        private NumericUpDown nbSoluong;
-        private ComboBox cbboxVitri;
-        private ComboBox cbboxCapbac;
+        private TextBox tbHinhthuc;
+        private TextBox tbCapbac;
+        private TextBox tbThoigian;
+        private TextBox tbSoluong;
+        private TextBox tbVitri;
+        private DateTimePicker dtpkNgayTD;
     }
 }

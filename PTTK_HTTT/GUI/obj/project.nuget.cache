@@ -1,8 +1,18 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Ai7ICiQHTTECBXUtaYLUmCZAhq9elVyWSGb2+6bdMXT5uGKzOcVM0Enea2/4NWHsxgPJjxRsuBk36fEGHxgFrg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "f0u32PKZ+bLZPH8k1eaSHCiXD193tM7YJ/lYR+xizZ13wG9xxU4CBh3QYGc4JbXZy8NYCBJCKuvlm7pUnUl9gA==",
+=======
+  "dgSpecHash": "7fNntR5J9HJNlMug9OkLODOrWw05t6x897BaKPx4x/PTtEbprTp+HYa7F/RLAE2FEb6IH/IBxTicMacLSul3Kw==",
+>>>>>>> 587561204e0d807963c8679114478a680ad02cc7
+  "success": true,
+  "projectFilePath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
+>>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\oracle.manageddataaccess.core\\3.21.130\\oracle.manageddataaccess.core.3.21.130.nupkg.sha512",

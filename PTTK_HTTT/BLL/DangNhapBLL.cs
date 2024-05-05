@@ -11,26 +11,33 @@ namespace BLL
     public class DangNhapBLL
     {
         // private DAL in DAL namespace
-        private DangNhapDAL dangNhapDAL = new DangNhapDAL();
+        private DangNhapDAL dangNhapDAL = new();
         public DangNhapBLL() { }
 
-        public string GetUsernameByEmailSDT(string username, string password)
+
+        private bool CheckValid(string username, string password)
         {
             if (username == "" || password == "")
             {
                 MessageBox.Show("Không được để trống username hoặc mật khẩu");
-                return null;
+                return false;
             }
             if (username.Length > 50 || password.Length > 50)
             {
                 MessageBox.Show("Username hoặc mật khẩu không hợp lệ");
-                return null;
+                return false;
             }
             if (username.Contains(" ") || password.Contains(" "))
             {
                 MessageBox.Show("Username hoặc mật khẩu không hợp lệ");
-                return null;
+                return false;
             }
+
+            return true;
+        }
+        public string GetUsernameByEmailSDT(string username, string password)
+        {
+            if (!CheckValid(username, password)) return null;
 
             username = dangNhapDAL.GetUsernameByEmailSDT(username);
             if (username == null || username == "")

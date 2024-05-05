@@ -625,6 +625,7 @@
   },
   "packageFolders": {
     "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -636,6 +637,7 @@
       "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
