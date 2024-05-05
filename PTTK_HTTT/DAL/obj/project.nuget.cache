@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "V6ZumXXJYUV+LZ6/E3jvN1DBcjGaPXlriFQwYM7nJpnjWdQ7ga0oi+wfYsK+9tRpu5VlJVflRkSl75VObhnITQ==",
+=======
+  "dgSpecHash": "0aSeneiyhbXxx2wuoz2xjn+XQMwLaJmOx1Z/0YSoy4B4RQ7/QT8omZj+qi3byhg7JuXPDDcJ1Gg2oZSuxZL1qA==",
+>>>>>>> 587561204e0d807963c8679114478a680ad02cc7
   "success": true,
   "projectFilePath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
   "expectedPackageFiles": [

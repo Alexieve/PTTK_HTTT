@@ -100,7 +100,7 @@ CREATE TABLE HOPDONG
   THOIGIANTD NUMBER(2, 0) NOT NULL,
   NGAYTD DATE NOT NULL,
   NGAYLAP DATE NOT NULL,
-  TRANGTHAI NUMBER(1, 0) NOT NULL, -- 0: Không yêu cầu hiệu chỉnh từ DN, 1: Có yêu cầu hiệu chỉnh DN
+  TRANGTHAI NUMBER(1, 0) NOT NULL, -- 0: Không yêu cầu hiệu chỉnh từ DN, 1: Có yêu cầu hiệu chỉnh DN.
   TONGTIEN FLOAT NOT NULL,
   TIENCONLAI FLOAT NOT NULL,
   CONSTRAINT PK_HOPDONG PRIMARY KEY (MAHOPDONG),
@@ -133,11 +133,13 @@ CREATE TABLE HSUNGTUYEN
   GIOITHIEU NVARCHAR2(2000) NOT NULL,
   HOCVAN NVARCHAR2(2000) NOT NULL,
   KINHNGHIEM NVARCHAR2(2000) NOT NULL,
-  KETQUA NUMBER(1, 0) NOT NULL, -- 0: Đang chờ, 1: Cần hiệu chỉnh, 2: Không đủ điều kiện, 3: Đủ điều kiện, 4: Không đạt, 5 Đạt
-  DOUUTIEN NUMBER(1, 0) UNIQUE NULL,
+  KETQUA NUMBER(1, 0) NOT NULL, -- 0: Đang chờ xác thực; 1: Đã xác thực, cần hiệu chỉnh; 2: Đã xác thực, đang chờ duyệt;
+                                -- 3: Đã duyệt, không đủ điều kiện; 4: Đã duyệt, đang chờ sắp xếp độ ưu tiên và đang chờ phản hồi; 
+                                -- 5: Đã phản hồi, không đạt, 6: Đã phản hồi, đạt
+  DOUUTIEN NUMBER(1, 0) NULL,
   CONSTRAINT PK_HSUNGTUYEN PRIMARY KEY (MAUV, MAHOPDONG),
   CONSTRAINT C_HSUNGTUYEN_DOUUTIEN CHECK(DOUUTIEN >= 0),
-  CONSTRAINT C_HSUNGTUYEN_KETQUA CHECK(KETQUA >= 0 AND KETQUA <= 5)
+  CONSTRAINT C_HSUNGTUYEN_KETQUA CHECK(KETQUA >= 0 AND KETQUA <= 6)
 );
 
 CREATE TABLE UUDAI

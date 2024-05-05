@@ -12,7 +12,7 @@ namespace GUI
 {
     public partial class NV_XacThucHS_ChiTietHS : Form
     {
-
+        private string MAHOPDONG;
         public NV_XacThucHS_ChiTietHS()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace GUI
         private void ThemGiayTo()
         {
             // Add GiayToPanel to ParentPanel when click button Allow add multiple and can scroll
-            GiayToCpn giayToCpn = new GiayToCpn();
+            GiayToCpn giayToCpn = new GiayToCpn(MAHOPDONG);
             giayToCpn.Location = new Point(0, 0);
             giayToCpn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             giayToCpn.DelGiayToBtn.Visible = false;

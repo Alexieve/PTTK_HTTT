@@ -67,7 +67,7 @@
             // 
             // XemCTHoSoBtn
             // 
-            XemCTHoSoBtn.Location = new Point(12, 8);
+            XemCTHoSoBtn.Location = new Point(793, 8);
             XemCTHoSoBtn.Name = "XemCTHoSoBtn";
             XemCTHoSoBtn.Size = new Size(248, 37);
             XemCTHoSoBtn.TabIndex = 13;
@@ -78,7 +78,7 @@
             // KetQuaLabel
             // 
             KetQuaLabel.AutoSize = true;
-            KetQuaLabel.Location = new Point(651, 11);
+            KetQuaLabel.Location = new Point(11, 11);
             KetQuaLabel.Name = "KetQuaLabel";
             KetQuaLabel.Size = new Size(141, 28);
             KetQuaLabel.TabIndex = 12;
@@ -88,17 +88,18 @@
             // 
             KetQuaCbb.DropDownStyle = ComboBoxStyle.DropDownList;
             KetQuaCbb.FormattingEnabled = true;
-            KetQuaCbb.Location = new Point(798, 8);
+            KetQuaCbb.Location = new Point(158, 8);
             KetQuaCbb.Name = "KetQuaCbb";
             KetQuaCbb.Size = new Size(252, 36);
             KetQuaCbb.TabIndex = 11;
+            KetQuaCbb.SelectedIndexChanged += KetQuaCbb_SelectedIndexChanged;
             // 
             // HoSoTb
             // 
             HoSoTb.AllowUserToAddRows = false;
             HoSoTb.AllowUserToDeleteRows = false;
             HoSoTb.BackgroundColor = SystemColors.ControlLightLight;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Control;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;

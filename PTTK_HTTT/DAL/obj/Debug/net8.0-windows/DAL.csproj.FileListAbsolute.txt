@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.deps.json
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.dll
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.pdb
@@ -11,3 +12,21 @@ E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.dll
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\refint\DAL.dll
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.pdb
 E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\ref\DAL.dll
+=======
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.deps.json
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.pdb
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.csproj.AssemblyReference.cache
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.AssemblyInfoInputs.cache
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.AssemblyInfo.cs
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.csproj.CoreCompileInputs.cache
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.sourcelink.json
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\refint\DAL.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.pdb
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\ref\DAL.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DTO.dll
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DTO.pdb
+D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.csproj.Up2Date
+>>>>>>> 587561204e0d807963c8679114478a680ad02cc7

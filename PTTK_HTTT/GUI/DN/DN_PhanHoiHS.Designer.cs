@@ -132,7 +132,6 @@
             DSHoSoBtn.TabIndex = 1;
             DSHoSoBtn.Text = "Danh Sách Hồ Sơ";
             DSHoSoBtn.UseVisualStyleBackColor = false;
-            DSHoSoBtn.Click += HoSoBtn_Click;
             // 
             // TitlePanel
             // 

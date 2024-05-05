@@ -30,6 +30,8 @@
         {
             panel1 = new Panel();
             panel3 = new Panel();
+            MatKhauLabel = new Label();
+            MatKhauBox = new TextBox();
             DangKyBtn = new Button();
             label5 = new Label();
             EmailBox = new TextBox();
@@ -45,8 +47,6 @@
             label2 = new Label();
             panel2 = new Panel();
             TitleLabel = new Label();
-            MatKhauLabel = new Label();
-            MatKhauBox = new TextBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -86,6 +86,30 @@
             panel3.Size = new Size(757, 643);
             panel3.TabIndex = 41;
             // 
+            // MatKhauLabel
+            // 
+            MatKhauLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            MatKhauLabel.AutoSize = true;
+            MatKhauLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            MatKhauLabel.Location = new Point(30, 500);
+            MatKhauLabel.Name = "MatKhauLabel";
+            MatKhauLabel.Size = new Size(102, 28);
+            MatKhauLabel.TabIndex = 54;
+            MatKhauLabel.Text = "Mật khẩu";
+            MatKhauLabel.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // MatKhauBox
+            // 
+            MatKhauBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            MatKhauBox.Font = new Font("Segoe UI", 12F);
+            MatKhauBox.Location = new Point(238, 500);
+            MatKhauBox.MaxLength = 50;
+            MatKhauBox.Name = "MatKhauBox";
+            MatKhauBox.PasswordChar = '*';
+            MatKhauBox.Size = new Size(507, 34);
+            MatKhauBox.TabIndex = 53;
+            MatKhauBox.KeyPress += PreventSpaceAndTab_KeyPress;
+            // 
             // DangKyBtn
             // 
             DangKyBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -95,6 +119,7 @@
             DangKyBtn.TabIndex = 52;
             DangKyBtn.Text = "Đăng Ký";
             DangKyBtn.UseVisualStyleBackColor = true;
+            DangKyBtn.Click += DangKyBtn_Click;
             // 
             // label5
             // 
@@ -113,18 +138,22 @@
             EmailBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             EmailBox.Font = new Font("Segoe UI", 12F);
             EmailBox.Location = new Point(238, 420);
+            EmailBox.MaxLength = 50;
             EmailBox.Name = "EmailBox";
             EmailBox.Size = new Size(507, 34);
             EmailBox.TabIndex = 50;
+            EmailBox.KeyPress += PreventSpaceAndTab_KeyPress;
             // 
             // SDTBox
             // 
             SDTBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             SDTBox.Font = new Font("Segoe UI", 12F);
             SDTBox.Location = new Point(238, 340);
+            SDTBox.MaxLength = 10;
             SDTBox.Name = "SDTBox";
             SDTBox.Size = new Size(507, 34);
             SDTBox.TabIndex = 49;
+            SDTBox.KeyPress += SDTBox_KeyPress;
             // 
             // label6
             // 
@@ -143,6 +172,7 @@
             DiaChiBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DiaChiBox.Font = new Font("Segoe UI", 12F);
             DiaChiBox.Location = new Point(238, 260);
+            DiaChiBox.MaxLength = 200;
             DiaChiBox.Name = "DiaChiBox";
             DiaChiBox.Size = new Size(507, 34);
             DiaChiBox.TabIndex = 47;
@@ -176,6 +206,7 @@
             NGDaiDienBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             NGDaiDienBox.Font = new Font("Segoe UI", 12F);
             NGDaiDienBox.Location = new Point(238, 180);
+            NGDaiDienBox.MaxLength = 50;
             NGDaiDienBox.Name = "NGDaiDienBox";
             NGDaiDienBox.Size = new Size(507, 34);
             NGDaiDienBox.TabIndex = 44;
@@ -185,9 +216,11 @@
             MSThueBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             MSThueBox.Font = new Font("Segoe UI", 12F);
             MSThueBox.Location = new Point(238, 100);
+            MSThueBox.MaxLength = 10;
             MSThueBox.Name = "MSThueBox";
             MSThueBox.Size = new Size(507, 34);
             MSThueBox.TabIndex = 43;
+            MSThueBox.KeyPress += PreventSpaceAndTab_KeyPress;
             // 
             // label3
             // 
@@ -206,6 +239,7 @@
             TenDNBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             TenDNBox.Font = new Font("Segoe UI", 12F);
             TenDNBox.Location = new Point(238, 20);
+            TenDNBox.MaxLength = 50;
             TenDNBox.Name = "TenDNBox";
             TenDNBox.Size = new Size(507, 34);
             TenDNBox.TabIndex = 41;
@@ -243,28 +277,6 @@
             TitleLabel.Size = new Size(582, 46);
             TitleLabel.TabIndex = 0;
             TitleLabel.Text = "Đăng Ký Thành Viên Doanh Nghiệp";
-            // 
-            // MatKhauLabel
-            // 
-            MatKhauLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            MatKhauLabel.AutoSize = true;
-            MatKhauLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            MatKhauLabel.Location = new Point(30, 500);
-            MatKhauLabel.Name = "MatKhauLabel";
-            MatKhauLabel.Size = new Size(102, 28);
-            MatKhauLabel.TabIndex = 54;
-            MatKhauLabel.Text = "Mật khẩu";
-            MatKhauLabel.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // MatKhauBox
-            // 
-            MatKhauBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            MatKhauBox.Font = new Font("Segoe UI", 12F);
-            MatKhauBox.Location = new Point(238, 500);
-            MatKhauBox.Name = "MatKhauBox";
-            MatKhauBox.PasswordChar = '*';
-            MatKhauBox.Size = new Size(507, 34);
-            MatKhauBox.TabIndex = 53;
             // 
             // DN_DangKy
             // 

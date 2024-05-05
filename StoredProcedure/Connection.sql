@@ -1,0 +1,70 @@
+CREATE OR REPLACE PROCEDURE USP_GET_USERNAME_BY_EMAIL_SDT(
+    P_RES OUT SYS_REFCURSOR,
+    P_USERNAME IN VARCHAR2
+)
+AS
+    P_ID VARCHAR2(10);
+BEGIN
+    SELECT MADN INTO P_ID
+    FROM DOANHNGHIEP
+    WHERE EMAIL = P_USERNAME OR SDT = P_USERNAME;
+    OPEN P_RES FOR 
+        SELECT P_ID AS USERNAME
+        FROM DUAL;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        BEGIN
+            SELECT MAUV INTO P_ID
+            FROM UNGVIEN
+            WHERE EMAIL = P_USERNAME OR SDT = P_USERNAME;
+            OPEN P_RES FOR 
+                SELECT P_ID AS USERNAME
+                FROM DUAL;
+        EXCEPTION
+            WHEN NO_DATA_FOUND THEN
+                BEGIN
+                    SELECT MANV INTO P_ID
+                    FROM NHANVIEN
+                    WHERE MANV = P_USERNAME;
+                    OPEN P_RES FOR 
+                        SELECT P_ID AS USERNAME
+                        FROM DUAL;
+                EXCEPTION
+                    WHEN NO_DATA_FOUND THEN
+                        P_ID := NULL;
+                        OPEN P_RES FOR 
+                            SELECT P_ID AS USERNAME
+                            FROM DUAL;
+                END;
+        END;
+END;
+/
+--GRANT EXECUTE ON USP_GET_USERNAME_BY_EMAIL_SDT TO PUBLIC;
+
+
+-- Lấy role chính của một user
+CREATE OR REPLACE FUNCTION USP_GET_USER_MAIN_ROLE
+RETURN VARCHAR2
+AS
+    P_USER_ROLE VARCHAR2(20) DEFAULT '';
+BEGIN
+    P_USER_ROLE := SYS_CONTEXT('USERENV', 'SESSION_USER');
+    IF P_USER_ROLE = 'C##ADMIN' THEN
+        RETURN 'DBA';
+    END IF;
+    
+    SELECT GRANTED_ROLE INTO P_USER_ROLE
+    FROM DBA_ROLE_PRIVS
+    WHERE GRANTEE = P_USER_ROLE
+    AND GRANTED_ROLE LIKE 'RL%';
+    
+    RETURN P_USER_ROLE;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        RETURN 'RL_NONE';
+END;
+/
+GRANT EXECUTE ON USP_GET_USER_MAIN_ROLE TO PUBLIC;
+
+
+-- 

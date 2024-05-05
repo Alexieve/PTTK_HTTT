@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\gui\\component\\cpn_xnpqc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\component\\cpn_xnpqc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +18,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\gui\\component\\cpn_ltgvht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\component\\cpn_ltgvht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\bll\\hsungtuyenbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|solutionrelative:bll\\hsungtuyenbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\uv\\uv_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\uv\\uv_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\bll\\hopdongbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|solutionrelative:bll\\hopdongbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\nv\\nv_duyethoso_dsbaidang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\nv\\nv_duyethoso_dsbaidang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 587561204e0d807963c8679114478a680ad02cc7
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +43,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 59,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,6 +63,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "CPN_LTGVHT.cs",
               "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\Component\\CPN_LTGVHT.cs",
@@ -92,6 +110,55 @@
               "ViewState": "AQIAABUAAAAAAAAAAAAYwCoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T23:50:44.611Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "UV_Home.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\UV\\UV_Home.cs",
+              "RelativeDocumentMoniker": "GUI\\UV\\UV_Home.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\UV\\UV_Home.cs [Design]*",
+              "RelativeToolTip": "GUI\\UV\\UV_Home.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T08:31:51.488Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HSUngTuyenBLL.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\HSUngTuyenBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\HSUngTuyenBLL.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\HSUngTuyenBLL.cs",
+              "RelativeToolTip": "BLL\\HSUngTuyenBLL.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T08:27:32.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HopDongBLL.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\HopDongBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\HopDongBLL.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\HopDongBLL.cs",
+              "RelativeToolTip": "BLL\\HopDongBLL.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T08:23:22.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NV_DuyetHoSo_DSBaiDang.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_DuyetHoSo_DSBaiDang.cs",
+              "RelativeDocumentMoniker": "GUI\\NV\\NV_DuyetHoSo_DSBaiDang.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_DuyetHoSo_DSBaiDang.cs",
+              "RelativeToolTip": "GUI\\NV\\NV_DuyetHoSo_DSBaiDang.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T08:17:23.47Z",
+>>>>>>> 587561204e0d807963c8679114478a680ad02cc7
               "EditorCaption": ""
             }
           ]

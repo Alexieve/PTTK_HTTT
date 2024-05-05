@@ -115,7 +115,7 @@
             ParentPanel.Dock = DockStyle.Fill;
             ParentPanel.Location = new Point(0, 0);
             ParentPanel.Name = "ParentPanel";
-            ParentPanel.Size = new Size(1139, 608);
+            ParentPanel.Size = new Size(1139, 1030);
             ParentPanel.TabIndex = 8;
             // 
             // panel1
@@ -236,6 +236,7 @@
             KinhNghiemBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             KinhNghiemBox.Location = new Point(147, 13);
             KinhNghiemBox.Name = "KinhNghiemBox";
+            KinhNghiemBox.ReadOnly = true;
             KinhNghiemBox.Size = new Size(396, 200);
             KinhNghiemBox.TabIndex = 1;
             KinhNghiemBox.Text = "";
@@ -266,6 +267,7 @@
             HocVanBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             HocVanBox.Location = new Point(147, 13);
             HocVanBox.Name = "HocVanBox";
+            HocVanBox.ReadOnly = true;
             HocVanBox.Size = new Size(396, 200);
             HocVanBox.TabIndex = 1;
             HocVanBox.Text = "";
@@ -296,6 +298,7 @@
             GioiThieuBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             GioiThieuBox.Location = new Point(147, 16);
             GioiThieuBox.Name = "GioiThieuBox";
+            GioiThieuBox.ReadOnly = true;
             GioiThieuBox.Size = new Size(396, 200);
             GioiThieuBox.TabIndex = 1;
             GioiThieuBox.Text = "";
@@ -433,7 +436,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1139, 608);
+            ClientSize = new Size(1139, 1030);
             Controls.Add(ParentPanel);
             Font = new Font("Segoe UI", 12F);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -478,8 +481,8 @@
         private Panel TieuChiDNBoxPanel;
         private RichTextBox TieuChiDNBox;
         private Panel ThongTinPanel;
-        private Button TuChoiBtn;
-        private Button XacNhanBtn;
+        internal Button TuChoiBtn;
+        internal Button XacNhanBtn;
         private Label ThongTinLabel;
         private Panel panel1;
         private Label TieuChiDNLabel;

@@ -1,20 +1,17 @@
 
+using DAL;
+
 namespace GUI
 {
     public partial class NV_Home : Form
     {
         private Button currentButton;
         private Form activeForm = null;
-        public NV_Home()
+        public NV_Home(string username)
         {
             InitializeComponent();
+            usernameLabel.Text = username;
             this.IsMdiContainer = true;
-        }
-
-        private void logoutBtn_Click(object sender, EventArgs e)
-        {
-
-            ActiveButton(sender);
         }
 
         private void XacThucDNBtn_Click(object sender, EventArgs e)
@@ -51,6 +48,15 @@ namespace GUI
         {
             ActiveButton(sender);
             openChildForm(new NV_XuLyDNTN());
+        }
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            DbConnection conn = new DbConnection();
+            conn.Disconnect();
+            this.Hide();
+            DangNhap dangNhap = new DangNhap();
+            dangNhap.ShowDialog();
+            this.Close();
         }
 
         private void openChildForm(Form childForm)

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 
 namespace GUI
 {
@@ -24,8 +25,9 @@ namespace GUI
 
         private void UngTuyenBtn_Click(object sender, EventArgs e)
         {
-            // Show dialog of UngTuyenModal
-            UV_UngTuyenModal modal = new UV_UngTuyenModal();
+            //Test
+            ViTriUngTuyenDTO viTriUngTuyenDTO = new ViTriUngTuyenDTO("HD00000001", "Quỳnh Company", "Intern", "Back-end Developer");
+            UV_UngTuyenModal modal = new UV_UngTuyenModal(viTriUngTuyenDTO);
             modal.ShowDialog();
         }
     }

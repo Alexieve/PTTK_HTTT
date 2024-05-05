@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,27 +15,52 @@ namespace GUI
     public partial class DN_PhanHoiHS_DSHopDong : Form
     {
         private DN_PhanHoiHS phanHoiHsTab;
+        private HopDongBLL hopDongBLL = new();
         public DN_PhanHoiHS_DSHopDong(DN_PhanHoiHS phanHoiHsTab)
         {
             InitializeComponent();
-            addSampleData();
             this.phanHoiHsTab = phanHoiHsTab;
+            Load();
+            Make_Beauty();
+        }
+        void Load()
+        {
+            List<HopDongDTO> listHD = hopDongBLL.Get_All_For_PhanHoiHS();
+            HopDongTb.Rows.Clear();
+            foreach (HopDongDTO hd in listHD)
+            {
+                string ViTriTD = hd.CAPBACTD + " - " + hd.VITRITD;
+                DateTime HanChotDuyet = hd.NGAYTD.AddDays(hd.THOIGIANTD + 10);
+                HopDongTb.Rows.Add(hd.MAHOPDONG,
+                    ViTriTD,
+                    hd.SOLUONGHS,
+                    HanChotDuyet.ToString("dd/MM/yyyy"));
+            }
         }
 
-        private void addSampleData()
+        void Make_Beauty()
         {
-            // add sample data for row Mã hợp đồng, cấp bậc + vị trí tuyển dụng, số hồ sơ cần phản hồi, hạn chót phản hồi
-            HopDongTb.Rows.Add("HD001", "Senior - Software Engineer", 10, "01/01/2022");
-            HopDongTb.Rows.Add("HD002", "Middle - Data Engineer", 12, "01/01/2021");
-            HopDongTb.Rows.Add("HD003", "Fresher - Data Analyst", 15, "01/01/2021");
-            HopDongTb.Rows.Add("HD004", "Intern - Software Engineer", 67, "01/01/2021");
-            HopDongTb.Rows.Add("HD005", "Intern - Data Engineer", 36, "01/01/2021");
+            HopDongTb.BorderStyle = BorderStyle.None;
+            HopDongTb.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            HopDongTb.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            HopDongTb.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            HopDongTb.DefaultCellStyle.SelectionForeColor = Color.White;
+            HopDongTb.BackgroundColor = Color.White;
 
+            HopDongTb.EnableHeadersVisualStyles = false;
+            HopDongTb.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            HopDongTb.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            HopDongTb.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
 
+            HopDongTb.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
         }
         private void XemDSHoSoBtn_Click(object sender, EventArgs e)
         {
-            this.phanHoiHsTab.openChildForm(new DN_PhanHoiHS_DSHoSo(this.phanHoiHsTab));
+            if (HopDongTb.SelectedCells.Count == 0)
+                return;
+            int index = HopDongTb.CurrentCell.RowIndex;
+            string MAHOPDONG = HopDongTb.Rows[index].Cells[0].Value.ToString();
+            this.phanHoiHsTab.openChildForm(new DN_PhanHoiHS_DSHoSo(MAHOPDONG));
         }
     }
 }

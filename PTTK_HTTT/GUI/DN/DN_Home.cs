@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Logging;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,16 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace GUI
 {
     public partial class DN_Home : Form
     {
         private Button currentButton;
-        public DN_Home()
+        public DN_Home(string username)
         {
             InitializeComponent();
-            // call LapYCBtn_Click when Home_DN is loaded
+            usernameLabel.Text = username;
             LapYCBtn_Click(LapYCBtn, new EventArgs());
         }
 
@@ -46,6 +48,15 @@ namespace GUI
         {
             loadform(new DN_PhanHoiHS());
             ActiveButton(sender);
+        }
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            DbConnection conn = new DbConnection();
+            conn.Disconnect();
+            this.Hide();
+            DangNhap dangNhap = new DangNhap();
+            dangNhap.ShowDialog();
+            this.Close();
         }
 
         private void ActiveButton(object senderBtn)

@@ -51,19 +51,19 @@ VALUES ('NV00000010', N'Lô Thuỷ Tiên', 1);
 
 -- DOANHNGHIEP
 INSERT INTO DOANHNGHIEP (MADN, TENDN, MSTHUE, NGDAIDIEN, DIACHI, SDT, EMAIL, TRANGTHAI) 
-VALUES ('DN00000001', N'Quỳnh Company', '1111111111', N'Vũ Minh Quỳnh', N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0100000001', 'vmquynh21@clc.fitus.edu.vn', 1);
+VALUES ('DN00000001', N'Quỳnh Company', '1111111111', N'Vũ Minh Quỳnh', N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0100000001', 'dn_vmquynh21@clc.fitus.edu.vn', 1);
 
 INSERT INTO DOANHNGHIEP (MADN, TENDN, MSTHUE, NGDAIDIEN, DIACHI, SDT, EMAIL, TRANGTHAI) 
-VALUES ('DN00000002', N'Thịnh Company', '2222222222', N'Võ Đoàn Vương Thịnh', N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0100000002', 'vdvthinh21@clc.fitus.edu.vn', 1);
+VALUES ('DN00000002', N'Thịnh Company', '2222222222', N'Võ Đoàn Vương Thịnh', N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0100000002', 'dn_vdvthinh21@clc.fitus.edu.vn', 1);
 
 INSERT INTO DOANHNGHIEP (MADN, TENDN, MSTHUE, NGDAIDIEN, DIACHI, SDT, EMAIL, TRANGTHAI) 
-VALUES ('DN00000003', N'Phúc Company', '3333333333', N'Trương Vĩnh Phúc', N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0100000003', 'tvphuc21@clc.fitus.edu.vn', 1);
+VALUES ('DN00000003', N'Phúc Company', '3333333333', N'Trương Vĩnh Phúc', N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0100000003', 'dn_tvphuc21@clc.fitus.edu.vn', 1);
 
 INSERT INTO DOANHNGHIEP (MADN, TENDN, MSTHUE, NGDAIDIEN, DIACHI, SDT, EMAIL, TRANGTHAI) 
-VALUES ('DN00000004', N'Kha Company', '4444444444', N'Nguyễn Lê Hoàng Kha', N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0100000004', 'nlhkha21@clc.fitus.edu.vn', 1);
+VALUES ('DN00000004', N'Kha Company', '4444444444', N'Nguyễn Lê Hoàng Kha', N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0100000004', 'dn_nlhkha21@clc.fitus.edu.vn', 1);
 
 INSERT INTO DOANHNGHIEP (MADN, TENDN, MSTHUE, NGDAIDIEN, DIACHI, SDT, EMAIL, TRANGTHAI) 
-VALUES ('DN00000005', N'Tiên Company', '5555555555', N'Lô Thuỷ Tiên', N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0100000005', 'lttien21@clc.fitus.edu.vn', 1);
+VALUES ('DN00000005', N'Tiên Company', '5555555555', N'Lô Thuỷ Tiên', N'227, đường Nguyễn Văn Cừ, quận 5, thành phố Hồ Chí Minh', '0100000005', 'dn_lttien21@clc.fitus.edu.vn', 1);
 
 
 

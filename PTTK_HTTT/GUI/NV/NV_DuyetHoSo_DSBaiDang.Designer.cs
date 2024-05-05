@@ -30,12 +30,12 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             BaiDangTb = new DataGridView();
-            panel1 = new Panel();
-            XemDSHoSoBtn = new Button();
             MAHOPDONG = new DataGridViewTextBoxColumn();
             CB_VT = new DataGridViewTextBoxColumn();
             SOLUONG = new DataGridViewTextBoxColumn();
             NGAYKT = new DataGridViewTextBoxColumn();
+            panel1 = new Panel();
+            XemDSHoSoBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)BaiDangTb).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -45,7 +45,7 @@
             BaiDangTb.AllowUserToAddRows = false;
             BaiDangTb.AllowUserToDeleteRows = false;
             BaiDangTb.BackgroundColor = SystemColors.ControlLightLight;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Control;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
@@ -61,25 +61,6 @@
             BaiDangTb.RowHeadersWidth = 51;
             BaiDangTb.Size = new Size(1053, 536);
             BaiDangTb.TabIndex = 10;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(XemDSHoSoBtn);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1053, 52);
-            panel1.TabIndex = 12;
-            // 
-            // XemDSHoSoBtn
-            // 
-            XemDSHoSoBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            XemDSHoSoBtn.Location = new Point(12, 8);
-            XemDSHoSoBtn.Name = "XemDSHoSoBtn";
-            XemDSHoSoBtn.Size = new Size(248, 37);
-            XemDSHoSoBtn.TabIndex = 0;
-            XemDSHoSoBtn.Text = "Xem Danh Sách Hồ Sơ";
-            XemDSHoSoBtn.UseVisualStyleBackColor = true;
-            XemDSHoSoBtn.Click += XemDSHoSoBtn_Click;
             // 
             // MAHOPDONG
             // 
@@ -108,10 +89,29 @@
             // NGAYKT
             // 
             NGAYKT.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            NGAYKT.HeaderText = "Hạn Chót Nộp Hồ Sơ";
+            NGAYKT.HeaderText = "Hạn Chót Duyệt HS";
             NGAYKT.MinimumWidth = 6;
             NGAYKT.Name = "NGAYKT";
             NGAYKT.ReadOnly = true;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(XemDSHoSoBtn);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1053, 52);
+            panel1.TabIndex = 12;
+            // 
+            // XemDSHoSoBtn
+            // 
+            XemDSHoSoBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            XemDSHoSoBtn.Location = new Point(793, 8);
+            XemDSHoSoBtn.Name = "XemDSHoSoBtn";
+            XemDSHoSoBtn.Size = new Size(248, 37);
+            XemDSHoSoBtn.TabIndex = 0;
+            XemDSHoSoBtn.Text = "Xem Danh Sách Hồ Sơ";
+            XemDSHoSoBtn.UseVisualStyleBackColor = true;
+            XemDSHoSoBtn.Click += XemDSHoSoBtn_Click;
             // 
             // NV_DuyetHoSo_DSBaiDang
             // 
