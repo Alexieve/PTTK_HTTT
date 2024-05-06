@@ -7,20 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using DTO;
 
 namespace GUI
 {
     public partial class DN_LapYeuCauTD : Form
     {
-        CPN_LTTDT cPN_LTTDT = new CPN_LTTDT();
-        CPN_LTGVHT cPN_LTGVHT = new CPN_LTGVHT();
-        CPN_XNPQC cPN_XNPQC = new CPN_XNPQC();
-
+        private CPN_LTTDT cPN_LTTDT = new CPN_LTTDT();
+        private CPN_XNPQC cPN_XNPQC = new CPN_XNPQC();
+        
         public DN_LapYeuCauTD()
         {
             InitializeComponent();
             cPN_LTTDT.btnSaveMain_click += LTTDT_btnSaveClicked;
-            cPN_LTGVHT.btnSaveMain_click += LTGVHT_btnSaveClicked;
             chuyen_CPN_UC(cPN_LTTDT);
             pnlLtt.BackColor = Color.MediumSeaGreen;
         }
@@ -47,10 +47,6 @@ namespace GUI
                     chuyen_CPN_UC(cPN_LTTDT);
                     pnlLtt.BackColor = Color.MediumSeaGreen;
                     break;
-                case "btnLtgvht":
-                    chuyen_CPN_UC(cPN_LTGVHT);
-                    pnlLtgvht.BackColor = Color.MediumSeaGreen;
-                    break;
                 case "btnXnpqc":
                     chuyen_CPN_UC(cPN_XNPQC);
                     pnlXnpqc.BackColor = Color.MediumSeaGreen;
@@ -66,12 +62,12 @@ namespace GUI
             cPN_XNPQC.Vitri = cPN_LTTDT.Vitri;
             cPN_XNPQC.Soluong = cPN_LTTDT.Soluong;
             cPN_XNPQC.Yeucau = cPN_LTTDT.Yeucau;
-        }
-        private void LTGVHT_btnSaveClicked(object sender, EventArgs e)
-        {
-            cPN_XNPQC.Hinhthuc = cPN_LTGVHT.Hinhthuc;
-            cPN_XNPQC.Thoigian = cPN_LTGVHT.Thoigian;
-            cPN_XNPQC.NgayTD = cPN_LTGVHT.NgayTD;
+            cPN_XNPQC.KyNang(cPN_LTTDT.KyNang);
+            cPN_XNPQC.HinhThuc(cPN_LTTDT.HinhThuc);
+            cPN_XNPQC.Thoigian = cPN_LTTDT.ThoiGian;
+            cPN_XNPQC.NgayTD = cPN_LTTDT.NgayTD;
+            cPN_XNPQC.kynang = cPN_LTTDT.kynang;
+            cPN_XNPQC.hinhthuc = cPN_LTTDT.hinhthuc;
         }
     }
 }

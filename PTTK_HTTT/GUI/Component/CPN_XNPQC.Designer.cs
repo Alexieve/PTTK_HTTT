@@ -30,13 +30,15 @@
         {
             panel2 = new Panel();
             gboxTGHT = new GroupBox();
-            tbHinhthuc = new TextBox();
+            richboxHinhThuc = new RichTextBox();
             tbThoigian = new TextBox();
             lbNgayTD = new Label();
             dtpkNgayTD = new DateTimePicker();
             label3 = new Label();
             lbTgian = new Label();
             gboxTTDT = new GroupBox();
+            richboxKyNang = new RichTextBox();
+            lbKyNang = new Label();
             tbSoluong = new TextBox();
             tbVitri = new TextBox();
             tbCapbac = new TextBox();
@@ -72,7 +74,7 @@
             // 
             // gboxTGHT
             // 
-            gboxTGHT.Controls.Add(tbHinhthuc);
+            gboxTGHT.Controls.Add(richboxHinhThuc);
             gboxTGHT.Controls.Add(tbThoigian);
             gboxTGHT.Controls.Add(lbNgayTD);
             gboxTGHT.Controls.Add(dtpkNgayTD);
@@ -86,31 +88,33 @@
             gboxTGHT.TabStop = false;
             gboxTGHT.Text = "Thời gian và hình thức";
             // 
-            // tbHinhthuc
+            // richboxHinhThuc
             // 
-            tbHinhthuc.Font = new Font("Segoe UI", 10.8F);
-            tbHinhthuc.Location = new Point(18, 363);
-            tbHinhthuc.Name = "tbHinhthuc";
-            tbHinhthuc.ReadOnly = true;
-            tbHinhthuc.Size = new Size(235, 31);
-            tbHinhthuc.TabIndex = 30;
+            richboxHinhThuc.Enabled = false;
+            richboxHinhThuc.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richboxHinhThuc.Location = new Point(18, 299);
+            richboxHinhThuc.Name = "richboxHinhThuc";
+            richboxHinhThuc.ReadOnly = true;
+            richboxHinhThuc.Size = new Size(235, 144);
+            richboxHinhThuc.TabIndex = 31;
+            richboxHinhThuc.Text = "";
             // 
             // tbThoigian
             // 
-            tbThoigian.Font = new Font("Segoe UI", 10.8F);
+            tbThoigian.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             tbThoigian.Location = new Point(18, 93);
             tbThoigian.Name = "tbThoigian";
             tbThoigian.ReadOnly = true;
-            tbThoigian.Size = new Size(235, 31);
+            tbThoigian.Size = new Size(235, 27);
             tbThoigian.TabIndex = 29;
             // 
             // lbNgayTD
             // 
             lbNgayTD.AutoSize = true;
-            lbNgayTD.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbNgayTD.Location = new Point(18, 203);
+            lbNgayTD.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lbNgayTD.Location = new Point(18, 180);
             lbNgayTD.Name = "lbNgayTD";
-            lbNgayTD.Size = new Size(130, 20);
+            lbNgayTD.Size = new Size(129, 20);
             lbNgayTD.TabIndex = 26;
             lbNgayTD.Text = "Ngày tuyển dụng";
             // 
@@ -118,7 +122,7 @@
             // 
             dtpkNgayTD.Enabled = false;
             dtpkNgayTD.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dtpkNgayTD.Location = new Point(18, 226);
+            dtpkNgayTD.Location = new Point(18, 203);
             dtpkNgayTD.Name = "dtpkNgayTD";
             dtpkNgayTD.Size = new Size(235, 27);
             dtpkNgayTD.TabIndex = 25;
@@ -126,25 +130,27 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(18, 340);
+            label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(18, 276);
             label3.Name = "label3";
-            label3.Size = new Size(161, 20);
+            label3.Size = new Size(158, 20);
             label3.TabIndex = 23;
             label3.Text = "Hình thức đăng tuyển";
             // 
             // lbTgian
             // 
             lbTgian.AutoSize = true;
-            lbTgian.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbTgian.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lbTgian.Location = new Point(18, 73);
             lbTgian.Name = "lbTgian";
             lbTgian.Size = new Size(239, 20);
             lbTgian.TabIndex = 17;
-            lbTgian.Text = "Thời gian tuyển dụng theo tháng";
+            lbTgian.Text = "Thời gian tuyển dụng (theo ngày)";
             // 
             // gboxTTDT
             // 
+            gboxTTDT.Controls.Add(richboxKyNang);
+            gboxTTDT.Controls.Add(lbKyNang);
             gboxTTDT.Controls.Add(tbSoluong);
             gboxTTDT.Controls.Add(tbVitri);
             gboxTTDT.Controls.Add(tbCapbac);
@@ -162,31 +168,52 @@
             gboxTTDT.TabStop = false;
             gboxTTDT.Text = "Thông tin đăng tuyển";
             // 
+            // richboxKyNang
+            // 
+            richboxKyNang.Enabled = false;
+            richboxKyNang.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richboxKyNang.Location = new Point(562, 169);
+            richboxKyNang.Name = "richboxKyNang";
+            richboxKyNang.ReadOnly = true;
+            richboxKyNang.Size = new Size(148, 274);
+            richboxKyNang.TabIndex = 30;
+            richboxKyNang.Text = "";
+            // 
+            // lbKyNang
+            // 
+            lbKyNang.AutoSize = true;
+            lbKyNang.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lbKyNang.Location = new Point(562, 146);
+            lbKyNang.Name = "lbKyNang";
+            lbKyNang.Size = new Size(148, 20);
+            lbKyNang.TabIndex = 29;
+            lbKyNang.Text = "Kỹ năng tuyển dụng";
+            // 
             // tbSoluong
             // 
-            tbSoluong.Font = new Font("Segoe UI", 10.8F);
-            tbSoluong.Location = new Point(526, 93);
+            tbSoluong.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbSoluong.Location = new Point(561, 93);
             tbSoluong.Name = "tbSoluong";
             tbSoluong.ReadOnly = true;
-            tbSoluong.Size = new Size(195, 31);
+            tbSoluong.Size = new Size(148, 27);
             tbSoluong.TabIndex = 28;
             // 
             // tbVitri
             // 
-            tbVitri.Font = new Font("Segoe UI", 10.8F);
-            tbVitri.Location = new Point(280, 93);
+            tbVitri.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbVitri.Location = new Point(286, 93);
             tbVitri.Name = "tbVitri";
             tbVitri.ReadOnly = true;
-            tbVitri.Size = new Size(198, 31);
+            tbVitri.Size = new Size(198, 27);
             tbVitri.TabIndex = 27;
             // 
             // tbCapbac
             // 
-            tbCapbac.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbCapbac.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             tbCapbac.Location = new Point(11, 93);
             tbCapbac.Name = "tbCapbac";
             tbCapbac.ReadOnly = true;
-            tbCapbac.Size = new Size(198, 31);
+            tbCapbac.Size = new Size(198, 27);
             tbCapbac.TabIndex = 26;
             // 
             // label7
@@ -203,50 +230,50 @@
             // lbYeucau
             // 
             lbYeucau.AutoSize = true;
-            lbYeucau.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbYeucau.Location = new Point(11, 147);
+            lbYeucau.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lbYeucau.Location = new Point(14, 146);
             lbYeucau.Name = "lbYeucau";
-            lbYeucau.Size = new Size(146, 20);
+            lbYeucau.Size = new Size(145, 20);
             lbYeucau.TabIndex = 23;
             lbYeucau.Text = "Yêu cầu tuyển dụng";
             // 
             // lbSoluong
             // 
             lbSoluong.AutoSize = true;
-            lbSoluong.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbSoluong.Location = new Point(526, 73);
+            lbSoluong.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lbSoluong.Location = new Point(562, 73);
             lbSoluong.Name = "lbSoluong";
-            lbSoluong.Size = new Size(155, 20);
+            lbSoluong.Size = new Size(153, 20);
             lbSoluong.TabIndex = 22;
             lbSoluong.Text = "Số lượng tuyển dụng";
             // 
             // lbVitri
             // 
             lbVitri.AutoSize = true;
-            lbVitri.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbVitri.Location = new Point(280, 72);
+            lbVitri.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lbVitri.Location = new Point(288, 72);
             lbVitri.Name = "lbVitri";
-            lbVitri.Size = new Size(127, 20);
+            lbVitri.Size = new Size(125, 20);
             lbVitri.TabIndex = 21;
             lbVitri.Text = "Vị trí tuyển dụng";
             // 
             // lbCapbac
             // 
             lbCapbac.AutoSize = true;
-            lbCapbac.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbCapbac.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lbCapbac.Location = new Point(14, 72);
             lbCapbac.Name = "lbCapbac";
-            lbCapbac.Size = new Size(147, 20);
+            lbCapbac.Size = new Size(146, 20);
             lbCapbac.TabIndex = 19;
             lbCapbac.Text = "Cấp bậc tuyển dụng";
             // 
             // richboxYeucau
             // 
-            richboxYeucau.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            richboxYeucau.Location = new Point(8, 169);
+            richboxYeucau.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richboxYeucau.Location = new Point(14, 169);
             richboxYeucau.Name = "richboxYeucau";
             richboxYeucau.ReadOnly = true;
-            richboxYeucau.Size = new Size(713, 274);
+            richboxYeucau.Size = new Size(470, 274);
             richboxYeucau.TabIndex = 18;
             richboxYeucau.Text = "";
             // 
@@ -345,11 +372,13 @@
         private Label lbVitri;
         private Label lbCapbac;
         private RichTextBox richboxYeucau;
-        private TextBox tbHinhthuc;
         private TextBox tbCapbac;
         private TextBox tbThoigian;
         private TextBox tbSoluong;
         private TextBox tbVitri;
         private DateTimePicker dtpkNgayTD;
+        private RichTextBox richboxKyNang;
+        private Label lbKyNang;
+        private RichTextBox richboxHinhThuc;
     }
 }

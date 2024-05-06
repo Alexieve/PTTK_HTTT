@@ -33,15 +33,12 @@
             tabtbLout = new TableLayoutPanel();
             pnlXnpqc = new Panel();
             btnXnpqc = new Button();
-            pnlLtgvht = new Panel();
-            btnLtgvht = new Button();
             pnlLtt = new Panel();
             btnLtt = new Button();
             pnlUserControl = new Panel();
             pnlTop.SuspendLayout();
             tabtbLout.SuspendLayout();
             pnlXnpqc.SuspendLayout();
-            pnlLtgvht.SuspendLayout();
             pnlLtt.SuspendLayout();
             SuspendLayout();
             // 
@@ -71,12 +68,10 @@
             // tabtbLout
             // 
             tabtbLout.BackColor = Color.Silver;
-            tabtbLout.ColumnCount = 3;
-            tabtbLout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tabtbLout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tabtbLout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tabtbLout.Controls.Add(pnlXnpqc, 2, 0);
-            tabtbLout.Controls.Add(pnlLtgvht, 1, 0);
+            tabtbLout.ColumnCount = 2;
+            tabtbLout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tabtbLout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tabtbLout.Controls.Add(pnlXnpqc, 1, 0);
             tabtbLout.Controls.Add(pnlLtt, 0, 0);
             tabtbLout.Dock = DockStyle.Top;
             tabtbLout.Location = new Point(0, 56);
@@ -84,7 +79,6 @@
             tabtbLout.Name = "tabtbLout";
             tabtbLout.RowCount = 1;
             tabtbLout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tabtbLout.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tabtbLout.Size = new Size(1077, 55);
             tabtbLout.TabIndex = 1;
             // 
@@ -93,11 +87,11 @@
             pnlXnpqc.BackColor = Color.Silver;
             pnlXnpqc.Controls.Add(btnXnpqc);
             pnlXnpqc.Dock = DockStyle.Fill;
-            pnlXnpqc.Location = new Point(723, 5);
+            pnlXnpqc.Location = new Point(543, 5);
             pnlXnpqc.Margin = new Padding(5);
             pnlXnpqc.Name = "pnlXnpqc";
             pnlXnpqc.Padding = new Padding(0, 0, 0, 5);
-            pnlXnpqc.Size = new Size(349, 45);
+            pnlXnpqc.Size = new Size(529, 45);
             pnlXnpqc.TabIndex = 2;
             // 
             // btnXnpqc
@@ -111,40 +105,11 @@
             btnXnpqc.Location = new Point(0, 0);
             btnXnpqc.Margin = new Padding(0);
             btnXnpqc.Name = "btnXnpqc";
-            btnXnpqc.Size = new Size(349, 40);
+            btnXnpqc.Size = new Size(529, 40);
             btnXnpqc.TabIndex = 2;
             btnXnpqc.Text = "Xác nhận phiếu quảng cáo";
             btnXnpqc.UseVisualStyleBackColor = false;
             btnXnpqc.Click += chuyen_Tab;
-            // 
-            // pnlLtgvht
-            // 
-            pnlLtgvht.BackColor = Color.Silver;
-            pnlLtgvht.Controls.Add(btnLtgvht);
-            pnlLtgvht.Dock = DockStyle.Fill;
-            pnlLtgvht.Location = new Point(364, 5);
-            pnlLtgvht.Margin = new Padding(5);
-            pnlLtgvht.Name = "pnlLtgvht";
-            pnlLtgvht.Padding = new Padding(0, 0, 0, 5);
-            pnlLtgvht.Size = new Size(349, 45);
-            pnlLtgvht.TabIndex = 1;
-            // 
-            // btnLtgvht
-            // 
-            btnLtgvht.BackColor = Color.Silver;
-            btnLtgvht.Dock = DockStyle.Fill;
-            btnLtgvht.FlatAppearance.BorderSize = 0;
-            btnLtgvht.FlatStyle = FlatStyle.Flat;
-            btnLtgvht.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLtgvht.ForeColor = SystemColors.GrayText;
-            btnLtgvht.Location = new Point(0, 0);
-            btnLtgvht.Margin = new Padding(0);
-            btnLtgvht.Name = "btnLtgvht";
-            btnLtgvht.Size = new Size(349, 40);
-            btnLtgvht.TabIndex = 3;
-            btnLtgvht.Text = "Lấy thời gian và hình thức đăng tuyển";
-            btnLtgvht.UseVisualStyleBackColor = false;
-            btnLtgvht.Click += chuyen_Tab;
             // 
             // pnlLtt
             // 
@@ -155,7 +120,7 @@
             pnlLtt.Margin = new Padding(5);
             pnlLtt.Name = "pnlLtt";
             pnlLtt.Padding = new Padding(0, 0, 0, 5);
-            pnlLtt.Size = new Size(349, 45);
+            pnlLtt.Size = new Size(528, 45);
             pnlLtt.TabIndex = 0;
             // 
             // btnLtt
@@ -169,7 +134,7 @@
             btnLtt.Location = new Point(0, 0);
             btnLtt.Margin = new Padding(0);
             btnLtt.Name = "btnLtt";
-            btnLtt.Size = new Size(349, 40);
+            btnLtt.Size = new Size(528, 40);
             btnLtt.TabIndex = 0;
             btnLtt.Text = "Lấy thông tin đăng tuyển";
             btnLtt.UseVisualStyleBackColor = false;
@@ -199,7 +164,6 @@
             pnlTop.PerformLayout();
             tabtbLout.ResumeLayout(false);
             pnlXnpqc.ResumeLayout(false);
-            pnlLtgvht.ResumeLayout(false);
             pnlLtt.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -213,8 +177,6 @@
         private Button btnLtt;
         private Panel pnlXnpqc;
         private Button btnXnpqc;
-        private Panel pnlLtgvht;
-        private Button btnLtgvht;
         private Panel pnlUserControl;
     }
 }

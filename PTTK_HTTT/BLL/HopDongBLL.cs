@@ -33,5 +33,15 @@ namespace BLL
             DataTable dt = hopDongDAL.Get_YeuCauDN(MAHOPDONG);
             return dt.Rows[0]["YEUCAU"].ToString();
         }
+
+        public string Insert(string CAPBAC, string VITRITD, string KYNANG, int SOLUONG, string YEUCAU, string HINHTHUC, int THOIGIANTD, DateTime NGAYTD)
+        {
+            return hopDongDAL.Insert(CAPBAC, VITRITD, KYNANG, SOLUONG, YEUCAU, HINHTHUC, THOIGIANTD, NGAYTD);
+        }
+
+        public HopDongDTO Find_BY_MAHOPDONG(string MAHOPDONG)
+        {
+            return hopDongDAL.Find_BY_MAHOPDONG(MAHOPDONG);
+        }
     }
 }

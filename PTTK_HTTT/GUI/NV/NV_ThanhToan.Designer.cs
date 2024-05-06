@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             lbTopbar = new Label();
             pnlTop = new Panel();
             dtgHoaDon = new DataGridView();
-            MAHOADON = new DataGridViewTextBoxColumn();
-            NGAYTT = new DataGridViewTextBoxColumn();
-            SOTIEN = new DataGridViewTextBoxColumn();
-            HINHTHUCTT = new DataGridViewTextBoxColumn();
-            NVTHANHTOAN = new DataGridViewTextBoxColumn();
-            tbMaBai = new TextBox();
+            tbMAHOPDONG = new TextBox();
             btnTimBai = new Button();
             pnlSave = new Panel();
             btnSave = new Button();
@@ -56,8 +53,6 @@
             rbtnThe = new RadioButton();
             rbtnTienMat = new RadioButton();
             gboxThoiHan = new GroupBox();
-            panel3 = new Panel();
-            btnHuy = new Button();
             pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgHoaDon).BeginInit();
             pnlSave.SuspendLayout();
@@ -66,7 +61,6 @@
             gboxTTTT.SuspendLayout();
             gboxHinhThuc.SuspendLayout();
             gboxThoiHan.SuspendLayout();
-            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // lbTopbar
@@ -96,8 +90,23 @@
             // dtgHoaDon
             // 
             dtgHoaDon.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dtgHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtgHoaDon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgHoaDon.Columns.AddRange(new DataGridViewColumn[] { MAHOADON, NGAYTT, SOTIEN, HINHTHUCTT, NVTHANHTOAN });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dtgHoaDon.DefaultCellStyle = dataGridViewCellStyle2;
             dtgHoaDon.Location = new Point(402, 161);
             dtgHoaDon.Name = "dtgHoaDon";
             dtgHoaDon.ReadOnly = true;
@@ -105,54 +114,14 @@
             dtgHoaDon.Size = new Size(630, 436);
             dtgHoaDon.TabIndex = 3;
             // 
-            // MAHOADON
+            // tbMAHOPDONG
             // 
-            MAHOADON.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            MAHOADON.HeaderText = "Mã hóa đơn";
-            MAHOADON.MinimumWidth = 6;
-            MAHOADON.Name = "MAHOADON";
-            MAHOADON.ReadOnly = true;
-            // 
-            // NGAYTT
-            // 
-            NGAYTT.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            NGAYTT.HeaderText = "Ngày thanh toán";
-            NGAYTT.MinimumWidth = 6;
-            NGAYTT.Name = "NGAYTT";
-            NGAYTT.ReadOnly = true;
-            // 
-            // SOTIEN
-            // 
-            SOTIEN.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            SOTIEN.HeaderText = "Số tiền";
-            SOTIEN.MinimumWidth = 6;
-            SOTIEN.Name = "SOTIEN";
-            SOTIEN.ReadOnly = true;
-            // 
-            // HINHTHUCTT
-            // 
-            HINHTHUCTT.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            HINHTHUCTT.HeaderText = "Hình thức thanh toán";
-            HINHTHUCTT.MinimumWidth = 6;
-            HINHTHUCTT.Name = "HINHTHUCTT";
-            HINHTHUCTT.ReadOnly = true;
-            // 
-            // NVTHANHTOAN
-            // 
-            NVTHANHTOAN.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            NVTHANHTOAN.HeaderText = "Nhân viên thanh toán";
-            NVTHANHTOAN.MinimumWidth = 6;
-            NVTHANHTOAN.Name = "NVTHANHTOAN";
-            NVTHANHTOAN.ReadOnly = true;
-            // 
-            // tbMaBai
-            // 
-            tbMaBai.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbMaBai.Location = new Point(174, 60);
-            tbMaBai.Name = "tbMaBai";
-            tbMaBai.PlaceholderText = "Nhập mã bài đăng tuyển dụng";
-            tbMaBai.Size = new Size(211, 27);
-            tbMaBai.TabIndex = 5;
+            tbMAHOPDONG.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbMAHOPDONG.Location = new Point(174, 60);
+            tbMAHOPDONG.Name = "tbMAHOPDONG";
+            tbMAHOPDONG.PlaceholderText = "Nhập mã bài đăng tuyển dụng";
+            tbMAHOPDONG.Size = new Size(211, 27);
+            tbMAHOPDONG.TabIndex = 5;
             // 
             // btnTimBai
             // 
@@ -164,12 +133,13 @@
             btnTimBai.TabIndex = 6;
             btnTimBai.Text = "Tìm";
             btnTimBai.UseVisualStyleBackColor = false;
+            btnTimBai.Click += btnTimBai_Click;
             // 
             // pnlSave
             // 
             pnlSave.BackColor = Color.MediumSeaGreen;
             pnlSave.Controls.Add(btnSave);
-            pnlSave.Location = new Point(617, 46);
+            pnlSave.Location = new Point(832, 43);
             pnlSave.Name = "pnlSave";
             pnlSave.Size = new Size(200, 61);
             pnlSave.TabIndex = 25;
@@ -206,6 +176,7 @@
             btnThanhToan.TabIndex = 15;
             btnThanhToan.Text = "Thanh toán";
             btnThanhToan.UseVisualStyleBackColor = false;
+            btnThanhToan.Click += btnThanhToan_Click;
             // 
             // rbtnTTToanBo
             // 
@@ -237,9 +208,8 @@
             panel2.Controls.Add(gboxTTTT);
             panel2.Controls.Add(gboxHinhThuc);
             panel2.Controls.Add(gboxThoiHan);
-            panel2.Controls.Add(panel3);
             panel2.Controls.Add(dtgHoaDon);
-            panel2.Controls.Add(tbMaBai);
+            panel2.Controls.Add(tbMAHOPDONG);
             panel2.Controls.Add(panel1);
             panel2.Controls.Add(btnTimBai);
             panel2.Controls.Add(pnlSave);
@@ -267,6 +237,7 @@
             // tbSoLan
             // 
             tbSoLan.BackColor = Color.White;
+            tbSoLan.Font = new Font("Segoe UI", 9F);
             tbSoLan.Location = new Point(20, 236);
             tbSoLan.Name = "tbSoLan";
             tbSoLan.ReadOnly = true;
@@ -276,6 +247,7 @@
             // tbConLai
             // 
             tbConLai.BackColor = Color.White;
+            tbConLai.Font = new Font("Segoe UI", 9F);
             tbConLai.Location = new Point(20, 154);
             tbConLai.Name = "tbConLai";
             tbConLai.ReadOnly = true;
@@ -285,6 +257,7 @@
             // tbTongTien
             // 
             tbTongTien.BackColor = Color.White;
+            tbTongTien.Font = new Font("Segoe UI", 9F);
             tbTongTien.Location = new Point(20, 73);
             tbTongTien.Name = "tbTongTien";
             tbTongTien.ReadOnly = true;
@@ -367,28 +340,7 @@
             gboxThoiHan.Size = new Size(364, 77);
             gboxThoiHan.TabIndex = 29;
             gboxThoiHan.TabStop = false;
-            gboxThoiHan.Text = "Thời hạn thanh toán";
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.MediumSeaGreen;
-            panel3.Controls.Add(btnHuy);
-            panel3.Location = new Point(832, 46);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(200, 61);
-            panel3.TabIndex = 27;
-            // 
-            // btnHuy
-            // 
-            btnHuy.BackColor = Color.White;
-            btnHuy.FlatStyle = FlatStyle.Flat;
-            btnHuy.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnHuy.Location = new Point(3, 3);
-            btnHuy.Name = "btnHuy";
-            btnHuy.Size = new Size(194, 55);
-            btnHuy.TabIndex = 15;
-            btnHuy.Text = "Hủy";
-            btnHuy.UseVisualStyleBackColor = false;
+            gboxThoiHan.Text = "Mức thanh toán";
             // 
             // NV_ThanhToan
             // 
@@ -414,7 +366,6 @@
             gboxHinhThuc.PerformLayout();
             gboxThoiHan.ResumeLayout(false);
             gboxThoiHan.PerformLayout();
-            panel3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -423,7 +374,7 @@
         private Label lbTopbar;
         private Panel pnlTop;
         private DataGridView dtgHoaDon;
-        private TextBox tbMaBai;
+        private TextBox tbMAHOPDONG;
         private Button btnTimBai;
         private Panel pnlSave;
         private Button btnSave;
@@ -432,8 +383,6 @@
         private RadioButton rbtnTTToanBo;
         private RadioButton rbtnTT30;
         private Panel panel2;
-        private Panel panel3;
-        private Button btnHuy;
         private GroupBox gboxThoiHan;
         private GroupBox gboxHinhThuc;
         private RadioButton rbtnThe;
@@ -445,10 +394,5 @@
         private TextBox tbSoLan;
         private TextBox tbConLai;
         private TextBox tbTongTien;
-        private DataGridViewTextBoxColumn MAHOADON;
-        private DataGridViewTextBoxColumn NGAYTT;
-        private DataGridViewTextBoxColumn SOTIEN;
-        private DataGridViewTextBoxColumn HINHTHUCTT;
-        private DataGridViewTextBoxColumn NVTHANHTOAN;
     }
 }
