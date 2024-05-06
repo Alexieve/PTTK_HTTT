@@ -32,7 +32,6 @@ namespace GUI
             button2 = new Button();
             button3 = new Button();
             button1 = new Button();
-            pictureBox1 = new PictureBox();
             label2 = new Label();
             textBox1 = new TextBox();
             textBox5 = new TextBox();
@@ -54,8 +53,9 @@ namespace GUI
             childFormPanel = new Panel();
             label11 = new Label();
             textBox10 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox1 = new PictureBox();
             childFormPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label3
@@ -97,17 +97,6 @@ namespace GUI
             button1.TabIndex = 11;
             button1.Text = "Phản hồi";
             button1.Click += button1_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.RosyBrown;
-            pictureBox1.Image = Properties.Resources.tải_xuống;
-            pictureBox1.Location = new Point(41, 120);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(245, 218);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 12;
-            pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -278,9 +267,9 @@ namespace GUI
             // childFormPanel
             // 
             childFormPanel.BorderStyle = BorderStyle.FixedSingle;
+            childFormPanel.Controls.Add(pictureBox1);
             childFormPanel.Controls.Add(label11);
             childFormPanel.Controls.Add(textBox10);
-            childFormPanel.Controls.Add(pictureBox1);
             childFormPanel.Controls.Add(label3);
             childFormPanel.Controls.Add(button2);
             childFormPanel.Controls.Add(button1);
@@ -326,6 +315,17 @@ namespace GUI
             textBox10.Size = new Size(549, 27);
             textBox10.TabIndex = 34;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.RosyBrown;
+            pictureBox1.Image = Properties.Resources.tải_xuống;
+            pictureBox1.Location = new Point(41, 120);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(245, 218);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 35;
+            pictureBox1.TabStop = false;
+            // 
             // DN_TraCuuHD_XemBaiDang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -335,9 +335,9 @@ namespace GUI
             FormBorderStyle = FormBorderStyle.None;
             Name = "DN_TraCuuHD_XemBaiDang";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             childFormPanel.ResumeLayout(false);
             childFormPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -346,7 +346,6 @@ namespace GUI
         private Button button2;
         private Button button3;
         private Button button1;
-        private PictureBox pictureBox1;
         private Label label2;
         private TextBox textBox1;
         private TextBox textBox5;
@@ -368,5 +367,6 @@ namespace GUI
         private Panel childFormPanel;
         private Label label11;
         private TextBox textBox10;
+        private PictureBox pictureBox1;
     }
 }
