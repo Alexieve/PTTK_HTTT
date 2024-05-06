@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label3 = new Label();
-            button2 = new Button();
+            BackBtn = new Button();
             UngTuyenBtn = new Button();
             pictureBox1 = new PictureBox();
             label2 = new Label();
@@ -68,16 +68,16 @@
             label3.Text = "Chi tiết bài đăng";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // BackBtn
             // 
-            button2.BackColor = Color.Plum;
-            button2.Location = new Point(41, 60);
-            button2.Name = "button2";
-            button2.Size = new Size(198, 40);
-            button2.TabIndex = 9;
-            button2.Text = "Quay lại";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            BackBtn.BackColor = Color.Plum;
+            BackBtn.Location = new Point(41, 60);
+            BackBtn.Name = "BackBtn";
+            BackBtn.Size = new Size(198, 40);
+            BackBtn.TabIndex = 9;
+            BackBtn.Text = "Quay lại";
+            BackBtn.UseVisualStyleBackColor = false;
+            BackBtn.Click += BackBtn_Click;
             // 
             // UngTuyenBtn
             // 
@@ -290,7 +290,7 @@
             childFormPanel.Controls.Add(KyNang);
             childFormPanel.Controls.Add(pictureBox1);
             childFormPanel.Controls.Add(label3);
-            childFormPanel.Controls.Add(button2);
+            childFormPanel.Controls.Add(BackBtn);
             childFormPanel.Controls.Add(UngTuyenBtn);
             childFormPanel.Controls.Add(LienHe);
             childFormPanel.Controls.Add(ViTri);
@@ -352,7 +352,7 @@
 
         #endregion
         private Label label3;
-        private Button button2;
+        private Button BackBtn;
         private Button UngTuyenBtn;
         private PictureBox pictureBox1;
         private Label label2;

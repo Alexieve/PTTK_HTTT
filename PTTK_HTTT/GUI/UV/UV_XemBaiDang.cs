@@ -64,7 +64,7 @@ namespace GUI
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BackBtn_Click(object sender, EventArgs e)
         {
             UV_Home Parent = (UV_Home)this.Parent.Parent;
             Parent.closeChildForm();
