@@ -1,4 +1,4 @@
-﻿namespace GUI
+namespace GUI
 {
     partial class DN_TraCuuHD
     {
@@ -85,6 +85,7 @@
             btnSearch.Size = new Size(132, 40);
             btnSearch.TabIndex = 0;
             btnSearch.Text = "Tìm kiếm";
+            btnSearch.Click += btnSearch_Click;
             // 
             // label1
             // 
@@ -162,13 +163,14 @@
             GrantPrivTable.RowHeadersWidth = 51;
             GrantPrivTable.Size = new Size(1053, 518);
             GrantPrivTable.TabIndex = 4;
+            GrantPrivTable.SelectionChanged += GrantPrivTable_SelectionChanged;
             // 
             // TableNameCol
             // 
             TableNameCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TableNameCol.DefaultCellStyle = dataGridViewCellStyle2;
+            //dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            //dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            //TableNameCol.DefaultCellStyle = dataGridViewCellStyle2;
             TableNameCol.HeaderText = "Mã Hợp Đồng";
             TableNameCol.MinimumWidth = 6;
             TableNameCol.Name = "TableNameCol";
@@ -178,7 +180,7 @@
             // 
             ICol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            //dataGridViewCellStyle3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ICol.DefaultCellStyle = dataGridViewCellStyle3;
             ICol.HeaderText = "Ngày Tuyển Dụng";
             ICol.MinimumWidth = 6;
@@ -189,7 +191,7 @@
             // 
             SCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            //dataGridViewCellStyle4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SCol.DefaultCellStyle = dataGridViewCellStyle4;
             SCol.HeaderText = "Số Lượng Tuyển Dụng";
             SCol.MinimumWidth = 6;
@@ -200,7 +202,7 @@
             // 
             UCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            //dataGridViewCellStyle5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UCol.DefaultCellStyle = dataGridViewCellStyle5;
             UCol.HeaderText = "Tổng Tiền";
             UCol.MinimumWidth = 6;
@@ -211,7 +213,7 @@
             // 
             DCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            //dataGridViewCellStyle6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DCol.DefaultCellStyle = dataGridViewCellStyle6;
             DCol.HeaderText = "Số Tiền Chưa Thanh Toán";
             DCol.MinimumWidth = 6;
@@ -219,14 +221,14 @@
             DCol.ReadOnly = true;
             DCol.Resizable = DataGridViewTriState.True;
             // 
-            // TraCuuHD
+            // DN_TraCuuHD
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1077, 721);
             Controls.Add(childFormPanel);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "TraCuuHD";
+            Name = "DN_TraCuuHD";
             Text = "Form1";
             childFormPanel.ResumeLayout(false);
             panel1.ResumeLayout(false);
