@@ -26,11 +26,10 @@ namespace DTO
         private string _DIACHI;
         private string _TENDN;
         private string _EMAIL;
+        private DateTime _NGAYPH;
+        private string _NOIDUNG;
 
-        public string EMAIL { get => _EMAIL; set => _EMAIL = value; }
-        public string KYNANG { get => _KYNANG; set => _KYNANG = value; }
-        public string DIACHI { get => _DIACHI; set => _DIACHI = value; }
-        public string TENDN { get => _TENDN; set => _TENDN = value; }
+        
         public string MAHOPDONG { get => _MAHOPDONG; set => _MAHOPDONG = value; }
         public string MADN { get => _MADN; set => _MADN = value; }
         public string CAPBACTD { get => _CAPBACTD; set => _CAPBACTD = value; }
@@ -44,6 +43,12 @@ namespace DTO
         public float TONGTIEN { get => _TONGTIEN; set => _TONGTIEN = value; }
         public float TIENCONLAI { get => _TIENCONLAI; set => _TIENCONLAI = value; }
         public int SOLUONGHS { get => _SOLUONGHS; set => _SOLUONGHS = value; }
+        public string KYNANG { get => _KYNANG; set => _KYNANG = value; }
+        public string DIACHI { get => _DIACHI; set => _DIACHI = value; }
+        public string TENDN { get => _TENDN; set => _TENDN = value; }
+        public string EMAIL { get => _EMAIL; set => _EMAIL = value; }
+        public DateTime NGAYPH { get => _NGAYPH; set => _NGAYPH = value; }
+        public string NOIDUNG { get => _NOIDUNG; set => _NOIDUNG = value; }
 
         public HopDongDTO()
         {
@@ -64,6 +69,8 @@ namespace DTO
             this.DIACHI = "";
             this.KYNANG = "";
             this.EMAIL = "";
+            this.NGAYPH = DateTime.Now;
+            this.NOIDUNG = "";
         }
 
         public HopDongDTO(string MAHOPDONG, string MADN, string CAPBACTD, string VITRITD, int SOLUONGTD, string YEUCAU,
@@ -165,6 +172,12 @@ namespace DTO
             this.TONGTIEN = 0;
             this.TIENCONLAI = 0;
             this.SOLUONGHS = 0;
+        }
+        public HopDongDTO(string MAHOPDONG, DateTime NGAYPH,  string NOIDUNG)
+        {
+            this.MAHOPDONG = MAHOPDONG;
+            this.NGAYPH = NGAYPH;
+            this.NOIDUNG = NOIDUNG;
         }
     }
 }
