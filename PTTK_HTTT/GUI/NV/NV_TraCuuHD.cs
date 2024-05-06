@@ -1,4 +1,6 @@
-﻿using System;
+using BLL;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,9 +16,43 @@ namespace GUI
     {
         private Button currentButton;
         private Form activeForm = null;
+        private HopDongBLL hdBLL;
         public NV_TraCuuHD()
         {
             InitializeComponent();
+            hdBLL = new HopDongBLL();
+            LoadData();
+        }
+        private string maHDToShow = "";
+        private void LoadData()
+        {
+            List<HopDongDTO> listHD = hdBLL.Get_All_For_TraCuuHD_NV();
+            GrantPrivTable.Rows.Clear();
+            foreach (HopDongDTO hopDong in listHD)
+            {
+                GrantPrivTable.Rows.Add(
+            hopDong.MAHOPDONG,
+            hopDong.MADN,
+            hopDong.TENDN,
+            hopDong.TONGTIEN,
+            hopDong.TIENCONLAI
+                );
+            }
+        }
+        private void LoadData(string keyword)
+        {
+            List<HopDongDTO> listHD = hdBLL.Get_All_For_TraCuuHD_NV_SEARCH(keyword);
+            GrantPrivTable.Rows.Clear();
+            foreach (HopDongDTO hopDong in listHD)
+            {
+                GrantPrivTable.Rows.Add(
+            hopDong.MAHOPDONG,
+            hopDong.MADN,
+            hopDong.TENDN,
+            hopDong.TONGTIEN,
+            hopDong.TIENCONLAI
+                );
+            }
         }
         private void openChildForm(Form childForm)
         {
@@ -61,8 +97,34 @@ namespace GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new NV_TraCuuHD_XemBaiDang());
-            ActiveButton(sender);
+            if (maHDToShow != "")
+            {
+                openChildForm(new NV_TraCuuHD_XemBaiDang(maHDToShow));
+                ActiveButton(sender);
+            }
+            else
+            {
+                // Hiển thị thông báo cho người dùng rằng họ cần chọn một dòng trước khi nhấp nút
+                MessageBox.Show("Vui lòng chọn một dòng trước khi xem bài đăng.");
+            }
+        }
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void GrantPrivTable_SelectionChanged(object sender, EventArgs e)
+        {
+            // Kiểm tra nếu có ít nhất một dòng được chọn
+            if (GrantPrivTable.SelectedRows.Count == 1)
+            {
+                // Lấy mã sinh viên từ dòng được chọn và lưu vào biến maSinhVienToShow
+                maHDToShow = GrantPrivTable.SelectedRows[0].Cells[0].Value.ToString();
+            }
+        }
+
+        private void btnSearch_Click_1(object sender, EventArgs e)
+        {
+            LoadData(txtSearch.Text);
         }
     }
 }
