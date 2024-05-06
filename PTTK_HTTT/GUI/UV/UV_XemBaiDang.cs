@@ -29,6 +29,11 @@ namespace GUI
             HSUngTuyen = new HSUngTuyenBLL();
             InitializeComponent();
             List<HopDongDTO> chiTietTD = BaiDangTD.Get_Detail_BaiDangTuyenDung(MAHD);
+            Load(chiTietTD);
+
+        }
+        private void Load(List<HopDongDTO> chiTietTD)
+        {
             foreach (var array in chiTietTD)
             {
                 ViTri.Text = array.VITRITD;
@@ -43,9 +48,7 @@ namespace GUI
                 LienHe.Text = array.EMAIL;
                 MaHD = array.MAHOPDONG;
             }
-
         }
-
         private void UngTuyenBtn_Click(object sender, EventArgs e)
         {
             if (HSUngTuyen.Check_Applied(MaHD))
