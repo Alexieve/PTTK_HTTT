@@ -28,7 +28,12 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             childFormPanel = new Panel();
             label3 = new Label();
             button1 = new Button();
@@ -98,6 +103,7 @@ namespace GUI
             btnSearch.Size = new Size(132, 40);
             btnSearch.TabIndex = 0;
             btnSearch.Text = "Tìm kiếm";
+            btnSearch.Click += btnSearch_Click_1;
             // 
             // txtSearch
             // 
@@ -120,14 +126,14 @@ namespace GUI
             GrantPrivTable.AllowUserToAddRows = false;
             GrantPrivTable.AllowUserToDeleteRows = false;
             GrantPrivTable.Anchor = AnchorStyles.Bottom;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            GrantPrivTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            GrantPrivTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             GrantPrivTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             GrantPrivTable.Columns.AddRange(new DataGridViewColumn[] { TableNameCol, ICol, SCol, UCol, DCol });
             GrantPrivTable.Location = new Point(10, 147);
@@ -135,9 +141,12 @@ namespace GUI
             GrantPrivTable.RowHeadersWidth = 51;
             GrantPrivTable.Size = new Size(1053, 475);
             GrantPrivTable.TabIndex = 4;
+            GrantPrivTable.SelectionChanged += GrantPrivTable_SelectionChanged;
             // 
             // TableNameCol
             // 
+            
+
             TableNameCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             TableNameCol.HeaderText = "Mã Hợp Đồng";
             TableNameCol.MinimumWidth = 6;
@@ -154,6 +163,8 @@ namespace GUI
             // 
             // SCol
             // 
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            SCol.DefaultCellStyle = dataGridViewCellStyle2;
             SCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             SCol.HeaderText = "Tên Doanh Nghiệp";
             SCol.MinimumWidth = 6;
@@ -162,6 +173,8 @@ namespace GUI
             // 
             // UCol
             // 
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            UCol.DefaultCellStyle = dataGridViewCellStyle3;
             UCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             UCol.HeaderText = "Tổng Tiền";
             UCol.MinimumWidth = 6;
@@ -170,6 +183,8 @@ namespace GUI
             // 
             // DCol
             // 
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            DCol.DefaultCellStyle = dataGridViewCellStyle4;
             DCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             DCol.HeaderText = "Số Tiền Chưa Thanh Toán";
             DCol.MinimumWidth = 6;

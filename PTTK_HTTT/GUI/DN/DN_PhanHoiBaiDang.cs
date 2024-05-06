@@ -1,4 +1,5 @@
-﻿using System;
+using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace GUI
 {
     public partial class DN_PhanHoiBaiDang : Form
     {
-        public DN_PhanHoiBaiDang()
+        private string mahd = "";
+        private HopDongBLL hdBLL = new HopDongBLL();
+        public DN_PhanHoiBaiDang(string tmp)
         {
             InitializeComponent();
+            mahd = tmp;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -25,8 +29,20 @@ namespace GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            int chec = hdBLL.ThemDNPhanHoi(mahd, textBox8.Text);
+            if (chec == 1)
+            {
+                MessageBox.Show("Gửi phản hồi thành công.");
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            if (chec == 5)
+            {
+                MessageBox.Show("Đã tồn tại phản hồi.");
+            }
+            if (chec == 0) MessageBox.Show("Đã có lỗi xảy ra, vui lòng thử lại sau");
+            //this.DialogResult = DialogResult.OK;
+            //this.Close();
         }
     }
 }

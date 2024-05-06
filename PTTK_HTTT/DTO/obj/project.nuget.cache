@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "6m/EiVeFBqfHsnS9gLj6UxGuTtOJdG6jNTp9WQD43WKIQh7kcREuPONKhXOdRgo/vzGxIxvjas06EnRhNmJsxA==",
+<<<<<<< HEAD
+  "dgSpecHash": "/V+Nx780MSom441IupUmeDlID2hhoRaHB+qZpOubsHlHersq7CkmQlBXMxMBaRKjhmqUbPNDpTEHT9aw5wZ3Mg==",
   "success": true,
-  "projectFilePath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj",
+=======
+  "dgSpecHash": "ytDzX+mQQmwy2Up1hGSUxBCNFLFCwZnsqVUM4s3lNTzpnN+TvbUJ2s4n3QWUx6sRp/DaUQfoW0B3Ic3E5RS46Q==",
+  "success": true,
+  "projectFilePath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj",
+>>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
   "expectedPackageFiles": [],
   "logs": []
 }

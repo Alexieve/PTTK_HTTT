@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.deps.json
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.dll
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.pdb
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.csproj.AssemblyReference.cache
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.AssemblyInfoInputs.cache
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.AssemblyInfo.cs
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.csproj.CoreCompileInputs.cache
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.sourcelink.json
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.dll
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\refint\DAL.dll
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.pdb
+E:\Kì 2 năm 3\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\ref\DAL.dll
+=======
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.deps.json
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.dll
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.pdb
@@ -14,3 +29,23 @@ D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\ref\DAL.d
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DTO.dll
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DTO.pdb
 D:\Study\Year3\HK2\PTTK\Project\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.csproj.Up2Date
+<<<<<<< HEAD
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.AssemblyInfo.cs
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.sourcelink.json
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.dll
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\refint\DAL.dll
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.pdb
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.deps.json
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.dll
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DAL.pdb
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DTO.dll
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\bin\Debug\net8.0-windows\DTO.pdb
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\DAL.csproj.Up2Date
+C:\Users\Admin\Desktop\CSDL\PTTK_HTTT\PTTK_HTTT\DAL\obj\Debug\net8.0-windows\ref\DAL.dll
+=======
+>>>>>>> 587561204e0d807963c8679114478a680ad02cc7
+>>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b

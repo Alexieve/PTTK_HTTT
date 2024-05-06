@@ -37,7 +37,7 @@
             btnLtgvht = new Button();
             pnlLtt = new Panel();
             btnLtt = new Button();
-            pnlMain = new Panel();
+            pnlUserControl = new Panel();
             pnlTop.SuspendLayout();
             tabtbLout.SuspendLayout();
             pnlXnpqc.SuspendLayout();
@@ -99,7 +99,6 @@
             pnlXnpqc.Padding = new Padding(0, 0, 0, 5);
             pnlXnpqc.Size = new Size(349, 45);
             pnlXnpqc.TabIndex = 2;
-            pnlXnpqc.MouseClick += Btn_Click;
             // 
             // btnXnpqc
             // 
@@ -116,7 +115,7 @@
             btnXnpqc.TabIndex = 2;
             btnXnpqc.Text = "Xác nhận phiếu quảng cáo";
             btnXnpqc.UseVisualStyleBackColor = false;
-            btnXnpqc.Click += Btn_Click;
+            btnXnpqc.Click += chuyen_Tab;
             // 
             // pnlLtgvht
             // 
@@ -145,7 +144,7 @@
             btnLtgvht.TabIndex = 3;
             btnLtgvht.Text = "Lấy thời gian và hình thức đăng tuyển";
             btnLtgvht.UseVisualStyleBackColor = false;
-            btnLtgvht.Click += Btn_Click;
+            btnLtgvht.Click += chuyen_Tab;
             // 
             // pnlLtt
             // 
@@ -174,27 +173,27 @@
             btnLtt.TabIndex = 0;
             btnLtt.Text = "Lấy thông tin đăng tuyển";
             btnLtt.UseVisualStyleBackColor = false;
-            btnLtt.Click += Btn_Click;
+            btnLtt.Click += chuyen_Tab;
             // 
-            // pnlMain
+            // pnlUserControl
             // 
-            pnlMain.BackColor = SystemColors.Control;
-            pnlMain.Location = new Point(0, 111);
-            pnlMain.Name = "pnlMain";
-            pnlMain.Size = new Size(1077, 610);
-            pnlMain.TabIndex = 2;
+            pnlUserControl.BackColor = SystemColors.Control;
+            pnlUserControl.Location = new Point(0, 111);
+            pnlUserControl.Name = "pnlUserControl";
+            pnlUserControl.Size = new Size(1077, 610);
+            pnlUserControl.TabIndex = 2;
             // 
-            // Page_LYCTD
+            // DN_LapYeuCauTD
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1077, 721);
-            Controls.Add(pnlMain);
+            Controls.Add(pnlUserControl);
             Controls.Add(tabtbLout);
             Controls.Add(pnlTop);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Page_LYCTD";
+            Name = "DN_LapYeuCauTD";
             Text = "Form1";
             pnlTop.ResumeLayout(false);
             pnlTop.PerformLayout();
@@ -216,6 +215,6 @@
         private Button btnXnpqc;
         private Panel pnlLtgvht;
         private Button btnLtgvht;
-        private Panel pnlMain;
+        private Panel pnlUserControl;
     }
 }

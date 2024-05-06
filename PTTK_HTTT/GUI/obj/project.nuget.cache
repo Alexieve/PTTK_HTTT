@@ -1,20 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "7fNntR5J9HJNlMug9OkLODOrWw05t6x897BaKPx4x/PTtEbprTp+HYa7F/RLAE2FEb6IH/IBxTicMacLSul3Kw==",
+<<<<<<< HEAD
+  "dgSpecHash": "Ai7ICiQHTTECBXUtaYLUmCZAhq9elVyWSGb2+6bdMXT5uGKzOcVM0Enea2/4NWHsxgPJjxRsuBk36fEGHxgFrg==",
   "success": true,
-  "projectFilePath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\GUI.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "f0u32PKZ+bLZPH8k1eaSHCiXD193tM7YJ/lYR+xizZ13wG9xxU4CBh3QYGc4JbXZy8NYCBJCKuvlm7pUnUl9gA==",
+=======
+  "dgSpecHash": "7fNntR5J9HJNlMug9OkLODOrWw05t6x897BaKPx4x/PTtEbprTp+HYa7F/RLAE2FEb6IH/IBxTicMacLSul3Kw==",
+>>>>>>> 587561204e0d807963c8679114478a680ad02cc7
+  "success": true,
+  "projectFilePath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
+>>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
   "expectedPackageFiles": [
-    "C:\\Users\\vumin\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\vumin\\.nuget\\packages\\oracle.manageddataaccess.core\\3.21.130\\oracle.manageddataaccess.core.3.21.130.nupkg.sha512",
-    "C:\\Users\\vumin\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
-    "C:\\Users\\vumin\\.nuget\\packages\\system.diagnostics.performancecounter\\6.0.1\\system.diagnostics.performancecounter.6.0.1.nupkg.sha512",
-    "C:\\Users\\vumin\\.nuget\\packages\\system.directoryservices\\6.0.1\\system.directoryservices.6.0.1.nupkg.sha512",
-    "C:\\Users\\vumin\\.nuget\\packages\\system.directoryservices.protocols\\6.0.2\\system.directoryservices.protocols.6.0.2.nupkg.sha512",
-    "C:\\Users\\vumin\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\vumin\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
-    "C:\\Users\\vumin\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
-    "C:\\Users\\vumin\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
-    "C:\\Users\\vumin\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\oracle.manageddataaccess.core\\3.21.130\\oracle.manageddataaccess.core.3.21.130.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.diagnostics.performancecounter\\6.0.1\\system.diagnostics.performancecounter.6.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.directoryservices\\6.0.1\\system.directoryservices.6.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.directoryservices.protocols\\6.0.2\\system.directoryservices.protocols.6.0.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
