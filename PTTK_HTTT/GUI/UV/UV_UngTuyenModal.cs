@@ -29,7 +29,7 @@ namespace GUI
             MAHOPDONG = ViTriUT.MAHOPDONG;
             string Title = "Ứng tuyển cho vị trí " + ViTriUT.CAPBACTD + " - " + ViTriUT.VITRITD + " tại " + ViTriUT.TENDN;
             TitleLabel.Text = Title;
-            UngVienDTO uv = ungVienBLL.Get_TT_UngTuyen_BY_MAUV("");
+            UngVienDTO uv = ungVienBLL.Get_TT_UngTuyen_By_MAUV("");
             NameBox.Text = uv.HOTEN;
             EmailBox.Text = uv.EMAIL;
             SDTBox.Text = uv.SDT;

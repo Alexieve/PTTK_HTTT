@@ -34,11 +34,14 @@
             CapBac = new Label();
             DiaChi = new Label();
             KyNang = new Label();
+            MAHD = new TextBox();
             ((System.ComponentModel.ISupportInitialize)Ava).BeginInit();
             SuspendLayout();
             // 
             // Ava
             // 
+            Ava.Cursor = Cursors.Hand;
+            Ava.Image = Properties.Resources.Trollface_non_free;
             Ava.Location = new Point(30, 18);
             Ava.Name = "Ava";
             Ava.Size = new Size(164, 153);
@@ -64,7 +67,6 @@
             TenDN.Size = new Size(613, 40);
             TenDN.TabIndex = 2;
             TenDN.Text = "Tên doanh nghiệp";
-            TenDN.Click += TenDN_Click;
             // 
             // CapBac
             // 
@@ -78,21 +80,28 @@
             // DiaChi
             // 
             DiaChi.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            DiaChi.Location = new Point(248, 143);
+            DiaChi.Location = new Point(248, 138);
             DiaChi.Name = "DiaChi";
             DiaChi.Size = new Size(660, 40);
             DiaChi.TabIndex = 4;
             DiaChi.Text = "Địa chỉ";
-            DiaChi.Click += DiaChi_Click;
             // 
             // KyNang
             // 
             KyNang.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            KyNang.Location = new Point(248, 183);
+            KyNang.Location = new Point(248, 178);
             KyNang.Name = "KyNang";
             KyNang.Size = new Size(555, 32);
             KyNang.TabIndex = 5;
             KyNang.Text = "Kỹ năng";
+            // 
+            // MAHD
+            // 
+            MAHD.Location = new Point(907, 174);
+            MAHD.Name = "MAHD";
+            MAHD.Size = new Size(125, 27);
+            MAHD.TabIndex = 6;
+            MAHD.Visible = false;
             // 
             // CPN_CardTuyenDung
             // 
@@ -100,6 +109,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(MAHD);
             Controls.Add(KyNang);
             Controls.Add(DiaChi);
             Controls.Add(CapBac);
@@ -108,9 +118,9 @@
             Controls.Add(Ava);
             Name = "CPN_CardTuyenDung";
             Size = new Size(1056, 226);
-            Load += CPN_CardTuyenDung_Load;
             ((System.ComponentModel.ISupportInitialize)Ava).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -121,5 +131,6 @@
         private Label CapBac;
         private Label DiaChi;
         private Label KyNang;
+        private TextBox MAHD;
     }
 }

@@ -607,11 +607,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
+      "projectName": "DAL",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\obj\\",
+=======
       "projectUniqueName": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
       "projectName": "DAL",
       "projectPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\obj\\",
+>>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -628,8 +636,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj": {
-              "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj"
+            "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj"
             }
           }
         }

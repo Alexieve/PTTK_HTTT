@@ -7,35 +7,94 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using DTO;
 
 namespace GUI
 {
     public partial class NV_XacThucDN : Form
     {
+        private DoanhNghiepBLL doanhNghiepBLL = new();
         public NV_XacThucDN()
         {
             InitializeComponent();
-            addSampleData();
+            Load_Table();
         }
 
-        private void addSampleData()
+        private void Load_Table()
         {
-            // Add data for DNTb
-            DNTb.Rows.Add("DN00000001", "Công ty ABC");
-            DNTb.Rows.Add("DN00000002", "Công ty XYZ");
-            DNTb.Rows.Add("DN00000003", "Công ty 123");
-            DNTb.Rows.Add("DN00000004", "Công ty 456");
-            DNTb.Rows.Add("DN00000005", "Công ty 789");
+            // Clear all box
+            MADNBox.Text = "";
+            TenDNBox.Text = "";
+            MAThueBox.Text = "";
+            NGDaiDienBox.Text = "";
+            DiaChiBox.Text = "";
+            SDTBox.Text = "";
+            EmailBox.Text = "";
+
+            List<DoanhNghiepDTO> listDN = doanhNghiepBLL.Get_List_DN_For_Xac_Thuc();
+            // USE FOR LOOP TO ADD ROWS AND CELLS
+            DNTb.Rows.Clear();
+            foreach (DoanhNghiepDTO dn in listDN)
+            {
+                DNTb.Rows.Add(dn.MADN, dn.TENDN);
+            }
         }
         private void XemCTBtn_Click(object sender, EventArgs e)
         {
-            MADNBox.Text = DNTb.CurrentRow.Cells[0].Value.ToString();
-            TenDNBox.Text = DNTb.CurrentRow.Cells[1].Value.ToString();
-            MAThueBox.Text = "123456789";
-            NGDaiDienBox.Text = "Nguyễn Văn A";
-            DiaChiBox.Text = "123 Đường ABC";
-            SDTBox.Text = "0123456789";
-            EmailBox.Text = "adasd@gmail.com";
+            if (DNTb.CurrentRow == null)
+            {
+                MessageBox.Show("Chưa chọn doanh nghiệp");
+                return;
+            }
+            DoanhNghiepDTO dn = doanhNghiepBLL.Get_Detail(DNTb.CurrentRow.Cells[0].Value.ToString());
+            MADNBox.Text = dn.MADN;
+            TenDNBox.Text = dn.TENDN;
+            MAThueBox.Text = dn.MSTHUE;
+            NGDaiDienBox.Text = dn.NGDAIDIEN;
+            DiaChiBox.Text = dn.DIACHI;
+            SDTBox.Text = dn.SDT;
+            EmailBox.Text = dn.EMAIL;
+        }
+
+        private void TuChoiBtn_Click(object sender, EventArgs e)
+        {
+            string MADN = MADNBox.Text;
+            if (MADN == "")
+            {
+                MessageBox.Show("Chưa chọn doanh nghiệp");
+                return;
+            }
+            doanhNghiepBLL.Delete(MADN);
+            MessageBox.Show("Đã từ chối doanh nghiệp");
+            Load_Table();
+        }
+
+        private void XacNhanBtn_Click(object sender, EventArgs e)
+        {
+            string MADN = MADNBox.Text;
+            string TENDN = TenDNBox.Text;
+            string MSTHUE = MAThueBox.Text;
+            string NGDAIDIEN = NGDaiDienBox.Text;
+            string DIACHI = DiaChiBox.Text;
+
+            if (MADN == "")
+            {
+                MessageBox.Show("Chưa chọn doanh nghiệp");
+                return;
+            }
+
+            DoanhNghiepDTO dn = new(MADN, TENDN, MSTHUE, NGDAIDIEN, DIACHI);
+            string errorCode = doanhNghiepBLL.Xac_Thuc(dn);
+            if (errorCode == "")
+            {
+                MessageBox.Show("Đã xác thực doanh nghiệp");
+                Load_Table();
+            }
+            else
+            {
+                MessageBox.Show(errorCode);
+            }
         }
     }
 }

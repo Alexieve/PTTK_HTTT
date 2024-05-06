@@ -14,9 +14,9 @@ namespace BLL
         private DAL.UngVienDAL ungVienDAL = new();
         public UngVienBLL() { }
 
-        public UngVienDTO Get_TT_UngTuyen_BY_MAUV(string MAUV)
+        public UngVienDTO Get_TT_UngTuyen_By_MAUV(string MAUV)
         {
-            DataTable dt = ungVienDAL.Get_TT_UngTuyen_BY_MAUV(MAUV);
+            DataTable dt = ungVienDAL.Get_TT_UngTuyen_By_MAUV(MAUV);
             return Utility.ToObject<UngVienDTO>(dt.Rows[0]);
         }
     }

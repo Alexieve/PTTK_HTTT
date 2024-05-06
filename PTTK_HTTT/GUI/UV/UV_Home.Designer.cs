@@ -32,7 +32,7 @@
             ContentPanel = new FlowLayoutPanel();
             SearchPanel = new Panel();
             SearchBtn = new Button();
-            textBox1 = new TextBox();
+            SearchBox = new TextBox();
             sidePanel = new FlowLayoutPanel();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel1 = new Panel();
@@ -68,7 +68,7 @@
             // SearchPanel
             // 
             SearchPanel.Controls.Add(SearchBtn);
-            SearchPanel.Controls.Add(textBox1);
+            SearchPanel.Controls.Add(SearchBox);
             SearchPanel.Location = new Point(3, 12);
             SearchPanel.Name = "SearchPanel";
             SearchPanel.Size = new Size(1061, 55);
@@ -83,15 +83,16 @@
             SearchBtn.TabIndex = 1;
             SearchBtn.Text = "Tìm Kiếm";
             SearchBtn.UseVisualStyleBackColor = true;
+            SearchBtn.Click += SearchBtn_Click;
             // 
-            // textBox1
+            // SearchBox
             // 
-            textBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(3, 8);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Tìm kiếm theo các Vị trí, Kỹ năng, Công ty,...";
-            textBox1.Size = new Size(921, 34);
-            textBox1.TabIndex = 0;
+            SearchBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            SearchBox.Location = new Point(3, 8);
+            SearchBox.Name = "SearchBox";
+            SearchBox.PlaceholderText = "Tìm kiếm theo các Vị trí, Kỹ năng, Công ty,...";
+            SearchBox.Size = new Size(921, 34);
+            SearchBox.TabIndex = 0;
             // 
             // sidePanel
             // 
@@ -216,7 +217,7 @@
         private Button HomeBtn;
         private Button XemKQBtn;
         private Button SearchBtn;
-        private TextBox textBox1;
+        private TextBox SearchBox;
         private Panel SearchPanel;
         private FlowLayoutPanel ContentPanel;
         private TableLayoutPanel tableLayoutPanel1;

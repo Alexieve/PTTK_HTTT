@@ -73,5 +73,12 @@ namespace BLL
         {
             hsUngTuyenDAL.Update_DoUuTien(MAUV, MAHOPDONG, DOUUTIEN);
         }
+
+        public List<HSUngTuyenDTO> Get_For_Xac_Thuc_HS()
+        {
+            DataTable dt = hsUngTuyenDAL.Get_For_Xac_Thuc_HS();
+            List<HSUngTuyenDTO> listHS = Utility.ToList<HSUngTuyenDTO>(dt);
+            return listHS;
+        }
     }
 }

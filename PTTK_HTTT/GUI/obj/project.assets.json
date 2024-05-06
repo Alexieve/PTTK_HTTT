@@ -651,11 +651,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
+      "projectName": "GUI",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\obj\\",
+=======
       "projectUniqueName": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
       "projectName": "GUI",
       "projectPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\obj\\",
+>>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -673,6 +681,13 @@
           "targetAlias": "net8.0-windows",
           "projectReferences": {
 <<<<<<< HEAD
+            "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj"
+            },
+            "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj"
+=======
+<<<<<<< HEAD
             "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj": {
               "projectPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj"
 =======
@@ -682,6 +697,7 @@
             "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj": {
               "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj"
 >>>>>>> 587561204e0d807963c8679114478a680ad02cc7
+>>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
             }
           }
         }

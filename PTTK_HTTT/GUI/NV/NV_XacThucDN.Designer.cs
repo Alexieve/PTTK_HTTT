@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             ParentPanel = new Panel();
             panel2 = new Panel();
+            TuChoiBtn = new Button();
+            XacNhanBtn = new Button();
             XemCTBtn = new Button();
             panel1 = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
@@ -57,8 +59,6 @@
             TenDNBox = new TextBox();
             TittlePanel = new Panel();
             TitleLabel = new Label();
-            XacNhanBtn = new Button();
-            TuChoiBtn = new Button();
             ParentPanel.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -88,6 +88,26 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1077, 45);
             panel2.TabIndex = 2;
+            // 
+            // TuChoiBtn
+            // 
+            TuChoiBtn.Location = new Point(763, 0);
+            TuChoiBtn.Name = "TuChoiBtn";
+            TuChoiBtn.Size = new Size(148, 45);
+            TuChoiBtn.TabIndex = 2;
+            TuChoiBtn.Text = "Từ Chối";
+            TuChoiBtn.UseVisualStyleBackColor = true;
+            TuChoiBtn.Click += TuChoiBtn_Click;
+            // 
+            // XacNhanBtn
+            // 
+            XacNhanBtn.Location = new Point(917, 0);
+            XacNhanBtn.Name = "XacNhanBtn";
+            XacNhanBtn.Size = new Size(148, 45);
+            XacNhanBtn.TabIndex = 1;
+            XacNhanBtn.Text = "Xác Nhận";
+            XacNhanBtn.UseVisualStyleBackColor = true;
+            XacNhanBtn.Click += XacNhanBtn_Click;
             // 
             // XemCTBtn
             // 
@@ -132,27 +152,27 @@
             DNTb.AllowUserToAddRows = false;
             DNTb.AllowUserToDeleteRows = false;
             DNTb.BackgroundColor = SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            DNTb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = SystemColors.Control;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            DNTb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             DNTb.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DNTb.Columns.AddRange(new DataGridViewColumn[] { MADN, TenDN });
             DNTb.Location = new Point(3, 3);
             DNTb.Name = "DNTb";
             DNTb.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = SystemColors.Control;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 12F);
-            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            DNTb.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = SystemColors.Control;
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 12F);
+            dataGridViewCellStyle8.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
+            DNTb.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             DNTb.RowHeadersWidth = 51;
             DNTb.Size = new Size(520, 563);
             DNTb.TabIndex = 2;
@@ -160,9 +180,9 @@
             // MADN
             // 
             MADN.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            MADN.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MADN.DefaultCellStyle = dataGridViewCellStyle6;
             MADN.HeaderText = "Mã Doanh Nghiệp";
             MADN.MinimumWidth = 6;
             MADN.Name = "MADN";
@@ -171,8 +191,8 @@
             // TenDN
             // 
             TenDN.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            TenDN.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            TenDN.DefaultCellStyle = dataGridViewCellStyle7;
             TenDN.HeaderText = "Tên Doanh Nghiệp";
             TenDN.MinimumWidth = 6;
             TenDN.Name = "TenDN";
@@ -255,7 +275,6 @@
             DiaChiBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             DiaChiBox.Location = new Point(136, 344);
             DiaChiBox.Name = "DiaChiBox";
-            DiaChiBox.ReadOnly = true;
             DiaChiBox.Size = new Size(378, 34);
             DiaChiBox.TabIndex = 9;
             // 
@@ -264,7 +283,6 @@
             NGDaiDienBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             NGDaiDienBox.Location = new Point(136, 264);
             NGDaiDienBox.Name = "NGDaiDienBox";
-            NGDaiDienBox.ReadOnly = true;
             NGDaiDienBox.Size = new Size(378, 34);
             NGDaiDienBox.TabIndex = 8;
             // 
@@ -273,7 +291,6 @@
             MAThueBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             MAThueBox.Location = new Point(136, 184);
             MAThueBox.Name = "MAThueBox";
-            MAThueBox.ReadOnly = true;
             MAThueBox.Size = new Size(378, 34);
             MAThueBox.TabIndex = 7;
             // 
@@ -348,7 +365,6 @@
             TenDNBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             TenDNBox.Location = new Point(136, 104);
             TenDNBox.Name = "TenDNBox";
-            TenDNBox.ReadOnly = true;
             TenDNBox.Size = new Size(378, 34);
             TenDNBox.TabIndex = 6;
             // 
@@ -373,24 +389,6 @@
             TitleLabel.TabIndex = 0;
             TitleLabel.Text = "Xác Thực Thông Tin Đăng Ký Doanh Nghiệp";
             TitleLabel.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // XacNhanBtn
-            // 
-            XacNhanBtn.Location = new Point(917, 0);
-            XacNhanBtn.Name = "XacNhanBtn";
-            XacNhanBtn.Size = new Size(148, 45);
-            XacNhanBtn.TabIndex = 1;
-            XacNhanBtn.Text = "Xác Nhận";
-            XacNhanBtn.UseVisualStyleBackColor = true;
-            // 
-            // TuChoiBtn
-            // 
-            TuChoiBtn.Location = new Point(763, 0);
-            TuChoiBtn.Name = "TuChoiBtn";
-            TuChoiBtn.Size = new Size(148, 45);
-            TuChoiBtn.TabIndex = 2;
-            TuChoiBtn.Text = "Từ Chối";
-            TuChoiBtn.UseVisualStyleBackColor = true;
             // 
             // NV_XacThucDN
             // 
