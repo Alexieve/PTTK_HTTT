@@ -29,25 +29,22 @@ namespace GUI
             HSUngTuyen = new HSUngTuyenBLL();
             InitializeComponent();
             List<HopDongDTO> chiTietTD = BaiDangTD.Get_Detail_BaiDangTuyenDung(MAHD);
-            Load(chiTietTD);
+            Load(chiTietTD[0]);
 
         }
-        private void Load(List<HopDongDTO> chiTietTD)
+        private void Load(HopDongDTO chiTietTD)
         {
-            foreach (var array in chiTietTD)
-            {
-                ViTri.Text = array.VITRITD;
-                NgayDang.Text = array.NGAYTD.ToString();
-                NgayKetThuc.Text = array.NGAYTD.AddDays(array.THOIGIANTD).ToString();
-                TenDN.Text = array.TENDN;
-                SoLuong.Text = array.SOLUONGTD.ToString();
-                CapBac.Text = array.CAPBACTD;
-                DiaChi.Text = array.DIACHI;
-                MoTa.Text = array.YEUCAU;
-                KyNang.Text = array.KYNANG;
-                LienHe.Text = array.EMAIL;
-                MaHD = array.MAHOPDONG;
-            }
+            ViTri.Text = chiTietTD.VITRITD;
+            NgayDang.Text = chiTietTD.NGAYTD.ToString();
+            NgayKetThuc.Text = chiTietTD.NGAYTD.AddDays(chiTietTD.THOIGIANTD).ToString();
+            TenDN.Text = chiTietTD.TENDN;
+            SoLuong.Text = chiTietTD.SOLUONGTD.ToString();
+            CapBac.Text = chiTietTD .CAPBACTD;
+            DiaChi.Text = chiTietTD.DIACHI;
+            MoTa.Text = chiTietTD.YEUCAU;
+            KyNang.Text = chiTietTD.KYNANG;
+            LienHe.Text = chiTietTD.EMAIL;
+            MaHD = chiTietTD.MAHOPDONG;
         }
         private void UngTuyenBtn_Click(object sender, EventArgs e)
         {
