@@ -73,5 +73,14 @@ namespace DTO
             SDT = sdt;
             EMAIL = email;
         }
+
+        public DoanhNghiepDTO(string MADN, string TENDN, string MSTHUE, string NGDAIDIEN, string DIACHI)
+        {
+            this.MADN = MADN;
+            this.TENDN = TENDN;
+            this.MSTHUE = MSTHUE;
+            this.NGDAIDIEN = NGDAIDIEN;
+            this.DIACHI = DIACHI;
+        }
     }
 }

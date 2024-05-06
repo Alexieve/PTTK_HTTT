@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\bll\\hsungtuyenbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|solutionrelative:bll\\hsungtuyenbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\nv\\nv_phanhoihs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\nv\\nv_phanhoihs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\uv\\uv_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\uv\\uv_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\nv\\nv_xacthuchs_chitieths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\nv\\nv_xacthuchs_chitieths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\bll\\hopdongbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|solutionrelative:bll\\hopdongbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\nv\\nv_xacthuchs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\nv\\nv_xacthuchs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\nv\\nv_duyethoso_dsbaidang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\nv\\nv_duyethoso_dsbaidang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\nv\\nv_duyethoso_chitieths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\nv\\nv_duyethoso_chitieths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 59,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,53 +46,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UV_Home.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\UV\\UV_Home.cs",
-              "RelativeDocumentMoniker": "GUI\\UV\\UV_Home.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\UV\\UV_Home.cs [Design]*",
-              "RelativeToolTip": "GUI\\UV\\UV_Home.cs [Design]*",
+              "DocumentIndex": 3,
+              "Title": "NV_DuyetHoSo_ChiTietHS.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_DuyetHoSo_ChiTietHS.cs",
+              "RelativeDocumentMoniker": "GUI\\NV\\NV_DuyetHoSo_ChiTietHS.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_DuyetHoSo_ChiTietHS.cs",
+              "RelativeToolTip": "GUI\\NV\\NV_DuyetHoSo_ChiTietHS.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAA7wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:31:51.488Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-06T19:17:52.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NV_XacThucHS_ChiTietHS.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_XacThucHS_ChiTietHS.cs",
+              "RelativeDocumentMoniker": "GUI\\NV\\NV_XacThucHS_ChiTietHS.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_XacThucHS_ChiTietHS.cs",
+              "RelativeToolTip": "GUI\\NV\\NV_XacThucHS_ChiTietHS.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAiwEYAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:34:50.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HSUngTuyenBLL.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\HSUngTuyenBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\HSUngTuyenBLL.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\HSUngTuyenBLL.cs",
-              "RelativeToolTip": "BLL\\HSUngTuyenBLL.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAgwBsAAAAAAAAA",
+              "Title": "NV_PhanHoiHS.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_PhanHoiHS.cs",
+              "RelativeDocumentMoniker": "GUI\\NV\\NV_PhanHoiHS.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_PhanHoiHS.cs",
+              "RelativeToolTip": "GUI\\NV\\NV_PhanHoiHS.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAQwCYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:27:32.755Z",
+              "WhenOpened": "2024-05-06T18:38:48.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HopDongBLL.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\HopDongBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\HopDongBLL.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\HopDongBLL.cs",
-              "RelativeToolTip": "BLL\\HopDongBLL.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Title": "NV_XacThucHS.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_XacThucHS.cs",
+              "RelativeDocumentMoniker": "GUI\\NV\\NV_XacThucHS.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_XacThucHS.cs",
+              "RelativeToolTip": "GUI\\NV\\NV_XacThucHS.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAUwDkAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:23:22.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NV_DuyetHoSo_DSBaiDang.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_DuyetHoSo_DSBaiDang.cs",
-              "RelativeDocumentMoniker": "GUI\\NV\\NV_DuyetHoSo_DSBaiDang.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_DuyetHoSo_DSBaiDang.cs",
-              "RelativeToolTip": "GUI\\NV\\NV_DuyetHoSo_DSBaiDang.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwBwAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:17:23.47Z",
+              "WhenOpened": "2024-05-06T16:16:50.918Z",
               "EditorCaption": ""
             }
           ]

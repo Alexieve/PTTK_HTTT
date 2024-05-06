@@ -41,6 +41,7 @@
             MAUV = new DataGridViewTextBoxColumn();
             TenUV = new DataGridViewTextBoxColumn();
             NgayNop = new DataGridViewTextBoxColumn();
+            MAHD = new DataGridViewTextBoxColumn();
             TittlePanel.SuspendLayout();
             ParentPanel.SuspendLayout();
             panel2.SuspendLayout();
@@ -111,7 +112,7 @@
             HoSoTb.AllowUserToAddRows = false;
             HoSoTb.AllowUserToDeleteRows = false;
             HoSoTb.BackgroundColor = SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Control;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
@@ -120,7 +121,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             HoSoTb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             HoSoTb.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            HoSoTb.Columns.AddRange(new DataGridViewColumn[] { MAUV, TenUV, NgayNop });
+            HoSoTb.Columns.AddRange(new DataGridViewColumn[] { MAUV, TenUV, NgayNop, MAHD });
             HoSoTb.Location = new Point(12, 3);
             HoSoTb.Name = "HoSoTb";
             HoSoTb.ReadOnly = true;
@@ -163,6 +164,14 @@
             NgayNop.Name = "NgayNop";
             NgayNop.ReadOnly = true;
             // 
+            // MAHD
+            // 
+            MAHD.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            MAHD.HeaderText = "Mã Hợp Đồng";
+            MAHD.MinimumWidth = 6;
+            MAHD.Name = "MAHD";
+            MAHD.ReadOnly = true;
+            // 
             // NV_XacThucHS
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
@@ -193,5 +202,6 @@
         private DataGridViewTextBoxColumn MAUV;
         private DataGridViewTextBoxColumn TenUV;
         private DataGridViewTextBoxColumn NgayNop;
+        private DataGridViewTextBoxColumn MAHD;
     }
 }

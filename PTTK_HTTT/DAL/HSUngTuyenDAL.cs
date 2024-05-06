@@ -97,5 +97,15 @@ namespace DAL
             };
             conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, Parameters);
         }
+
+        public DataTable Get_For_Xac_Thuc_HS()
+        {
+            string procName = "USP_HSUNGTUYEN_GET_FOR_XAC_THUC_HS";
+            OracleParameter[] Parameters =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }

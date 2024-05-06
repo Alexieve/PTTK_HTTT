@@ -176,6 +176,7 @@
             GioiThieuBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             GioiThieuBox.Location = new Point(147, 16);
             GioiThieuBox.Name = "GioiThieuBox";
+            GioiThieuBox.ReadOnly = true;
             GioiThieuBox.Size = new Size(396, 200);
             GioiThieuBox.TabIndex = 1;
             GioiThieuBox.Text = "";
@@ -217,6 +218,7 @@
             KinhNghiemBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             KinhNghiemBox.Location = new Point(147, 13);
             KinhNghiemBox.Name = "KinhNghiemBox";
+            KinhNghiemBox.ReadOnly = true;
             KinhNghiemBox.Size = new Size(396, 200);
             KinhNghiemBox.TabIndex = 1;
             KinhNghiemBox.Text = "";
@@ -237,6 +239,7 @@
             HocVanBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             HocVanBox.Location = new Point(147, 13);
             HocVanBox.Name = "HocVanBox";
+            HocVanBox.ReadOnly = true;
             HocVanBox.Size = new Size(396, 200);
             HocVanBox.TabIndex = 1;
             HocVanBox.Text = "";
@@ -293,7 +296,7 @@
             ParentPanel.Dock = DockStyle.Fill;
             ParentPanel.Location = new Point(0, 0);
             ParentPanel.Name = "ParentPanel";
-            ParentPanel.Size = new Size(1139, 608);
+            ParentPanel.Size = new Size(1139, 680);
             ParentPanel.TabIndex = 9;
             // 
             // ThongTinPanel
@@ -386,14 +389,14 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1139, 608);
+            ClientSize = new Size(1139, 680);
             Controls.Add(ParentPanel);
             Font = new Font("Segoe UI", 12F);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4);
             Name = "NV_XacThucHS_ChiTietHS";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Duyệt Hồ Sơ Ứng Tuyển";
+            Text = "Xác Thực Hồ Sơ Ứng Tuyển";
             SDTPanel.ResumeLayout(false);
             SDTPanel.PerformLayout();
             EmailPanel.ResumeLayout(false);

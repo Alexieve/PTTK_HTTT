@@ -45,7 +45,7 @@ namespace GUI
 
         private void Load_TT_UngVien()
         {
-            UngVienDTO uv = ungVienBLL.Get_TT_UngTuyen_BY_MAUV(MAUV);
+            UngVienDTO uv = ungVienBLL.Get_TT_UngTuyen_By_MAUV(MAUV);
             NameBox.Text = uv.HOTEN;
             EmailBox.Text = uv.EMAIL;
             SDTBox.Text = uv.SDT;

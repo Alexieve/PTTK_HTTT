@@ -14,7 +14,7 @@ namespace DAL
         private DbConnection conn = new();
         public UngVienDAL() {}
 
-        public DataTable Get_TT_UngTuyen_BY_MAUV(string MAUV)
+        public DataTable Get_TT_UngTuyen_By_MAUV(string MAUV)
         {
             if (MAUV == "") MAUV = conn.username;
             string procName = "USP_UNGVIEN_GET_TTUNGTUYEN_BY_MAUV";

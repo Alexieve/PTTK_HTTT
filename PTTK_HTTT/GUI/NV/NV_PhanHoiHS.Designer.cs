@@ -30,9 +30,9 @@
         {
             label3 = new Label();
             panel1 = new Panel();
-            button2 = new Button();
-            button3 = new Button();
-            textBox8 = new TextBox();
+            XacNhanBtn = new Button();
+            HuyBtn = new Button();
+            NoiDungBox = new TextBox();
             label9 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -52,9 +52,9 @@
             // 
             panel1.BackColor = SystemColors.Control;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(textBox8);
+            panel1.Controls.Add(XacNhanBtn);
+            panel1.Controls.Add(HuyBtn);
+            panel1.Controls.Add(NoiDungBox);
             panel1.Controls.Add(label9);
             panel1.Controls.Add(label3);
             panel1.Location = new Point(0, 0);
@@ -62,32 +62,32 @@
             panel1.Size = new Size(1054, 434);
             panel1.TabIndex = 19;
             // 
-            // button2
+            // XacNhanBtn
             // 
-            button2.Location = new Point(712, 359);
-            button2.Name = "button2";
-            button2.Size = new Size(122, 40);
-            button2.TabIndex = 34;
-            button2.Text = "Gửi";
-            button2.Click += button2_Click;
+            XacNhanBtn.Location = new Point(712, 359);
+            XacNhanBtn.Name = "XacNhanBtn";
+            XacNhanBtn.Size = new Size(122, 40);
+            XacNhanBtn.TabIndex = 34;
+            XacNhanBtn.Text = "Gửi";
+            XacNhanBtn.Click += XacNhanBtn_Click;
             // 
-            // button3
+            // HuyBtn
             // 
-            button3.Location = new Point(208, 359);
-            button3.Name = "button3";
-            button3.Size = new Size(122, 40);
-            button3.TabIndex = 33;
-            button3.Text = "Hủy";
-            button3.Click += button3_Click;
+            HuyBtn.Location = new Point(208, 359);
+            HuyBtn.Name = "HuyBtn";
+            HuyBtn.Size = new Size(122, 40);
+            HuyBtn.TabIndex = 33;
+            HuyBtn.Text = "Hủy";
+            HuyBtn.Click += HuyBtn_Click;
             // 
-            // textBox8
+            // NoiDungBox
             // 
-            textBox8.Location = new Point(19, 139);
-            textBox8.Multiline = true;
-            textBox8.Name = "textBox8";
-            textBox8.ScrollBars = ScrollBars.Vertical;
-            textBox8.Size = new Size(1011, 172);
-            textBox8.TabIndex = 32;
+            NoiDungBox.Location = new Point(19, 139);
+            NoiDungBox.Multiline = true;
+            NoiDungBox.Name = "NoiDungBox";
+            NoiDungBox.ScrollBars = ScrollBars.Vertical;
+            NoiDungBox.Size = new Size(1011, 172);
+            NoiDungBox.TabIndex = 32;
             // 
             // label9
             // 
@@ -118,9 +118,9 @@
         private Label label3;
         
         private Panel panel1;
-        private TextBox textBox8;
+        private TextBox NoiDungBox;
         private Label label9;
-        private Button button2;
-        private Button button3;
+        private Button XacNhanBtn;
+        private Button HuyBtn;
     }
 }
