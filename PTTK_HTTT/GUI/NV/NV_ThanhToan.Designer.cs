@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             lbTopbar = new Label();
             pnlTop = new Panel();
             dtgHoaDon = new DataGridView();
             tbMAHOPDONG = new TextBox();
             btnTimBai = new Button();
             pnlSave = new Panel();
-            btnSave = new Button();
+            btnInHoaDon = new Button();
             panel1 = new Panel();
             btnThanhToan = new Button();
             rbtnTTToanBo = new RadioButton();
@@ -90,23 +90,23 @@
             // dtgHoaDon
             // 
             dtgHoaDon.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dtgHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dtgHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dtgHoaDon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dtgHoaDon.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Window;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            dtgHoaDon.DefaultCellStyle = dataGridViewCellStyle4;
             dtgHoaDon.Location = new Point(402, 161);
             dtgHoaDon.Name = "dtgHoaDon";
             dtgHoaDon.ReadOnly = true;
@@ -138,23 +138,23 @@
             // pnlSave
             // 
             pnlSave.BackColor = Color.MediumSeaGreen;
-            pnlSave.Controls.Add(btnSave);
+            pnlSave.Controls.Add(btnInHoaDon);
             pnlSave.Location = new Point(832, 43);
             pnlSave.Name = "pnlSave";
             pnlSave.Size = new Size(200, 61);
             pnlSave.TabIndex = 25;
             // 
-            // btnSave
+            // btnInHoaDon
             // 
-            btnSave.BackColor = Color.White;
-            btnSave.FlatStyle = FlatStyle.Flat;
-            btnSave.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSave.Location = new Point(3, 3);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(194, 55);
-            btnSave.TabIndex = 15;
-            btnSave.Text = "In hóa đơn";
-            btnSave.UseVisualStyleBackColor = false;
+            btnInHoaDon.BackColor = Color.White;
+            btnInHoaDon.FlatStyle = FlatStyle.Flat;
+            btnInHoaDon.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnInHoaDon.Location = new Point(3, 3);
+            btnInHoaDon.Name = "btnInHoaDon";
+            btnInHoaDon.Size = new Size(194, 55);
+            btnInHoaDon.TabIndex = 15;
+            btnInHoaDon.Text = "In hóa đơn";
+            btnInHoaDon.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -377,7 +377,7 @@
         private TextBox tbMAHOPDONG;
         private Button btnTimBai;
         private Panel pnlSave;
-        private Button btnSave;
+        private Button btnInHoaDon;
         private Panel panel1;
         private Button btnThanhToan;
         private RadioButton rbtnTTToanBo;

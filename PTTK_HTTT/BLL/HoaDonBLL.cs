@@ -24,9 +24,9 @@ namespace BLL
             return listHoaDon;
         }
 
-        public string THANH_TOAN(float SOTIEN, string HINHTHUCTT, string MAHOPDONG)
+        public string THANH_TOAN(HoaDonDTO _HoaDonDTO)
         {
-            return _HoaDonDAL.THANH_TOAN(SOTIEN, HINHTHUCTT, MAHOPDONG);
+            return _HoaDonDAL.THANH_TOAN(_HoaDonDTO);
         }
     }
 }

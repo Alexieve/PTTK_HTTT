@@ -29,6 +29,7 @@ namespace DTO
         private DateTime _NGAYPH;
         private string _NOIDUNG;
         private DateTime _NGAYTT;
+        private string _HINHTHUC;
 
 
 
@@ -52,6 +53,7 @@ namespace DTO
         public DateTime NGAYPH { get => _NGAYPH; set => _NGAYPH = value; }
         public string NOIDUNG { get => _NOIDUNG; set => _NOIDUNG = value; }
         public DateTime NGAYTT { get => _NGAYTT; set => _NGAYTT = value; }
+        public string HINHTHUC { get => _HINHTHUC; set => _HINHTHUC = value; }
         public HopDongDTO()
         {
             this.MAHOPDONG = "";
@@ -176,6 +178,28 @@ namespace DTO
             this.TIENCONLAI = 0;
             this.SOLUONGHS = 0;
         }
+
+        public HopDongDTO(string CAPBAC, string VITRITD, string KYNANG, int SOLUONG, string YEUCAU, string HINHTHUC, int THOIGIANTD, DateTime NGAYTD)
+        {
+            this.MAHOPDONG = "";
+            this.VITRITD = VITRITD;
+            this.TENDN = "";
+            this.CAPBACTD = CAPBAC;
+            this.DIACHI = "";
+            this.KYNANG = KYNANG;
+            this.MADN = "";
+            this.SOLUONGTD = SOLUONG;
+            this.YEUCAU = YEUCAU;
+            this.THOIGIANTD = THOIGIANTD;
+            this.NGAYTD = NGAYTD;
+            this.NGAYLAP = DateTime.Now;
+            this.TRANGTHAI = 0;
+            this.TONGTIEN = 0;
+            this.TIENCONLAI = 0;
+            this.SOLUONGHS = 0;
+            this.HINHTHUC = HINHTHUC;
+        }
+
         public HopDongDTO(string MAHOPDONG, DateTime NGAYPH,  string NOIDUNG)
         {
             this.MAHOPDONG = MAHOPDONG;

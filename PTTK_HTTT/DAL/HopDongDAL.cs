@@ -215,21 +215,21 @@ namespace DAL
             //return 1;
         }
 
-        public string Insert(string CAPBAC, string VITRITD, string KYNANG, int SOLUONGTD, string YEUCAU, string HINHTHUC, int THOIGIANTD, DateTime NGAYTD)
+        public string Them_HopDong(HopDongDTO _HopDongDTO)
         {
             try
             {
                 string procName = "USP_HOPDONG_INSERT";
                 OracleParameter[] parameters =
                 {
-                    new("vCAPBACTD", OracleDbType.Varchar2,CAPBAC, ParameterDirection.Input),
-                    new("vVITRITD", OracleDbType.Varchar2,VITRITD, ParameterDirection.Input),
-                    new("vKYNANG", OracleDbType.Varchar2,KYNANG, ParameterDirection.Input),
-                    new("vSOLUONGTD", OracleDbType.Int32,SOLUONGTD, ParameterDirection.Input),
-                    new("vYEUCAU", OracleDbType.NVarchar2,YEUCAU, ParameterDirection.Input),
-                    new("vHINHTHUC", OracleDbType.NVarchar2,HINHTHUC, ParameterDirection.Input),
-                    new("vTHOIGIANTD", OracleDbType.Int32,THOIGIANTD, ParameterDirection.Input),
-                    new("vNGAYTD", OracleDbType.Date,NGAYTD, ParameterDirection.Input)
+                    new("vCAPBACTD", OracleDbType.Varchar2,_HopDongDTO.CAPBACTD, ParameterDirection.Input),
+                    new("vVITRITD", OracleDbType.Varchar2,_HopDongDTO.VITRITD, ParameterDirection.Input),
+                    new("vKYNANG", OracleDbType.Varchar2,_HopDongDTO.KYNANG, ParameterDirection.Input),
+                    new("vSOLUONGTD", OracleDbType.Int32,_HopDongDTO.SOLUONGTD, ParameterDirection.Input),
+                    new("vYEUCAU", OracleDbType.NVarchar2,_HopDongDTO.YEUCAU, ParameterDirection.Input),
+                    new("vHINHTHUC", OracleDbType.NVarchar2,_HopDongDTO.HINHTHUC, ParameterDirection.Input),
+                    new("vTHOIGIANTD", OracleDbType.Int32,_HopDongDTO.THOIGIANTD, ParameterDirection.Input),
+                    new("vNGAYTD", OracleDbType.Date,_HopDongDTO.NGAYTD, ParameterDirection.Input)
                 };
                 conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, parameters);
                 return "Thêm hợp đồng thành công";

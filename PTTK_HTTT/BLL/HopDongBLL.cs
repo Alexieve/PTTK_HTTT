@@ -36,9 +36,9 @@ namespace BLL
             return dt.Rows[0]["YEUCAU"].ToString();
         }
 
-        public string Insert(string CAPBAC, string VITRITD, string KYNANG, int SOLUONG, string YEUCAU, string HINHTHUC, int THOIGIANTD, DateTime NGAYTD)
+        public string Them_HopDong(HopDongDTO _HopDongDTO)
         {
-            return hopDongDAL.Insert(CAPBAC, VITRITD, KYNANG, SOLUONG, YEUCAU, HINHTHUC, THOIGIANTD, NGAYTD);
+            return hopDongDAL.Them_HopDong(_HopDongDTO);
         }
 
         public HopDongDTO Find_BY_MAHOPDONG(string MAHOPDONG)

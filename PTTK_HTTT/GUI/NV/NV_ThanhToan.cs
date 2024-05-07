@@ -101,7 +101,8 @@ namespace GUI
             }
             string MAHOPDONG = tbMAHOPDONG.Text;
             string HINHTHUCTT = rbtnTienMat.Checked ? "Tiền mặt" : "Thẻ";
-            string status = _HoaDonBLL.THANH_TOAN(SOTIEN, HINHTHUCTT, MAHOPDONG);
+            HoaDonDTO _HoaDonDTO = new HoaDonDTO(SOTIEN, HINHTHUCTT, MAHOPDONG);
+            string status = _HoaDonBLL.THANH_TOAN(_HoaDonDTO);
             MessageBox.Show(status);
             btnTimBai_Click(sender, e);
         }
