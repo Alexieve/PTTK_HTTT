@@ -232,7 +232,7 @@ namespace DAL
                     new("vNGAYTD", OracleDbType.Date,NGAYTD, ParameterDirection.Input)
                 };
                 conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, parameters);
-                return "success";
+                return "Thêm hợp đồng thành công";
             }
             catch (Exception ex)
             {
