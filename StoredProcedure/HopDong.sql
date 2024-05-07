@@ -327,7 +327,7 @@ BEGIN
     SELECT TO_CHAR(COUNT(*) + 1) INTO pkMAHD
     FROM HOPDONG;
     
-    pkMAHD := 'NV' || TO_CHAR(TO_NUMBER(SUBSTR(vUSER, -8))) || '_' || pkMAHD;
+    pkMAHD := 'HD' || TO_CHAR(TO_NUMBER(SUBSTR(vUSER, -8))) || '_' || pkMAHD;
     
 --    RAISE_APPLICATION_ERROR(-20001, pkMAHD);
     
