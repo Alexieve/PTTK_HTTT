@@ -103,7 +103,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(320, 122);
+            label2.Location = new Point(320, 120);
             label2.Name = "label2";
             label2.Size = new Size(190, 28);
             label2.TabIndex = 13;
@@ -115,7 +115,7 @@
             ViTri.Enabled = false;
             ViTri.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
             ViTri.ForeColor = Color.Black;
-            ViTri.Location = new Point(530, 119);
+            ViTri.Location = new Point(530, 122);
             ViTri.Name = "ViTri";
             ViTri.ReadOnly = true;
             ViTri.Size = new Size(217, 34);
@@ -126,7 +126,7 @@
             TenDN.BackColor = SystemColors.ButtonHighlight;
             TenDN.Enabled = false;
             TenDN.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            TenDN.Location = new Point(530, 210);
+            TenDN.Location = new Point(520, 213);
             TenDN.Name = "TenDN";
             TenDN.ReadOnly = true;
             TenDN.Size = new Size(217, 27);
@@ -135,7 +135,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(320, 213);
+            label6.Location = new Point(320, 211);
             label6.Name = "label6";
             label6.Size = new Size(135, 20);
             label6.TabIndex = 17;
@@ -146,7 +146,7 @@
             CapBac.BackColor = SystemColors.ButtonHighlight;
             CapBac.Enabled = false;
             CapBac.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            CapBac.Location = new Point(412, 290);
+            CapBac.Location = new Point(412, 293);
             CapBac.Name = "CapBac";
             CapBac.ReadOnly = true;
             CapBac.Size = new Size(255, 27);
@@ -155,7 +155,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(320, 290);
+            label4.Location = new Point(321, 291);
             label4.Name = "label4";
             label4.Size = new Size(70, 20);
             label4.TabIndex = 19;
@@ -175,7 +175,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(43, 395);
+            label5.Location = new Point(43, 390);
             label5.Name = "label5";
             label5.Size = new Size(62, 20);
             label5.TabIndex = 21;
@@ -186,7 +186,7 @@
             SoLuong.BackColor = SystemColors.ButtonHighlight;
             SoLuong.Enabled = false;
             SoLuong.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            SoLuong.Location = new Point(530, 250);
+            SoLuong.Location = new Point(520, 250);
             SoLuong.Name = "SoLuong";
             SoLuong.ReadOnly = true;
             SoLuong.Size = new Size(97, 27);
@@ -195,7 +195,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(320, 250);
+            label7.Location = new Point(320, 248);
             label7.Name = "label7";
             label7.Size = new Size(154, 20);
             label7.TabIndex = 23;
@@ -206,7 +206,7 @@
             NgayDang.BackColor = SystemColors.ButtonHighlight;
             NgayDang.Enabled = false;
             NgayDang.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            NgayDang.Location = new Point(530, 170);
+            NgayDang.Location = new Point(452, 173);
             NgayDang.Name = "NgayDang";
             NgayDang.ReadOnly = true;
             NgayDang.Size = new Size(187, 27);
@@ -215,7 +215,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(320, 169);
+            label1.Location = new Point(320, 171);
             label1.Name = "label1";
             label1.Size = new Size(89, 20);
             label1.TabIndex = 25;
@@ -226,7 +226,7 @@
             NgayKetThuc.BackColor = SystemColors.ButtonHighlight;
             NgayKetThuc.Enabled = false;
             NgayKetThuc.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            NgayKetThuc.Location = new Point(877, 166);
+            NgayKetThuc.Location = new Point(837, 173);
             NgayKetThuc.Name = "NgayKetThuc";
             NgayKetThuc.ReadOnly = true;
             NgayKetThuc.Size = new Size(195, 27);
@@ -235,7 +235,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(755, 170);
+            label8.Location = new Point(688, 171);
             label8.Name = "label8";
             label8.Size = new Size(107, 20);
             label8.TabIndex = 27;
@@ -277,7 +277,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(43, 550);
+            label10.Location = new Point(43, 548);
             label10.Name = "label10";
             label10.Size = new Size(63, 20);
             label10.TabIndex = 31;
@@ -318,7 +318,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(320, 330);
+            label11.Location = new Point(320, 339);
             label11.Name = "label11";
             label11.Size = new Size(69, 20);
             label11.TabIndex = 33;
@@ -329,7 +329,7 @@
             KyNang.BackColor = SystemColors.ButtonHighlight;
             KyNang.Enabled = false;
             KyNang.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            KyNang.Location = new Point(412, 330);
+            KyNang.Location = new Point(412, 339);
             KyNang.Name = "KyNang";
             KyNang.ReadOnly = true;
             KyNang.Size = new Size(383, 27);

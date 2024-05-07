@@ -35,11 +35,11 @@ namespace GUI
         private void Load(HopDongDTO chiTietTD)
         {
             ViTri.Text = chiTietTD.VITRITD;
-            NgayDang.Text = chiTietTD.NGAYTD.ToString();
-            NgayKetThuc.Text = chiTietTD.NGAYTD.AddDays(chiTietTD.THOIGIANTD).ToString();
+            NgayDang.Text = chiTietTD.NGAYTD.ToString("dd/MM/yyyy");
+            NgayKetThuc.Text = chiTietTD.NGAYTD.AddDays(chiTietTD.THOIGIANTD).ToString("dd/MM/yyyy");
             TenDN.Text = chiTietTD.TENDN;
             SoLuong.Text = chiTietTD.SOLUONGTD.ToString();
-            CapBac.Text = chiTietTD .CAPBACTD;
+            CapBac.Text = chiTietTD.CAPBACTD;
             DiaChi.Text = chiTietTD.DIACHI;
             MoTa.Text = chiTietTD.YEUCAU;
             KyNang.Text = chiTietTD.KYNANG;
@@ -66,5 +66,6 @@ namespace GUI
             UV_Home Parent = (UV_Home)this.Parent.Parent;
             Parent.closeChildForm();
         }
+
     }
 }

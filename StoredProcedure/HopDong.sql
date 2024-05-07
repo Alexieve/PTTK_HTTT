@@ -81,6 +81,7 @@ BEGIN
                                                                                             JOIN VITRI VT ON HD.VITRITD = VT.MAVT
                                                                                             JOIN HOPDONG_KYNANG HDKN ON HD.MAHOPDONG = HDKN.MAHOPDONG
                                                                                             JOIN KYNANG KN ON HDKN.MAKN = KN.MAKN
+        WHERE HD.TIENCONLAI < HD.TONGTIEN AND (HD.NGAYTD + HD.THOIGIANTD) > SYSDATE
         GROUP BY HD.MAHOPDONG, VT.MOTA, DN.TENDN, CB.MOTA, DN.DIACHI;
 END;
 /
@@ -91,12 +92,23 @@ CREATE OR REPLACE PROCEDURE USP_GET_LIST_TUYEN_DUNG_BY_NAME(P_RES OUT SYS_REFCUR
 AS
 BEGIN
     OPEN P_RES FOR
+        WITH CTE AS
+        (
+        SELECT HD.MAHOPDONG AS MAHD FROM HOPDONG HD JOIN DOANHNGHIEP DN ON HD.MADN = DN.MADN
+                                            JOIN CAPBAC CB ON HD.CAPBACTD = CB.MACB
+                                            JOIN VITRI VT ON HD.VITRITD = VT.MAVT
+                                            JOIN HOPDONG_KYNANG HDKN ON HD.MAHOPDONG = HDKN.MAHOPDONG
+                                            JOIN KYNANG KN ON HDKN.MAKN = KN.MAKN
+        WHERE (LOWER(VT.MOTA) LIKE '%' ||SearchString || '%' OR LOWER(DN.TENDN) LIKE '%' ||SearchString || '%' OR LOWER(KN.MOTA) LIKE '%' ||SearchString || '%')
+        AND (HD.TIENCONLAI < HD.TONGTIEN AND (HD.NGAYTD + HD.THOIGIANTD) > SYSDATE)
+        GROUP BY HD.MAHOPDONG, VT.MOTA, DN.TENDN, CB.MOTA, DN.DIACHI
+        )
         SELECT HD.MAHOPDONG, VT.MOTA as VITRITD, DN.TENDN, CB.MOTA AS CAPBACTD, DN.DIACHI, LISTAGG(KN.MOTA,', ') AS KYNANG FROM HOPDONG HD JOIN DOANHNGHIEP DN ON HD.MADN = DN.MADN
                                                                                             JOIN CAPBAC CB ON HD.CAPBACTD = CB.MACB
                                                                                             JOIN VITRI VT ON HD.VITRITD = VT.MAVT
                                                                                             JOIN HOPDONG_KYNANG HDKN ON HD.MAHOPDONG = HDKN.MAHOPDONG
                                                                                             JOIN KYNANG KN ON HDKN.MAKN = KN.MAKN
-        WHERE VT.MOTA LIKE '%' ||SearchString || '%' OR DN.TENDN LIKE '%' ||SearchString || '%' OR KN.MOTA LIKE '%' ||SearchString || '%'
+                                                                                            JOIN CTE ON HD.MAHOPDONG = CTE.MAHD
         GROUP BY HD.MAHOPDONG, VT.MOTA, DN.TENDN, CB.MOTA, DN.DIACHI;
 END;
 /
