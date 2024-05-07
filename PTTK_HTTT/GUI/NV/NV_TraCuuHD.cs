@@ -30,12 +30,13 @@ namespace GUI
             GrantPrivTable.Rows.Clear();
             foreach (HopDongDTO hopDong in listHD)
             {
+                string trangThai = hopDong.TRANGTHAI == 1 ? "Có" : "Không";
                 GrantPrivTable.Rows.Add(
             hopDong.MAHOPDONG,
             hopDong.MADN,
             hopDong.TENDN,
             hopDong.TONGTIEN,
-            hopDong.TIENCONLAI
+            hopDong.TIENCONLAI, trangThai
                 );
             }
         }

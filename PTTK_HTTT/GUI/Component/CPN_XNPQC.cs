@@ -17,6 +17,8 @@ namespace GUI
         private string _kynang;
         private string _hinhthuc;
         private HopDongBLL _HopDongBLL;
+        public event EventHandler reloadOuter;
+
         public CPN_XNPQC()
         {
             InitializeComponent();
@@ -78,6 +80,8 @@ namespace GUI
             DateTime NGAYTD = dtpkNgayTD.Value;
             string status = _HopDongBLL.Insert(CAPBAC, VITRITD, KYNANG, SOLUONG, YEUCAU, HINHTHUC, THOIGIANTD, NGAYTD);
             MessageBox.Show(status);
+            if(status == "Thêm hợp đồng thành công")
+                reloadOuter?.Invoke(this, EventArgs.Empty);
         }
     }
 }
