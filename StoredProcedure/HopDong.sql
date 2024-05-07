@@ -81,6 +81,7 @@ BEGIN
                                                                                             JOIN VITRI VT ON HD.VITRITD = VT.MAVT
                                                                                             JOIN HOPDONG_KYNANG HDKN ON HD.MAHOPDONG = HDKN.MAHOPDONG
                                                                                             JOIN KYNANG KN ON HDKN.MAKN = KN.MAKN
+        WHERE HD.TIENCONLAI < HD.TONGTIEN AND (HD.NGAYTD + HD.THOIGIANTD) > SYSDATE
         GROUP BY HD.MAHOPDONG, VT.MOTA, DN.TENDN, CB.MOTA, DN.DIACHI;
 END;
 /
@@ -91,12 +92,23 @@ CREATE OR REPLACE PROCEDURE USP_GET_LIST_TUYEN_DUNG_BY_NAME(P_RES OUT SYS_REFCUR
 AS
 BEGIN
     OPEN P_RES FOR
+        WITH CTE AS
+        (
+        SELECT HD.MAHOPDONG AS MAHD FROM HOPDONG HD JOIN DOANHNGHIEP DN ON HD.MADN = DN.MADN
+                                            JOIN CAPBAC CB ON HD.CAPBACTD = CB.MACB
+                                            JOIN VITRI VT ON HD.VITRITD = VT.MAVT
+                                            JOIN HOPDONG_KYNANG HDKN ON HD.MAHOPDONG = HDKN.MAHOPDONG
+                                            JOIN KYNANG KN ON HDKN.MAKN = KN.MAKN
+        WHERE (LOWER(VT.MOTA) LIKE '%' ||SearchString || '%' OR LOWER(DN.TENDN) LIKE '%' ||SearchString || '%' OR LOWER(KN.MOTA) LIKE '%' ||SearchString || '%')
+        AND (HD.TIENCONLAI < HD.TONGTIEN AND (HD.NGAYTD + HD.THOIGIANTD) > SYSDATE)
+        GROUP BY HD.MAHOPDONG, VT.MOTA, DN.TENDN, CB.MOTA, DN.DIACHI
+        )
         SELECT HD.MAHOPDONG, VT.MOTA as VITRITD, DN.TENDN, CB.MOTA AS CAPBACTD, DN.DIACHI, LISTAGG(KN.MOTA,', ') AS KYNANG FROM HOPDONG HD JOIN DOANHNGHIEP DN ON HD.MADN = DN.MADN
                                                                                             JOIN CAPBAC CB ON HD.CAPBACTD = CB.MACB
                                                                                             JOIN VITRI VT ON HD.VITRITD = VT.MAVT
                                                                                             JOIN HOPDONG_KYNANG HDKN ON HD.MAHOPDONG = HDKN.MAHOPDONG
                                                                                             JOIN KYNANG KN ON HDKN.MAKN = KN.MAKN
-        WHERE VT.MOTA LIKE '%' ||SearchString || '%' OR DN.TENDN LIKE '%' ||SearchString || '%' OR KN.MOTA LIKE '%' ||SearchString || '%'
+                                                                                            JOIN CTE ON HD.MAHOPDONG = CTE.MAHD
         GROUP BY HD.MAHOPDONG, VT.MOTA, DN.TENDN, CB.MOTA, DN.DIACHI;
 END;
 /
@@ -201,6 +213,7 @@ IF v_count > 0 THEN
 END IF;
   INSERT INTO DNPHANHOI
   VALUES (P_MaHopDong, to_date(TO_CHAR(sysdate, 'MM/DD/YYYY'),'MM/DD/YYYY'),P_NoiDung);
+  UPDATE HOPDONG SET TRANGTHAI = 1 WHERE MAHOPDONG = P_MaHopDong;
   
   -- Handle potential errors during insert
    P_ErrCode := 0;
@@ -221,7 +234,29 @@ BEGIN
        WHERE MAHOPDONG = P_KEYWORD;
 END;
 /
-GRANT EXECUTE ON USP_HOPDONG_GET_PHANHOI_FOR_TRACUUHD_DN TO RL_DOANHNGHIEP;
+GRANT EXECUTE ON USP_HOPDONG_GET_PHANHOI_FOR_TRACUUHD_DN TO RL_DOANHNGHIEP, RL_NHANVIEN;
+/
+CREATE OR REPLACE PROCEDURE USP_HOPDONG_GET_NGAYTHANHTOAN_FOR_TRACUUHD_DN(P_KEYWORD IN VARCHAR2,P_RES OUT SYS_REFCURSOR)
+AS
+BEGIN
+    OPEN P_RES FOR
+       SELECT MAHOPDONG, NGAYTT
+       FROM HOADON
+       WHERE MAHOPDONG = P_KEYWORD;
+END;
+/
+GRANT EXECUTE ON USP_HOPDONG_GET_NGAYTHANHTOAN_FOR_TRACUUHD_DN TO RL_DOANHNGHIEP;
+/
+CREATE OR REPLACE PROCEDURE USP_HOPDONG_GET_TRANGTHAI_FOR_TRACUUHD(P_KEYWORD IN VARCHAR2,P_RES OUT SYS_REFCURSOR)
+AS
+BEGIN
+    OPEN P_RES FOR
+       SELECT MAHOPDONG, TRANGTHAI
+       FROM HOPDONG
+       WHERE MAHOPDONG = P_KEYWORD;
+END;
+/
+GRANT EXECUTE ON USP_HOPDONG_GET_TRANGTHAI_FOR_TRACUUHD TO RL_NHANVIEN;
 /
 CREATE OR REPLACE PROCEDURE USP_DN_CHECK_PHANHOI_TRACUUHD (
   P_MaHopDong IN VARCHAR2,
@@ -247,7 +282,7 @@ CREATE OR REPLACE PROCEDURE USP_NV_BAIDANG_UPDATE (
 AS
 BEGIN
   -- Insert with error handling
-  UPDATE HOPDONG SET YEUCAU = P_NoiDung WHERE MAHOPDONG = P_MaHopDong;
+  UPDATE HOPDONG SET YEUCAU = P_NoiDung, TRANGTHAI = 0 WHERE MAHOPDONG = P_MaHopDong;
    P_ErrCode := 0;
   EXCEPTION
     WHEN OTHERS THEN

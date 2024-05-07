@@ -30,6 +30,22 @@ namespace GUI
             LoadData(tmp);
             mahd = tmp;
             LoadCheck(tmp);
+            LoadNgayTT(tmp);
+        }
+        private void LoadNgayTT(string keyword)
+        {
+            HopDongDTO hd = hdBLL.Get_NgayThanhToan_For_TraCuuHD_DN(keyword);
+            DateTime ngayTT = hd.NGAYTT;
+            DateTime ngayHienTai = DateTime.Now;
+
+            DateTime ngaySauNgayTT = ngayTT.AddDays(60);
+
+            // Kiểm tra xem ngày hiện tại có nằm trong khoảng ngày thanh toán và ngày sau đó không
+            if (ngayHienTai < ngayTT || ngayHienTai > ngaySauNgayTT)
+            {
+                // Nếu điều kiện thành công, ẩn Button 1
+                button1.Visible = false;
+            }
         }
         private void LoadCheck(string keyword)
         {

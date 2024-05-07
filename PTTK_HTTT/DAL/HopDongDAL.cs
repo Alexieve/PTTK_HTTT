@@ -141,6 +141,28 @@ namespace DAL
 
             return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
         }
+        public DataTable Get_NgayThanhToan_For_TraCuuHD_DN(string keyword)
+        {
+            string procName = "USP_HOPDONG_GET_NGAYTHANHTOAN_FOR_TRACUUHD_DN";
+            OracleParameter[] parameter =
+            {
+                new("P_KEYWORD", OracleDbType.Varchar2, ParameterDirection.Input) {Value = keyword},
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
+        }
+        public DataTable Get_TRANGTHAI_For_TraCuuHD(string keyword)
+        {
+            string procName = "USP_HOPDONG_GET_TRANGTHAI_FOR_TRACUUHD";
+            OracleParameter[] parameter =
+            {
+                new("P_KEYWORD", OracleDbType.Varchar2, ParameterDirection.Input) {Value = keyword},
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
+        }
         public string Check_Tontai_PhanHoi(string keyword)
         {
             string procName = "USP_DN_CHECK_PHANHOI_TRACUUHD";

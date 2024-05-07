@@ -120,6 +120,24 @@ namespace BLL
                 dr["NOIDUNG"].ToString());
             return svDTO;
         }
+        public HopDongDTO Get_NgayThanhToan_For_TraCuuHD_DN(string keyword)
+        {
+            DataTable dt = hopDongDAL.Get_NgayThanhToan_For_TraCuuHD_DN(keyword.ToUpper());
+            DataRow dr = dt.Rows[0];
+            HopDongDTO svDTO = new HopDongDTO(
+                dr["MAHOPDONG"].ToString(),
+                DateTime.Parse(dr["NGAYTT"].ToString()));
+            return svDTO;
+        }
+        public HopDongDTO Get_TRANGTHAI_For_TraCuuHD(string keyword)
+        {
+            DataTable dt = hopDongDAL.Get_TRANGTHAI_For_TraCuuHD(keyword.ToUpper());
+            DataRow dr = dt.Rows[0];
+            HopDongDTO svDTO = new HopDongDTO(
+                dr["MAHOPDONG"].ToString(),
+                int.Parse(dr["TRANGTHAI"].ToString()));
+            return svDTO;
+        }
         public string Check_Tontai_PhanHoi(string tmp)
         {
             return hopDongDAL.Check_Tontai_PhanHoi(tmp);
