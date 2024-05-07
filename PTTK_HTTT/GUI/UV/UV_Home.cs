@@ -35,10 +35,7 @@ namespace GUI
                 addData(array.MAHOPDONG, array.VITRITD, array.TENDN, array.CAPBACTD, array.DIACHI, array.KYNANG);
             }
         }
-        public string getUsername()
-        {
-            return usernameLabel.Text;
-        }
+
         private void Load(string SearchString)
         {
             ContentPanel.Controls.Clear();
@@ -130,7 +127,7 @@ namespace GUI
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
-            string searchString = SearchBox.Text;
+            string searchString = SearchBox.Text.ToLower();
             if (searchString == "") Load();
             else Load(searchString);
         }
