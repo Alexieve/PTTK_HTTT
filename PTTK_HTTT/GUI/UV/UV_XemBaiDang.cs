@@ -28,8 +28,8 @@ namespace GUI
             BaiDangTD = new HopDongBLL();
             HSUngTuyen = new HSUngTuyenBLL();
             InitializeComponent();
-            List<HopDongDTO> chiTietTD = BaiDangTD.Get_Detail_BaiDangTuyenDung(MAHD);
-            Load(chiTietTD[0]);
+            HopDongDTO chiTietTD = BaiDangTD.Get_Detail_BaiDangTuyenDung(MAHD);
+            Load(chiTietTD);
 
         }
         private void Load(HopDongDTO chiTietTD)

@@ -57,10 +57,11 @@ namespace BLL
             List<HopDongDTO> listHD = Utility.ToList<HopDongDTO>(dt);
             return listHD;
         }
-        public List<HopDongDTO> Get_Detail_BaiDangTuyenDung(string MAHD)
+        public HopDongDTO Get_Detail_BaiDangTuyenDung(string MAHD)
         {
             DataTable dt = hopDongDAL.Get_Detail_BaiDangTuyenDung(MAHD);
-            List<HopDongDTO> listHD = Utility.ToList<HopDongDTO>(dt);
+            DataRow dataRow = dt.Rows[0];
+            HopDongDTO listHD = Utility.ToObject<HopDongDTO>(dataRow);
             return listHD;
         }
                 public List<HopDongDTO> Get_All_For_TraCuuHD_DN()
