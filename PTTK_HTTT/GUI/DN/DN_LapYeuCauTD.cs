@@ -61,8 +61,13 @@ namespace GUI
                     pnlLtt.BackColor = Color.MediumSeaGreen;
                     break;
                 case "btnXnpqc":
-                    chuyen_CPN_UC(cPN_XNPQC);
-                    pnlXnpqc.BackColor = Color.MediumSeaGreen;
+                    if (cPN_LTTDT.DONE)
+                    {
+                        chuyen_CPN_UC(cPN_XNPQC);
+                        pnlXnpqc.BackColor = Color.MediumSeaGreen;
+                    }
+                    else
+                        MessageBox.Show("Vui lòng nhập thông tin đăng tuyển");
                     break;
                 default:
                     break;
