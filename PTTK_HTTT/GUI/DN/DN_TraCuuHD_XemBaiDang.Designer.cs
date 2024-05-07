@@ -51,9 +51,9 @@ namespace GUI
             textBox9 = new TextBox();
             label10 = new Label();
             childFormPanel = new Panel();
+            pictureBox1 = new PictureBox();
             label11 = new Label();
             textBox10 = new TextBox();
-            pictureBox1 = new PictureBox();
             childFormPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -297,6 +297,17 @@ namespace GUI
             childFormPanel.Size = new Size(1077, 721);
             childFormPanel.TabIndex = 33;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.RosyBrown;
+            pictureBox1.Image = Properties.Resources.tải_xuống;
+            pictureBox1.Location = new Point(41, 120);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(245, 218);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 35;
+            pictureBox1.TabStop = false;
+            // 
             // label11
             // 
             label11.AutoSize = true;
@@ -314,17 +325,6 @@ namespace GUI
             textBox10.ReadOnly = true;
             textBox10.Size = new Size(549, 27);
             textBox10.TabIndex = 34;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.RosyBrown;
-            pictureBox1.Image = Properties.Resources.tải_xuống;
-            pictureBox1.Location = new Point(41, 120);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(245, 218);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 35;
-            pictureBox1.TabStop = false;
             // 
             // DN_TraCuuHD_XemBaiDang
             // 
