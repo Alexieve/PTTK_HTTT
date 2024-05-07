@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,7 +30,7 @@ namespace GUI
 
         private string _kynang = "";
         private string _hinhthuc = "";
-
+        private bool done = false;
         public CPN_LTTDT()
         {
             InitializeComponent();
@@ -95,12 +96,14 @@ namespace GUI
         public string hinhthuc { get => _hinhthuc; }
         public string ThoiGian { get => nbThoigian.Value.ToString(); }
         public DateTime NgayTD { get => dtpkNgayTD.Value; }
+        public bool DONE { get => done; }
 
         private void btnSave_Click_1(object sender, EventArgs e)
         {
             if (!checkNULL())
                 return;
             MessageBox.Show("Lưu thành công");
+            done = true;
             btnSaveMain_click?.Invoke(this, EventArgs.Empty);
         }
 
