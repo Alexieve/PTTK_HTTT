@@ -29,6 +29,20 @@ namespace GUI
             LoadData(tmp);
             mahd = tmp;
             LoadCheck(tmp);
+            LoadTrangThai(tmp);
+        }
+        private void LoadTrangThai(string keyword)
+        {
+            HopDongDTO hd = hdBLL.Get_TRANGTHAI_For_TraCuuHD(keyword);
+            if (hd.TRANGTHAI == 0)
+            {
+                button1.Visible = false;
+            }
+            else
+            {
+                button1.Visible = true;
+            }
+
         }
         private void LoadCheck(string keyword)
         {

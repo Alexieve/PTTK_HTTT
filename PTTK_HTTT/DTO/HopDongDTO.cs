@@ -28,8 +28,10 @@ namespace DTO
         private string _EMAIL;
         private DateTime _NGAYPH;
         private string _NOIDUNG;
+        private DateTime _NGAYTT;
 
-        
+
+
         public string MAHOPDONG { get => _MAHOPDONG; set => _MAHOPDONG = value; }
         public string MADN { get => _MADN; set => _MADN = value; }
         public string CAPBACTD { get => _CAPBACTD; set => _CAPBACTD = value; }
@@ -49,7 +51,7 @@ namespace DTO
         public string EMAIL { get => _EMAIL; set => _EMAIL = value; }
         public DateTime NGAYPH { get => _NGAYPH; set => _NGAYPH = value; }
         public string NOIDUNG { get => _NOIDUNG; set => _NOIDUNG = value; }
-
+        public DateTime NGAYTT { get => _NGAYTT; set => _NGAYTT = value; }
         public HopDongDTO()
         {
             this.MAHOPDONG = "";
@@ -71,6 +73,7 @@ namespace DTO
             this.EMAIL = "";
             this.NGAYPH = DateTime.Now;
             this.NOIDUNG = "";
+            this.NGAYTT = DateTime.Now;
         }
 
         public HopDongDTO(string MAHOPDONG, string MADN, string CAPBACTD, string VITRITD, int SOLUONGTD, string YEUCAU,
@@ -178,6 +181,16 @@ namespace DTO
             this.MAHOPDONG = MAHOPDONG;
             this.NGAYPH = NGAYPH;
             this.NOIDUNG = NOIDUNG;
+        }
+        public HopDongDTO(string MAHOPDONG, DateTime NGAYTT)
+        {
+            this.MAHOPDONG = MAHOPDONG;
+            this.NGAYTT = NGAYTT;
+        }
+        public HopDongDTO(string MAHOPDONG, int TRANGTHAI)
+        {
+            this.MAHOPDONG = MAHOPDONG;
+            this.TRANGTHAI = TRANGTHAI;
         }
     }
 }
