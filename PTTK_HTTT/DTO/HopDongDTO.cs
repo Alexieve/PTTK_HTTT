@@ -26,9 +26,8 @@ namespace DTO
         private string _DIACHI;
         private string _TENDN;
         private string _EMAIL;
-        private DateTime _NGAYPH;
-        private string _NOIDUNG;
         private DateTime _NGAYTT;
+        private string _HINHTHUC;
 
 
 
@@ -49,9 +48,10 @@ namespace DTO
         public string DIACHI { get => _DIACHI; set => _DIACHI = value; }
         public string TENDN { get => _TENDN; set => _TENDN = value; }
         public string EMAIL { get => _EMAIL; set => _EMAIL = value; }
-        public DateTime NGAYPH { get => _NGAYPH; set => _NGAYPH = value; }
-        public string NOIDUNG { get => _NOIDUNG; set => _NOIDUNG = value; }
+        //public DateTime NGAYPH { get => _NGAYPH; set => _NGAYPH = value; }
+        //public string NOIDUNG { get => _NOIDUNG; set => _NOIDUNG = value; }
         public DateTime NGAYTT { get => _NGAYTT; set => _NGAYTT = value; }
+        public string HINHTHUC { get => _HINHTHUC; set => _HINHTHUC = value; }
         public HopDongDTO()
         {
             this.MAHOPDONG = "";
@@ -71,8 +71,8 @@ namespace DTO
             this.DIACHI = "";
             this.KYNANG = "";
             this.EMAIL = "";
-            this.NGAYPH = DateTime.Now;
-            this.NOIDUNG = "";
+            //this.NGAYPH = DateTime.Now;
+            //this.NOIDUNG = "";
             this.NGAYTT = DateTime.Now;
         }
 
@@ -176,12 +176,34 @@ namespace DTO
             this.TIENCONLAI = 0;
             this.SOLUONGHS = 0;
         }
-        public HopDongDTO(string MAHOPDONG, DateTime NGAYPH,  string NOIDUNG)
+
+        public HopDongDTO(string CAPBAC, string VITRITD, string KYNANG, int SOLUONG, string YEUCAU, string HINHTHUC, int THOIGIANTD, DateTime NGAYTD)
         {
-            this.MAHOPDONG = MAHOPDONG;
-            this.NGAYPH = NGAYPH;
-            this.NOIDUNG = NOIDUNG;
+            this.MAHOPDONG = "";
+            this.VITRITD = VITRITD;
+            this.TENDN = "";
+            this.CAPBACTD = CAPBAC;
+            this.DIACHI = "";
+            this.KYNANG = KYNANG;
+            this.MADN = "";
+            this.SOLUONGTD = SOLUONG;
+            this.YEUCAU = YEUCAU;
+            this.THOIGIANTD = THOIGIANTD;
+            this.NGAYTD = NGAYTD;
+            this.NGAYLAP = DateTime.Now;
+            this.TRANGTHAI = 0;
+            this.TONGTIEN = 0;
+            this.TIENCONLAI = 0;
+            this.SOLUONGHS = 0;
+            this.HINHTHUC = HINHTHUC;
         }
+
+        //public HopDongDTO(string MAHOPDONG, DateTime NGAYPH,  string NOIDUNG)
+        //{
+        //    this.MAHOPDONG = MAHOPDONG;
+        //    this.NGAYPH = NGAYPH;
+        //    this.NOIDUNG = NOIDUNG;
+        //}
         public HopDongDTO(string MAHOPDONG, DateTime NGAYTT)
         {
             this.MAHOPDONG = MAHOPDONG;

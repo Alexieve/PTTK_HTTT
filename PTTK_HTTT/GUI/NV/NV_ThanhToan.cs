@@ -27,11 +27,13 @@ namespace GUI
 
         private void btnTimBai_Click(object sender, EventArgs e)
         {
+            _HopDongDTO = null;
             _HopDongDTO = _HopDongBLL.Find_BY_MAHOPDONG(tbMAHOPDONG.Text);
             if (_HopDongDTO != null)
             {
                 tbTongTien.Text = _HopDongDTO.TONGTIEN.ToString();
                 tbConLai.Text = _HopDongDTO.TIENCONLAI.ToString();
+                dtgHoaDon.DataSource = null;
             }
             else
             {
@@ -41,7 +43,6 @@ namespace GUI
             List<HoaDonDTO> list = _HoaDonBLL.GET_BY_MAHOPDONG(tbMAHOPDONG.Text);
             if (list.Count() != 0)
             {
-                dtgHoaDon.DataSource = null;
                 dtgHoaDon.DataSource = list;
                 dtgHoaDon.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dtgHoaDon.Columns[0].HeaderText = "Mã Hóa Đơn";
@@ -80,28 +81,28 @@ namespace GUI
                 return;
             }
 
-            float SOTIEN;
+            float SOTIEN = -1;
             if (rbtnTT30.Checked)
-                if (_HopDongDTO.TIENCONLAI >= _HopDongDTO.TONGTIEN * 0.3)
-                    SOTIEN = (float)(_HopDongDTO.TONGTIEN * 0.3);
-                else
+            {
+                if (_HopDongDTO.THOIGIANTD >= 30)
+                {
+                    if (_HopDongDTO.TIENCONLAI >= _HopDongDTO.TONGTIEN * 0.3)
+                        SOTIEN = (float)(_HopDongDTO.TONGTIEN * 0.3);
+                }
+                if (SOTIEN == -1)
                 {
                     MessageBox.Show("Thanh toán mức 30% không khả thi");
                     return;
                 }
-            else
-                if (_HopDongDTO.THOIGIANTD >= 30)
-                SOTIEN = (float)(_HopDongDTO.TIENCONLAI);
+            }    
             else
             {
-                if (_HopDongDTO.TIENCONLAI < _HopDongDTO.TONGTIEN * 0.3)
-                    SOTIEN = (float)(_HopDongDTO.TIENCONLAI);
-                MessageBox.Show("Thanh toán mức toàn bộ không khả thi");
-                return;
+                SOTIEN = (float)(_HopDongDTO.TIENCONLAI);
             }
             string MAHOPDONG = tbMAHOPDONG.Text;
             string HINHTHUCTT = rbtnTienMat.Checked ? "Tiền mặt" : "Thẻ";
-            string status = _HoaDonBLL.THANH_TOAN(SOTIEN, HINHTHUCTT, MAHOPDONG);
+            HoaDonDTO _HoaDonDTO = new HoaDonDTO(SOTIEN, HINHTHUCTT, MAHOPDONG);
+            string status = _HoaDonBLL.THANH_TOAN(_HoaDonDTO);
             MessageBox.Show(status);
             btnTimBai_Click(sender, e);
         }

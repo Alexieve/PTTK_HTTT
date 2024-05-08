@@ -47,6 +47,7 @@ namespace GUI
             SCol = new DataGridViewTextBoxColumn();
             UCol = new DataGridViewTextBoxColumn();
             DCol = new DataGridViewTextBoxColumn();
+            YCHC = new DataGridViewTextBoxColumn();
             childFormPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)GrantPrivTable).BeginInit();
             SuspendLayout();
@@ -135,7 +136,7 @@ namespace GUI
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             GrantPrivTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             GrantPrivTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            GrantPrivTable.Columns.AddRange(new DataGridViewColumn[] { TableNameCol, ICol, SCol, UCol, DCol });
+            GrantPrivTable.Columns.AddRange(new DataGridViewColumn[] { TableNameCol, ICol, SCol, UCol, DCol, YCHC });
             GrantPrivTable.Location = new Point(10, 147);
             GrantPrivTable.Name = "GrantPrivTable";
             GrantPrivTable.RowHeadersWidth = 51;
@@ -191,6 +192,15 @@ namespace GUI
             DCol.Name = "DCol";
             DCol.ReadOnly = true;
             DCol.Resizable = DataGridViewTriState.True;
+
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            YCHC.DefaultCellStyle = dataGridViewCellStyle5;
+            YCHC.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            YCHC.HeaderText = "Yêu Cầu Hiệu Chỉnh";
+            YCHC.MinimumWidth = 6;
+            YCHC.Name = "DCol";
+            YCHC.ReadOnly = true;
+            YCHC.Resizable = DataGridViewTriState.True;
             // 
             // NV_TraCuuHD
             // 
@@ -221,5 +231,6 @@ namespace GUI
         private DataGridViewTextBoxColumn SCol;
         private DataGridViewTextBoxColumn UCol;
         private DataGridViewTextBoxColumn DCol;
+        private DataGridViewTextBoxColumn YCHC;
     }
 }

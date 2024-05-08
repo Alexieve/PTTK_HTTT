@@ -36,9 +36,9 @@ namespace BLL
             return dt.Rows[0]["YEUCAU"].ToString();
         }
 
-        public string Insert(string CAPBAC, string VITRITD, string KYNANG, int SOLUONG, string YEUCAU, string HINHTHUC, int THOIGIANTD, DateTime NGAYTD)
+        public string Them_HopDong(HopDongDTO _HopDongDTO)
         {
-            return hopDongDAL.Insert(CAPBAC, VITRITD, KYNANG, SOLUONG, YEUCAU, HINHTHUC, THOIGIANTD, NGAYTD);
+            return hopDongDAL.Them_HopDong(_HopDongDTO);
         }
 
         public HopDongDTO Find_BY_MAHOPDONG(string MAHOPDONG)
@@ -95,32 +95,32 @@ namespace BLL
                 dr["EMAIL"].ToString());
             return svDTO;
         }
-        public int ThemDNPhanHoi(string mahd, string noidung)
-        {
+        //public int ThemDNPhanHoi(string mahd, string noidung)
+        //{
 
-            if (string.IsNullOrEmpty(noidung))
-            {
-                MessageBox.Show("Nội dung không được để trống");
-                return 3;
-            }
-            string resValue = hopDongDAL.ThemDNPhanHoi(mahd, noidung);
-            if (resValue == "1")
-                return 0;
-            if (resValue == "5")
-                return 5;
-            return 1;
-            //return hopDongDAL.ThemDNPhanHoi(mahd, noidung);
-        }
-        public HopDongDTO Get_PHANHOI_For_TraCuuHD_DN(string keyword)
-        {
-            DataTable dt = hopDongDAL.Get_PHANHOI_For_TraCuuHD_DN(keyword.ToUpper());
-            DataRow dr = dt.Rows[0];
-            HopDongDTO svDTO = new HopDongDTO(
-                dr["MAHOPDONG"].ToString(),
-                DateTime.Parse(dr["NGAYPH"].ToString()),
-                dr["NOIDUNG"].ToString());
-            return svDTO;
-        }
+        //    if (string.IsNullOrEmpty(noidung))
+        //    {
+        //        MessageBox.Show("Nội dung không được để trống");
+        //        return 3;
+        //    }
+        //    string resValue = hopDongDAL.ThemDNPhanHoi(mahd, noidung);
+        //    if (resValue == "1")
+        //        return 0;
+        //    if (resValue == "5")
+        //        return 5;
+        //    return 1;
+        //    //return hopDongDAL.ThemDNPhanHoi(mahd, noidung);
+        //}
+        //public HopDongDTO Get_PHANHOI_For_TraCuuHD_DN(string keyword)
+        //{
+        //    DataTable dt = hopDongDAL.Get_PHANHOI_For_TraCuuHD_DN(keyword.ToUpper());
+        //    DataRow dr = dt.Rows[0];
+        //    HopDongDTO svDTO = new HopDongDTO(
+        //        dr["MAHOPDONG"].ToString(),
+        //        DateTime.Parse(dr["NGAYPH"].ToString()),
+        //        dr["NOIDUNG"].ToString());
+        //    return svDTO;
+        //}
         public HopDongDTO Get_NgayThanhToan_For_TraCuuHD_DN(string keyword)
         {
             DataTable dt = hopDongDAL.Get_NgayThanhToan_For_TraCuuHD_DN(keyword.ToUpper());
@@ -139,10 +139,10 @@ namespace BLL
                 int.Parse(dr["TRANGTHAI"].ToString()));
             return svDTO;
         }
-        public string Check_Tontai_PhanHoi(string tmp)
-        {
-            return hopDongDAL.Check_Tontai_PhanHoi(tmp);
-        }
+        //public string Check_Tontai_PhanHoi(string tmp)
+        //{
+        //    return hopDongDAL.Check_Tontai_PhanHoi(tmp);
+        //}
         public List<HopDongDTO> Get_All_For_TraCuuHD_NV()
         {
             DataTable dt = hopDongDAL.Get_All_For_TraCuuHD_NV();

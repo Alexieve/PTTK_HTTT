@@ -14,13 +14,26 @@ namespace GUI
 {
     public partial class DN_LapYeuCauTD : Form
     {
-        private CPN_LTTDT cPN_LTTDT = new CPN_LTTDT();
-        private CPN_XNPQC cPN_XNPQC = new CPN_XNPQC();
+        private CPN_LTTDT cPN_LTTDT;
+        private CPN_XNPQC cPN_XNPQC;
         
         public DN_LapYeuCauTD()
         {
             InitializeComponent();
+            cPN_LTTDT = new CPN_LTTDT();
+            cPN_XNPQC = new CPN_XNPQC();
             cPN_LTTDT.btnSaveMain_click += LTTDT_btnSaveClicked;
+            cPN_XNPQC.reloadOuter += reload;
+            chuyen_CPN_UC(cPN_LTTDT);
+            pnlLtt.BackColor = Color.MediumSeaGreen;
+        }
+
+        private void reload(object sender, EventArgs e)
+        {
+            cPN_LTTDT = new CPN_LTTDT();
+            cPN_XNPQC = new CPN_XNPQC();
+            cPN_LTTDT.btnSaveMain_click += LTTDT_btnSaveClicked;
+            cPN_XNPQC.reloadOuter += reload;
             chuyen_CPN_UC(cPN_LTTDT);
             pnlLtt.BackColor = Color.MediumSeaGreen;
         }
@@ -48,8 +61,13 @@ namespace GUI
                     pnlLtt.BackColor = Color.MediumSeaGreen;
                     break;
                 case "btnXnpqc":
-                    chuyen_CPN_UC(cPN_XNPQC);
-                    pnlXnpqc.BackColor = Color.MediumSeaGreen;
+                    if (cPN_LTTDT.DONE)
+                    {
+                        chuyen_CPN_UC(cPN_XNPQC);
+                        pnlXnpqc.BackColor = Color.MediumSeaGreen;
+                    }
+                    else
+                        MessageBox.Show("Vui lòng nhập thông tin đăng tuyển");
                     break;
                 default:
                     break;

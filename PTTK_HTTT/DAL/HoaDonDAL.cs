@@ -28,16 +28,16 @@ namespace DAL
             return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
         }
 
-        public string THANH_TOAN(float SOTIEN, string HINHTHUCTT, string MAHOPDONG)
+        public string THANH_TOAN(HoaDonDTO _HoaDonDTO)
         {
             try
             {
                 string procName = "USP_HOADON_THANH_TOAN";
                 OracleParameter[] parameters =
                 {
-                    new("vSOTIEN", OracleDbType.Int32, SOTIEN, ParameterDirection.Input),
-                    new("vHINHTHUCTT", OracleDbType.NVarchar2, HINHTHUCTT, ParameterDirection.Input),
-                    new("vMAHOPDONG", OracleDbType.Varchar2, MAHOPDONG, ParameterDirection.Input)
+                    new("vSOTIEN", OracleDbType.Int32, _HoaDonDTO.SOTIEN, ParameterDirection.Input),
+                    new("vHINHTHUCTT", OracleDbType.NVarchar2, _HoaDonDTO.HINHTHUCTT, ParameterDirection.Input),
+                    new("vMAHOPDONG", OracleDbType.Varchar2, _HoaDonDTO.MAHOPDONG, ParameterDirection.Input)
                 };
                 conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, parameters);
                 return "Thanh toán thành công";
