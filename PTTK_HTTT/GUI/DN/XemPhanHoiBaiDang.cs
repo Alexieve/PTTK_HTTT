@@ -14,7 +14,7 @@ namespace GUI
 {
     public partial class XemPhanHoiBaiDang : Form
     {
-        private HopDongBLL hdBLL = new HopDongBLL();
+        private DNPhanHoiBLL hdBLL = new DNPhanHoiBLL();
         public XemPhanHoiBaiDang(string tmp)
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace GUI
         }
         private void LoadData(string keyword)
         {
-            HopDongDTO hdDTO = hdBLL.Get_PHANHOI_For_TraCuuHD_DN(keyword);
+            DNPhanHoiDTO hdDTO = hdBLL.Get_PHANHOI_For_TraCuuHD_DN(keyword);
             DateTime ngayTD = hdDTO.NGAYPH;
             textBox4.Text = ngayTD.ToString("dd/MM/yyyy");
             textBox8.Text = hdDTO.NOIDUNG;
