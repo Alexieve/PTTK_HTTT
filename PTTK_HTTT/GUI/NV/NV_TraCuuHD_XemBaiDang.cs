@@ -20,6 +20,7 @@ namespace GUI
         private Button currentButton;
         private Form activeForm = null;
         private HopDongBLL hdBLL = new HopDongBLL();
+        private DNPhanHoiBLL phBLL = new DNPhanHoiBLL();
         private string mahd = "";
         private DateTime ngaybd;
         private DateTime ngaykt;
@@ -46,7 +47,7 @@ namespace GUI
         }
         private void LoadCheck(string keyword)
         {
-            string check_phanhoi = hdBLL.Check_Tontai_PhanHoi(keyword);
+            string check_phanhoi = phBLL.Check_Tontai_PhanHoi(keyword);
             if (check_phanhoi == "0")
             {
                 button3.Visible = false;
