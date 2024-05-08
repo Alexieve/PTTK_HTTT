@@ -32,7 +32,7 @@ namespace GUI
             List<HopDongDTO> danhSachTuyenDung = TuyenDung.Get_All_BaiDangTuyenDung();
             foreach (var array in danhSachTuyenDung)
             {
-                addData(array.MAHOPDONG, array.VITRITD, array.TENDN, array.CAPBACTD, array.DIACHI, array.KYNANG);
+                addData(array);
             }
         }
 
@@ -42,19 +42,13 @@ namespace GUI
             List<HopDongDTO> danhSachTuyenDung = TuyenDung.Search_BaiDangTuyenDung(SearchString);
             foreach (var array in danhSachTuyenDung)
             {
-                addData(array.MAHOPDONG, array.VITRITD, array.TENDN, array.CAPBACTD, array.DIACHI, array.KYNANG);
+                addData(array);
             }
         }
-        private void addData(string MAHD, string MOTA, string TENDN, string CAPBAC, string DIACHI, string KYNANG)
+        private void addData(HopDongDTO array)
         {
-            CPN_CardTuyenDung card = new CPN_CardTuyenDung();
+            CPN_CardTuyenDung card = new CPN_CardTuyenDung(array);
             card.Margin = new Padding(0, 0, 0, 10);
-            card.MAHOPDONG = MAHD;
-            card.ViTri = MOTA;
-            card.TenDoanhNghiep = TENDN;
-            card.CapBacUngtuyen = CAPBAC;
-            card.DiaChiDN = DIACHI;
-            card.KyNangUngTuyen = KYNANG;
             ContentPanel.Controls.Add(card);
         }
         private void HomeBtn_Click(object sender, EventArgs e)
@@ -128,8 +122,7 @@ namespace GUI
         private void SearchBtn_Click(object sender, EventArgs e)
         {
             string searchString = SearchBox.Text.ToLower();
-            if (searchString == "") Load();
-            else Load(searchString);
+            Load(searchString);
         }
     }
 }

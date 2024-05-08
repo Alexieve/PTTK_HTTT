@@ -50,6 +50,19 @@ namespace BLL
                 giayToDAL.Insert(gt);
             }
         }
+        public void Insert(GiayToDTO gt)
+        {
+            giayToDAL.Insert(gt);
+        }
+        public void Update(GiayToDTO gt)
+        {
+            giayToDAL.Update(gt);
+        }
+
+        public void Delete(GiayToDTO gt)
+        {
+            giayToDAL.Delete(gt);
+        }
 
         public List<GiayToDTO> Get_GiayTo_By_MAUV_MAHOPDONG(string MAUV, string MAHOPDONG)
         {
@@ -57,5 +70,7 @@ namespace BLL
             List<GiayToDTO> listGT = Utility.ToList<GiayToDTO>(dt);
             return listGT;
         }
+
+        
     }
 }

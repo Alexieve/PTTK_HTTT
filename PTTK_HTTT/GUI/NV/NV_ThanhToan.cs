@@ -71,6 +71,8 @@ namespace GUI
 
             if (rbtnTT30.Checked)
             {
+                if (_HopDongDTO.THOIGIANTD > 30)
+                {
                 if (_HopDongDTO.THOIGIANTD >= 30)
                     if (_HopDongDTO.TIENCONLAI >= _HopDongDTO.TONGTIEN * 0.3)
                         return "30";

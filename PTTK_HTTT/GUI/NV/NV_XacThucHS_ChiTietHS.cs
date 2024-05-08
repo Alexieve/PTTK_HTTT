@@ -78,6 +78,7 @@ namespace GUI
             modal.ShowDialog();
             if (modal.DialogResult == DialogResult.OK)
             {
+                this.DialogResult = DialogResult.OK;
                 MessageBox.Show("Yêu cầu hiệu chỉnh thành công");
                 this.Close();
             }

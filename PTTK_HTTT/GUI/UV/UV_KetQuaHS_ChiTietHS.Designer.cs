@@ -35,9 +35,9 @@
             PhanHoiTitlePanel = new Panel();
             label1 = new Label();
             PhanHoiPanel = new Panel();
-            richTextBox1 = new RichTextBox();
+            PhanHoiBox = new RichTextBox();
             ThongTinPanel = new Panel();
-            UngTuyenBtn = new Button();
+            HieuChinhBtn = new Button();
             ThongTinLabel = new Label();
             TTUngTuyenPanel = new Panel();
             ThongTinUngTuyenPanel = new Panel();
@@ -115,7 +115,7 @@
             ParentPanel.Dock = DockStyle.Fill;
             ParentPanel.Location = new Point(0, 0);
             ParentPanel.Name = "ParentPanel";
-            ParentPanel.Size = new Size(1139, 608);
+            ParentPanel.Size = new Size(1139, 880);
             ParentPanel.TabIndex = 8;
             // 
             // PhanHoiTitlePanel
@@ -140,42 +140,42 @@
             // 
             // PhanHoiPanel
             // 
-            PhanHoiPanel.Controls.Add(richTextBox1);
+            PhanHoiPanel.Controls.Add(PhanHoiBox);
             PhanHoiPanel.Location = new Point(3, 155);
             PhanHoiPanel.Name = "PhanHoiPanel";
             PhanHoiPanel.Size = new Size(1102, 125);
             PhanHoiPanel.TabIndex = 10;
             // 
-            // richTextBox1
+            // PhanHoiBox
             // 
-            richTextBox1.Dock = DockStyle.Fill;
-            richTextBox1.Location = new Point(0, 0);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.ReadOnly = true;
-            richTextBox1.Size = new Size(1102, 125);
-            richTextBox1.TabIndex = 0;
-            richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            PhanHoiBox.Dock = DockStyle.Fill;
+            PhanHoiBox.Location = new Point(0, 0);
+            PhanHoiBox.Name = "PhanHoiBox";
+            PhanHoiBox.ReadOnly = true;
+            PhanHoiBox.Size = new Size(1102, 125);
+            PhanHoiBox.TabIndex = 0;
+            PhanHoiBox.Text = resources.GetString("PhanHoiBox.Text");
             // 
             // ThongTinPanel
             // 
             ThongTinPanel.BackColor = SystemColors.ControlDark;
-            ThongTinPanel.Controls.Add(UngTuyenBtn);
+            ThongTinPanel.Controls.Add(HieuChinhBtn);
             ThongTinPanel.Controls.Add(ThongTinLabel);
             ThongTinPanel.Location = new Point(3, 286);
             ThongTinPanel.Name = "ThongTinPanel";
             ThongTinPanel.Size = new Size(1102, 65);
             ThongTinPanel.TabIndex = 14;
             // 
-            // UngTuyenBtn
+            // HieuChinhBtn
             // 
-            UngTuyenBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            UngTuyenBtn.Location = new Point(186, 7);
-            UngTuyenBtn.Name = "UngTuyenBtn";
-            UngTuyenBtn.Size = new Size(129, 46);
-            UngTuyenBtn.TabIndex = 2;
-            UngTuyenBtn.Text = "Hiệu chỉnh";
-            UngTuyenBtn.UseVisualStyleBackColor = true;
-            UngTuyenBtn.Click += UngTuyenBtn_Click;
+            HieuChinhBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            HieuChinhBtn.Location = new Point(186, 7);
+            HieuChinhBtn.Name = "HieuChinhBtn";
+            HieuChinhBtn.Size = new Size(129, 46);
+            HieuChinhBtn.TabIndex = 2;
+            HieuChinhBtn.Text = "Hiệu chỉnh";
+            HieuChinhBtn.UseVisualStyleBackColor = true;
+            HieuChinhBtn.Click += HieuChinhBtn_Click;
             // 
             // ThongTinLabel
             // 
@@ -433,7 +433,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1139, 608);
+            ClientSize = new Size(1139, 880);
             Controls.Add(ParentPanel);
             Font = new Font("Segoe UI", 12F);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -475,10 +475,10 @@
         private FlowLayoutPanel ParentPanel;
         private Panel GiayToPanel;
         private Label GiayToLabel;
-        private Button ThemGiayToBtn;
-        private Button UngTuyenBtn;
+        internal Button ThemGiayToBtn;
+        internal Button HieuChinhBtn;
         private Panel PhanHoiPanel;
-        private RichTextBox richTextBox1;
+        private RichTextBox PhanHoiBox;
         private Panel TTUngTuyenPanel;
         private Panel ThongTinUngTuyenPanel;
         private Panel KinhNghiemPanel;

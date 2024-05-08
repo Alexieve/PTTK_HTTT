@@ -80,5 +80,17 @@ namespace BLL
             List<HSUngTuyenDTO> listHS = Utility.ToList<HSUngTuyenDTO>(dt);
             return listHS;
         }
+
+        public List<HSUngTuyenDTO> Get_For_Ket_Qua_Ung_Tuyen()
+        {
+            DataTable dt = hsUngTuyenDAL.Get_For_Ket_Qua_Ung_Tuyen();
+            List<HSUngTuyenDTO> listHS = Utility.ToList<HSUngTuyenDTO>(dt);
+            return listHS;
+        }
+
+        public void Update(HSUngTuyenDTO hs)
+        {
+            hsUngTuyenDAL.Update(hs);
+        }
     }
 }
