@@ -128,8 +128,7 @@ namespace GUI
         private void SearchBtn_Click(object sender, EventArgs e)
         {
             string searchString = SearchBox.Text.ToLower();
-            if (searchString == "") Load();
-            else Load(searchString);
+            Load(searchString);
         }
     }
 }
