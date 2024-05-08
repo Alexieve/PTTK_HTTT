@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace GUI
 {
     public partial class CPN_CardTuyenDung : UserControl
@@ -14,6 +16,16 @@ namespace GUI
         public CPN_CardTuyenDung()
         {
             InitializeComponent();
+        }
+        public CPN_CardTuyenDung(HopDongDTO data)
+        {
+            InitializeComponent();
+            MAHOPDONG = data.MAHOPDONG;
+            ViTri = data.VITRITD;
+            TenDoanhNghiep = data.TENDN;
+            CapBacUngtuyen = data.CAPBACTD;
+            DiaChiDN = data.DIACHI;
+            KyNangUngTuyen = data.KYNANG;
         }
         #region Properties
         private string _MAHOPDONG;
