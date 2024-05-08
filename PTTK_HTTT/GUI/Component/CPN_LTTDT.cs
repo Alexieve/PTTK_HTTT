@@ -100,14 +100,14 @@ namespace GUI
 
         private void btnSave_Click_1(object sender, EventArgs e)
         {
-            if (!checkNULL())
+            if (!KiemTraTT_DangTuyen())
                 return;
             MessageBox.Show("Lưu thành công");
             done = true;
             btnSaveMain_click?.Invoke(this, EventArgs.Empty);
         }
 
-        private bool checkNULL()
+        private bool KiemTraTT_DangTuyen()
         {
             if (cbboxCapbac.Text == "")
             {
