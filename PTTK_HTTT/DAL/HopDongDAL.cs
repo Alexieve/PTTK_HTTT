@@ -112,35 +112,29 @@ namespace DAL
 
             return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
         }
-        public string ThemDNPhanHoi(string  mahd, string noidung)
-        {
-            string ProcName = "USP_DN_PHANHOI_ADD";
-            OracleParameter[] Parameters =
-            {
-                   new OracleParameter("P_MaHopDong", OracleDbType.Varchar2, mahd, ParameterDirection.Input ),
-                   new OracleParameter("P_NoiDung", OracleDbType.Varchar2, noidung, ParameterDirection.Input ),
-                   new OracleParameter("P_RES", OracleDbType.Decimal, ParameterDirection.Output)
-            };
-            conn.ExecuteNonQuery(ProcName, CommandType.StoredProcedure, Parameters);
-            return Parameters[Parameters.Length - 1].Value.ToString();
-            //object resValue = Parameters[Parameters.Length - 1].Value; // Lấy giá trị của tham số đầu ra P_RES
-            //if (resValue.ToString() == "1")
-            //    return 0;
-            //if (resValue.ToString() == "5")
-            //    return 5;
-            //return 1;
-        }
-        public DataTable Get_PHANHOI_For_TraCuuHD_DN(string keyword)
-        {
-            string procName = "USP_HOPDONG_GET_PHANHOI_FOR_TRACUUHD_DN";
-            OracleParameter[] parameter =
-            {
-                new("P_KEYWORD", OracleDbType.Varchar2, ParameterDirection.Input) {Value = keyword},
-                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
-            };
+        //public string ThemDNPhanHoi(string  mahd, string noidung)
+        //{
+        //    string ProcName = "USP_DN_PHANHOI_ADD";
+        //    OracleParameter[] Parameters =
+        //    {
+        //           new OracleParameter("P_MaHopDong", OracleDbType.Varchar2, mahd, ParameterDirection.Input ),
+        //           new OracleParameter("P_NoiDung", OracleDbType.Varchar2, noidung, ParameterDirection.Input ),
+        //           new OracleParameter("P_RES", OracleDbType.Decimal, ParameterDirection.Output)
+        //    };
+        //    conn.ExecuteNonQuery(ProcName, CommandType.StoredProcedure, Parameters);
+        //    return Parameters[Parameters.Length - 1].Value.ToString();
+        //}
+        //public DataTable Get_PHANHOI_For_TraCuuHD_DN(string keyword)
+        //{
+        //    string procName = "USP_HOPDONG_GET_PHANHOI_FOR_TRACUUHD_DN";
+        //    OracleParameter[] parameter =
+        //    {
+        //        new("P_KEYWORD", OracleDbType.Varchar2, ParameterDirection.Input) {Value = keyword},
+        //        new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+        //    };
 
-            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
-        }
+        //    return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
+        //}
         public DataTable Get_NgayThanhToan_For_TraCuuHD_DN(string keyword)
         {
             string procName = "USP_HOPDONG_GET_NGAYTHANHTOAN_FOR_TRACUUHD_DN";
@@ -163,18 +157,18 @@ namespace DAL
 
             return conn.ExecuteQuery(procName, CommandType.StoredProcedure, parameter);
         }
-        public string Check_Tontai_PhanHoi(string keyword)
-        {
-            string procName = "USP_DN_CHECK_PHANHOI_TRACUUHD";
-            OracleParameter[] Parameters =
-            {
-                new("P_KEYWORD", OracleDbType.Varchar2, ParameterDirection.Input) {Value = keyword},
-               new OracleParameter("P_RES", OracleDbType.Decimal, ParameterDirection.Output)
-            };
-            conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, Parameters);
-            return Parameters[Parameters.Length - 1].Value.ToString();
+        //public string Check_Tontai_PhanHoi(string keyword)
+        //{
+        //    string procName = "USP_DN_CHECK_PHANHOI_TRACUUHD";
+        //    OracleParameter[] Parameters =
+        //    {
+        //        new("P_KEYWORD", OracleDbType.Varchar2, ParameterDirection.Input) {Value = keyword},
+        //       new OracleParameter("P_RES", OracleDbType.Decimal, ParameterDirection.Output)
+        //    };
+        //    conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, Parameters);
+        //    return Parameters[Parameters.Length - 1].Value.ToString();
     
-        }
+        //}
         public DataTable Get_All_For_TraCuuHD_NV()
         {
             string procName = "USP_HOPDONG_GET_ALL_FOR_TRACUUHD_NV";
@@ -215,21 +209,21 @@ namespace DAL
             //return 1;
         }
 
-        public string Insert(string CAPBAC, string VITRITD, string KYNANG, int SOLUONGTD, string YEUCAU, string HINHTHUC, int THOIGIANTD, DateTime NGAYTD)
+        public string Them_HopDong(HopDongDTO _HopDongDTO)
         {
             try
             {
                 string procName = "USP_HOPDONG_INSERT";
                 OracleParameter[] parameters =
                 {
-                    new("vCAPBACTD", OracleDbType.Varchar2,CAPBAC, ParameterDirection.Input),
-                    new("vVITRITD", OracleDbType.Varchar2,VITRITD, ParameterDirection.Input),
-                    new("vKYNANG", OracleDbType.Varchar2,KYNANG, ParameterDirection.Input),
-                    new("vSOLUONGTD", OracleDbType.Int32,SOLUONGTD, ParameterDirection.Input),
-                    new("vYEUCAU", OracleDbType.NVarchar2,YEUCAU, ParameterDirection.Input),
-                    new("vHINHTHUC", OracleDbType.NVarchar2,HINHTHUC, ParameterDirection.Input),
-                    new("vTHOIGIANTD", OracleDbType.Int32,THOIGIANTD, ParameterDirection.Input),
-                    new("vNGAYTD", OracleDbType.Date,NGAYTD, ParameterDirection.Input)
+                    new("vCAPBACTD", OracleDbType.Varchar2,_HopDongDTO.CAPBACTD, ParameterDirection.Input),
+                    new("vVITRITD", OracleDbType.Varchar2,_HopDongDTO.VITRITD, ParameterDirection.Input),
+                    new("vKYNANG", OracleDbType.Varchar2,_HopDongDTO.KYNANG, ParameterDirection.Input),
+                    new("vSOLUONGTD", OracleDbType.Int32,_HopDongDTO.SOLUONGTD, ParameterDirection.Input),
+                    new("vYEUCAU", OracleDbType.NVarchar2,_HopDongDTO.YEUCAU, ParameterDirection.Input),
+                    new("vHINHTHUC", OracleDbType.NVarchar2,_HopDongDTO.HINHTHUC, ParameterDirection.Input),
+                    new("vTHOIGIANTD", OracleDbType.Int32,_HopDongDTO.THOIGIANTD, ParameterDirection.Input),
+                    new("vNGAYTD", OracleDbType.Date,_HopDongDTO.NGAYTD, ParameterDirection.Input)
                 };
                 conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, parameters);
                 return "Thêm hợp đồng thành công";

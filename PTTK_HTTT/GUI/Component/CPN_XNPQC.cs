@@ -1,4 +1,5 @@
 ﻿using BLL;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -78,7 +79,8 @@ namespace GUI
             string HINHTHUC = _hinhthuc;
             int THOIGIANTD = int.Parse(tbThoigian.Text);
             DateTime NGAYTD = dtpkNgayTD.Value;
-            string status = _HopDongBLL.Insert(CAPBAC, VITRITD, KYNANG, SOLUONG, YEUCAU, HINHTHUC, THOIGIANTD, NGAYTD);
+            HopDongDTO _HopDongDTO = new HopDongDTO(CAPBAC, VITRITD, KYNANG, SOLUONG, YEUCAU, HINHTHUC, THOIGIANTD, NGAYTD);
+            string status = _HopDongBLL.Them_HopDong(_HopDongDTO);
             MessageBox.Show(status);
             if(status == "Thêm hợp đồng thành công")
                 reloadOuter?.Invoke(this, EventArgs.Empty);

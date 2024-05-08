@@ -15,6 +15,7 @@ namespace GUI
     {
         private string mahd = "";
         private HopDongBLL hdBLL = new HopDongBLL();
+        private DNPhanHoiBLL phBLL = new DNPhanHoiBLL();
         public DN_PhanHoiBaiDang(string tmp)
         {
             InitializeComponent();
@@ -29,7 +30,7 @@ namespace GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int chec = hdBLL.ThemDNPhanHoi(mahd, textBox8.Text);
+            int chec = phBLL.ThemDNPhanHoi(mahd, textBox8.Text);
             if (chec == 1)
             {
                 MessageBox.Show("Gửi phản hồi thành công.");
