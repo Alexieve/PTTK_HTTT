@@ -34,21 +34,23 @@ namespace GUI
         public CPN_LTTDT()
         {
             InitializeComponent();
-            Load_CPN_LTTDT();
+            Load();
         }
 
-        private void Load_CPN_LTTDT()
+        private void Load()
         {
 
             listViTri = _ViTriBLL.getAll();
             cbboxVitri.DropDownHeight = 200;
             foreach (ViTriDTO item in listViTri)
                 cbboxVitri.Items.Add(item.MAVT + " - " + item.MOTA);
+            cbboxVitri.KeyPress += KeyPress;
 
             listCapBac = _CapBacBLL.getAll();
             cbboxCapbac.DropDownHeight = 200;
             foreach (CapBacDTO item in listCapBac)
                 cbboxCapbac.Items.Add(item.MACB + " - " + item.MOTA);
+            cbboxCapbac.KeyPress += KeyPress;
 
             listHinhThuc = _HinhThucBLL.getAll();
             tbHinhThuc.Click += MultiSelect;
@@ -100,56 +102,36 @@ namespace GUI
 
         private void btnSave_Click_1(object sender, EventArgs e)
         {
-            if (!KiemTraTT_DangTuyen())
+            string errorMessage = KiemTraTT_DangTuyen();
+            if (errorMessage != "")
+            {
+                MessageBox.Show(errorMessage);
                 return;
+            }    
             MessageBox.Show("Lưu thành công");
             done = true;
             btnSaveMain_click?.Invoke(this, EventArgs.Empty);
         }
 
-        private bool KiemTraTT_DangTuyen()
+        private string KiemTraTT_DangTuyen()
         {
             if (cbboxCapbac.Text == "")
-            {
-                MessageBox.Show("Bạn chưa chọn cấp bậc tuyển dụng");
-                return false;
-            }
+                return "Bạn chưa chọn cấp bậc tuyển dụng";
             if (cbboxVitri.Text == "")
-            {
-                MessageBox.Show("Bạn chưa chọn vị trí tuyển dụng");
-                return false;
-            }
+                return "Bạn chưa chọn vị trí tuyển dụng";
             if (tbKyNang.Text == "")
-            {
-                MessageBox.Show("Bạn chưa chọn kỹ năng tuyển dụng");
-                return false;
-            }
+                return "Bạn chưa chọn kỹ năng tuyển dụng";
             if (nbSoluong.Value == 0)
-            {
-                MessageBox.Show("Bạn chưa chọn số lượng tuyển dụng");
-                return false;
-            }
+                return "Bạn chưa chọn số lượng tuyển dụng";
             if (richboxYeucau.Text == "")
-            {
-                MessageBox.Show("Bạn chưa điền yêu cầu tuyển dụng");
-                return false;
-            }
+                return "Bạn chưa điền yêu cầu tuyển dụng";
             if (tbHinhThuc.Text == "")
-            {
-                MessageBox.Show("Bạn chưa chọn hình thức tuyển dụng");
-                return false;
-            }
+                return "Bạn chưa chọn hình thức tuyển dụng";
             if (nbThoigian.Value == 0)
-            {
-                MessageBox.Show("Bạn chưa chọn thời gian tuyển dụng");
-                return false;
-            }
+                return "Bạn chưa chọn thời gian tuyển dụng";
             if(dtpkNgayTD.Value < DateTime.Now)
-            {
-                MessageBox.Show("Ngày tuyển dụng không hợp lệ");
-                return false;
-            }
-            return true;
+                return "Ngày tuyển dụng không hợp lệ";
+            return "";
         }
     }
 }

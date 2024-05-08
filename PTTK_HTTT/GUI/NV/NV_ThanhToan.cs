@@ -55,49 +55,45 @@ namespace GUI
             }
         }
 
-        private void btnThanhToan_Click(object sender, EventArgs e)
+        private string KiemTraTT_ThanhToan()
         {
             if (_HopDongDTO == null)
-            {
-                MessageBox.Show("Vui lòng chọn hợp đồng hợp lệ");
-                return;
-            }
+                return "Vui lòng chọn hợp đồng hợp lệ";
 
             if (!rbtnTTToanBo.Checked && !rbtnTT30.Checked)
-            {
-                MessageBox.Show("Vui lòng chọn mức thanh toán");
-                return;
-            }
+                return "Vui lòng chọn mức thanh toán";
 
             if (!rbtnTienMat.Checked && !rbtnThe.Checked)
-            {
-                MessageBox.Show("Vui lòng chọn loại thanh toán");
-                return;
-            }
+                return "Vui lòng chọn loại thanh toán";
 
             if (_HopDongDTO.TIENCONLAI == 0)
-            {
-                MessageBox.Show("Hợp đồng đã thanh toán toàn bộ số tiền");
-                return;
-            }
+                return "Hợp đồng đã thanh toán toàn bộ số tiền";
 
-            float SOTIEN = -1;
             if (rbtnTT30.Checked)
             {
                 if (_HopDongDTO.THOIGIANTD >= 30)
-                {
                     if (_HopDongDTO.TIENCONLAI >= _HopDongDTO.TONGTIEN * 0.3)
-                        SOTIEN = (float)(_HopDongDTO.TONGTIEN * 0.3);
-                }
-                if (SOTIEN == -1)
-                {
-                    MessageBox.Show("Thanh toán mức 30% không khả thi");
-                    return;
-                }
-            }    
+                        return "30";
+
+                return "Thanh toán mức 30% không khả thi";
+            }
+            else
+                return "100";
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            string check_message = KiemTraTT_ThanhToan();
+            float SOTIEN;
+
+            if (check_message == "30")
+                SOTIEN = (float)(_HopDongDTO.TONGTIEN * 0.3);
+            else if(check_message == "100")
+                SOTIEN = (float)(_HopDongDTO.TIENCONLAI);
             else
             {
-                SOTIEN = (float)(_HopDongDTO.TIENCONLAI);
+                MessageBox.Show(check_message);
+                return;
             }
             string MAHOPDONG = tbMAHOPDONG.Text;
             string HINHTHUCTT = rbtnTienMat.Checked ? "Tiền mặt" : "Thẻ";
