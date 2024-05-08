@@ -10,7 +10,9 @@ namespace DTO
     {
         private string _MAUV;
         private string _MAHOPDONG;
+        private string _TENDN;
         private string _HOTEN;
+        private string _VITRI;
         private DateTime _NGAYNOP;
         private string _GIOITHIEU;
         private string _HOCVAN;
@@ -18,7 +20,9 @@ namespace DTO
         private string _KETQUA;
         public string MAUV { get => _MAUV; set => _MAUV = value; }
         public string MAHOPDONG { get => _MAHOPDONG; set => _MAHOPDONG = value; }
+        public string TENDN { get => _TENDN; set => _TENDN = value; }
         public string HOTEN { get => _HOTEN; set => _HOTEN = value; }
+        public string VITRI { get => _VITRI; set => _VITRI = value; }
         public DateTime NGAYNOP { get => _NGAYNOP; set => _NGAYNOP = value; }
         public string GIOITHIEU { get => _GIOITHIEU; set => _GIOITHIEU = value; }
         public string HOCVAN { get => _HOCVAN; set => _HOCVAN = value; }
@@ -44,6 +48,16 @@ namespace DTO
 
         public HSUngTuyenDTO()
         {
+        }
+
+        public HSUngTuyenDTO(string MAUV, string MAHOPDONG, string TENDN, string VITRI, DateTime NGAYNOP, string KETQUA)
+        {
+            this.MAUV = MAUV;
+            this.MAHOPDONG = MAHOPDONG;
+            this.TENDN = TENDN;
+            this.VITRI = VITRI;
+            this.NGAYNOP = NGAYNOP;
+            this.KETQUA = KETQUA;
         }
     }
 

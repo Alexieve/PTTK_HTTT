@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 using DTO;
 
 namespace GUI
@@ -25,9 +26,9 @@ namespace GUI
         public GiayToCpn(string MAHOPDONG, string LOAI, string NOIDUNG)
         {
             InitializeComponent();
+            isOld = true;
             LoaiGTBox.Text = LOAI;
             MoTaBox.Text = NOIDUNG;
-            isOld = true;
             this.MAHOPDONG = MAHOPDONG;
         }
 
@@ -41,6 +42,12 @@ namespace GUI
 
         private void DelGiayToBtn_Click(object sender, EventArgs e)
         {
+            if (isOld)
+            {
+                GiayToDTO giayToDTO = new GiayToDTO(MAHOPDONG, LoaiGTBox.Text, MoTaBox.Text);
+                GiayToBLL giayToBLL = new GiayToBLL();
+                giayToBLL.Delete(giayToDTO);
+            }
             Parent.Controls.Remove(this);
         }
     }

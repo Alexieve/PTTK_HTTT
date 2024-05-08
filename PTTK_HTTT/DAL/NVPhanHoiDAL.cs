@@ -25,5 +25,17 @@ namespace DAL
             };
             conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, Parameters);
         }
+
+        public DataTable Get_New(string MAUV, string MAHOPDONG)
+        {
+            string procName = "USP_NVPHANHOI_GET_NEW";
+            OracleParameter[] Parameters =
+            {
+                new("P_MAUV", OracleDbType.Varchar2, MAUV, ParameterDirection.Input),
+                new("P_MAHOPDONG", OracleDbType.Varchar2, MAHOPDONG, ParameterDirection.Input),
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }

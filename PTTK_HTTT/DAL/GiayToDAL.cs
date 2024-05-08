@@ -26,6 +26,29 @@ namespace DAL
             conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, Parameters);
         }
 
+        public void Update(GiayToDTO gt)
+        {
+            string procName = "USP_GIAYTO_UPDATE";
+            OracleParameter[] Parameters =
+            {
+                new("P_MAHOPDONG", OracleDbType.Varchar2, gt.MAHOPDONG, ParameterDirection.Input),
+                new("P_LOAI", OracleDbType.Varchar2, gt.LOAI, ParameterDirection.Input),
+                new("P_NOIDUNG", OracleDbType.Varchar2, gt.NOIDUNG, ParameterDirection.Input)
+            };
+            conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
+
+        public void Delete(GiayToDTO gt)
+        {
+            string procName = "USP_GIAYTO_DELETE";
+            OracleParameter[] Parameters =
+            {
+                new("P_MAHOPDONG", OracleDbType.Varchar2, gt.MAHOPDONG, ParameterDirection.Input),
+                new("P_LOAI", OracleDbType.Varchar2, gt.LOAI, ParameterDirection.Input)
+            };
+            conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
+
         public DataTable Get_GiayTo_By_MAUV_MAHOPDONG(string MAUV, string MAHOPDONG)
         {
             string procName = "USP_GIAYTO_GET_BY_MAUV_MAHOPDONG";
