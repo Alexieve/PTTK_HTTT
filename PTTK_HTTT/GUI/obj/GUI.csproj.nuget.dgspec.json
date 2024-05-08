@@ -1,30 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj": {}
+    "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\GUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj": {
-=======
-    "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj": {}
-  },
-  "projects": {
-<<<<<<< HEAD
-    "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj": {
-=======
     "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\BLL.csproj": {
->>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj",
+        "projectUniqueName": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\obj\\",
+        "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\vumin\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,11 +28,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj"
+              "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DAL.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj"
+              "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj"
               }
             }
           }
@@ -84,29 +74,17 @@
         }
       }
     },
-<<<<<<< HEAD
-    "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
-        "projectName": "DAL",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\obj\\",
-=======
     "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DAL.csproj": {
->>>>>>> 587561204e0d807963c8679114478a680ad02cc7
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\obj\\",
->>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
+        "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\vumin\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,8 +98,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj"
+              "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj"
               }
             }
           }
@@ -169,17 +147,17 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj": {
+    "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj",
+        "projectUniqueName": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\obj\\",
+        "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\vumin\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -232,28 +210,17 @@
         }
       }
     },
-<<<<<<< HEAD
-    "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj": {
+    "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
+        "projectUniqueName": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\GUI.csproj",
         "projectName": "GUI",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\GUI\\obj\\",
-=======
-    "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
-        "projectName": "GUI",
-        "projectPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\GUI.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\GUI\\obj\\",
->>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
+        "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\GUI.csproj",
+        "packagesPath": "C:\\Users\\vumin\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -267,24 +234,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-<<<<<<< HEAD
-              "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj"
-              },
-              "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj"
-=======
-<<<<<<< HEAD
-              "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj": {
-                "projectPath": "E:\\Kì 2 năm 3\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj"
-=======
               "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\BLL.csproj": {
                 "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\BLL.csproj"
               },
               "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj": {
                 "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj"
->>>>>>> 587561204e0d807963c8679114478a680ad02cc7
->>>>>>> 114ffc0be12b21c6a10123dbebf4712860cde47b
               }
             }
           }

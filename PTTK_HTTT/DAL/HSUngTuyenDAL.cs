@@ -107,5 +107,28 @@ namespace DAL
             };
             return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
         }
+
+        public DataTable Get_For_Ket_Qua_Ung_Tuyen()
+        {
+            string procName = "USP_HSUNGTUYEN_GET_FOR_KET_QUA_UNG_TUYEN";
+            OracleParameter[] Parameters =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
+
+        public void Update(HSUngTuyenDTO hs)
+        {
+            string procName = "USP_HSUNGTUYEN_UPDATE";
+            OracleParameter[] Parameters =
+            {
+                new("P_MAHOPDONG", OracleDbType.Varchar2, hs.MAHOPDONG, ParameterDirection.Input),
+                new("P_GIOITHIEU", OracleDbType.Varchar2, hs.GIOITHIEU, ParameterDirection.Input),
+                new("P_HOCVAN", OracleDbType.Varchar2, hs.HOCVAN, ParameterDirection.Input),
+                new("P_KINHNGHIEM", OracleDbType.Varchar2, hs.KINHNGHIEM, ParameterDirection.Input)
+            };
+            conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }

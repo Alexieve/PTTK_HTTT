@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             ParentPanel = new Panel();
             BtnPanel = new Panel();
             XemCTHoSoBtn = new Button();
             KetQuaTb = new DataGridView();
+            TitlePanel = new Panel();
+            TitleLabel = new Label();
+            MAUV = new DataGridViewTextBoxColumn();
+            MAHOPDONG = new DataGridViewTextBoxColumn();
             TENDN = new DataGridViewTextBoxColumn();
             CB_VT = new DataGridViewTextBoxColumn();
             NGAYNOP = new DataGridViewTextBoxColumn();
             KETQUA = new DataGridViewTextBoxColumn();
-            TitlePanel = new Panel();
-            TitleLabel = new Label();
             ParentPanel.SuspendLayout();
             BtnPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)KetQuaTb).BeginInit();
@@ -80,22 +82,60 @@
             KetQuaTb.AllowUserToAddRows = false;
             KetQuaTb.AllowUserToDeleteRows = false;
             KetQuaTb.BackgroundColor = SystemColors.ControlLightLight;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            KetQuaTb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            KetQuaTb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             KetQuaTb.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            KetQuaTb.Columns.AddRange(new DataGridViewColumn[] { TENDN, CB_VT, NGAYNOP, KETQUA });
+            KetQuaTb.Columns.AddRange(new DataGridViewColumn[] { MAUV, MAHOPDONG, TENDN, CB_VT, NGAYNOP, KETQUA });
             KetQuaTb.Location = new Point(12, 144);
             KetQuaTb.Name = "KetQuaTb";
             KetQuaTb.ReadOnly = true;
             KetQuaTb.RowHeadersWidth = 51;
             KetQuaTb.Size = new Size(1053, 565);
             KetQuaTb.TabIndex = 9;
+            // 
+            // TitlePanel
+            // 
+            TitlePanel.BackColor = SystemColors.AppWorkspace;
+            TitlePanel.BorderStyle = BorderStyle.Fixed3D;
+            TitlePanel.Controls.Add(TitleLabel);
+            TitlePanel.Location = new Point(12, 12);
+            TitlePanel.Name = "TitlePanel";
+            TitlePanel.Size = new Size(1053, 75);
+            TitlePanel.TabIndex = 8;
+            // 
+            // TitleLabel
+            // 
+            TitleLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            TitleLabel.AutoSize = true;
+            TitleLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            TitleLabel.Location = new Point(3, 17);
+            TitleLabel.Name = "TitleLabel";
+            TitleLabel.Size = new Size(291, 41);
+            TitleLabel.TabIndex = 0;
+            TitleLabel.Text = "Kết Quả Ứng Tuyển";
+            TitleLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // MAUV
+            // 
+            MAUV.HeaderText = "MAUV";
+            MAUV.MinimumWidth = 6;
+            MAUV.Name = "MAUV";
+            MAUV.ReadOnly = true;
+            MAUV.Width = 6;
+            // 
+            // MAHOPDONG
+            // 
+            MAHOPDONG.HeaderText = "MAHOPDONG";
+            MAHOPDONG.MinimumWidth = 6;
+            MAHOPDONG.Name = "MAHOPDONG";
+            MAHOPDONG.ReadOnly = true;
+            MAHOPDONG.Width = 6;
             // 
             // TENDN
             // 
@@ -130,28 +170,6 @@
             KETQUA.Name = "KETQUA";
             KETQUA.ReadOnly = true;
             // 
-            // TitlePanel
-            // 
-            TitlePanel.BackColor = SystemColors.AppWorkspace;
-            TitlePanel.BorderStyle = BorderStyle.Fixed3D;
-            TitlePanel.Controls.Add(TitleLabel);
-            TitlePanel.Location = new Point(12, 12);
-            TitlePanel.Name = "TitlePanel";
-            TitlePanel.Size = new Size(1053, 75);
-            TitlePanel.TabIndex = 8;
-            // 
-            // TitleLabel
-            // 
-            TitleLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            TitleLabel.AutoSize = true;
-            TitleLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            TitleLabel.Location = new Point(3, 17);
-            TitleLabel.Name = "TitleLabel";
-            TitleLabel.Size = new Size(291, 41);
-            TitleLabel.TabIndex = 0;
-            TitleLabel.Text = "Kết Quả Ứng Tuyển";
-            TitleLabel.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // UV_KetQuaHS
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -177,6 +195,8 @@
         private DataGridView KetQuaTb;
         private Panel BtnPanel;
         private Button XemCTHoSoBtn;
+        private DataGridViewTextBoxColumn MAUV;
+        private DataGridViewTextBoxColumn MAHOPDONG;
         private DataGridViewTextBoxColumn TENDN;
         private DataGridViewTextBoxColumn CB_VT;
         private DataGridViewTextBoxColumn NGAYNOP;

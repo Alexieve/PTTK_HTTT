@@ -624,21 +624,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\vumin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj",
+      "projectUniqueName": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\BLL.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\BLL\\obj\\",
+      "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\BLL.csproj",
+      "packagesPath": "C:\\Users\\vumin\\.nuget\\packages\\",
+      "outputPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -652,11 +650,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DAL\\DAL.csproj"
+            "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\PTTK_HTTT\\PTTK_HTTT\\DTO\\DTO.csproj"
+            "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DTO\\DTO.csproj"
             }
           }
         }

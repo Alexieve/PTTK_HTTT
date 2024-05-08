@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,16 @@ namespace BLL
             }
             nvPhanHoiDal.Insert(ph);
             return "";
+        }
+
+        public string Get_New(string MAUV, string MAHOPDONG)
+        {
+            DataTable dt = nvPhanHoiDal.Get_New(MAUV, MAHOPDONG);
+            if (dt.Rows.Count == 0)
+            {
+                return "";
+            }
+            return dt.Rows[0]["NOIDUNG"].ToString();
         }
     }
 }

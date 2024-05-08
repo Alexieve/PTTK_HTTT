@@ -14,9 +14,6 @@
     <Compile Update="Component\CPN_GiayToPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Component\CPN_LTGVHT.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="Component\CPN_LTTDT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -60,6 +57,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DN\DN_TraCuuHD_XemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DN\MultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DN\XemPhanHoiBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="NV\NV_DuyetHoSo.cs">

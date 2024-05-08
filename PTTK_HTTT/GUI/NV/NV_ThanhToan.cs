@@ -84,19 +84,20 @@ namespace GUI
             float SOTIEN = -1;
             if (rbtnTT30.Checked)
             {
-                if (_HopDongDTO.THOIGIANTD >= 30)
+                if (_HopDongDTO.THOIGIANTD > 30)
                 {
                     if (_HopDongDTO.TIENCONLAI >= _HopDongDTO.TONGTIEN * 0.3)
                         SOTIEN = (float)(_HopDongDTO.TONGTIEN * 0.3);
                 }
                 if (SOTIEN == -1)
                 {
-                    MessageBox.Show("Thanh toán mức 30% không khả thi");
+                    MessageBox.Show("Thanh toán mức 30% không khả thi vì số ngày tuyển dụng không hơn 30 ngày");
                     return;
                 }
             }    
             else
             {
+
                 SOTIEN = (float)(_HopDongDTO.TIENCONLAI);
             }
             string MAHOPDONG = tbMAHOPDONG.Text;
