@@ -28,7 +28,7 @@ namespace GUI
         private void btnTimBai_Click(object sender, EventArgs e)
         {
             _HopDongDTO = null;
-            _HopDongDTO = _HopDongBLL.Find_BY_MAHOPDONG(tbMAHOPDONG.Text);
+            _HopDongDTO = _HopDongBLL.Find_BY_MAHOPDONG(tbMAHOPDONG.Text.ToUpper());
             if (_HopDongDTO != null)
             {
                 tbTongTien.Text = _HopDongDTO.TONGTIEN.ToString();
@@ -40,7 +40,7 @@ namespace GUI
                 MessageBox.Show("Không tìm thấy hợp đồng");
                 return;
             }
-            List<HoaDonDTO> list = _HoaDonBLL.GET_BY_MAHOPDONG(tbMAHOPDONG.Text);
+            List<HoaDonDTO> list = _HoaDonBLL.GET_BY_MAHOPDONG(tbMAHOPDONG.Text.ToUpper());
             if (list.Count() != 0)
             {
                 dtgHoaDon.DataSource = list;
@@ -53,6 +53,7 @@ namespace GUI
                 dtgHoaDon.Columns[5].Visible = false;
                 tbSoLan.Text = list.Count.ToString();
             }
+            else { tbSoLan.Text = "0"; }
         }
 
         private string KiemTraTT_ThanhToan()
@@ -73,16 +74,14 @@ namespace GUI
             {
                 if (_HopDongDTO.THOIGIANTD > 30)
                 {
-                if (_HopDongDTO.THOIGIANTD >= 30)
                     if (_HopDongDTO.TIENCONLAI >= _HopDongDTO.TONGTIEN * 0.3)
                         return "30";
-
-                return "Thanh toán mức 30% không khả thi";
+                }
+                    return "Thanh toán mức 30% không khả thi";
             }
             else
                 return "100";
         }
-
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
             string check_message = KiemTraTT_ThanhToan();
@@ -90,7 +89,7 @@ namespace GUI
 
             if (check_message == "30")
                 SOTIEN = (float)(_HopDongDTO.TONGTIEN * 0.3);
-            else if(check_message == "100")
+            else if (check_message == "100")
                 SOTIEN = (float)(_HopDongDTO.TIENCONLAI);
             else
             {
