@@ -81,9 +81,13 @@ namespace GUI
             DateTime NGAYTD = dtpkNgayTD.Value;
             HopDongDTO _HopDongDTO = new HopDongDTO(CAPBAC, VITRITD, KYNANG, SOLUONG, YEUCAU, HINHTHUC, THOIGIANTD, NGAYTD);
             string status = _HopDongBLL.Them_HopDong(_HopDongDTO);
-            MessageBox.Show(status);
-            if(status == "Thêm hợp đồng thành công")
+            if(status != "")
+                MessageBox.Show(status);
+            else
+            {
+                MessageBox.Show("Thêm hợp đồng thành công");
                 reloadOuter?.Invoke(this, EventArgs.Empty);
+            }
         }
     }
 }

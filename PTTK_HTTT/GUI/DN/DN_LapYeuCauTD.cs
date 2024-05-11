@@ -67,7 +67,10 @@ namespace GUI
                         pnlXnpqc.BackColor = Color.MediumSeaGreen;
                     }
                     else
+                    {
+                        pnlLtt.BackColor = Color.MediumSeaGreen;
                         MessageBox.Show("Vui lòng nhập thông tin đăng tuyển");
+                    }    
                     break;
                 default:
                     break;

@@ -226,7 +226,7 @@ namespace DAL
                     new("vNGAYTD", OracleDbType.Date,_HopDongDTO.NGAYTD, ParameterDirection.Input)
                 };
                 conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, parameters);
-                return "Thêm hợp đồng thành công";
+                return "";
             }
             catch (Exception ex)
             {

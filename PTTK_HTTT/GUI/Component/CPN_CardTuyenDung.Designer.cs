@@ -41,7 +41,7 @@
             // Ava
             // 
             Ava.Cursor = Cursors.Hand;
-            Ava.Image = Properties.Resources.Trollface_non_free;
+            Ava.Image = Properties.Resources.tải_xuống;
             Ava.Location = new Point(30, 18);
             Ava.Name = "Ava";
             Ava.Size = new Size(164, 153);

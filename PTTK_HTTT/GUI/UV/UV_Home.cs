@@ -47,14 +47,8 @@ namespace GUI
         }
         private void addData(HopDongDTO array)
         {
-            CPN_CardTuyenDung card = new CPN_CardTuyenDung();
+            CPN_CardTuyenDung card = new CPN_CardTuyenDung(array);
             card.Margin = new Padding(0, 0, 0, 10);
-            card.MAHOPDONG = array.MAHOPDONG;
-            card.ViTri = array.VITRITD;
-            card.TenDoanhNghiep = array.TENDN;
-            card.CapBacUngtuyen = array.CAPBACTD;
-            card.DiaChiDN = array.DIACHI;
-            card.KyNangUngTuyen = array.KYNANG;
             ContentPanel.Controls.Add(card);
         }
         private void HomeBtn_Click(object sender, EventArgs e)
@@ -128,8 +122,7 @@ namespace GUI
         private void SearchBtn_Click(object sender, EventArgs e)
         {
             string searchString = SearchBox.Text.ToLower();
-            if (searchString == "") Load();
-            else Load(searchString);
+            Load(searchString);
         }
     }
 }
