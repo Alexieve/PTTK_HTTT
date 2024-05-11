@@ -22,6 +22,7 @@ namespace GUI
             InitializeComponent();
             hdBLL = new HopDongBLL();
             LoadData();
+            Make_Beauty();
         }
         private string maHDToShow = "";
         private void LoadData()
@@ -54,6 +55,22 @@ namespace GUI
             hopDong.TIENCONLAI
                 );
             }
+        }
+        void Make_Beauty()
+        {
+            GrantPrivTable.BorderStyle = BorderStyle.None;
+            GrantPrivTable.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            GrantPrivTable.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            GrantPrivTable.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            GrantPrivTable.DefaultCellStyle.SelectionForeColor = Color.White;
+            GrantPrivTable.BackgroundColor = Color.White;
+
+            GrantPrivTable.EnableHeadersVisualStyles = false;
+            GrantPrivTable.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            GrantPrivTable.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            GrantPrivTable.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+            //GrantPrivTable.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
         }
         private void openChildForm(Form childForm)
         {

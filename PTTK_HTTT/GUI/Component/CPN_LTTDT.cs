@@ -144,7 +144,8 @@ namespace GUI
                 MessageBox.Show("Bạn chưa chọn thời gian tuyển dụng");
                 return false;
             }
-            if(dtpkNgayTD.Value < DateTime.Now)
+
+            if(dtpkNgayTD.Value.Date < DateTime.Now.Date)
             {
                 MessageBox.Show("Ngày tuyển dụng không hợp lệ");
                 return false;

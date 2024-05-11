@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\gui\\uv\\uv_ketquahs_chitieths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\uv\\uv_ketquahs_chitieths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\dn\\dn_tracuuhd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\dn\\dn_tracuuhd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\gui\\component\\cpn_giaytopanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\component\\cpn_giaytopanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\nv\\nv_tracuuhd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\nv\\nv_tracuuhd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\gui\\uv\\uv_ketquahs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\uv\\uv_ketquahs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB5D35C5-C6EA-4BC3-9795-3B07F022F3FA}|DAL\\DAL.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\dal\\giaytodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB5D35C5-C6EA-4BC3-9795-3B07F022F3FA}|DAL\\DAL.csproj|solutionrelative:dal\\giaytodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\bll\\giaytobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04DC6689-01BA-43A9-A998-3FFBAB43AAB3}|BLL\\BLL.csproj|solutionrelative:bll\\giaytobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|d:\\study\\year3\\hk2\\pttk\\project\\pttk_httt\\gui\\dn\\dn_phanhoihs_dshopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{177D6E4E-0CA5-4984-A837-2DD4FB2B5453}|GUI\\GUI.csproj|solutionrelative:gui\\dn\\dn_phanhoihs_dshopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 59,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,67 +42,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GiayToDAL.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\GiayToDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\GiayToDAL.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\DAL\\GiayToDAL.cs",
-              "RelativeToolTip": "DAL\\GiayToDAL.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "DN_TraCuuHD.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\DN\\DN_TraCuuHD.cs",
+              "RelativeDocumentMoniker": "GUI\\DN\\DN_TraCuuHD.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\DN\\DN_TraCuuHD.cs",
+              "RelativeToolTip": "GUI\\DN\\DN_TraCuuHD.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T07:32:41.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GiayToBLL.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\GiayToBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\GiayToBLL.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\BLL\\GiayToBLL.cs",
-              "RelativeToolTip": "BLL\\GiayToBLL.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAcwDsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T07:31:18.143Z",
+              "WhenOpened": "2024-05-10T06:39:55.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UV_KetQuaHS.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\UV\\UV_KetQuaHS.cs",
-              "RelativeDocumentMoniker": "GUI\\UV\\UV_KetQuaHS.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\UV\\UV_KetQuaHS.cs",
-              "RelativeToolTip": "GUI\\UV\\UV_KetQuaHS.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAgwEAAAAA0AAAA",
+              "Title": "DN_PhanHoiHS_DSHopDong.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\DN\\DN_PhanHoiHS_DSHopDong.cs",
+              "RelativeDocumentMoniker": "GUI\\DN\\DN_PhanHoiHS_DSHopDong.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\DN\\DN_PhanHoiHS_DSHopDong.cs",
+              "RelativeToolTip": "GUI\\DN\\DN_PhanHoiHS_DSHopDong.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T18:13:08.712Z",
+              "WhenOpened": "2024-05-10T06:37:29.469Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CPN_GiayToPanel.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\Component\\CPN_GiayToPanel.cs",
-              "RelativeDocumentMoniker": "GUI\\Component\\CPN_GiayToPanel.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\Component\\CPN_GiayToPanel.cs",
-              "RelativeToolTip": "GUI\\Component\\CPN_GiayToPanel.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAArwCUAAAAlAAAA",
+              "Title": "NV_TraCuuHD.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_TraCuuHD.cs",
+              "RelativeDocumentMoniker": "GUI\\NV\\NV_TraCuuHD.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\NV\\NV_TraCuuHD.cs",
+              "RelativeToolTip": "GUI\\NV\\NV_TraCuuHD.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwDoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T18:10:45.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UV_KetQuaHS_ChiTietHS.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\UV\\UV_KetQuaHS_ChiTietHS.cs",
-              "RelativeDocumentMoniker": "GUI\\UV\\UV_KetQuaHS_ChiTietHS.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\PTTK\\Project\\PTTK_HTTT\\GUI\\UV\\UV_KetQuaHS_ChiTietHS.cs",
-              "RelativeToolTip": "GUI\\UV\\UV_KetQuaHS_ChiTietHS.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAswIoAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T17:49:34.851Z",
+              "WhenOpened": "2024-05-10T06:37:01.847Z",
               "EditorCaption": ""
             }
           ]
